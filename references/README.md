@@ -22,6 +22,7 @@ but active orchestrator behavior should prioritize REVA-aligned files.
 
 | File | Purpose |
 |------|---------|
+| REVA University.md | Institutional philosophy, values, mission, and student-guidance source text |
 | five-spheres-framework.md | Five Student Spheres balance model |
 | reva-values-anchor.md | Values and coaching decision baseline |
 | srujana-pathway-framework.md | Stage 1-4 progression and evidence model |
@@ -51,3 +52,4 @@ These files still provide supporting methods and can be adapted further:
 2. Prefer behavior rules over abstract theory.
 3. Ensure terms match orchestrator naming.
 4. Add a direct mapping to at least one session type when introducing a new reference.
+5. If a rule is REVA-specific, ground it in [REVA University.md](REVA%20University.md) before creating a derived summary file.

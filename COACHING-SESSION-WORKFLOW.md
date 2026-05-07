@@ -4,6 +4,7 @@
 
 This document defines the operational coaching workflow for REVA student sessions.
 It aligns to the v1.4 requirements and the orchestration logic in [SKILL.md](SKILL.md).
+For REVA-specific value interpretation and student guidance norms, use [references/REVA University.md](references/REVA%20University.md), especially `The Strategic Directive: Educate to Enterprise`, `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`, and the student-principles section near the end of that document.
 
 ## Universal session contract
 
@@ -18,6 +19,8 @@ Each daily session includes dopamine baseline check:
 3. Natural reward anchor.
 
 ## Year-group routing defaults
+
+These defaults should remain aligned with REVA's learner-centric and holistic-development framing in [references/REVA University.md](references/REVA%20University.md#L55).
 
 1. Year 1 (Foundation): orientation, study skills, campus integration, GTD basics.
 2. Year 2-3 (Development): skill depth, projects, internships, leadership growth.
@@ -129,6 +132,8 @@ Each daily session includes dopamine baseline check:
 3. Session 22 for serious risk and referral.
 
 ## Operational guardrails
+
+Interpret these guardrails through REVA's universal-values and leadership framing in [references/REVA University.md](references/REVA%20University.md#L49).
 
 1. Ask before advice.
 2. Diagnose technical vs adaptive challenge.

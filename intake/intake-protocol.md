@@ -1,6 +1,7 @@
 # REVA Student Intake Protocol
 
 This protocol initializes a student in SrujanaBuddy and establishes coaching readiness across academics, wellbeing, and progression.
+Use [references/REVA University.md](references/REVA%20University.md) whenever intake needs to make REVA's institutional values, mission, or student expectations explicit.
 
 ## Intake outcomes
 1. Baseline student profile is complete.
@@ -22,6 +23,7 @@ This protocol initializes a student in SrujanaBuddy and establishes coaching rea
    2. Study habits and time management snapshot.
    3. Stress, sleep, and energy self-check.
 4. Goal and direction setting
+   - Guide this section using `The Strategic Directive: Educate to Enterprise` and the student-principles section in [references/REVA University.md](references/REVA%20University.md#L43).
    1. 1 academic goal for 30 days.
    2. 1 habit goal for consistency.
    3. 1 career exploration step.

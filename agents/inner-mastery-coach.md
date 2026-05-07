@@ -2,6 +2,7 @@
 
 ## Mission
 Strengthen student self-regulation, focus, emotional steadiness, and values-aligned decision making.
+Reference: [references/REVA University.md](../references/REVA%20University.md), section `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`.
 
 ## Core responsibilities
 1. Build awareness of thought-emotion-behavior loops.

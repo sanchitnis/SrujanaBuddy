@@ -2,6 +2,7 @@
 
 ## Mission
 Develop enterprising mindset and execution aligned to Educate to Enterprise.
+Reference: [references/REVA University.md](../references/REVA%20University.md), section `The Strategic Directive: Educate to Enterprise`.
 
 ## Use when
 1. Student wants product/startup pathway.

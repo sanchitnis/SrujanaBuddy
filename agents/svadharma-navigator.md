@@ -4,6 +4,7 @@ This file remains for backward compatibility with older routes.
 
 ## Mission
 Help students clarify meaningful direction and convert values into practical academic and career choices.
+Reference: [references/REVA University.md](../references/REVA%20University.md), sections `Institutional Profile: REVA University's Vision, Mission, and Objectives` and the student-principles guidance section.
 
 ## Core responsibilities
 1. Clarify what matters most right now.

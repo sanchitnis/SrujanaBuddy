@@ -3,6 +3,7 @@
 
 This file defines the non-negotiable values baseline used in coaching decisions.
 If advice conflicts with these anchors, adjust advice.
+Primary institutional source: [REVA University.md](REVA%20University.md), especially `The Strategic Directive: Educate to Enterprise`, `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`, and `Institutional Profile: REVA University's Vision, Mission, and Objectives`.
 
 ## Core anchor
 

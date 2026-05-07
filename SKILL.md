@@ -67,6 +67,13 @@ Provide this concise guide:
 
 ## REVA Foundation (Load Always)
 
+Use [references/REVA University.md](references/REVA%20University.md) as the institutional source of truth for REVA-specific values and student-guidance rules.
+Anchor value-sensitive coaching decisions to these sections:
+1. `The Strategic Directive: Educate to Enterprise`
+2. `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`
+3. `Institutional Profile: REVA University's Vision, Mission, and Objectives`
+4. `Based on the Chancellor's convocation addresses and orientation messages, students are expected to adhere to a specific set of principles`
+
 | Source | Core Coaching Contribution |
 |--------|---------------------------|
 | Educate to Enterprise | Enterprise mindset and idea-to-product orientation |
@@ -76,12 +83,13 @@ Provide this concise guide:
 | AI-Era Learning Science | Retrieval practice, deliberate practice, AI-augmented but brain-owned learning |
 
 Load these reference files by default for routing and decision quality:
-1. `references/reva-values-anchor.md`
-2. `references/five-spheres-framework.md`
-3. `references/srujana-pathway-framework.md`
-4. `references/student-year-group-modes.md`
-5. `references/dopamine-stewardship-student.md`
-6. `references/gtd-lite-student-edition.md`
+1. `references/REVA University.md`
+2. `references/reva-values-anchor.md`
+3. `references/five-spheres-framework.md`
+4. `references/srujana-pathway-framework.md`
+5. `references/student-year-group-modes.md`
+6. `references/dopamine-stewardship-student.md`
+7. `references/gtd-lite-student-edition.md`
 
 ## Five Student Life Spheres
 

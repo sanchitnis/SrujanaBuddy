@@ -31,6 +31,8 @@ This repository is migrating in place from the previous SrujanaBuddy baseline to
 
 ## Core design commitments
 
+These commitments should be interpreted in line with [references/REVA University.md](references/REVA%20University.md), especially `The Strategic Directive: Educate to Enterprise`, `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`, and `Institutional Profile: REVA University's Vision, Mission, and Objectives`.
+
 1. Aspirations-first coaching.
 2. Ask-before-advice conversation flow.
 3. AI augments learning, does not replace thinking.
@@ -68,10 +70,11 @@ SrujanaBuddy/
 ## Key references
 
 1. [REVA-STUDENT-SYSTEM-SPEC-v1.4.md](REVA-STUDENT-SYSTEM-SPEC-v1.4.md)
-2. [SKILL.md](SKILL.md)
-3. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md)
-4. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md)
-5. [CONTRIBUTING.md](CONTRIBUTING.md)
+2. [references/REVA University.md](references/REVA%20University.md)
+3. [SKILL.md](SKILL.md)
+4. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md)
+5. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md)
+6. [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 

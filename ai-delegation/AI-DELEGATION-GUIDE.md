@@ -53,7 +53,7 @@ The coaching layer is orchestrated by `SKILL.md` and routed into the six coachin
 | Deep creative and philosophical thinking | Compiling background, summarising prior thinking |
 | Mentoring — full presence with another person | Tracking mentee progress, preparing coaching questions |
 | Reading and responding to a situation | Preparing situational analysis and stakeholder mapping |
-| The SPG vision | Researching peer organisations, funding sources, models |
+| The optional contribution vision | Researching peer organisations, funding sources, models |
 | Weekly Svadhyaya | Pre-processing the data (tasks, calendar, metrics) |
 
 ---
@@ -76,7 +76,7 @@ In any GTD or coaching context, use this syntax to create an AI-delegated task:
       outcomes — with emphasis on India-applicable frameworks.
       Agent: Research Agent | Priority: M | By: 2026-05-10
       Output format: 3-page synthesis with table of models
-      Context: For SPG proposal to AICTE on gifted education policy
+      Context: For a USR or contribution proposal on gifted education policy
       #ai-delegate #samaj
 ```
 
@@ -124,7 +124,7 @@ Maintain this live log in the Waiting For list (`gtd/04-waiting-for.md`):
 - Which delegated tasks had highest quality output?
 - Which required the most rework? Why?
 - What new task categories could be delegated?
-- Are AI agents freeing up more time for Atma, Sangha, and SPG — or just enabling more Karma Bhoomi work?
+- Are AI agents freeing up more time for Atma, Sangha, and optional contribution work — or just enabling more Karma Bhoomi work?
 
 ---
 
@@ -143,9 +143,9 @@ The Prabodhini tradition's scientific temper and value of honesty applies to AI 
 ## FUTURE POSSIBILITIES (Horizon 2–3)
 
 As AI capabilities grow, the following may become delegatable:
-- SPG stakeholder outreach (with templates and approved messages)
+- USR or contribution stakeholder outreach (with templates and approved messages)
 - Mentee progress tracking and session note-taking
 - Automated calendar health scoring
 - Weekly sphere metrics compilation
-- Research monitoring for SPG domain (news, papers, developments)
+- Research monitoring for contribution domains (news, papers, developments)
 - Draft responses to standard professional correspondence

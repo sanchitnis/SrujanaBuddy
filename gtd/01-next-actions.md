@@ -40,10 +40,10 @@
 
 ---
 
-## 🟢 SAMAJ SEVA (National Contribution & SPG)
-<!-- Actions that advance your Adult SPG and community contribution -->
+## 🟢 SAMAJ SEVA (USR & Optional Contribution)
+<!-- Actions that advance optional student contribution and community engagement -->
 
-- [ ] [AI-COACH] Draft first shortlist of 5 potential SrujanaBuddy SPG team members with proposed roles  due:2026-05-11 ~30min #samaj #coach-suggested #medium @office [Next action for SPG team roster project]
+- [ ] [AI-COACH] Draft first shortlist of 5 potential SrujanaBuddy contribution team members with proposed roles  due:2026-05-11 ~30min #samaj #coach-suggested #medium @office [Next action for optional contribution team project]
 - [ ] 
 
 ---

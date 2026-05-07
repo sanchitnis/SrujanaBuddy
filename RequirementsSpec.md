@@ -71,7 +71,7 @@ The system shall structure all coaching, planning, and self-assessment around fi
 | **Atma** | Inner Self — Sadhana, Svadhyaya, spiritual depth, Svadharma alignment |
 | **Sangha** | Family & Close Relationships — Grihastha Dharma, relational presence |
 | **Karma Bhoomi** | Professional & Creative Contribution — mastery, Karma Yoga, economic foundation |
-| **Samaj Seva** | National & Community Contribution — Adult SPG, Dharma-Sansthapana |
+| **Samaj Seva** | National & Community Contribution — USR and optional contribution pathways |
 | **Sharira-Prana** | Physical & Vital Energy — bio-integrity, sleep, movement, Prana management |
 
 All coaching, task tracking, time audits, and reviews shall be tagged and filtered by sphere. No sphere should fall below 5/10 for more than one quarter without active coaching intervention.
@@ -106,7 +106,7 @@ AI-delegated tasks shall follow a structured syntax with agent, priority, deadli
 
 The system shall provide **structured temporal operating rhythms**:
 
-- **Daily** — Five-zone operating model: Sacred Opening (Atma), Deep Work Window (Karma Bhoomi), Engagement Block (Meetings/SPG), Regeneration Window (Physical/Sangha), Evening Closure (Sangha/Atma reflection). Minimum Viable Day protocol for disrupted days.
+- **Daily** — Five-zone operating model: Sacred Opening (Atma), Deep Work Window (Karma Bhoomi), Engagement Block (Meetings/Contribution), Regeneration Window (Physical/Sangha), Evening Closure (Sangha/Atma reflection). Minimum Viable Day protocol for disrupted days.
 - **Weekly** — Sunday Svadhyaya Review cycle: sphere audit, Sankalpa review, project review, calendar review, weekly Sankalpa-setting
 - **Monthly** — Three Commitments Review and AI delegation audit
 - **Quarterly/Annual** — Full sphere scoring, vision review, multi-year Sankalpa design via `yearly-strategy.md`
@@ -118,7 +118,7 @@ The system shall support a **Google Calendar connector** for automated Five-Sphe
 - Classify each calendar event by sphere
 - Produce an Integrity Gap Report comparing declared priorities against actual time allocation
 - Generate a Meeting Quality Audit (Generative / Maintenance / Consuming / Unclear)
-- Produce a weekly Calendar Health Dashboard with scores for Atma protection, Sangha presence, deep work, SPG advance, and physical health
+- Produce a weekly Calendar Health Dashboard with scores for Atma protection, Sangha presence, deep work, contribution advance, and physical health
 
 ### FR-9: Living Mentee Profile
 
@@ -129,7 +129,7 @@ The system shall maintain a **living profile document per mentee** capturing:
 - Core values, passions, flow activators
 - 10-year vision narrative and Svadharma calling
 - Recurring behavioural patterns and growth edges
-- Active Sankalpas (1-year, 5-year, SPG)
+- Active Sankalpas (1-year, 5-year, contribution)
 - Coaching preferences and accountability style
 - Psychometric results from all three assessments
 - Session breakthroughs and coach notes (updated continuously)
@@ -138,7 +138,7 @@ The system shall maintain a **living profile document per mentee** capturing:
 
 All coaching interactions shall be grounded in a defined hierarchy of wisdom traditions integrated with Western coaching science:
 
-**Indian Traditions**: Advaita Vedanta (Upanishads / Shankaracharya), Bhagavad Gita (Chapters 2–3, 18), Swami Vivekananda (Man-Making Education, Organizational Attitude), Sri Aurobindo (Integral Yoga), Samarth Ramdas (Dasabodha), Maharshi Dayananda (Vedic rationalism), JP Pedagogy (Gunavikas, SPG, Paristhiti Jnana)
+**Indian Traditions**: Advaita Vedanta (Upanishads / Shankaracharya), Bhagavad Gita (Chapters 2–3, 18), Swami Vivekananda (Man-Making Education, Organizational Attitude), Sri Aurobindo (Integral Yoga), Samarth Ramdas (Dasabodha), Maharshi Dayananda (Vedic rationalism), civic and service-oriented pedagogies, and Paristhiti Jnana
 
 **Western Frameworks**: ICF coaching competencies, PERMA Model (Seligman), VIA Character Strengths (Peterson & Seligman), Adaptive Leadership (Heifetz), Logotherapy (Frankl), Immunity to Change (Kegan), Positive Intelligence / Saboteurs (Chamine), WOOP (Oettingen), GTD (David Allen)
 
@@ -181,7 +181,7 @@ All coaching interactions shall be grounded in a defined hierarchy of wisdom tra
  ┌─────────────────────────────────────────────────┐
  │               References Layer                  │
  │  Philosophy · Five Spheres · Daily/Weekly/Annual│
- │  Rhythms · Modern Coaching Frameworks · SPG     │
+ │  Rhythms · Modern Coaching Frameworks · USR     │
  └─────────────────────────────────────────────────┘
        │
        ▼
@@ -212,7 +212,7 @@ All coaching interactions shall be grounded in a defined hierarchy of wisdom tra
 | Companion mobile-friendly web app for GTD + Sankalpa tracking | Listed in README roadmap |
 | Anonymised aggregate community insights dashboard | Listed in README roadmap |
 | Gmail and Google Drive connectors | Referenced in `SKILL.md` compatibility section |
-| SPG stakeholder outreach templates | Noted in `AI-DELEGATION-GUIDE.md` future section |
+| Contribution stakeholder outreach templates | Noted in `AI-DELEGATION-GUIDE.md` future section |
 | Automated calendar health scoring | Noted in `AI-DELEGATION-GUIDE.md` future section |
 | Mentee progress tracking and session note-taking automation | Noted in `AI-DELEGATION-GUIDE.md` future section |
 

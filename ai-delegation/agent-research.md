@@ -20,7 +20,7 @@ Research tasks the agent handles well:
 - Landscape analysis of peer organisations, models, or initiatives
 - Literature review on a policy, research, or philosophical question
 - Compilation of data, statistics, or case studies for a proposal
-- Monitoring a domain (SPG area, professional field) for developments
+- Monitoring a domain (USR area, contribution domain, professional field) for developments
 - Preparing briefing notes before important meetings
 - Fact-checking claims before publishing or presenting
 

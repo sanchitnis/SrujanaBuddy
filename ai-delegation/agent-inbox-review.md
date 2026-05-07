@@ -55,14 +55,14 @@ ITEM 2: [Brief description]
 → Actionable: YES
 → Sphere: #samaj
 → Routing: RESEARCH AGENT
-→ Delegation: "Research [topic] for SPG proposal" — create task in agent-research.md
+→ Delegation: "Research [topic] for USR proposal" — create task in agent-research.md
 → AI-delegatable: YES ✓
 
 ---
 ITEM 3: [Brief description]
 → Actionable: NO
 → Routing: REFERENCE — file under [category]
-→ Note: Interesting for Someday SPG idea
+→ Note: Interesting for Someday contribution idea
 
 ---
 ITEMS READY FOR `01-next-actions.md`:
@@ -114,7 +114,7 @@ Based on calendar:
 - Atma time: approx X hours (target: 5–8% waking hrs)
 - Sangha genuine presence: [detected/not detected]
 - Karma deep work: approx X hours
-- Samaj/SPG: approx X hours
+- Samaj/contribution: approx X hours
 - Sharira movement: [detected X days]
 
 Sphere most at risk: [SPHERE] — [observation]
@@ -122,7 +122,7 @@ Sphere most at risk: [SPHERE] — [observation]
 #### PATTERNS DETECTED
 - [Pattern 1: e.g., "Third week running that Sangha Sankalpa was not honoured"]
 - [Pattern 2: e.g., "Tuesday deep work block has been interrupted 3 weeks running"]
-- [Pattern 3: e.g., "SPG project has had no next action for 3 weeks"]
+- [Pattern 3: e.g., "Contribution project has had no next action for 3 weeks"]
 
 #### QUESTIONS FOR SVADHYAYA
 Generated from this week's patterns:
@@ -163,7 +163,7 @@ Based on project status and upcoming needs:
 - [Emerging pattern 2]
 
 #### SUGGESTED FOCUS AREAS FOR THIS SESSION:
-1. [Based on patterns — e.g., "The recurring avoidance of SPG activation"]
+1. [Based on patterns — e.g., "The recurring avoidance of contribution activation"]
 2. [Based on stalled items — e.g., "Three coaching-suggested tasks remain untouched"]
 3. [Based on sphere data — e.g., "Sangha sphere has declined for 3 consecutive weeks"]
 
@@ -187,4 +187,4 @@ Tracks month-over-month trends in:
 - Task completion by sphere
 - AI delegation efficiency
 - Coach-suggested item completion rate
-- SPG progress indicators
+- Contribution progress indicators

@@ -17,7 +17,7 @@ personalisation, and the addition of genuine wisdom — not the mechanical produ
 
 Writing tasks this agent handles:
 - First drafts of professional documents (proposals, reports, policy papers, letters)
-- SPG communication materials (outreach, project proposals, impact reports)
+- Contribution communication materials (outreach, project proposals, impact reports)
 - Blog posts, LinkedIn articles, and social media drafts (for leader's voice)
 - Meeting agendas and minutes frameworks
 - Email templates for recurring communication types
@@ -75,7 +75,7 @@ The invitation (question or statement for engagement)
 ```
 
 ### Type B: Policy / Proposal Document
-*For SPG work, institutional proposals, or professional submissions*
+*For USR work, institutional proposals, or professional submissions*
 
 ```
 STRUCTURE:
@@ -101,7 +101,7 @@ Call to action: [What do you want the reader to do?]
 Close: [Appropriate warmth]
 ```
 
-### Type D: SPG / Community Outreach
+### Type D: USR / Community Outreach
 *For National Contribution and movement-building communications*
 
 ```

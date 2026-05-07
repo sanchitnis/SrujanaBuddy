@@ -33,7 +33,7 @@
 
 ---
 
-## 🟢 SAMAJ SEVA — Future SPG Ideas
+## 🟢 SAMAJ SEVA — Future Optional Contribution Ideas
 
 - [ ] Launch [initiative] when resources/team are available
 - [ ] Collaborate with [organization] on [project]

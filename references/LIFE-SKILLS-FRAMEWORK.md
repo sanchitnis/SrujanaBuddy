@@ -84,16 +84,16 @@ The framework acknowledges that:
 |-----------|-----------------|----------|-----------|
 | **VIA Character Strengths mapping** | ✅ Strong | Svadharma Navigator | Phase 1.2 (Psychometrics), 2.3 (Svadharma) |
 | **Values clarification (5 Spheres)** | ✅ Strong | Integral Life Coach | Phase 2.2, ongoing weekly |
-| **Advaita/Vedantic values foundation** | ✅ Strong | All agents | Reference always: `jp-philosophical-foundation.md` |
+| **REVA values and philosophical foundation** | ✅ Strong | All agents | Reference always: `REVA University.md` |
 | **Integrity gap diagnosis** | ✅ Strong | Integral Life Coach + ILC | Phase 2.2, 3.1 (Weekly), 3.4 (Quarterly) |
 | **Courage to act on values** (even costly) | 🟡 Partial | Organizational Attitude Builder | Phase 2.4 (OA Deep Dive) |
 | **Truth-telling & vulnerability** | 🟡 Partial | Inner Mastery Coach | Phase 2.5, ongoing coaching |
-| **Cultural/civilizational values** (India-specific) | ✅ Strong | Paristhiti Jnana Analyst | Phase 4.1 (Challenge), SPG work |
+| **Cultural/civilizational values** (India-specific) | ✅ Strong | Paristhiti Jnana Analyst | Phase 4.1 (Challenge), service and contribution work |
 
 **Materials Available**:
 - `intake/apps/01-character-strengths.html` (VIA 24 strengths, JP-aligned)
 - `intake/apps/02-spheres-assessment.html` (Five Spheres values audit)
-- `references/jp-philosophical-foundation.md` (comprehensive Vedantic + JP values)
+- `references/REVA University.md` (institutional values, mission, and student guidance)
 - `references/five-spheres-framework.md` (values by sphere)
 - `agents/svadharma-navigator.md` (calling + values alignment)
 - `agents/integral-life-coach.md` (integrity + balance)
@@ -109,24 +109,24 @@ The framework acknowledges that:
 
 | Dimension | Current Support | Agent(s) | Session(s) |
 |-----------|-----------------|----------|-----------|
-| **Adult SPG design** | ✅ Strong | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (monthly), 3.5 (annual) |
+| **Optional USR contribution design** | ✅ Strong | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (monthly), 3.5 (annual) |
 | **National/community problem diagnosis** | ✅ Strong | Paristhiti Jnana Analyst | Phase 2.4, 3.4 (Quarterly), 4.1 (Challenge) |
-| **Dharma-Sansthapana thinking** | ✅ Strong | All agents | Reference: `jp-philosophical-foundation.md` |
+| **Purpose-driven contribution mindset** | ✅ Strong | All agents | Reference: `REVA University.md` |
 | **Systems thinking for social change** | ✅ Strong | Paristhiti Jnana Analyst | Phase 3.4 (Quarterly), 4.1 (Challenge) |
 | **Building with others** (Sahakar) | ✅ Strong | OA Builder | Phase 2.4, 3.1 (Weekly OA check), 4.1 (Leadership) |
 | **Measuring social impact** | 🟡 Partial | Accountability Partner + Data Coach | GTD tracking + metrics |
 | **Long-term vision for contribution** | ✅ Strong | Svadharma Navigator | Phase 2.3, 3.5 (Annual) |
 
 **Materials Available**:
-- `references/spg-contribution-tracker.md` (Adult SPG framework)
+- `references/usr-optional-contribution-tracker.md` (USR optional contribution framework)
 - `agents/organizational-attitude-builder.md` (Sanghatan component)
 - `agents/paristhiti-jnana-analyst.md` (systems + social reading)
 - `COACHING-SESSION-WORKFLOW.md` (Phase 2.4, 3.3, 4.1)
-- Profile template section: "THE ADULT SPG"
+- Profile and GTD contribution sections
 
 **Materials Needed** 🔴:
-- SPG coaching curriculum (multi-session deep dive)
-- Social impact measurement guide for SPG
+- USR contribution coaching curriculum (multi-session deep dive)
+- Social impact measurement guide for student contribution
 - "Building with others" collaboration framework
 - Systemic problem-solving playbook
 
@@ -139,7 +139,7 @@ The framework acknowledges that:
 |-----------|-----------------|----------|-----------|
 | **Intellectual curiosity** | ✅ Strong | Svadharma Navigator | Phase 1 (Intake), ongoing discovery |
 | **Love of Learning** (VIA strength) | ✅ Strong | Svadharma Navigator | Phase 1.2 (Psychometrics) |
-| **Scientific temper** (JP ideal) | ✅ Strong | All agents (foundation) | Reference: `jp-philosophical-foundation.md` |
+| **Scientific temper and learner mindset** | ✅ Strong | All agents (foundation) | Reference: `REVA University.md` |
 | **Hypothesis-testing in life** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 2.5 (Inner Mastery experiments), 3.3 (monthly) |
 | **Research & learning projects** | ✅ Strong | AI Delegation system | `ai-delegation/agent-research.md` |
 | **Svadhyaya practice** (self-study discipline) | ✅ Strong | All agents | 3.1 (Weekly), 3.5 (Annual), daily |
@@ -219,7 +219,7 @@ The framework acknowledges that:
 | **Conflict resolution** | 🟡 Partial | Integral Life Coach + OA Builder | Phase 4.1 (Challenge), ongoing |
 | **Delegation** | 🟡 Partial | OA Builder + Accountability Partner | Phase 2.4, GTD system |
 | **Team development** | 🟡 Partial | OA Builder | Phase 2.4, 4.1 (Leadership Challenge) |
-| **Building institutional capacity** (Sanghatan) | ✅ Strong | OA Builder | Phase 2.4, 3.3 (monthly SPG), 4.1 |
+| **Building institutional capacity** (Sanghatan) | ✅ Strong | OA Builder | Phase 2.4, 3.3 (monthly contribution review), 4.1 |
 
 **Materials Available**:
 - `agents/organizational-attitude-builder.md` (Sahakar + Sanghatan components)
@@ -231,7 +231,7 @@ The framework acknowledges that:
 - Conflict resolution playbook (specific scenarios)
 - Delegation framework + practice
 - Team dynamics diagnosis & intervention guide
-- Collective intelligence practices (for SPG/teams)
+- Collective intelligence practices (for contribution teams)
 
 ---
 
@@ -279,7 +279,7 @@ The framework acknowledges that:
 - VIA Character Strengths (ranked 1-24)
 - Weekly review template with metric tracking
 - COACHING-SESSION-WORKFLOW.md (measurement framework)
-- `references/spg-contribution-tracker.md` (SPG metrics)
+- `references/usr-optional-contribution-tracker.md` (student contribution metrics)
 
 **Materials Needed** 🔴:
 - Data interpretation for personal coaching guide
@@ -299,7 +299,7 @@ The framework acknowledges that:
 | **WOOP method** (Wish-Outcome-Obstacle-Plan) | ✅ Strong | Accountability Partner | Reference in agent |
 | **Scenario planning** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 3.4, 4.1 (Challenge) |
 | **Decision-making under uncertainty** | ✅ Strong | Paristhiti Jnana Analyst | Phase 4.1 (Challenge), ongoing |
-| **Multi-stakeholder solutions** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 4.1 (Leadership Challenge), 3.3 (SPG) |
+| **Multi-stakeholder solutions** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 4.1 (Leadership Challenge), 3.3 (optional contribution review) |
 | **Root cause diagnosis** | ✅ Strong | All agents in problem exploration | Ongoing coaching |
 
 **Materials Available**:
@@ -326,7 +326,7 @@ The framework acknowledges that:
 | **Creative flow states** | ✅ Strong | Svadharma Navigator | Phase 1 (Intake: hobbies/flow), ongoing |
 | **Novel problem approaches** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 3.4, 4.1 (Challenge) |
 | **Artistic/creative practice** | ✅ Strong | Reference in profile | Phase 1 (Intake: interests), ongoing |
-| **Innovation in SPG** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (SPG), 4.1 |
+| **Innovation in student contribution** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (optional contribution review), 4.1 |
 | **Connecting disparate domains** (creativity source) | 🟡 Partial | Svadharma Navigator | Phase 2.3 (Svadharma), 3.4 (Quarterly) |
 
 **Materials Available**:
@@ -337,7 +337,7 @@ The framework acknowledges that:
 
 **Materials Needed** 🔴:
 - Creative coaching practices (unlocking creative capacity)
-- Innovation frameworks for SPG
+- Innovation frameworks for student contribution
 - Art/creative practice integration into coaching
 - Connecting multi-domain insights guide
 
@@ -353,13 +353,13 @@ The framework acknowledges that:
 | **Teaching others** | 🟡 Partial | All agents | Emergence through coaching |
 | **Learning from peers** | 🟡 Partial | Integral Life Coach + Paristhiti Jnana | Ongoing coaching, 3.4 (Quarterly) |
 | **Knowledge documentation** | ✅ Strong | GTD system + Profile | Prabodhini Corpus reference |
-| **Collective SPG learning** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (SPG) |
+| **Collective contribution learning** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (service/project settings) |
 
 **Materials Available**:
 - Mentoring relationships tracked in profile
 - Intake interview question about mentors/Satsang
 - Reference to "Mentor's Mirror" in weekly review
-- `references/spg-contribution-tracker.md` (collective learning in SPG)
+- `references/usr-optional-contribution-tracker.md` (collective learning in service contributions)
 - Prabodhini Corpus reference (documenting insights)
 
 **Materials Needed** 🔴:
@@ -375,22 +375,22 @@ The framework acknowledges that:
 
 | Dimension | Current Support | Agent(s) | Session(s) |
 |-----------|-----------------|----------|-----------|
-| **Vedantic/JP philosophical grounding** | ✅ Strong | All agents (foundation) | Reference: `jp-philosophical-foundation.md` |
+| **REVA institutional and philosophical grounding** | ✅ Strong | All agents (foundation) | Reference: `REVA University.md` |
 | **Indian context reading** (Paristhiti Jnana) | ✅ Strong | Paristhiti Jnana Analyst | Phase 4.1 (Challenge), ongoing |
-| **Contemporary India issues** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 3.4, 4.1 (SPG context) |
+| **Contemporary India issues** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 3.4, 4.1 (USR and contribution context) |
 | **Global/local balance** | 🟡 Partial | Paristhiti Jnana Analyst | Phase 3.4 (Quarterly), 4.1 |
 | **Cross-cultural leadership** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 4.1 (Challenge) |
 | **Heritage + modernity synthesis** | ✅ Strong | All agents (philosophy) | Ongoing reference |
 
 **Materials Available**:
-- `references/jp-philosophical-foundation.md` (comprehensive)
+- `references/REVA University.md` (institutional philosophy and guidance)
 - `references/modern-coaching-frameworks.md` (East-West synthesis)
 - `agents/paristhiti-jnana-analyst.md` (situational reading)
 - Intake protocol: cultural values, inheritance, JP formation
-- SPG selection (often involves cultural/national issues)
+- Optional contribution selection (often involves cultural or civic issues)
 
 **Materials Needed** 🔴:
-- Contemporary India audit guide (for SPG mentees)
+- Contemporary India audit guide (for contribution-focused mentees)
 - Cross-cultural leadership coaching
 - "Living at two speeds" guide (global professional + Indian rooted)
 - Heritage reclamation for mid-career/elder mentees
@@ -408,7 +408,7 @@ The framework acknowledges that:
 | **Failure resilience** | ✅ Strong | Inner Mastery Coach | Phase 2.5, 3.5 (Annual), ongoing |
 | **Sthitaprajna under pressure** | ✅ Strong | Inner Mastery Coach | Phase 2.5, ongoing coaching |
 | **VIA Bravery strength** | ✅ Strong | Reference in strengths | Phase 1.2 (Psychometrics) |
-| **Pioneering new ventures** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (SPG), 4.1 |
+| **Pioneering new ventures** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (contribution or venture review), 4.1 |
 | **Dealing with impostor syndrome** | ✅ Strong | Inner Mastery Coach | Phase 2.5 (Saboteur: Impostor), ongoing |
 
 **Materials Available**:
@@ -434,7 +434,7 @@ The framework acknowledges that:
 
 | Session | Primary Skills | Secondary Skills |
 |---------|----------------|------------------|
-| **Phase 1.1: Intake Interview** | Conscientiousness, Character & Values, Curiosity | Citizenship (SPG discovery) |
+| **Phase 1.1: Intake Interview** | Conscientiousness, Character & Values, Curiosity | Citizenship (optional contribution discovery) |
 | **Phase 1.2: Psychometrics** | Conscientiousness, Character & Values, Curiosity | All skills (baseline mapping) |
 | **Phase 1.3: Synthesis & Sankalpas** | Commitment & Self-Management, Conscientiousness | All skills (integration) |
 | **Phase 2.1: Morning Ignition** | Commitment & Self-Management, Conscientiousness | Creativity (flow), Courage, Inner Mastery |
@@ -458,7 +458,7 @@ The framework acknowledges that:
 1. **Commitment & Self-Management** — GTD system, Sankalpa framework, daily/weekly/annual rhythms
 2. **Conscientiousness** — Svadhyaya practice, shadow work, psychometrics, intake protocol
 3. **Character & Universal Values** — VIA strengths, Vedantic foundation, Five Spheres, integrity audit
-4. **Citizenship & Making a Difference** — Adult SPG framework, Dharma-Sansthapana philosophy
+4. **Citizenship & Making a Difference** — USR-aligned optional contribution framework
 5. **Curiosity & Scientific Mindset** — Svadhyaya discipline, research delegation, learning projects
 6. **Courage to Lead & Entrepreneur** — OA profile, inner mastery, resilience coaching, psychometrics
 
@@ -482,7 +482,7 @@ The framework acknowledges that:
 5. **Writing for Clarity** — Not covered
 6. **Decision-Making Frameworks** — WOOP exists; others missing
 7. **Scenario Planning** — Not formalized
-8. **Innovation for SPG** — SPG framework exists; innovation curriculum missing
+8. **Innovation for student contribution** — contribution framework exists; innovation curriculum missing
 9. **Entrepreneurial Coaching Playbook** — Not formalized
 10. **Mentoring as Coaching** — Not formalized beyond "mentoring relationships" tracking
 11. **Satsang Formation & Sustainability** — Philosophy exists; practical guide missing
@@ -498,7 +498,7 @@ The framework acknowledges that:
 4. **Habit Formation & Neuroplasticity Guide** — Bridges Vedantic + neuroscience; foundational to coaching
 
 ### TIER 2: High Impact, Medium Feasibility (Do Second)
-1. **SPG Deep-Dive Curriculum** — Extends existing SPG framework; needs sequencing
+1. **USR Optional Contribution Curriculum** — Extends existing contribution framework; needs sequencing
 2. **Mentoring Coaching Guide** — Many mentees want to mentor; needs formalization
 3. **Data Interpretation for Personal Coaching** — Extends existing metrics; needs methodology
 4. **Creative Coaching Practices** — Unlocks underused capacity; needs structured approach
@@ -507,7 +507,7 @@ The framework acknowledges that:
 1. **Public Speaking & Leadership Voice** — Many mentees need; can be added incrementally
 2. **Writing for Clarity** — Professional skill; can be integrated with communication work
 3. **Digital Literacy & Tool Mastery** — Increasing relevance; start with popular tools
-4. **Innovation Frameworks for SPG** — Extends existing work; moderate priority
+4. **Innovation Frameworks for Student Contribution** — Extends existing work; moderate priority
 
 ---
 
@@ -587,7 +587,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 **When to Coach**: 
 - Sangha sphere: family/relationship tension (Phase 4.1 trigger, or as-needed)
 - Karma Bhoomi: workplace conflict, performance issues (Phase 4.1 trigger)
-- Samaj Seva: team/SPG disagreement (Phase 4.1 trigger, 3.3 if SPG-focused)
+- Samaj Seva: team/contribution disagreement (Phase 4.1 trigger, 3.3 if contribution-focused)
 
 **Key Framework**:
 
@@ -643,10 +643,10 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 - Pre-work: Get concrete feedback; distinguish perception from fact
 - Frame: "I'd like to understand how you see my contribution. I've been [specific work]. Is that visible to you?"
 
-**Scenario 3: SPG/Team — "Team member is not pulling their weight"**
+**Scenario 3: Contribution Team — "Team member is not pulling their weight"**
 - Root: Different standards, competing priorities, or capacity issue
 - Pre-work: Check OA diagnosis (is this Lakshya Nishtha misalignment or Anushasan gap?)
-- Frame: "Our goal is [SPG goal]. I notice [specific behavior]. What's happening from your side?"
+- Frame: "Our goal is [contribution goal]. I notice [specific behavior]. What's happening from your side?"
 
 **Scenario 4: Sangha — "Partner/friend feels neglected because of my work"**
 - Root: Sphere imbalance; possible guilt or resentment
@@ -674,7 +674,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 
 **Step 1**: State the choice clearly
 - "Should I stay in this job or leave?"
-- "Should I invest energy in family or SPG?"
+- "Should I invest energy in family or optional contribution work?"
 
 **Step 2**: Extract the values underneath each option
 - Option A (stay): Values at stake? Security, stability, reputation? Or compromise?
@@ -756,7 +756,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 
 **Seek input when:**
 - You have a blind spot (get feedback from trusted advisors)
-- Decision impacts others (Sangha, team, SPG)
+- Decision impacts others (Sangha, team, contribution group)
 - You're in an adaptive challenge (collective wisdom helps)
 
 **Decide alone when:**
@@ -775,9 +775,9 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 
 **Purpose**: Coach mentees through the full entrepreneurial journey (ideation → launch → scale → institutionalization).
 
-**When to Coach**: Primarily Phase 4.3 (Advanced/Specialized), but can emerge in Phase 2.4 (OA) or 3.3 (SPG) sessions.
+**When to Coach**: Primarily Phase 4.3 (Advanced/Specialized), but can emerge in Phase 2.4 (OA) or 3.3 (contribution review) sessions.
 
-**Trigger**: Mentee starting a business, SPG initiative, or significant new venture
+**Trigger**: Mentee starting a business, USR initiative, or significant new venture
 
 **Key Module Structure**:
 
@@ -963,7 +963,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 - Continuous learning practice
 
 **Samaj Seva Habits** (Contribution):
-- Weekly SPG action (minimum)
+- Weekly optional contribution action (minimum)
 - Paristhiti Jnana reading (national/community affairs)
 
 **Sharira-Prana Habits** (Physical):
@@ -988,47 +988,47 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 
 ## TIER 2: High Impact, Medium Feasibility Missing Materials
 
-### Component 5: SPG Deep-Dive Curriculum
+### Component 5: USR Optional Contribution Curriculum
 
-**Purpose**: Multi-session coaching journey for designing, launching, and sustaining an Adult SPG (Social Purpose Group / chosen contribution domain).
+**Purpose**: Multi-session coaching journey for designing, launching, and sustaining an optional student contribution aligned with University Social Responsibility.
 
 **Session Sequence**:
 
-**SPG Session 1: Discovery & Domain Selection (90 min)**
-- What problem calls to you? (personal + systemic)
-- Why this? (What in your Svadharma points here?)
-- Who's doing similar work? (What's the gap you can fill?)
-- Preliminary vision: "In 10 years, my SPG will have..."
-- Output: SPG Domain Brief
+**Contribution Session 1: Discovery & Domain Selection (90 min)**
+- What need calls to you? (campus, community, public-good)
+- Why this? (What in your values and current stage points here?)
+- Who is already working here? (What gap can you help fill?)
+- Preliminary vision: "In 1 year, this contribution will have..."
+- Output: Contribution Domain Brief
 
-**SPG Session 2: Stakeholder & Systems Mapping (90 min)**
+**Contribution Session 2: Stakeholder & Systems Mapping (90 min)**
 - Who are the primary stakeholders? (Who's affected? Who's already working on this?)
 - Power & interest analysis (Who has power? Who cares? Who needs to move?)
 - System thinking: What are the leverage points?
 - What resources exist? (Money, people, knowledge, platforms)
 - Output: Stakeholder map + systems diagram
 
-**SPG Session 3: Team & Partnership Design (60 min)**
+**Contribution Session 3: Team & Partnership Design (60 min)**
 - Who will you work with? (Co-founders, collaborators, advisors)
 - What's each person's role? (Vision? Execution? Resources? Credibility?)
 - How will you make decisions together? (Consensus? Leadership?)
 - Governance: How light or formal?
 - Output: Team charter + partnership agreement (if formal)
 
-**SPG Session 4: Year 1 Strategy & Launch (90 min)**
+**Contribution Session 4: 8-Week Strategy & Launch (90 min)**
 - What's Year 1 success? (Not the 10-year goal; what proves the concept?)
 - Who's your first beneficiary/customer? (Go talk to them)
-- What's the minimum viable action? (MVP of your SPG)
+- What's the minimum viable action? (MVP of your contribution plan)
 - Money: Do you need it? How will you fund?
-- Output: Year 1 plan + launch roadmap
+- Output: 8-week plan + launch roadmap
 
-**SPG Session 5+: Quarterly Review & Adaptation (ongoing, 60 min each)**
+**Contribution Session 5+: Review & Adaptation (ongoing, 60 min each)**
 - What impact have you had? (Qualitative + quantitative)
 - What have you learned? (About the problem? About yourself? About teams?)
 - What's working / not working?
 - Year 2 adjustment: Pivot or persist?
 
-**Materials to Create**: SPG Coaching Guide with all 5 modules detailed
+**Materials to Create**: USR Contribution Coaching Guide with all 5 modules detailed
 
 ---
 
@@ -1052,7 +1052,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 - Atma mentor: Spiritual guide or elder in contemplative practice
 - Sangha mentor: Elder who knows family/relationship mastery
 - Karma Bhoomi mentor: Professional/creative master in your domain
-- Samaj Seva mentor: Elder in social change / SPG work
+- Samaj Seva mentor: Elder in social change / service contribution work
 - Sharira-Prana mentor: Health/body wisdom teacher
 
 **Materials to Create**: Mentoring conversation guide + question bank for mentors
@@ -1099,7 +1099,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 - How can you create these conditions more often?
 
 **Practice 2: Creative Problem-Solving**
-- Present a real challenge (personal or SPG)
+- Present a real challenge (personal or contribution-related)
 - Brainstorm wild ideas (no judgment, no filtering)
 - "What if..." questions (What if you had unlimited resources? What if you approached it differently?)
 - Pick the most interesting idea; develop it
@@ -1233,7 +1233,7 @@ The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensi
 - Team contract: explicit norms, rewards, and consequences.
 - Monthly fairness audit: is discipline applied consistently across roles?
 
-**Output**: Incentive and Discipline Architecture for team/SPG
+**Output**: Incentive and Discipline Architecture for team/contribution effort
 
 #### Influence Review Scorecard (Monthly)
 

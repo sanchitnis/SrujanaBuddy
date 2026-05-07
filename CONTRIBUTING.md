@@ -18,7 +18,7 @@ This is not a generic productivity tool with Indian branding. Every design decis
 
 1. **Philosophical accuracy matters more than coaching elegance.** A technically sophisticated coaching question that misrepresents Advaita or the Organizational Attitude framework does more harm than good.
 
-2. **The user's dignity is non-negotiable.** Nothing in this system should make a JP alumnus feel inadequate for not having a fully active SPG or a perfect daily Sadhana practice. The coaching is demanding but never shaming.
+2. **The user's dignity is non-negotiable.** Nothing in this system should make a student feel inadequate for not having an active optional contribution pathway or a perfect daily practice. The coaching is demanding but never shaming.
 
 3. **Less is more.** The temptation in coaching systems is to add more questions, more frameworks, more agents. Resist. A smaller system that is deeply used is better than a comprehensive one that overwhelms.
 
@@ -70,7 +70,7 @@ If you want to write the improvement directly:
 
 ### The editorial process for philosophical changes
 
-Any change to `jp-philosophical-foundation.md` or to the core frameworks in `references/five-spheres-framework.md` goes through a two-reviewer process before merging. This protects the philosophical integrity of the system.
+Any change to `references/REVA University.md`, `references/reva-values-anchor.md`, or to the core frameworks in `references/five-spheres-framework.md` goes through a two-reviewer process before merging. This protects the philosophical integrity of the system.
 
 Reviewers are drawn from a standing panel of JP alumni and credentialed coaches. If you'd like to be on the review panel, open an Issue with label `reviewer-volunteer`.
 

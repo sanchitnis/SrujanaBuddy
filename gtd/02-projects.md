@@ -31,11 +31,11 @@
 
 ---
 
-## 🟢 SAMAJ SEVA / SPG PROJECTS
+## 🟢 SAMAJ SEVA / OPTIONAL CONTRIBUTION PROJECTS
 
-| Project | SPG? | Next Action | Last Updated | Status |
+| Project | Contribution? | Next Action | Last Updated | Status |
 |---------|------|-------------|-------------|--------|
-| Define SrujanaBuddy SPG team roster (3-5 names + roles) and record in profile | Y | Draft first shortlist of 5 potential team members with roles | 2026-05-05 | Active |
+| Define SrujanaBuddy optional contribution team roster (3-5 names + roles) and record in profile | Y | Draft first shortlist of 5 potential team members with roles | 2026-05-05 | Active |
 | | | | | |
 
 ---

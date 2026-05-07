@@ -17,7 +17,7 @@ focus on the strategic and catalytic aspects of any initiative.
 
 Planning tasks this agent handles:
 - Decomposing a Sankalpa or vision into projects and next actions
-- Creating phased implementation plans for SPG initiatives
+- Creating phased implementation plans for USR or optional contribution initiatives
 - Backward-planning from a deadline to identify milestones and critical path
 - Scheduling and time-blocking recommendations for the week/month
 - Risk assessment and contingency planning for important initiatives
@@ -68,7 +68,7 @@ Planning tasks that remain human-primary:
 ```markdown
 ### PROJECT PLAN OUTPUT
 **Project**: [Name]
-**Sphere**: | **Sankalpa**: | **Horizon**: [1yr/5yr/SPG]
+**Sphere**: | **Sankalpa**: | **Horizon**: [1yr/5yr/contribution]
 **Completed by Planning Agent**: [DATE]
 
 ---
@@ -137,7 +137,7 @@ Priority 3 (Catalytic): _____ → needs [X] hours
 | Wed | Sadhana | [Creative work] | [External meetings] | Family |
 | Thu | Sadhana | [Mentoring prep] | [Mentoring + Team] | Walk |
 | Fri | Sadhana | [Closure tasks] | [Comms + handover] | Rest |
-| Sat | Extended | [Optional SPG] | — | Family + Nature |
+| Sat | Extended | [Optional Contribution] | — | Family + Nature |
 | Sun | Extended | — | — | Svadhyaya Review |
 
 #### CALENDAR CONFLICTS DETECTED

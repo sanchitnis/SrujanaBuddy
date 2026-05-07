@@ -56,7 +56,7 @@ Open the relevant agent file and copy the **INPUT FORMAT** template. Fill it in 
 ### RESEARCH REQUEST
 Date: 2026-05-01
 Sphere: #samaj
-Project: SPG Water Initiative Proposal
+Project: USR Water Initiative Proposal
 
 Research Question: 
 What are the most effective models for community-led water management 
@@ -195,7 +195,7 @@ def run_inbox_agent(inbox_items: list[str]) -> str:
 - **Meeting Prep Agent**: Given a meeting attendee list and agenda, research participants and prepare talking points
 - **Mentee Progress Agent**: Given session logs, track commitment patterns and surface coaching insights
 - **Content Calendar Agent**: Given personal brand themes, generate a monthly LinkedIn content calendar
-- **SPG Monitor Agent**: Given an SPG domain, monitor news and research for weekly briefing
+- **Contribution Monitor Agent**: Given a contribution domain, monitor news and research for weekly briefing
 
 ### MCP (Model Context Protocol) integration
 

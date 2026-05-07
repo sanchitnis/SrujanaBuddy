@@ -9,7 +9,7 @@
 ## PROFILE COMPLETION TASKS (Accepted)
 
 - [x] [AI-COACH] Confirm coaching cadence and preferred session time window for the next 4 weeks  #atma #coach-suggested @anywhere [Profile completion: Coaching Relationship Notes] -> processed to gtd/01-next-actions.md on 2026-05-05
-- [x] [AI-COACH] Define SPG team roster for SrujanaBuddy (3-5 names + roles) and record in profile  #samaj #coach-suggested @office [Profile completion: Adult SPG Team] -> processed to gtd/02-projects.md + gtd/01-next-actions.md on 2026-05-05
+- [x] [AI-COACH] Define optional contribution team roster for SrujanaBuddy (3-5 names + roles) and record in profile  #samaj #coach-suggested @office [Profile completion: Optional Contribution Team] -> processed to gtd/02-projects.md + gtd/01-next-actions.md on 2026-05-05
 
 ---
 
@@ -29,7 +29,7 @@
 - Session trigger: Morning Ignition
 - Accepted today:
   - Confirm coaching cadence and preferred session time window
-  - Define SPG team roster for SrujanaBuddy
+  - Define optional contribution team roster for SrujanaBuddy
   - Schedule one assertive trust-building conversation
   - Send email for Saturday training on agent skills
 

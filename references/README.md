@@ -29,6 +29,7 @@ but active orchestrator behavior should prioritize REVA-aligned files.
 | student-year-group-modes.md | Year-group routing defaults |
 | dopamine-stewardship-student.md | Daily and weekly attention hygiene protocol |
 | gtd-lite-student-edition.md | D-14, D-21, D-3, no-zero-day execution rules |
+| usr-optional-contribution-tracker.md | Optional student contribution planning through USR-aligned service |
 
 ## Additional references
 
@@ -42,9 +43,7 @@ These files still provide supporting methods and can be adapted further:
 
 ## Legacy references (to be reviewed)
 
-1. jp-philosophical-foundation.md
-2. spg-contribution-tracker.md
-3. llm-wiki.md
+1. llm-wiki.md
 
 ## Contribution checklist for this folder
 

@@ -1,8 +1,8 @@
 # SrujanaBuddy
 
-An open-source markdown-native AI coaching system for REVA University students.
+An AI coaching system for REVA University students.
 
-## What this repository is
+## What this is
 
 SrujanaBuddy is a multi-agent coaching operating system for UG and PG students across streams.
 It is designed for action-first coaching in the AI era:
@@ -14,21 +14,6 @@ It is designed for action-first coaching in the AI era:
 
 The coach identity in sessions is **SrujanaBuddy**.
 
-## Current implementation status
-
-This repository is migrating in place from the previous SrujanaBuddy baseline to the REVA v1.4 specification.
-
-### Completed in Sprint 1 kickoff
-1. Orchestrator identity moved to SrujanaBuddy in [SKILL.md](SKILL.md).
-2. Session routing structure updated to 15-agent architecture and 24 required session types.
-3. Year-group differentiation added (Year 1, Year 2-3, Final Year, PG).
-
-### In progress (next phases)
-1. REVA reference layer and Five Student Spheres standardization.
-2. Specialist agent expansion and subject-coach framework.
-3. Intake/profile upgrades and psychometric app expansion.
-4. GTD Lite runway enforcement, safety routing, metrics, and acceptance audits.
-
 ## Core design commitments
 
 These commitments should be interpreted in line with [references/REVA University.md](references/REVA%20University.md), especially `The Strategic Directive: Educate to Enterprise`, `Spiritual and Moral Anchoring: The Gita Perspective and Universal Values`, and `Institutional Profile: REVA University's Vision, Mission, and Objectives`.
@@ -39,23 +24,14 @@ These commitments should be interpreted in line with [references/REVA University
 4. Privacy by default and consent-first sharing.
 5. Tiered wellbeing support with Manodhara referral for serious concerns.
 
-## Repository structure
+## What you can use it for
 
-```text
-SrujanaBuddy/
-├── SKILL.md
-├── agents/
-├── references/
-├── intake/
-│   └── apps/
-├── profiles/
-├── gtd/
-├── ai-delegation/
-├── connectors/
-├── COACHING-SESSION-WORKFLOW.md
-├── REVA-STUDENT-SYSTEM-SPEC-v1.4.md
-└── CONTRIBUTING.md
-```
+1. Daily planning and anti-procrastination support.
+2. Weekly review and academic recovery.
+3. Subject-learning and exam preparation support.
+4. Career, placement, portfolio, and internship guidance.
+5. Enterprising, project, and competition coaching.
+6. Holistic growth across learning, wellbeing, relationships, contribution, and health.
 
 ## How to use
 
@@ -67,14 +43,15 @@ SrujanaBuddy/
    - "I need placement readiness coaching."
 3. Use the GTD and profile files to track commitments, completions, and progress.
 
-## Key references
+## Useful files
 
-1. [REVA-STUDENT-SYSTEM-SPEC-v1.4.md](REVA-STUDENT-SYSTEM-SPEC-v1.4.md)
-2. [references/REVA University.md](references/REVA%20University.md)
-3. [SKILL.md](SKILL.md)
-4. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md)
-5. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md)
-6. [CONTRIBUTING.md](CONTRIBUTING.md)
+1. [SKILL.md](SKILL.md): master coaching behavior and routing.
+2. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md): session types and outcomes.
+3. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md): student execution system.
+4. [intake/intake-protocol.md](intake/intake-protocol.md): onboarding flow.
+5. [profiles/_mentee-profile-template.md](profiles/_mentee-profile-template.md): student profile template.
+6. [references/REVA University.md](references/REVA%20University.md): REVA values, mission, and student guidance source.
+7. [intake/README.md](intake/README.md): available intake apps and their purpose.
 
 ## License
 

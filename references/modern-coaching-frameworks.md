@@ -10,7 +10,7 @@
 
 ## Overview
 
-The Hitaishin integrates the best of contemporary evidence-based coaching with
+The SrujanaBuddy integrates the best of contemporary evidence-based coaching with
 its Eastern philosophical foundation. These frameworks are *tools*, not authorities.
 Apply them with *Viveka* — discernment about when each is most apt.
 

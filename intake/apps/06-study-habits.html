@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Habits and Learning Strategy</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #f7fee7; color: #14532d; }
+    .card { max-width: 860px; margin: 0 auto; background: #fff; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px; }
+    .q { margin: 14px 0; padding: 12px; background: #f0fdf4; border-radius: 8px; }
+    button { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 0; background: #15803d; color: #fff; }
+    textarea { width: 100%; min-height: 150px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Study Habits and Learning Strategy</h1>
+    <p>Rate each statement from 1 (never true) to 5 (always true).</p>
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+  <script>
+    const items = [
+      "I plan weekly study blocks before deadlines.",
+      "I use active recall instead of passive rereading.",
+      "I revise topics with spaced repetition.",
+      "I study only when urgency is very high.",
+      "I test myself with practice questions.",
+      "I convert mistakes into a correction list.",
+      "I can explain concepts without looking at notes.",
+      "I know which subjects need the most runway this week."
+    ];
+    const reverse = [3];
+    const q = document.getElementById('questions');
+    items.forEach((text, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${text}</label><br/>` +
+        [1,2,3,4,5].map(v => `<label><input type="radio" name="q${i}" value="${v}"> ${v}</label>`).join(' ');
+      q.appendChild(row);
+    });
+    function scoreTest() {
+      let total = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        let val = Number(checked.value);
+        if (reverse.includes(i)) val = 6 - val;
+        total += val;
+      }
+      const max = items.length * 5;
+      const pct = Math.round((total / max) * 100);
+      let band = 'Strong Study System';
+      if (pct < 50) band = 'At-Risk Study Pattern';
+      else if (pct < 75) band = 'Developing Study System';
+      document.getElementById('result').value = `Study Habits Score: ${total}/${max} (${pct}%)\nBand: ${band}\n\nAction:\n1) Set D-21 and D-14 runway blocks now.\n2) Use one recall test per subject this week.\n3) End each session with a 3-line summary.`;
+    }
+    function copyResult() { const text = document.getElementById('result'); text.select(); document.execCommand('copy'); alert('Result copied.'); }
+  </script>
+</body>
+</html>

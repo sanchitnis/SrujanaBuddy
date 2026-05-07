@@ -10,6 +10,51 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 
 ---
 
+## [Unreleased] - 2026-05-07
+
+### Added - REVA v1.4 migration foundations
+- `references/reva-values-anchor.md` - REVA coaching value baseline and learning integrity checks.
+- `references/srujana-pathway-framework.md` - Stage 1-4 pathway and evidence progression model.
+- `references/student-year-group-modes.md` - Year-group routing defaults.
+- `references/dopamine-stewardship-student.md` - Daily and weekly dopamine protocol.
+- `references/gtd-lite-student-edition.md` - D-14, D-21, D-3 and no-zero-day policy.
+- `agents/academic-learning-coach.md` - learning strategy specialist agent.
+- `agents/subject-coach-template.md` - dynamic subject-coach template.
+- `agents/assessment-competition-coach.md` - assessments and competitions specialist.
+- `agents/career-pathway-coach.md` - multi-path career planning specialist.
+- `agents/competency-portfolio-coach.md` - competency evidence mapping specialist.
+- `agents/out-of-curriculum-coach.md` - optional track governance specialist.
+- `agents/enterprising-skills-mentor.md` - enterprise and MVP coaching specialist.
+- `agents/support-escalation-guide.md` - tiered support and referral specialist.
+- `agents/faculty-mentor-coordination-agent.md` - mentor prep/debrief and share controls.
+- `agents/academic-history-agent.md` - academic record history specialist.
+- `agents/personal-website-builder-agent.md` - student website planning specialist.
+- `gtd/03-runway-calendar.md` - student runway and red-zone tracker.
+- `gtd/opportunity-radar.md` - rolling opportunities tracker.
+- `connectors/manodhara-referral.md` - three-tier escalation and referral protocol.
+- `intake/apps/04-growth-mindset.html` - offline mindset baseline app.
+- `intake/apps/05-grit-perseverance.html` - offline grit baseline app.
+- `intake/apps/06-study-habits.html` - offline study habits app.
+- `intake/apps/07-time-management-procrastination.html` - offline procrastination profile app.
+- `intake/apps/08-stress-energy-self-check.html` - offline stress-energy app.
+- `intake/apps/09-career-interest-mapping.html` - offline career interest mapping app.
+- `REVA-IMPLEMENTATION-TRACKER-v1.4.md` - migration progress tracker.
+- `REVA-METRICS-TRACKER-v1.4.md` - success metrics tracking grid.
+
+### Changed
+- `SKILL.md` migrated to SrujanaBuddy identity, 15-agent routing, 24 session types, year-group modes, and REVA guardrails.
+- `README.md` replaced with REVA product framing and migration status.
+- `COACHING-SESSION-WORKFLOW.md` replaced with REVA 24-session operational workflow.
+- `references/five-spheres-framework.md` replaced with Five Student Spheres framework.
+- `references/daily-thread.md`, `references/weekly-rhythm.md`, `references/yearly-strategy.md` replaced with clean REVA-compatible rhythm docs.
+- `references/README.md`, `agents/README.md`, `intake/README.md`, `gtd/README.md`, `connectors/README.md` updated for REVA artifact discovery.
+- `intake/intake-protocol.md` extended with REVA student onboarding addendum.
+- `profiles/_mentee-profile-template.md` extended with REVA student profile fields.
+- `gtd/GTD-GUIDE.md` extended with REVA GTD Lite runway policy.
+- `agents/accountability-partner.md`, `agents/integral-life-coach.md`, `agents/inner-mastery-coach.md` extended with REVA student-mode addendums.
+
+---
+
 ## [2.0.0] — 2026-04
 
 ### Added — Coaching Lifecycle (Intake System)

@@ -35,7 +35,7 @@
 
 | Project | SPG? | Next Action | Last Updated | Status |
 |---------|------|-------------|-------------|--------|
-| Define Hitaishin SPG team roster (3-5 names + roles) and record in profile | Y | Draft first shortlist of 5 potential team members with roles | 2026-05-05 | Active |
+| Define SrujanaBuddy SPG team roster (3-5 names + roles) and record in profile | Y | Draft first shortlist of 5 potential team members with roles | 2026-05-05 | Active |
 | | | | | |
 
 ---

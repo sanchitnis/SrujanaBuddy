@@ -1,10 +1,10 @@
 # Requirements Specification
 ## SrujanaBuddy — AI Coaching System for REVA University Students
-**Version:** 1.4 (Consolidated with Hitaishin Best Practices)
+**Version:** 1.4 (Consolidated with SrujanaBuddy Best Practices)
 **Date:** 07 May 2026
 **Language:** English only (multilingual later)
 **Type:** Product and coaching requirements (implementation-agnostic)
-**Platform:** Claude/Copilot markdown-native skill (same architecture as Hitaishin)
+**Platform:** Claude/Copilot markdown-native skill (same architecture as SrujanaBuddy)
 
 ---
 
@@ -29,7 +29,7 @@ streams to help them progress toward their aspirations in the AI era through:
 
 ## 3. Context Constraints
 
-1. Keep overall structure similar to Hitaishin (the existing coaching system) in style.
+1. Keep overall structure similar to SrujanaBuddy (the existing coaching system) in style.
 2. Do not include references to Jnana Prabodhini.
 3. Keep student-first REVA context throughout.
 4. Keep outputs beginner-friendly and immediately actionable.
@@ -231,7 +231,7 @@ No auto-sharing with faculty or peers without student consent. Student controls 
 4. Assign year-group coaching mode.
 5. Generate first-week starter plan.
 
-**Living Profile Rule (from Hitaishin):**
+**Living Profile Rule (from SrujanaBuddy):**
 The student profile is a living document — not a static intake form. In every session,
 capture 1–2 new profile signals (energy pattern, value expressed, new constraint, commitment style)
 and update the profile incrementally. Coaching precision improves continuously over time.
@@ -246,7 +246,7 @@ and update the profile incrementally. Coaching precision improves continuously o
 
 ### 13.3 Custom Psychometric Baseline (Non-Clinical, Offline HTML Apps)
 
-Build custom offline HTML apps (same architecture as Hitaishin's HTML apps) for:
+Build custom offline HTML apps (same architecture as SrujanaBuddy's HTML apps) for:
 1. Character strengths (VIA-inspired, custom)
 2. Growth mindset
 3. Grit and perseverance
@@ -740,7 +740,7 @@ Wisdom is never decorative — it must convert to behavior.
 
 ## 17. Non-Functional Requirements
 
-1. Markdown-native operation (Claude/Copilot skill, same as Hitaishin).
+1. Markdown-native operation (Claude/Copilot skill, same as SrujanaBuddy).
 2. High clarity, low cognitive load.
 3. Action-first outputs in every session.
 4. Explainable recommendations.
@@ -822,7 +822,7 @@ Wisdom is never decorative — it must convert to behavior.
 | Decision | Status |
 |----------|--------|
 | Coach name: SrujanaBuddy | Confirmed |
-| Platform: Claude/Copilot markdown-native (same as Hitaishin) | Confirmed |
+| Platform: Claude/Copilot markdown-native (same as SrujanaBuddy) | Confirmed |
 | Psychometrics: custom offline HTML apps | Confirmed |
 | REVA values anchor: Educate to Enterprise + holistic development | Confirmed (values file to be created) |
 | Manodhara: full counseling and psychology unit | Confirmed |

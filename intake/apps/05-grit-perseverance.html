@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grit and Perseverance Baseline</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #eef6ff; color: #172554; }
+    .card { max-width: 860px; margin: 0 auto; background: #fff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px; }
+    .q { margin: 14px 0; padding: 12px; background: #f8fafc; border-radius: 8px; }
+    button { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 0; background: #1d4ed8; color: #fff; }
+    textarea { width: 100%; min-height: 130px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Grit and Perseverance Baseline</h1>
+    <p>Rate each statement from 1 (not like me) to 5 (very much like me).</p>
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+  <script>
+    const items = [
+      "I finish what I begin.",
+      "Setbacks do not stop me for long.",
+      "My long-term goals stay stable over time.",
+      "I frequently change goals before finishing.",
+      "I can keep effort consistent for months.",
+      "I continue even when progress is slow.",
+      "I lose interest when tasks become repetitive.",
+      "I can recover quickly after poor results."
+    ];
+    const reverse = [3,6];
+    const q = document.getElementById('questions');
+    items.forEach((text, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${text}</label><br/>` +
+        [1,2,3,4,5].map(v => `<label><input type="radio" name="q${i}" value="${v}"> ${v}</label>`).join(' ');
+      q.appendChild(row);
+    });
+    function scoreTest() {
+      let total = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        let val = Number(checked.value);
+        if (reverse.includes(i)) val = 6 - val;
+        total += val;
+      }
+      const max = items.length * 5;
+      const pct = Math.round((total / max) * 100);
+      let band = 'High Grit';
+      if (pct < 50) band = 'Low Grit Risk';
+      else if (pct < 75) band = 'Moderate Grit';
+      document.getElementById('result').value = `Grit Score: ${total}/${max} (${pct}%)\nBand: ${band}\n\nAction:\n1) Choose one long-arc goal.\n2) Commit weekly progress blocks.\n3) Track consistency streak, not only output.`;
+    }
+    function copyResult() {
+      const text = document.getElementById('result'); text.select(); document.execCommand('copy'); alert('Result copied.');
+    }
+  </script>
+</body>
+</html>

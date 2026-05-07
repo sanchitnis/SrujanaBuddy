@@ -1,4 +1,4 @@
-# Feedback Inbox — Hitaishin Improvement Loop
+# Feedback Inbox — SrujanaBuddy Improvement Loop
 
 Rolling queue for user feedback, suggestions, bug reports, and improvement ideas.
 

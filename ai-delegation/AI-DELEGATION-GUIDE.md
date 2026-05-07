@@ -29,7 +29,7 @@ Every hour saved from research, drafting, organising, and tracking is an hour av
 
 ## THE AGENT ROSTER
 
-The Hitaishin uses **five operational AI agents** (with Inbox and Review combined), each with a specific mandate:
+The SrujanaBuddy uses **five operational AI agents** (with Inbox and Review combined), each with a specific mandate:
 
 | Agent | File | What It Does |
 |-------|------|-------------|

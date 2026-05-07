@@ -43,7 +43,7 @@
 ## 🟢 SAMAJ SEVA (National Contribution & SPG)
 <!-- Actions that advance your Adult SPG and community contribution -->
 
-- [ ] [AI-COACH] Draft first shortlist of 5 potential Hitaishin SPG team members with proposed roles  due:2026-05-11 ~30min #samaj #coach-suggested #medium @office [Next action for SPG team roster project]
+- [ ] [AI-COACH] Draft first shortlist of 5 potential SrujanaBuddy SPG team members with proposed roles  due:2026-05-11 ~30min #samaj #coach-suggested #medium @office [Next action for SPG team roster project]
 - [ ] 
 
 ---

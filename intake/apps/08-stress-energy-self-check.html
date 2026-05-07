@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stress-Energy Self-Check</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #f5f3ff; color: #312e81; }
+    .card { max-width: 860px; margin: 0 auto; background: #fff; border: 1px solid #ddd6fe; border-radius: 12px; padding: 20px; }
+    .q { margin: 14px 0; padding: 12px; background: #faf5ff; border-radius: 8px; }
+    button { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 0; background: #5b21b6; color: #fff; }
+    textarea { width: 100%; min-height: 160px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Stress-Energy Self-Check</h1>
+    <p>Rate each statement from 1 (never) to 5 (always).</p>
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+  <script>
+    const items = [
+      "I wake up with usable energy on most days.",
+      "My sleep schedule is consistent enough for learning.",
+      "I experience frequent stress spikes that derail work.",
+      "I have at least one recovery routine that works for me.",
+      "I feel mentally clear during study blocks.",
+      "I use digital stimulation late into the night.",
+      "I recover from emotional setbacks within a reasonable time.",
+      "I notice body stress signals before burnout escalates."
+    ];
+    const reverse = [2,5];
+    const q = document.getElementById('questions');
+    items.forEach((text, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${text}</label><br/>` + [1,2,3,4,5].map(v => `<label><input type="radio" name="q${i}" value="${v}"> ${v}</label>`).join(' ');
+      q.appendChild(row);
+    });
+    function scoreTest() {
+      let total = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        let val = Number(checked.value);
+        if (reverse.includes(i)) val = 6 - val;
+        total += val;
+      }
+      const max = items.length * 5;
+      const pct = Math.round((total / max) * 100);
+      let band = 'Stable Energy';
+      if (pct < 50) band = 'High Stress-Energy Risk';
+      else if (pct < 75) band = 'Moderate Stress-Energy Risk';
+      document.getElementById('result').value = `Stress-Energy Score: ${total}/${max} (${pct}%)\nBand: ${band}\n\nAction:\n1) Protect sleep cutoff time tonight.\n2) Add one 10-minute recovery block daily.\n3) Reduce one avoidable stimulation source this week.`;
+    }
+    function copyResult() { const text = document.getElementById('result'); text.select(); document.execCommand('copy'); alert('Result copied.'); }
+  </script>
+</body>
+</html>

@@ -1,8 +1,8 @@
-# High-Level Requirements Specification: Hitaishin
+# High-Level Requirements Specification: SrujanaBuddy
 
 ## 1. System Overview
 
-**Hitaishin** is an AI-powered coaching operating system implemented as a Claude AI *Skill* (a structured prompt-and-knowledge package). It transforms Claude into a deeply contextual, philosophically grounded personal coach for graduates of Jnana Prabodhini (JP), a Pune-based gifted-education institution. The system integrates Indian philosophical traditions with modern evidence-based coaching science to serve leaders navigating professional achievement, family responsibility, and national contribution simultaneously.
+**SrujanaBuddy** is an AI-powered coaching operating system implemented as a Claude AI *Skill* (a structured prompt-and-knowledge package). It transforms Claude into a deeply contextual, philosophically grounded personal coach for graduates of Jnana Prabodhini (JP), a Pune-based gifted-education institution. The system integrates Indian philosophical traditions with modern evidence-based coaching science to serve leaders navigating professional achievement, family responsibility, and national contribution simultaneously.
 
 ---
 

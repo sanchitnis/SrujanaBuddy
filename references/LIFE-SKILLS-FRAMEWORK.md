@@ -1,4 +1,4 @@
-# Life Skills Framework for Hitaishin Coaching
+# Life Skills Framework for SrujanaBuddy Coaching
 ## Comprehensive Skill Development Architecture
 
 ---
@@ -567,7 +567,7 @@ PHASE 4: Advanced/Specialized
 
 ## Conclusion
 
-The Hitaishin coaching system already addresses **9 out of 15 C's comprehensively** and **5 more partially**. The framework aligns naturally with the 15 C's because both emerge from similar values: **integrated human development across mind, heart, action, and contribution**.
+The SrujanaBuddy coaching system already addresses **9 out of 15 C's comprehensively** and **5 more partially**. The framework aligns naturally with the 15 C's because both emerge from similar values: **integrated human development across mind, heart, action, and contribution**.
 
 ### Immediate Next Steps:
 
@@ -1122,7 +1122,7 @@ The Hitaishin coaching system already addresses **9 out of 15 C's comprehensivel
 
 **Purpose**: Build leadership influence as a disciplined practice of self-mastery, psychological insight, positioning, and context-adaptive action.
 
-**Positioning in Hitaishin**:
+**Positioning in SrujanaBuddy**:
 - Chanakya contributes internal statecraft: loyalty, incentives, governance discipline, ethical realism.
 - Sun Tzu contributes external statecraft: timing, positioning, shaping perception, adaptive strategy.
 - Integration principle: lasting influence = internal credibility + external adaptability.
@@ -1260,7 +1260,7 @@ Rate 1-10:
 
 #### Comparative Summary (Chanakya vs Sun Tzu in Coaching Use)
 
-| Feature | Chanakya Lens | Sun Tzu Lens | Hitaishin Integration |
+| Feature | Chanakya Lens | Sun Tzu Lens | SrujanaBuddy Integration |
 |--------|---------------|--------------|-----------------------|
 | Focus | Governance and loyalty mechanics | Positioning and timing mechanics | Influence system design + adaptive execution |
 | Source of power | Knowledge + disciplined conduct | Psychological advantage + uncertainty reduction | Credibility + context mastery |

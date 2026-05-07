@@ -1,288 +1,78 @@
-# 🔥 Hitaishin
+# SrujanaBuddy
 
-**An open-source AI coaching system for leaders shaped by [Jnana Prabodhini](https://www.jnanaprabodhini.org/)**
+An open-source markdown-native AI coaching system for REVA University students.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Claude Skill](https://img.shields.io/badge/Claude-Skill-orange)](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)
-[![Platform](https://img.shields.io/badge/Platform-Claude.ai%20%7C%20Claude%20Code-blue)](https://claude.ai)
+## What this repository is
 
----
+SrujanaBuddy is a multi-agent coaching operating system for UG and PG students across streams.
+It is designed for action-first coaching in the AI era:
+1. Learn-by-doing progression.
+2. Career and competency development.
+3. Holistic growth across five student life spheres.
+4. Better execution and anti-procrastination discipline.
+5. Portfolio-first outcomes.
 
-## What This Is
+The coach identity in sessions is **SrujanaBuddy**.
 
-The **Hitaishin** is a Claude AI *skill* — a structured coaching system that turns Claude into a deeply grounded personal coach for graduates of Jnana Prabodhini (JP), the Pune-based gifted-education institution founded in 1962 on the philosophy of Swami Vivekananda.
+## Current implementation status
 
-JP alumni are unusually formed individuals: high-IQ, trained from school age in leadership, steeped in Advaita Vedanta, the Bhagavad Gita, the teachings of Sri Aurobindo, Samarth Ramdas, and Maharshi Dayananda — and carrying a deep conviction that their education was given in service of India's renewal. They are now navigating demanding professional lives, family responsibilities, and national contribution.
+This repository is migrating in place from the previous SrujanaBuddy baseline to the REVA v1.4 specification.
 
-This coaching system serves them at the intersection of all three.
+### Completed in Sprint 1 kickoff
+1. Orchestrator identity moved to SrujanaBuddy in [SKILL.md](SKILL.md).
+2. Session routing structure updated to 15-agent architecture and 24 required session types.
+3. Year-group differentiation added (Year 1, Year 2-3, Final Year, PG).
 
-In conversation, the AI coach identifies itself as **Hitaishin**. At the start of a session it gives
-a short introduction, and if asked "what can you do?" or "how do I use this?" it provides a concise
-capability and usage guide.
+### In progress (next phases)
+1. REVA reference layer and Five Student Spheres standardization.
+2. Specialist agent expansion and subject-coach framework.
+3. Intake/profile upgrades and psychometric app expansion.
+4. GTD Lite runway enforcement, safety routing, metrics, and acceptance audits.
 
----
+## Core design commitments
 
-## Who This Is For
+1. Aspirations-first coaching.
+2. Ask-before-advice conversation flow.
+3. AI augments learning, does not replace thinking.
+4. Privacy by default and consent-first sharing.
+5. Tiered wellbeing support with Manodhara referral for serious concerns.
 
-| Audience | What You'll Find Here |
-|----------|----------------------|
-| 👤 **JP alumni / users** | A personal AI coach available any time — for daily planning, weekly review, purpose-finding, and life balance |
-| 🎓 **Domain experts** (coaches, educators, philosophers) | A structured coaching curriculum to review, validate, and enrich with deeper wisdom |
-| 💻 **Developers / engineers** | An open skill framework to extend with scripts, integrations, and automation |
+## Repository structure
 
-> **Not a JP alumnus but curious?** The underlying frameworks — Five Spheres, GTD with Sankalpa-alignment, AI delegation architecture — are broadly applicable to any purpose-driven leader. The philosophical grounding is Indian and specific; the structure is universal.
-
----
-
-## What It Does
-
-The skill activates a **six-agent coaching system** inside Claude:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                  Hitaishin                  │
-├──────────────────┬──────────────────────────────────────┤
-│  🔍 Svadharma    │ Purpose, calling, life mission        │
-│     Navigator    │                                       │
-├──────────────────┼──────────────────────────────────────┤
-│  ⚖️  Integral    │ Five-sphere balance: Self · Family ·  │
-│     Life Coach   │ Career · Nation · Body               │
-├──────────────────┼──────────────────────────────────────┤
-│  🏛️  Organizational Attitude Builder  │ Vivekananda's Organizational         │
-│                  │ Attitude — team & institution building│
-├──────────────────┼──────────────────────────────────────┤
-│  🧘 Inner Mastery│ Sthitaprajna development, resilience, │
-│     Coach        │ Saboteur awareness                    │
-├──────────────────┼──────────────────────────────────────┤
-│  🗺️  Paristhiti  │ Situational reading, adaptive         │
-│     Analyst      │ leadership, systemic thinking         │
-├──────────────────┼──────────────────────────────────────┤
-│  ✅ Accountability│ GTD workflow, Sankalpas, commitments  │
-│     Partner      │                                       │
-└──────────────────┴──────────────────────────────────────┘
-```
-
-It also includes:
-
-- **3 psychometric web apps** (run in any browser, no backend) — Character Strengths, Five Spheres Balance Wheel, Organizational Attitude Leadership Profile
-- **Full GTD task management** in Markdown files — with sphere-tagging, Sankalpa alignment, and AI delegation
-- **AI delegation architecture** — 5 specialised AI agents (Research, Drafting, Planning, Inbox, Review) that handle work the human shouldn't be doing
-- **Complete onboarding lifecycle** — intake interview protocol → psychometrics → synthesis → living mentee profile
-
----
-
-## Quick Start (5 minutes)
-
-### Step 1 — Download the skill
-
-```bash
-git clone https://github.com/sanchitnis/hitaishin.git
-```
-
-Or download the [latest release ZIP](../../releases).
-
-### Step 2 — Install in Claude
-
-1. Open [claude.ai](https://claude.ai) → click your profile icon → **Settings**
-2. Go to **Features** → **Skills**
-3. Click **+** → **Create Skill** → **Upload ZIP**
-4. Zip the `hitaishin` folder and upload it
-
-> see [Alternative Usage](#alternative-usage-without-skills) below.
-
-### Step 3 — Start your first session
-
-In any Claude conversation, just say:
-
-```
-Coach me using the Hitaishin
-```
-
-Or try:
-```
-I want to start my coaching intake — I'm a JP alumnus ready to onboard
-```
-```
-Help me plan my day using the Five Spheres
-```
-```
-Run a Sunday Svadhyaya review with me
-```
-```
-Apply the Purushartha filter to this task: [describe a decision]
-```
-
-### Direct Entry Paths
-
-You can enter the system from either path without setup friction:
-
-1. **Direct coaching path** (values, purpose, leadership, emotional state)
-    Use prompts like:
-    ```
-    Coach me using the Hitaishin
-    ```
-    ```
-    Help me through this leadership challenge in my team
-    ```
-
-2. **Direct planning path** (daily/weekly execution and GTD)
-    Use prompts like:
-    ```
-    Plan my day using the Five Spheres
-    ```
-    ```
-    Run a weekly review and produce my next actions
-    ```
-
-If you're unsure where to start, begin with planning. The coach will route to deeper modules as needed.
-
----
-
-## Alternative Usage (Without Skills)
-
-If you don't have a plan that supports Skills:
-
-1. Open the file `SKILL.md` in this repository
-2. Copy its entire contents
-3. Paste it as the first message in a new Claude conversation
-4. Attach any reference files you want Claude to know about
-5. Then proceed with your coaching session
-
-This works but requires manual setup each conversation. The Skills feature automates this.
-
----
-
-## Repository Structure
-
-```
-hitaishin/
-│
-├── SKILL.md                    ← The master intelligence layer
-│                                 (Claude reads this to understand the system)
-│
-├── references/                 ← Philosophical and framework foundations
-│   ├── jp-philosophical-foundation.md
-│   ├── five-spheres-framework.md
-│   ├── daily-thread.md
-│   ├── weekly-rhythm.md
-│   ├── yearly-strategy.md
-│   ├── modern-coaching-frameworks.md
-│   └── spg-contribution-tracker.md
-│
-├── agents/                     ← Six specialist coaching agents
-│   ├── svadharma-navigator.md
-│   ├── integral-life-coach.md
-│   ├── organizational-attitude-builder.md
-│   ├── inner-mastery-coach.md
-│   ├── paristhiti-jnana-analyst.md
-│   └── accountability-partner.md
-│
-├── intake/                     ← Onboarding system (new mentee)
-│   ├── intake-protocol.md
+```text
+SrujanaBuddy/
+├── SKILL.md
+├── agents/
+├── references/
+├── intake/
 │   └── apps/
-│       ├── 01-character-strengths.html
-│       ├── 02-spheres-assessment.html
-│       └── 03-leadership-oa-profile.html
-│
-├── profiles/                   ← Per-mentee living documents
-│   └── _mentee-profile-template.md
-│
-├── gtd/                        ← Getting Things Done system (Markdown-native)
-│   ├── GTD-GUIDE.md
-│   ├── 00-inbox.md
-│   ├── 01-next-actions.md
-│   ├── 02-projects.md
-│   ├── 04-waiting-for.md
-│   ├── 05-someday.md
-│   ├── 07-weekly-review.md
-│   └── projects/
-│       └── _project-template.md
-│
-├── ai-delegation/              ← AI agent specifications and task queues
-│   ├── AI-DELEGATION-GUIDE.md
-│   ├── agent-research.md
-│   ├── agent-drafting.md
-│   ├── agent-planning.md
-│   └── agent-inbox-review.md
-│
-└── connectors/                 ← External tool integrations
-    └── calendar-audit.md
+├── profiles/
+├── gtd/
+├── ai-delegation/
+├── connectors/
+├── COACHING-SESSION-WORKFLOW.md
+├── REVA-STUDENT-SYSTEM-SPEC-v1.4.md
+└── CONTRIBUTING.md
 ```
 
----
+## How to use
 
-## The Philosophical Foundation
+1. Load [SKILL.md](SKILL.md) into your AI environment as the master orchestration file.
+2. Start a session with a direct request, for example:
+   - "Plan my day."
+   - "Run weekly review."
+   - "Help me prepare for exams."
+   - "I need placement readiness coaching."
+3. Use the GTD and profile files to track commitments, completions, and progress.
 
-The coaching system is grounded in four wisdom traditions JP synthesises:
+## Key references
 
-| Tradition | Core Contribution |
-|-----------|------------------|
-| **Advaita Vedanta** (Upanishads) | Non-dual identity — you are not only your roles |
-| **Bhagavad Gita** | Svadharma, Nishkama Karma, Sthitaprajna |
-| **Swami Vivekananda** | Man-Making Education, Organizational Attitude |
-| **Sri Aurobindo** | Integral Yoga — all life as transformative practice |
-| **Samarth Ramdas** | Practical activism; Dasabodha wisdom |
-| **Maharshi Dayananda** | Scientific temper within Vedic tradition |
-
-Layered with Western coaching science: ICF competencies, Positive Psychology (Seligman), Adaptive Leadership (Heifetz), Logotherapy (Frankl), Immunity to Change (Kegan), and Positive Intelligence (Chamine).
-
----
-
-## Contributing
-
-We welcome contributions from:
-
-- **JP alumni** with lived experience of the formation
-- **Coaching professionals** who can strengthen the methodology
-- **Philosophers and educators** who can deepen the philosophical grounding
-- **Developers** who can add automation, integrations, and tooling
-
-Please read the [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a PR.
-
----
-
-## Folder-Specific Documentation
-
-Each folder has its own README tailored to the most likely person working in it:
-
-| Folder | README audience |
-|--------|----------------|
-| [`references/`](references/README.md) | Domain experts — philosophers, coaches, educators |
-| [`agents/`](agents/README.md) | Domain experts — coaching methodology reviewers |
-| [`intake/`](intake/README.md) | Domain experts + developers |
-| [`gtd/`](gtd/README.md) | Users + developers |
-| [`ai-delegation/`](ai-delegation/README.md) | Developers + innovators |
-| [`profiles/`](profiles/README.md) | Users (mentees and coaches) |
-| [`connectors/`](connectors/README.md) | Developers |
-
----
-
-## Roadmap
-
-- [ ] Voice-first coaching session support (audio intake)
-- [ ] Google Calendar auto-audit integration via MCP
-- [ ] Automated weekly review pre-processing script
-- [ ] Multi-language support (Marathi, Hindi) for broader JP community reach
-- [ ] Companion mobile-friendly web app for GTD + Sankalpa tracking
-- [ ] Anonymised aggregate insights dashboard for JP community
-
----
+1. [REVA-STUDENT-SYSTEM-SPEC-v1.4.md](REVA-STUDENT-SYSTEM-SPEC-v1.4.md)
+2. [SKILL.md](SKILL.md)
+3. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md)
+4. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md)
+5. [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-MIT License — see [LICENSE](LICENSE).
-
-*The psychometric questions and philosophical frameworks are drawn from public domain and adapted traditions. VIA Character Strengths are inspired by the work of Peterson & Seligman. GTD framework principles are from David Allen's published work.*
-
----
-
-## Acknowledgements
-
-Built in the spirit of Jnana Prabodhini's founding vision:
-*"Motivated intelligence, organised for social change, grounded in Advaita."*
-
-With deep respect to Dr. V.V. (Appa) Pendse and the entire JP community whose formation made this worth building.
-
----
-
-*"Arise, Awake, and stop not until the goal is reached."* — Swami Vivekananda
+MIT License. See [LICENSE](LICENSE).

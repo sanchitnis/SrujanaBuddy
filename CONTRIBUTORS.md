@@ -1,6 +1,6 @@
 # Contributors
 
-The Hitaishin is built by and for the JP community and those who love it.
+The SrujanaBuddy is built by and for the JP community and those who love it.
 
 ---
 

@@ -1,4 +1,4 @@
-# Contributing to Hitaishin
+# Contributing to SrujanaBuddy
 
 First, thank you. This project exists to serve a community shaped by a remarkable educational institution — Jnana Prabodhini — and every improvement makes a genuine difference to the people who use it.
 
@@ -109,8 +109,8 @@ Each agent has a **Powerful Questions Library**. If you've been asked (by a coac
 
 ```bash
 # Clone
-git clone https://github.com/YOUR-ORG/hitaishin.git
-cd hitaishin
+git clone https://github.com/YOUR-ORG/srujanabuddy.git
+cd srujanabuddy
 
 # No build step required for the core skill (all Markdown)
 # For the psychometric apps:
@@ -179,7 +179,7 @@ Outputs:
 
 Dependencies: None (stdlib only)
 
-Part of: Hitaishin
+Part of: SrujanaBuddy
 License: MIT
 """
 

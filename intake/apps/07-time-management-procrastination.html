@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Management and Procrastination Profile</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #fff7ed; color: #7c2d12; }
+    .card { max-width: 860px; margin: 0 auto; background: #fff; border: 1px solid #fed7aa; border-radius: 12px; padding: 20px; }
+    .q { margin: 14px 0; padding: 12px; background: #fffbeb; border-radius: 8px; }
+    button { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 0; background: #c2410c; color: #fff; }
+    textarea { width: 100%; min-height: 150px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Time Management and Procrastination Profile</h1>
+    <p>Rate each statement from 1 (never) to 5 (always).</p>
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+  <script>
+    const items = [
+      "I break large tasks into small next actions.",
+      "I begin priority work without waiting for perfect mood.",
+      "I delay difficult tasks until urgency forces action.",
+      "I schedule runway before deadlines.",
+      "I switch contexts frequently and lose time.",
+      "I review my task system weekly.",
+      "I avoid tasks when I fear poor performance.",
+      "I complete at least one important task daily."
+    ];
+    const reverse = [2,4,6];
+    const q = document.getElementById('questions');
+    items.forEach((text, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${text}</label><br/>` + [1,2,3,4,5].map(v => `<label><input type="radio" name="q${i}" value="${v}"> ${v}</label>`).join(' ');
+      q.appendChild(row);
+    });
+    function scoreTest() {
+      let total = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        let val = Number(checked.value);
+        if (reverse.includes(i)) val = 6 - val;
+        total += val;
+      }
+      const max = items.length * 5;
+      const pct = Math.round((total / max) * 100);
+      let band = 'Strong Time Discipline';
+      if (pct < 50) band = 'High Procrastination Risk';
+      else if (pct < 75) band = 'Moderate Procrastination Risk';
+      document.getElementById('result').value = `Time Management Score: ${total}/${max} (${pct}%)\nBand: ${band}\n\nAction:\n1) Define first 30-minute action for top task.\n2) Add D-14 or D-21 runway marker.\n3) Run one daily no-zero-day block on at-risk work.`;
+    }
+    function copyResult() { const text = document.getElementById('result'); text.select(); document.execCommand('copy'); alert('Result copied.'); }
+  </script>
+</body>
+</html>

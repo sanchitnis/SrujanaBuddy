@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Interest Mapping</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #ecfeff; color: #164e63; }
+    .card { max-width: 860px; margin: 0 auto; background: #fff; border: 1px solid #a5f3fc; border-radius: 12px; padding: 20px; }
+    .row { margin: 10px 0; }
+    label { display: inline-block; width: 220px; }
+    input[type=range] { width: 320px; }
+    button { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 0; background: #0e7490; color: #fff; }
+    textarea { width: 100%; min-height: 170px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Career Interest Mapping</h1>
+    <p>Rate your current interest in each pathway from 1 to 10.</p>
+    <div id="sliders"></div>
+    <button onclick="generateResult()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+  <script>
+    const paths = ["Industry","Government","Academia","Research","Defense","Entrepreneurship","Hybrid"];
+    const s = document.getElementById('sliders');
+    paths.forEach((p, i) => {
+      const row = document.createElement('div');
+      row.className = 'row';
+      row.innerHTML = `<label>${p}</label><input id="p${i}" type="range" min="1" max="10" value="5" oninput="v${i}.innerText=this.value"/><span id="v${i}">5</span>`;
+      s.appendChild(row);
+    });
+    function generateResult() {
+      const scores = paths.map((p, i) => ({ path: p, score: Number(document.getElementById(`p${i}`).value) }));
+      scores.sort((a,b) => b.score - a.score);
+      const top = scores.slice(0,3).map(x => `${x.path} (${x.score})`).join(', ');
+      const primary = scores[0];
+      const text = `Top pathways: ${top}\nPrimary current pathway: ${primary.path}\n\nAction:\n1) Pick one pathway for next 4 weeks.\n2) Add one opportunity from radar.\n3) Define one evidence artifact for readiness.`;
+      document.getElementById('result').value = text;
+    }
+    function copyResult() { const text = document.getElementById('result'); text.select(); document.execCommand('copy'); alert('Result copied.'); }
+  </script>
+</body>
+</html>

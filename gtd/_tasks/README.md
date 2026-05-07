@@ -10,7 +10,7 @@ This folder captures and processes raw items (emails, meeting minutes, notes, me
 | `meetings/` | Meeting minutes and summaries |
 | `notes/` | Ad-hoc notes, checklists, task lists |
 | `messages/` | Chat, Slack, or message captures |
-| `coach/` | Hitaishin AI coach-suggested tasks accepted by the leader |
+| `coach/` | SrujanaBuddy AI coach-suggested tasks accepted by the leader |
 | `feedback/` | User feedback, suggestions, and improvement requests |
 | `json/` | **AUTO**: Processed task files in JSON format |
 | `.archive/` | **AUTO**: Raw files moved here after processing |

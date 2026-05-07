@@ -1,11 +1,11 @@
 # Beginner Interactive Orientation Script
-## Explain and Start Hitaishin Without Reading Docs
+## Explain and Start SrujanaBuddy Without Reading Docs
 
 ---
 
 ## Goal
 
-Run a beginner-friendly guided conversation that explains what Hitaishin is and gets the user to first value within 5-10 minutes.
+Run a beginner-friendly guided conversation that explains what SrujanaBuddy is and gets the user to first value within 5-10 minutes.
 
 ---
 
@@ -13,7 +13,7 @@ Run a beginner-friendly guided conversation that explains what Hitaishin is and 
 
 ### Step 1: One-line explanation
 Say:
-"Hitaishin is your AI coaching system for clarity, execution, and balanced growth across self, family, work, contribution, and health."
+"SrujanaBuddy is your AI coaching system for clarity, execution, and balanced growth across self, family, work, contribution, and health."
 
 ### Step 2: Pick onboarding speed
 Ask:
@@ -62,7 +62,7 @@ Say:
 ## Completion Criteria
 
 Orientation is complete when:
-1. User can describe Hitaishin in one sentence.
+1. User can describe SrujanaBuddy in one sentence.
 2. User can name one session they will use first.
 3. User has one concrete next action committed.
 

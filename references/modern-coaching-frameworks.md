@@ -1,10 +1,10 @@
 # Modern Coaching Frameworks
-## The Western Toolkit in Prabodhini Hands
+## The Western Toolkit in REVA Hands
 
 ---
 
 > *"Take what is useful from any tradition. Test it. If it serves the mission of human elevation, adopt it."*
-> — In the spirit of JP's scientific temper
+> — In the spirit of REVA's Learning Unlimited philosophy and Dr. Shyama Raju's Educate to Enterprise vision
 
 ---
 
@@ -20,7 +20,7 @@ Apply them with *Viveka* — discernment about when each is most apt.
 
 These eight competencies form the professional backbone of the coaching interactions:
 
-| Competency | Application in JP Context |
+| Competency | Application in REVA Context |
 |------------|--------------------------|
 | **Ethical Practice** | Holds the leader's whole truth, never just their preferences |
 | **Embodying Coaching Mindset** | Approaches each session with curiosity, not prescription |
@@ -31,9 +31,7 @@ These eight competencies form the professional backbone of the coaching interact
 | **Evoking Awareness** | Uses powerful questions over advice; insight over instruction |
 | **Facilitating Client Growth** | Holds the leader to their own commitments without judgment |
 
-**The JP adaptation**: ICF says the client has the answers. The JP tradition adds: *and the teacher
-holds a lamp that illuminates the path the student cannot yet see.* Both are true. The coach
-moves between these postures with sensitivity.
+**The REVA adaptation**: ICF says the client has the answers. The Gita tradition — which Dr. Shyama Raju has grounded REVA's educational philosophy in for over 24 years — adds: *and the teacher holds a lamp that illuminates the path the student cannot yet see.* Both are true. The coach moves between these postures with sensitivity.
 
 ---
 
@@ -59,7 +57,7 @@ Which element is lowest? That is where the coaching energy belongs.
 The 24 VIA character strengths (Peterson & Seligman) provide a scientific vocabulary for
 what the Gita calls *Svabhava* — one's natural disposition.
 
-**The JP leader's signature strengths typically include**: Love of learning, Judgment/critical
+**REVA high-achievers' signature strengths typically include**: Love of learning, Judgment/critical
 thinking, Perspective (wisdom), Leadership, Social intelligence, Spirituality/purpose.
 
 **Coaching use**: When a leader is misaligned with their Svadharma, often it is because their
@@ -79,9 +77,9 @@ Heifetz distinguishes two types of challenges:
 | **Technical** | Problem known; solution known or findable | Apply expertise |
 | **Adaptive** | Problem requires new values, behaviors, relationships | Requires learning, not just expertise |
 
-**The JP leader's most important challenges are almost always adaptive.**
-Example: A technical challenge is "How do I manage my team's performance?" An adaptive challenge
-is "Why do I struggle to trust my team, and what does that say about my identity as a leader?"
+**REVA students' most challenging issues are often adaptive.**
+Example: A technical challenge is "How do I manage my study schedule?" An adaptive challenge
+is "Why do I struggle to trust my own judgment, and what does that say about my identity as a learner?"
 
 **The Adaptive Leadership toolkit**:
 - **Get on the balcony**: Step back from the dance floor of action to see the larger pattern
@@ -89,7 +87,7 @@ is "Why do I struggle to trust my team, and what does that say about my identity
 - **Regulate distress**: Maintain productive heat — enough discomfort for learning, not so much it causes shutdown
 - **Give the work back**: Don't solve for people what they need to learn to solve themselves
 
-**JP alignment**: Paristhiti Jnana (reading the situation correctly) is the Indian equivalent of
+**REVA/Gita alignment**: Paristhiti Jnana (reading the situation correctly) is the Indian equivalent of
 "getting on the balcony."
 
 ---
@@ -123,14 +121,14 @@ genuine commitment. The root: *competing commitments* — hidden assumptions tha
 3. What competing commitment is being served by my current behavior?
 4. What is the Big Assumption underneath the competing commitment?
 
-**Example for a JP leader**:
-- Wants to: Delegate more and build team capacity
-- Is doing: Reviewing all output before it goes out; answering every question himself
-- Competing commitment: To be competent; to maintain standards; to be needed
-- Big Assumption: "If I let go, standards will fall and I'll be seen as responsible"
+**Example for a REVA student**:
+- Wants to: Delegate more and collaborate in team projects
+- Is doing: Reviewing all output before submitting; handling every task personally
+- Competing commitment: To be competent; to maintain standards; to be seen as reliable
+- Big Assumption: "If I let go, quality will drop and I'll be blamed"
 
-**JP alignment**: The Immunity to Change map is a structured Svadhyaya exercise — the same
-rigorous self-examination JP trained students for, now applied to leadership behavior.
+**REVA/Gita alignment**: The Immunity to Change map is a structured Svadhyaya exercise — the same
+rigorous self-examination the Gita invites in its concept of Svadhyaya, now applied to student behavior.
 
 ---
 
@@ -140,7 +138,7 @@ The ontological approach recognizes that a person is constituted by three domain
 **language** (declarations, assessments, requests), **emotions** (moods as background dispositions),
 and **body** (physical coordination, posture, breath).
 
-**For JP leaders**, the most relevant application:
+**For REVA students**, the most relevant application:
 - **Mood as worldview**: A leader in a mood of resignation sees different possibilities than one in
   a mood of ambition. Moods are not just feelings — they are *interpretive filters*.
 - **The power of declarations**: A JP leader who *declares* a commitment (not just sets a goal)
@@ -155,7 +153,7 @@ and **body** (physical coordination, posture, breath).
 Chamine's framework identifies **Saboteur** mental patterns that undermine performance and wellbeing,
 and the **Sage** perspective that enables effective action.
 
-**Common Saboteurs in high-achieving JP alumni:**
+**Common Saboteurs in high-achieving REVA students:**
 - **Judge**: Relentlessly criticizing self and others for imperfection
 - **Hyper-Achiever**: Self-worth tied entirely to accomplishment and impact
 - **Controller**: Anxiety that drives the need to control outcomes and people
@@ -178,7 +176,7 @@ Use frameworks in service of the person, not the framework.
 - If the challenge is *meaning and purpose* → Logotherapy + Svadharma exploration
 - If the challenge is *behavior change despite intention* → Immunity to Change
 - If the challenge is *technical vs. adaptive* confusion → Heifetz
-- If the challenge is *overall flourishing* → PERMA + Five Spheres
+- If the challenge is *overall flourishing* → PERMA + Panchakosha
 - If the challenge is *self-sabotage patterns* → Positive Intelligence
-- If the challenge is *role vs. identity* confusion → Ontological Coaching + Advaita
+- If the challenge is *role vs. identity* confusion → Ontological Coaching + Gita (Bhagavad Gita's Brahmacharya Ashrama framing)
 - If the challenge is *strengths underutilization* → VIA Character Strengths

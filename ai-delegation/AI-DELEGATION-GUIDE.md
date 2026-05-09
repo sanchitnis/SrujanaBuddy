@@ -1,5 +1,5 @@
 # AI Delegation Architecture
-## The Prabodhini Leader's Guide to Human-AI Collaborative Productivity
+## The REVA Student Guide to Human-AI Collaborative Productivity
 
 ---
 
@@ -12,9 +12,9 @@
 ## THE CORE INNOVATION
 
 Traditional GTD says: delegate to humans what humans can do better.
-The Prabodhini AI-Augmented GTD adds: **delegate to AI agents what AI can do well**,
-so the leader's finite human energy is reserved for what only a human — specifically this
-particular Prabodhini-formed human — can uniquely do.
+The SrujanaBuddy AI-Augmented GTD adds: **delegate to AI agents what AI can do well**,
+so the student's finite human energy is reserved for what only a human — specifically this
+particular REVA student — can uniquely do.
 
 This is not about efficiency. It is about **Svadharma at scale**.
 
@@ -103,7 +103,7 @@ not final outputs that go to the world unreviewed.
 
 Every AI output must pass through:
 1. **Factual review**: Is the information accurate and current?
-2. **Values review**: Does this reflect my authentic voice and Prabodhini values?
+2. **Values review**: Does this reflect my authentic voice and REVA Universal Values (Ethics, Ownership, Involvement, Commitment)?
 3. **Purpose review**: Does this advance the right Sankalpa and sphere?
 4. **Human touch**: What needs to be added that only I can add?
 
@@ -130,7 +130,7 @@ Maintain this live log in the Waiting For list (`gtd/04-waiting-for.md`):
 
 ## ETHICAL PRINCIPLES FOR AI DELEGATION
 
-The Prabodhini tradition's scientific temper and value of honesty applies to AI use:
+REVA's commitment to intellectual honesty, grounded in Dr. Shyama Raju's Learning Unlimited philosophy, applies to AI use:
 
 1. **Transparency**: Never present AI-drafted content as if personally researched without disclosure where relevant
 2. **Accountability**: You remain fully responsible for every output bearing your name, regardless of AI assistance

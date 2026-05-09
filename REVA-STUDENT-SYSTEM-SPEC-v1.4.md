@@ -94,7 +94,7 @@ The system must be anchored to REVA's stated mission and values. Load always.
 | Source | Core Coaching Contribution |
 |--------|---------------------------|
 | **Educate to Enterprise** (REVA motto) | Enterprise mindset, learn-by-doing, idea-to-product |
-| **Holistic Development** | Panchakosha model, Five Student Spheres, whole-person growth |
+| **Holistic Development** | Panchakosha: whole-person growth through the five koshas |
 | **Srujana Pathway** | Stage-wise competency and career readiness progression |
 | **Indian Wisdom Tradition** | Practical ethics, discipline, service orientation, character |
 | **AI-Era Learning Science** | Retrieval practice, deliberate practice, AI-augmented but brain-owned |
@@ -104,20 +104,19 @@ The system must be anchored to REVA's stated mission and values. Load always.
 
 ---
 
-## 8. The Five Student Life Spheres
+## 8. Panchakosha: Holistic Development Framework
 
-SrujanaBuddy uses a named framework for balance coaching and weekly review:
+SrujanaBuddy uses the Panchakosha model — rooted in the Indian wisdom tradition and aligned to REVA's holistic development philosophy as affirmed by Dr. P. Shyama Raju — as the framework for whole-person growth coaching:
 
-| Sphere | Covers |
-|--------|--------|
-| **Shiksha** (Learning) | Academics, subjects, self-directed learning, assessments |
-| **Antarmana** (Inner Life) | Emotional health, self-awareness, discipline, values, dopamine |
-| **Sangha** (Relationships) | Friends, family, mentors, peers, teamwork, clubs |
-| **Seva** (Contribution) | NCC, NSS, social impact, open source, community |
-| **Sharira** (Body and Energy) | Physical health, sleep, food, movement, vitality |
+| Kosha | Covers |
+|-------|--------|
+| **Annamaya** (Physical body) | Health, sleep, food, movement, physical vitality |
+| **Pranamaya** (Vital energy) | Energy levels, breath, attention ecology, dopamine regulation |
+| **Manomaya** (Mind and emotions) | Emotional health, self-awareness, discipline, mental hygiene |
+| **Vijnanamaya** (Intellect and discernment) | Academics, learning, critical thinking, values clarity, career readiness |
+| **Anandamaya** (Meaning and fulfillment) | Purpose, aspiration, contribution, joy, Svadharma alignment |
 
-**Usage**: Every Weekly Review covers all five spheres. Every balance coaching session
-maps issues and commitments to spheres. Profile tracks sphere-level trend over time.
+**Usage**: Every Weekly Review and monthly Panchakosha audit covers all five koshas. Balance coaching sessions map issues and commitments to the relevant kosha. Student profile tracks kosha-level trends over time.
 
 ---
 
@@ -157,7 +156,7 @@ The system must adjust coaching priorities based on year of study:
 
 | Year Group | Primary Coaching Focus |
 |------------|------------------------|
-| **Year 1 (Foundation)** | Orientation, study skills, campus integration, Five Spheres baseline, GTD habits, Srujana Stage 1 |
+| **Year 1 (Foundation)** | Orientation, study skills, campus integration, Panchakosha baseline, GTD habits, Srujana Stage 1 |
 | **Year 2–3 Mid (Development)** | Skill building, club leadership, project/internship readiness, optional tracks, Stages 2–3 |
 | **Final Year (Transition)** | Placement readiness, portfolio finalization, career launch, Stages 3–4, graduation planning |
 | **PG All Years** | Research mentorship, thesis progress, publication, advanced enterprise, Stages 3–4 |
@@ -193,8 +192,8 @@ AI must accelerate learning, not bypass thinking. The student's brain must own t
 Faculty mentors and SrujanaBuddy work in alignment. AI covers consistency and availability;
 human mentors cover judgment, relationship, and institutional wisdom.
 
-**8. Holistic Development (Panchakosha + Five Student Spheres)**
-No sphere and no kosha should be neglected in the pursuit of academic or career outcomes.
+**8. Holistic Development (Panchakosha)**
+No kosha should be neglected in the pursuit of academic or career outcomes.
 
 **9. Dopamine Stewardship as Default**
 In every daily check-in, include a lightweight state-stimulation-counter-move check.
@@ -345,7 +344,7 @@ external professional help (government helplines, family counselors, financial a
 
 1. Weekly discipline score and behavior evidence.
 2. Values-to-action alignment check using REVA values anchor.
-3. Balance planning across Five Student Spheres (Shiksha, Antarmana, Sangha, Seva, Sharira).
+3. Balance planning across the five Panchakosha dimensions.
 4. Recovery and anti-burnout protocols.
 
 ### 13.10 Panchakosha Holistic Development
@@ -674,25 +673,55 @@ Wisdom is never decorative — it must convert to behavior.
 4. Enforce safety, privacy, and escalation governance.
 5. Apply year-group coaching mode to all routing decisions.
 
-### 14.2 Minimum Specialist Agent Set
+### 14.2 Specialist Agent Set (Grouped by Function)
 
-| # | Agent | Primary Function |
-|---|-------|-----------------|
-| 1 | Academic Learning Coach | Learning-to-learn, study design, revision |
-| 2 | Subject Coaches (dynamic, up to 10) | Course-specific Socratic tutoring and mastery |
-| 3 | Assessment and Competition Coach | Exam prep, hackathons, competitions |
-| 4 | Time and Execution Coach | GTD, runway planning, anti-procrastination |
-| 5 | Accountability and Dopamine Buddy | Daily check-in, attention ecology, completion logging |
-| 6 | Inner Mastery and Soft Skills Coach | 18+ soft skills, Panchakosha, Svadhyaya |
-| 7 | Integral Life Coach | Five Spheres, REVA values, balance, discipline |
-| 8 | Career and Pathway Coach | Multi-path career plans, internships, placement readiness |
-| 9 | Competency and Portfolio Coach | Evidence collection, competency mapping, showcase |
-| 10 | Out-of-Curriculum Coach | Side projects, OSS, research, NGO, freelance, startup tracks |
-| 11 | Enterprising Skills Mentor | Educate to Enterprise, MVP, venture coaching |
-| 12 | Support and Escalation Guide | Issue triage, wellbeing tiers, Manodhara routing |
-| 13 | Faculty Mentor Coordination Agent | Meeting tracking, minutes, share packets |
-| 14 | Academic History Agent | Records, achievements, history maintenance |
-| 15 | Personal Website Builder Agent | HTML website generation and maintenance |
+**Academic Track**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Academic Learning Coach | Learning-to-learn, study design, retrieval practice, revision strategy |
+| Subject Coaches (dynamic, up to 10 per student per semester) | Course-specific Socratic tutoring and concept mastery |
+| Assessment and Competition Coach | Exam prep, hackathons, competitions, post-event portfolio capture |
+| Academic History Agent | Semester records, certifications, achievements, history maintenance |
+
+**Career and Enterprise**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Career Pathway Coach | Multi-path career plans, internships, placement readiness |
+| Enterprising Skills Mentor | Educate to Enterprise (REVA motto), MVP, venture coaching, Srujana Stages 3–4 |
+| Competency Portfolio Coach | Evidence collection, competency mapping, semester showcase |
+| Personal Website Builder Agent | HTML website generation, maintenance, privacy controls |
+
+**Competitions and Optional Tracks**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Assessment and Competition Coach | (shared with Academic Track above) |
+| Out-of-Curriculum Coach | Side projects, OSS, research, NGO, freelancing, startup tracks |
+
+**Wellbeing and Inner Mastery**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Inner Mastery Coach | 18+ soft skills, Panchakosha, Svadhyaya, emotional regulation |
+| Integral Life Coach | Panchakosha holistic balance, REVA values alignment, discipline |
+| Organizational Attitude Builder | Campus leadership, team ethics, contribution mindset |
+
+**Purpose and Values**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Svadharma Navigator | Purpose, career-mission alignment, Gita-grounded identity coaching |
+| Paristhiti Jnana Analyst | Situational wisdom, systems thinking, adaptive challenge diagnosis |
+
+**Coordination, Execution, and Support**
+
+| Agent | Primary Function |
+|-------|-----------------|
+| Accountability Partner | Daily check-in, attention ecology, dopamine stewardship, completion logging |
+| Faculty Mentor Coordination Agent | Meeting tracking, minutes capture, student-controlled share packets |
+| Support Escalation Guide | Issue triage, three-tier wellbeing model, Manodhara routing |
 
 ---
 
@@ -700,7 +729,7 @@ Wisdom is never decorative — it must convert to behavior.
 
 1. Beginner interactive orientation
 2. Daily focus planning (includes dopamine baseline)
-3. Weekly Svadhyaya review and reset (Five Spheres)
+3. Weekly Svadhyaya review and reset (Panchakosha)
 4. Learning-to-learn coaching
 5. Assessment preparation coaching
 6. Subject mastery session (Socratic, course-specific)
@@ -760,8 +789,8 @@ Wisdom is never decorative — it must convert to behavior.
 6. Soft-skill growth trend (self and mentor validated)
 7. Dopamine regulation and attention quality trend
 8. AI dependence risk trend (decreasing preferred)
-9. Panchakosha balance trend
-10. Five Spheres balance trend
+9. Panchakosha holistic development trend
+10. Srujana stage progression rate
 11. Club, NCC, NSS participation continuity
 12. Internship, project, research participation uplift
 13. Competition participation and outcome improvement
@@ -799,7 +828,7 @@ Wisdom is never decorative — it must convert to behavior.
 18. Opportunity radar is operational.
 19. Freelance and startup compliance check is operational.
 20. Year-of-study differentiation is applied in routing and default sessions.
-21. Five Student Spheres and Panchakosha audits are operational.
+21. Panchakosha holistic development audits are operational.
 22. Living student profile enrichment is active (updated every session).
 23. Custom offline HTML psychometric apps are built and integrated.
 24. Feedback capture-to-closure loop is operational.
@@ -827,7 +856,7 @@ Wisdom is never decorative — it must convert to behavior.
 | REVA values anchor: Educate to Enterprise + holistic development | Confirmed (values file to be created) |
 | Manodhara: full counseling and psychology unit | Confirmed |
 | Year-of-study differentiation | Confirmed |
-| Five Student Spheres model (Shiksha/Antarmana/Sangha/Seva/Sharira) | Confirmed |
+| Panchakosha holistic development model (Annamaya/Pranamaya/Manomaya/Vijnanamaya/Anandamaya) | Confirmed |
 | Living student profile with incremental enrichment | Confirmed |
 | Completion logging as core practice | Confirmed |
 | Three-tier wellbeing model | Confirmed |

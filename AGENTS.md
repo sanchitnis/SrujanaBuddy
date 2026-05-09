@@ -8,7 +8,7 @@
 
 ## Architecture
 - `SKILL.md` is the master orchestration layer for coaching behavior and routing.
-- `agents/` contains the six core coaching agent specifications.
+- `agents/` contains the specialist coaching agent specifications.
 - `references/` contains philosophical and framework foundations used by agents.
 - `gtd/` contains the Markdown-native GTD operating system and task lists.
 - `ai-delegation/` contains AI delegation specs and task queue templates.
@@ -23,7 +23,7 @@
   - `python3 -c "import yaml; c=open('SKILL.md').read(); yaml.safe_load(c.split('---')[1]); print('SKILL.md frontmatter: valid')"`
 
 ## Conventions
-- Keep guidance JP-specific and philosophically accurate; do not generalize away core domain intent.
+- Keep guidance aligned with REVA philosophy and Dr. Shyama Raju's vision; do not generalize away core domain intent.
 - Prefer small, additive updates over broad rewrites.
 - Use "link, don’t embed": point to existing docs instead of duplicating long guidance.
 - High-value references for context:

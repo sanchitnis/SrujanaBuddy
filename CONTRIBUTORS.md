@@ -1,6 +1,6 @@
 # Contributors
 
-The SrujanaBuddy is built by and for the JP community and those who love it.
+SrujanaBuddy is built for REVA University students, grounded in Dr. P. Shyama Raju's founding vision.
 
 ---
 
@@ -8,7 +8,7 @@ The SrujanaBuddy is built by and for the JP community and those who love it.
 
 | Contributor | Role | Affiliation |
 |-------------|------|-------------|
-| *(your name here)* | Founder & Architect | REVA University / JP |
+| *(your name here)* | Founder & Architect | REVA University |
 
 ---
 
@@ -32,11 +32,11 @@ The SrujanaBuddy is built by and for the JP community and those who love it.
 
 ---
 
-## JP Community Contributors
+## REVA Community Contributors
 
-*JP alumni who have shared their experience, feedback, and wisdom:*
+*REVA faculty, mentors, and students who have shared their experience, feedback, and wisdom:*
 
-| Name | JP Batch | Contribution |
+| Name | REVA Program / Stream | Contribution |
 |------|---------|-------------|
 | *(open for contributions)* | | |
 
@@ -52,11 +52,9 @@ When your Pull Request is merged, you're welcome to add yourself to the relevant
 
 This project stands on the shoulders of:
 
-- **Dr. V.V. (Appa) Pendse** — Founder of Jnana Prabodhini, whose vision of Man-Making Education inspired this entire system
+- **Dr. V.V. (Appa) Pendse** — Founder of Jnana Prabodhini, whose vision of Man-Making Education continues to inspire the coaching philosophy grounding this system
 - **Swami Vivekananda** — whose Organizational Attitude framework is the backbone of the leadership coaching
-- **Sri Aurobindo** — whose Integral Yoga philosophy grounds the Five Spheres model
-- **Samarth Ramdas** — whose Dasabodha provides the practical activist wisdom
-- **Maharshi Dayananda** — whose insistence on rational inquiry within tradition shapes the scientific temper
+- **Sri Aurobindo** — whose Integral philosophy grounds the holistic development approach
 - **David Allen** — whose GTD system provides the task management architecture
 - **Martin Seligman** and the positive psychology community — for PERMA and character strengths research
 - **Ronald Heifetz** — for the Adaptive Leadership framework
@@ -65,4 +63,4 @@ This project stands on the shoulders of:
 - **Shirzad Chamine** — for the Positive Intelligence / Saboteur framework
 - **The ICF** (International Coaching Federation) — for the Core Coaching Competencies standard
 
-*With deep gratitude to Jnana Prabodhini and its entire community, past and present.*
+*With deep gratitude to Dr. P. Shyama Raju and the founding vision of REVA University — that education must Educate to Enterprise and that Knowledge is indeed Power. And with enduring acknowledgement of Jnana Prabodhini, whose tradition of Man-Making Education continues to inspire this work.*

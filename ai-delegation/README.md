@@ -6,7 +6,7 @@
 
 ## What This Folder Contains
 
-The `ai-delegation/` folder contains the **specifications, protocols, and task queues** for five AI agents that handle work on behalf of the Prabodhini leader. This is the innovation layer — the feature that makes this coaching system genuinely novel.
+The `ai-delegation/` folder contains the **specifications, protocols, and task queues** for five AI agents that handle work on behalf of the REVA student. This is the innovation layer — the feature that makes this coaching system genuinely novel.
 
 ```
 ai-delegation/
@@ -23,7 +23,7 @@ ai-delegation/
 
 **Traditional GTD**: Delegate to humans what humans can do better than you.
 
-**Prabodhini AI-Augmented GTD**: Delegate to AI agents what AI can do competently — so the leader's finite human energy is reserved for what only *this particular human* can uniquely do.
+**SrujanaBuddy AI-Augmented GTD**: Delegate to AI agents what AI can do competently — so the student's finite human energy is reserved for what only *this particular student* can uniquely do.
 
 The human's irreplaceable domain:
 - Svadharma decisions (only you know your deepest calling)
@@ -218,7 +218,7 @@ compatibility:
 
 ### Data persistence (beyond Markdown files)
 
-For teams or coaching practices serving multiple JP alumni, consider:
+For coaching practices serving REVA students, consider:
 
 **Supabase schema (PostgreSQL)**:
 ```sql
@@ -226,7 +226,7 @@ For teams or coaching practices serving multiple JP alumni, consider:
 CREATE TABLE mentees (
   id UUID PRIMARY KEY,
   name TEXT,
-  jp_batch TEXT,
+  reva_program TEXT,
   created_at TIMESTAMP,
   profile_data JSONB  -- stores psychometric results
 );
@@ -246,7 +246,7 @@ CREATE TABLE sessions (
 CREATE TABLE tasks (
   id UUID PRIMARY KEY,
   mentee_id UUID REFERENCES mentees(id),
-  sphere TEXT CHECK (sphere IN ('atma','sangha','karma','samaj','sharira')),
+  sphere TEXT CHECK (sphere IN ('annamaya','pranamaya','manomaya','vijnanamaya','anandamaya')),
   status TEXT CHECK (status IN ('inbox','next','waiting','someday','done')),
   content TEXT,
   sankalpa_id UUID,
@@ -278,4 +278,4 @@ The `AI-DELEGATION-GUIDE.md` contains five ethical principles governing agent us
 4. **Depth** — The wisdom must come from the human; AI handles the surface
 5. **Non-attachment** — If AI produces something better than the human would have, celebrate it
 
-These principles are grounded in the Prabodhini tradition's commitment to honesty (*Satyam*) and the Advaita recognition that ego-protection is the enemy of growth.
+These principles are grounded in REVA's commitment to honesty (*Satyam*) and the Learning Unlimited philosophy that the depth of wisdom must come from the student; AI handles the surface.

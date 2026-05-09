@@ -1,6 +1,6 @@
 # Contributing to SrujanaBuddy
 
-First, thank you. This project exists to serve a community shaped by a remarkable educational institution — Jnana Prabodhini — and every improvement makes a genuine difference to the people who use it.
+First, thank you. This project exists to serve REVA University students, and every improvement makes a genuine difference to the people who use it.
 
 This guide is for all three types of contributors. Read the section that applies to you.
 
@@ -10,9 +10,9 @@ This guide is for all three types of contributors. Read the section that applies
 
 ### Understand the spirit
 
-This is not a generic productivity tool with Indian branding. Every design decision flows from the specific formation of JP alumni: their philosophical grounding, their characteristic strengths and shadow sides, the particular tension they carry between personal achievement and national calling.
+This is not a generic productivity tool with Indian branding. Every design decision flows from the specific context of REVA students: their aspirations, the Educate to Enterprise vision of Dr. P. Shyama Raju, the Panchakosha model of holistic development, and the Brahmacharya Ashrama stage of disciplined learning and preparation for life.
 
-**Before suggesting any change, ask**: Does this serve the JP-formed leader specifically, or am I generalising for a broader audience? (Both are valid, but they're different projects.)
+**Before suggesting any change, ask**: Does this serve REVA students in the Educate to Enterprise vision, or am I generalising for a broader audience? (Both are valid, but they're different projects.)
 
 ### Ground rules
 
@@ -22,7 +22,7 @@ This is not a generic productivity tool with Indian branding. Every design decis
 
 3. **Less is more.** The temptation in coaching systems is to add more questions, more frameworks, more agents. Resist. A smaller system that is deeply used is better than a comprehensive one that overwhelms.
 
-4. **Credit sources.** If you adapt from Kegan, Heifetz, Seligman, or any other framework — say so. Intellectual honesty is a JP value.
+4. **Credit sources.** If you adapt from Kegan, Heifetz, Seligman, or any other framework — say so. Intellectual honesty is a REVA Universal Value (Ethics pillar).
 
 ---
 
@@ -30,9 +30,9 @@ This is not a generic productivity tool with Indian branding. Every design decis
 
 ### What counts as domain expertise here
 
-- Current or former JP faculty, alumni, or community members with deep familiarity with JP's pedagogy
+- REVA faculty, staff, mentors, and students with deep familiarity with REVA's pedagogy and Dr. Shyama Raju's vision
 - Professional coaches (ICF-credentialed preferred — PCC or above)
-- Scholars of Advaita Vedanta, the Bhagavad Gita, or the specific traditions (Vivekananda, Aurobindo, Ramdas, Dayananda)
+- Scholars of Advaita Vedanta, the Bhagavad Gita, or related Indian traditions (Vivekananda, Aurobindo)
 - Positive psychologists, organisational behaviourists, or leadership researchers with relevant expertise
 
 ### How to contribute as a domain expert
@@ -42,7 +42,7 @@ This is not a generic productivity tool with Indian branding. Every design decis
 The lowest-friction way to contribute. Label your issue with one of:
 - `philosophy-accuracy` — something is philosophically incorrect or misleading
 - `coaching-methodology` — a coaching protocol needs improvement
-- `jp-authenticity` — something doesn't ring true for the actual JP experience
+- `reva-authenticity` — something doesn't align with REVA's philosophy or Dr. Shyama Raju's vision
 - `missing-content` — an important domain, concept, or framework is absent
 - `enhancement` — something correct that could be made richer
 
@@ -63,20 +63,20 @@ If you want to write the improvement directly:
 
 **Pull Request checklist for domain contributions**:
 - [ ] Changes are philosophically grounded (cite source if possible)
-- [ ] Language is accessible to a JP alumnus who is not an academic
+- [ ] Language is accessible to any REVA student or faculty member
 - [ ] Nothing has been removed without explanation
-- [ ] JP-specific terminology is used accurately (see Glossary in `references/README.md`)
+- [ ] REVA philosophical terminology is used accurately (see Glossary in `references/README.md`)
 - [ ] Changes tested by asking Claude to coach using the modified file
 
 ### The editorial process for philosophical changes
 
 Any change to `references/REVA University.md`, `references/reva-values-anchor.md`, or to the core frameworks in `references/five-spheres-framework.md` goes through a two-reviewer process before merging. This protects the philosophical integrity of the system.
 
-Reviewers are drawn from a standing panel of JP alumni and credentialed coaches. If you'd like to be on the review panel, open an Issue with label `reviewer-volunteer`.
+Reviewers are drawn from a standing panel of REVA faculty, mentors, and credentialed coaches. If you'd like to be on the review panel, open an Issue with label `reviewer-volunteer`.
 
 ---
 
-## For General Users (JP Alumni)
+## For General Users (REVA Students and Faculty)
 
 You don't need to know how to code to contribute meaningfully.
 
@@ -84,9 +84,9 @@ You don't need to know how to code to contribute meaningfully.
 
 The most valuable contributions from users are:
 - "This coaching question landed exactly right — here's why"
-- "This framing of Svadharma doesn't match my experience of JP"
+- "This framing of Svadharma doesn't align with REVA's Gita perspective or Dr. Shyama Raju's vision"
 - "I needed coaching on [topic] and the system didn't have it"
-- "This psychometric question doesn't make sense in Indian context"
+- "This psychometric question doesn't make sense in an Indian student context"
 
 Open a GitHub Issue with label `user-experience`. You don't need technical details — just describe what happened and what would have been more useful.
 
@@ -248,7 +248,7 @@ This project follows the [Contributor Covenant](https://www.contributor-covenant
 Additionally, given the community this serves:
 - Respect the philosophical traditions referenced — engage with them seriously, not as cultural decoration
 - Disagreements about philosophical interpretation are welcome as Issues, not in PR comments
-- The JP community spans many backgrounds; contributions should be accessible across that diversity
+- REVA serves students across many streams and backgrounds; contributions should be accessible across that diversity
 
 ---
 
@@ -264,4 +264,4 @@ Domain experts who make significant philosophical contributions will be listed w
 
 Open a GitHub Discussion (not an Issue) for open-ended questions about the project's direction, design philosophy, or how to approach a contribution you're considering.
 
-*Sada Saavdhan* — always alert, always engaged. — Samarth Ramdas
+*Sada Saavdhan* — always alert, always engaged.

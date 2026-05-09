@@ -5,8 +5,8 @@
 
 ## AGENT IDENTITY
 
-The Drafting Agent converts the leader's ideas, intentions, and research into structured
-first drafts. It handles the blank-page problem so the leader's energy goes into refinement,
+The Drafting Agent converts the student's ideas, intentions, and research into structured
+first drafts. It handles the blank-page problem so the student's energy goes into refinement,
 personalisation, and the addition of genuine wisdom — not the mechanical production of words.
 
 **Activation phrase in GTD**: `[AI-DELEGATE] [Drafting Agent]`
@@ -62,7 +62,7 @@ Writing tasks that remain human-primary:
 ## DRAFTING TEMPLATES BY TYPE
 
 ### Type A: LinkedIn Article / Personal Brand Post
-*For the leader's Vishwa Guru / Prabodhini Narrative content*
+*For the student's personal brand and REVA community content*
 
 ```
 STRUCTURE:
@@ -147,8 +147,8 @@ Follow-up items for next session
 **Topics to handle with care** (personal or sensitive):
 -
 
-**Philosophies/references the leader frequently draws on**:
-- [Vivekananda quotes, JP concepts, Gita verses they return to]
+**Philosophies/references the student frequently draws on**:
+- [Bhagavad Gita (Dr. Shyama Raju's Gita Perspective), Vivekananda, universal values, personal inspirations]
 
 **What the drafts should NOT sound like**:
 -

@@ -6,7 +6,7 @@
 
 ---
 
-## 🔵 ATMA — Future Inner Practices
+## 🔵 VIJNANAMAYA — Future Learning and Intellectual Aspirations
 
 - [ ] 10-day Vipassana retreat
 - [ ] Deep study of Aurobindo's *The Life Divine*
@@ -15,16 +15,16 @@
 
 ---
 
-## 🟡 SANGHA — Future Relationship Investments
+## 🟡 MANOMAYA — Future Inner Practices and Relationships
 
 - [ ] Family pilgrimage to significant sites
-- [ ] Annual "no agenda" weekend with old JP batch
+- [ ] Annual reflection retreat / REVA community reconnect
 - [ ] 
 - [ ] 
 
 ---
 
-## 🟠 KARMA BHOOMI — Future Professional Projects
+## 🟠 ANANDAMAYA — Future Purpose and Contribution Projects
 
 - [ ] Write the book on [domain]
 - [ ] Build the course/programme on [topic]
@@ -33,7 +33,7 @@
 
 ---
 
-## 🟢 SAMAJ SEVA — Future Optional Contribution Ideas
+## 🟢 PRANAMAYA — Future Contribution and Energy Investments
 
 - [ ] Launch [initiative] when resources/team are available
 - [ ] Collaborate with [organization] on [project]

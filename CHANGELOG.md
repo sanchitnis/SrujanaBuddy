@@ -59,13 +59,13 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 
 ### Added — Coaching Lifecycle (Intake System)
 - `intake/intake-protocol.md` — Complete 3-stage onboarding: Deep Interview (6 modules) → Psychometrics → Synthesis session
-- `intake/apps/01-character-strengths.html` — 30-question VIA-adapted Character Strengths assessment with JP-aligned interpretations and Markdown export
-- `intake/apps/02-spheres-assessment.html` — 50-question Five Spheres Balance Wheel with radar chart visualisation and Integral Balance Score
-- `intake/apps/03-leadership-oa-profile.html` — 40-question Organizational Attitude profile with Saboteur identification and Prabodhini-specific antidotes
+- `intake/apps/01-character-strengths.html` — 30-question VIA-adapted Character Strengths assessment with REVA values-aligned interpretations and Markdown export
+- `intake/apps/02-spheres-assessment.html` — 50-question Five Spheres Balance Wheel with radar chart visualisation and Integral Balance Score (see REVA-STUDENT-SYSTEM-SPEC for Panchakosha rewrite roadmap)
+- `intake/apps/03-leadership-oa-profile.html` — 40-question Organizational Attitude profile with Saboteur identification and REVA-specific antidotes
 - `profiles/_mentee-profile-template.md` — Comprehensive living mentee document: psychometrics → sessions → breakthroughs → coaching hypothesis
 
 ### Added — GTD Task Management System
-- `gtd/GTD-GUIDE.md` — Complete GTD framework adapted for Prabodhini context with Five Sphere tagging, Sankalpa alignment, and AI delegation layer
+- `gtd/GTD-GUIDE.md` — Complete GTD framework adapted for REVA student context with Panchakosha tagging, Sankalpa alignment, and AI delegation layer
 - `gtd/00-inbox.md` — Capture inbox template
 - `gtd/01-next-actions.md` — Sphere-organised next actions with full tag system
 - `gtd/02-projects.md` — Multi-step project index with Sankalpa traceability
@@ -84,10 +84,10 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 ### Added — Documentation (GitHub Open Source)
 - `README.md` — Project landing page with Quick Start for all three audiences, repository map, philosophical foundation, roadmap
 - `references/README.md` — Domain expert guide: what to review, contribution style guide, glossary of 20 key terms
-- `agents/README.md` — Coaching methodology guide: ICF alignment check, JP authenticity review, how to add new agents
+- `agents/README.md` — Coaching methodology guide: ICF alignment check, REVA authenticity review, how to add new agents
 - `intake/README.md` — Three-audience guide: users (getting started), domain experts (reviewing), developers (extending apps)
 - `profiles/README.md` — User and coach guide: creating profiles, privacy, version control, `.gitignore` setup
-- `gtd/README.md` — User and developer guide: GTD basics, Prabodhini innovations, Obsidian integration, programmatic parsing
+- `gtd/README.md` — User and developer guide: GTD basics, REVA student adaptations, Obsidian integration, programmatic parsing
 - `ai-delegation/README.md` — Developer guide: current architecture, Phase 1–4 roadmap, Claude API integration examples, Supabase schema, ethical architecture
 - `connectors/README.md` — Developer guide: connector file structure, 5 connectors roadmap with MCP details, privacy considerations
 - `CONTRIBUTING.md` — Contribution guide for all three audiences with PR checklists, branch naming, script template
@@ -105,12 +105,12 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 
 ### Added — Initial Release
 - `SKILL.md` — Master intelligence layer with 7 session types and 6-agent routing
-- `references/jp-philosophical-foundation.md` — JP wisdom architecture: Advaita, Gita, Vivekananda, Ramdas, Dayananda, Aurobindo, JP pedagogy
-- `references/five-spheres-framework.md` — Five Spheres model (Atma, Sangha, Karma Bhoomi, Samaj Seva, Sharira-Prana) with Purusharthas mapping
+- `references/reva-values-anchor.md` — REVA philosophical foundation: Panchakosha model, Gita Perspective (Dr. Shyama Raju), Universal Values, USR/Jagruti, Educate to Enterprise
+- `references/five-spheres-framework.md` — Panchakosha holistic development model with Purusharthas mapping
 - `references/daily-thread.md` — Five-zone 24-hour rhythm with Brahma Muhurta protocol and Minimum Viable Day
 - `references/weekly-rhythm.md` — Seven-day Svadhyaya architecture with full Sunday review protocol
 - `references/yearly-strategy.md` — Two-day Annual Vision Retreat template
-- `references/modern-coaching-frameworks.md` — ICF, PERMA, VIA, Heifetz, Frankl, Kegan, Chamine with JP alignment notes
+- `references/modern-coaching-frameworks.md` — ICF, PERMA, VIA, Heifetz, Frankl, Kegan, Chamine with REVA alignment notes
 - `references/spg-contribution-tracker.md` — Adult SPG: selection framework, health assessment, India's priority domains
 - `agents/svadharma-navigator.md` — Purpose, calling, VIA strengths integration, three-phase coaching protocol
 - `agents/integral-life-coach.md` — Five-sphere balance, time audit, Aurobindo's Integral Yoga applied
@@ -125,7 +125,7 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 ## Versioning Notes
 
 **What triggers a Major version bump:**
-- Fundamental change to the Five Spheres model
+- Fundamental change to the Panchakosha holistic development model
 - New primary philosophical tradition added to the foundation
 - Complete redesign of the agent architecture
 - Breaking changes to GTD file formats (requiring migration)

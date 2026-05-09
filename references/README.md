@@ -15,8 +15,7 @@ Use:
 ## Current migration state
 
 The repository is migrating in place to SrujanaBuddy for REVA students.
-Some legacy JP-oriented references remain for historical continuity,
-but active orchestrator behavior should prioritize REVA-aligned files.
+Active orchestrator behavior should prioritize REVA-aligned files.
 
 ## REVA-active references
 

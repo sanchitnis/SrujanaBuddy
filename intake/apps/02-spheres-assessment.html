@@ -135,7 +135,7 @@ const SPHERES = [
   },
   {
     id:'sangha', name:'Sangha', label:'Family & Close Relationships', icon:'🟡', color:'#D97B4A',
-    jp:'Grihastha Dharma — the forge of character in relationships',
+    jp:'Brahmacharya Ashrama — the stage of learning and preparing for life\'s contribution',
     questions:[
       'The quality of my most important relationships (partner/spouse, children, close friends) is genuinely good.',
       'I am able to be vulnerable and honest with at least one person in my life.',
@@ -308,7 +308,7 @@ function showResults() {
   // Sphere results
   const insights = {
     atma: s => s >= 70 ? 'Your inner life is a genuine resource — protect and deepen it.' : s >= 50 ? 'The inner life is present but fragile. Sadhana needs structural protection.' : 'This is the urgent priority — without a strong Atma foundation, all else is unsustainable.',
-    sangha: s => s >= 70 ? 'Your close relationships are a genuine source of strength.' : s >= 50 ? 'Relationships exist but are not fully nourished. More genuine presence is needed.' : 'A critical gap. The Grihastha Dharma is calling for serious attention.',
+    sangha: s => s >= 70 ? 'Your close relationships are a genuine source of strength.' : s >= 50 ? 'Relationships exist but are not fully nourished. More genuine presence is needed.' : 'A critical gap. Your Brahmacharya Ashrama commitments need attention — learning, growth, and preparation are the call right now.',
     karma: s => s >= 70 ? 'Your work is meaningfully aligned with your Svadharma.' : s >= 50 ? 'Work is functional but not yet fully an expression of your deepest calling.' : 'A significant misalignment between professional life and Svadharma. Needs coaching attention.',
     samaj: s => s >= 70 ? 'You have a genuine organized contribution to India — a real Adult SPG.' : s >= 50 ? 'Contribution is present but not yet organized for sustained impact.' : 'The Organizational Attitude is yet to be applied to national service. The JP calling is waiting.',
     sharira: s => s >= 70 ? 'Your body is an asset for the mission. Maintain and improve.' : s >= 50 ? 'Physical health is manageable but not optimised. Small investments would yield large returns.' : 'Physical depletion is limiting your capacity in all other spheres. This needs immediate attention.',

@@ -8,7 +8,7 @@
 
 ---
 
-## Overview: The 15 C's + JP/Vedantic Integration
+## Overview: The 15 C's + REVA/Vedantic Integration
 
 This document maps **15 essential life skills** (the "15 C's" framework + cultural variants) to:
 1. **Which coaching sessions develop each skill**
@@ -17,14 +17,14 @@ This document maps **15 essential life skills** (the "15 C's" framework + cultur
 4. **What is missing** and needs development
 
 The framework acknowledges that:
-- Not all skills are equally relevant to all mentees at all life stages
+- Not all skills are equally relevant to all students at all life stages
 - Multiple skills develop simultaneously in integrated ways
-- The JP pedagogical inheritance aligns naturally with these skills
+- REVA's Educate to Enterprise vision and Panchakosha model align naturally with these skills
 - Some skills are prerequisites to others
 
 ---
 
-## The 15 Essential Life Skills (with JP Alignment)
+## The 15 Essential Life Skills (with REVA Alignment)
 
 ### 1. **COMMITMENT & SELF-MANAGEMENT**
 *The capacity to make conscious choices and sustain them with discipline*
@@ -91,7 +91,7 @@ The framework acknowledges that:
 | **Cultural/civilizational values** (India-specific) | ✅ Strong | Paristhiti Jnana Analyst | Phase 4.1 (Challenge), service and contribution work |
 
 **Materials Available**:
-- `intake/apps/01-character-strengths.html` (VIA 24 strengths, JP-aligned)
+- `intake/apps/01-character-strengths.html` (VIA 24 strengths, REVA values-aligned)
 - `intake/apps/02-spheres-assessment.html` (Five Spheres values audit)
 - `references/REVA University.md` (institutional values, mission, and student guidance)
 - `references/five-spheres-framework.md` (values by sphere)
@@ -254,7 +254,7 @@ The framework acknowledges that:
 - `references/modern-coaching-frameworks.md` (systems perspective)
 
 **Materials Needed** 🔴:
-- Computational thinking for JP leaders guide
+- Computational thinking for REVA student leaders guide
 - Digital literacy coaching (tool proficiency, discernment)
 - Algorithm/logic thinking exercises
 - Technology ethics framework (India-specific)
@@ -312,7 +312,7 @@ The framework acknowledges that:
 **Materials Needed** 🔴:
 - Decision-making playbook with frameworks (decision matrix, etc.)
 - Scenario planning guide
-- Creative problem-solving techniques (JP + modern combined)
+- Creative problem-solving techniques (REVA + modern combined)
 - "Deciding when to act vs. wait" framework
 
 ---
@@ -352,7 +352,7 @@ The framework acknowledges that:
 | **Satsang / peer community** | ✅ Strong | Reference in philosophy | Phase 1 (Intake), ongoing |
 | **Teaching others** | 🟡 Partial | All agents | Emergence through coaching |
 | **Learning from peers** | 🟡 Partial | Integral Life Coach + Paristhiti Jnana | Ongoing coaching, 3.4 (Quarterly) |
-| **Knowledge documentation** | ✅ Strong | GTD system + Profile | Prabodhini Corpus reference |
+| **Knowledge documentation** | ✅ Strong | GTD system + Profile | Student evidence corpus |
 | **Collective contribution learning** | 🟡 Partial | OA Builder + Paristhiti Jnana | Phase 2.4, 3.3 (service/project settings) |
 
 **Materials Available**:
@@ -360,13 +360,13 @@ The framework acknowledges that:
 - Intake interview question about mentors/Satsang
 - Reference to "Mentor's Mirror" in weekly review
 - `references/usr-optional-contribution-tracker.md` (collective learning in service contributions)
-- Prabodhini Corpus reference (documenting insights)
+- REVA knowledge corpus and student portfolio (documenting insights)
 
 **Materials Needed** 🔴:
 - Mentoring coaching guide (both mentoring others + learning from mentors)
-- Satsang formation + sustainability guide
-- Knowledge sharing framework (what insights to document/share)
-- Learning circle design guide
+- Satsang and peer learning community formation guide
+- Knowledge sharing framework (what insights to document and share)
+- Learning community design guide
 
 ---
 
@@ -386,7 +386,7 @@ The framework acknowledges that:
 - `references/REVA University.md` (institutional philosophy and guidance)
 - `references/modern-coaching-frameworks.md` (East-West synthesis)
 - `agents/paristhiti-jnana-analyst.md` (situational reading)
-- Intake protocol: cultural values, inheritance, JP formation
+- Intake protocol: Panchakosha baseline, REVA values, Educate to Enterprise formation
 - Optional contribution selection (often involves cultural or civic issues)
 
 **Materials Needed** 🔴:

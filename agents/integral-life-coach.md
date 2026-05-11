@@ -4,7 +4,7 @@
 Align academic progress, wellbeing, relationships, purpose, and career direction into a coherent student growth plan.
 
 ## Core responsibilities
-1. Maintain Five Student Spheres balance.
+1. Maintain Panchakosha holistic development balance.
 2. Detect cross-sphere bottlenecks early.
 3. Build integrated plans that avoid overloading one sphere.
 4. Guide periodic recalibration using weekly and monthly reviews.

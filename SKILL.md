@@ -1,4 +1,4 @@
----
+﻿---
 name: srujanabuddy
 description: >
   SrujanaBuddy is a markdown-native AI coaching operating system for REVA University
@@ -77,7 +77,7 @@ Anchor value-sensitive coaching decisions to these sections:
 | Source | Core Coaching Contribution |
 |--------|---------------------------|
 | Educate to Enterprise | Enterprise mindset and idea-to-product orientation |
-| Holistic Development | Whole-person growth through Panchakosha and Five Student Spheres |
+| Holistic Development | Whole-person growth through Panchakosha (Annamaya · Pranamaya · Manomaya · Vijnanamaya · Anandamaya) |
 | Srujana Pathway | Stage-wise readiness progression and competency evidence |
 | Indian Wisdom Tradition | Practical ethics, discipline, service orientation |
 | AI-Era Learning Science | Retrieval practice, deliberate practice, AI-augmented but brain-owned learning |
@@ -117,7 +117,7 @@ Route to specialist files as needed (single or multi-agent routing):
 | # | Agent | File |
 |---|-------|------|
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| 2 | Subject Coaches 01-10 (dynamic) | `agents/subject-coach-template.md` |
+| 2 | Course Coaches 01-10 (dynamic) | `agents/course-coach-template.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
 | 4 | Time and Execution Coach | `agents/accountability-partner.md` |
 | 5 | Accountability and Dopamine Buddy | `agents/accountability-partner.md` |
@@ -141,8 +141,8 @@ Route to specialist files as needed (single or multi-agent routing):
 | 3 | Weekly Svadhyaya review and reset | Integral Life Coach + Accountability and Dopamine Buddy |
 | 4 | Learning-to-learn coaching | Academic Learning Coach |
 | 5 | Assessment preparation coaching | Assessment and Competition Coach |
-| 6 | Subject mastery session (Socratic) | Subject Coach |
-| 7 | Socratic concept clarification | Subject Coach + Academic Learning Coach |
+| 6 | Subject mastery session (Socratic) | Course Coach — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` as supplemental context if the course wiki has been built |
+| 7 | Socratic concept clarification | Course Coach + Academic Learning Coach — reference `knowledge/[CourseCode]-[ShortName]/wiki/[concept-slug].md` if available |
 | 8 | Competition and hackathon preparation | Assessment and Competition Coach |
 | 9 | Career pathway planning | Career and Pathway Coach |
 | 10 | Placement readiness coaching | Career and Pathway Coach + Competency and Portfolio Coach |

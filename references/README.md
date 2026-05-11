@@ -22,7 +22,7 @@ Active orchestrator behavior should prioritize REVA-aligned files.
 | File | Purpose |
 |------|---------|
 | REVA University.md | Institutional philosophy, values, mission, and student-guidance source text |
-| five-spheres-framework.md | Five Student Spheres balance model |
+| five-spheres-framework.md | Panchakosha holistic development model |
 | reva-values-anchor.md | Values and coaching decision baseline |
 | srujana-pathway-framework.md | Stage 1-4 progression and evidence model |
 | student-year-group-modes.md | Year-group routing defaults |

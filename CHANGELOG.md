@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to the Hitaishin are documented here.
 
@@ -19,7 +19,7 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 - `references/dopamine-stewardship-student.md` - Daily and weekly dopamine protocol.
 - `references/gtd-lite-student-edition.md` - D-14, D-21, D-3 and no-zero-day policy.
 - `agents/academic-learning-coach.md` - learning strategy specialist agent.
-- `agents/subject-coach-template.md` - dynamic subject-coach template.
+- `agents/course-coach-template.md` - dynamic course-coach template.
 - `agents/assessment-competition-coach.md` - assessments and competitions specialist.
 - `agents/career-pathway-coach.md` - multi-path career planning specialist.
 - `agents/competency-portfolio-coach.md` - competency evidence mapping specialist.

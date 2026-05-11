@@ -1,4 +1,4 @@
-# Requirements Specification
+﻿# Requirements Specification
 ## SrujanaBuddy — AI Coaching System for REVA University Students
 **Version:** 1.4 (Consolidated with SrujanaBuddy Best Practices)
 **Date:** 07 May 2026
@@ -468,8 +468,8 @@ university policy compliance check before being activated as a high-intensity tr
 ### 13.18 Subject-Specific Agent Framework (Up to 10)
 
 1. Dynamically instantiate up to 10 subject agents per student per semester.
-2. Naming: `Subject Coach 01–10 — [CourseCode] — [ShortName]`
-3. Example: `Subject Coach 01 — CSE301 — Data Structures`
+2. Naming: `Course Coach 01–10 — [CourseCode] — [ShortName]`
+3. Example: `Course Coach 01 — CSE301 — Data Structures`
 
 Each subject agent folder supports:
 1. Syllabus and unit-wise outcomes
@@ -680,7 +680,7 @@ Wisdom is never decorative — it must convert to behavior.
 | Agent | Primary Function |
 |-------|-----------------|
 | Academic Learning Coach | Learning-to-learn, study design, retrieval practice, revision strategy |
-| Subject Coaches (dynamic, up to 10 per student per semester) | Course-specific Socratic tutoring and concept mastery |
+| Course Coaches (dynamic, up to 10 per student per semester) | Course-specific Socratic tutoring and concept mastery |
 | Assessment and Competition Coach | Exam prep, hackathons, competitions, post-event portfolio capture |
 | Academic History Agent | Semester records, certifications, achievements, history maintenance |
 

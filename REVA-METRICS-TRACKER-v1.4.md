@@ -1,4 +1,4 @@
-# REVA Metrics Tracker v1.4
+﻿# REVA Metrics Tracker v1.4
 
 Track required success metrics with clear ownership and cadence.
 
@@ -8,7 +8,7 @@ Track required success metrics with clear ownership and cadence.
 | 2 | Commitment completion rate | Profile + GTD | Weekly | Up |
 | 3 | Last-minute submission reduction | Runway board | Monthly | Up |
 | 4 | Runway compliance (D-14/D-21) | Runway board | Weekly | Up |
-| 5 | Concept mastery progression | Subject coach logs | Bi-weekly | Up |
+| 5 | Concept mastery progression | Course Coach logs | Bi-weekly | Up |
 | 6 | Soft-skill growth trend | Inner mastery notes | Monthly | Up |
 | 7 | Dopamine regulation trend | Daily baseline logs | Weekly | Up |
 | 8 | AI dependence risk trend | AI reflection sessions | Monthly | Down |

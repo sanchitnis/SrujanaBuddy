@@ -14,6 +14,35 @@
 - `ai-delegation/` contains AI delegation specs and task queue templates.
 - `intake/` and `profiles/` contain onboarding and mentee profile workflows.
 - `connectors/` contains integration specifications (for example calendar audit).
+- `tools/` contains standalone scripts and lightweight tools that augment the system (see Tools and Automation policy below).
+
+## Tools and Automation
+
+Tools, scripts, and small programs are permitted and encouraged in this repository. All tools follow the **T0–T4 Technology Implementation Hierarchy** defined in [references/ai-tutor-philosophy.md](references/ai-tutor-philosophy.md) (Part 6). Summary:
+
+| Tier | What it means | Key required? |
+|------|--------------|---------------|
+| **T0** | Deterministic — stdlib only, no model | No |
+| **T1** | Agent skills — markdown-native, IDE-LLM | No |
+| **T2** | Scripts without LLM — rule-based automation | No |
+| **T3** | Local / Edge AI — Ollama or Google AI Edge Gallery | No (local) |
+| **T4** | Free-tier cloud API — cron/background jobs only; Gemini Flash or Groq free tier | Optional |
+
+**Preference order: T0 → T1 → T2 → T3 → T4.** Use the lowest tier that achieves the goal. T3/T4 keys are always optional — if absent, tools run at T2 level. Paid frontier API keys (OpenAI, Claude, Gemini Pro) are not in scope currently but could be implemented in future.
+
+**In-scope tool categories**:
+- Psychometric and self-assessment tools (offline HTML/JS preferred; see `intake/apps/` for the established pattern)
+- Live data collectors: email/WhatsApp checking, calendar scraping, RSS/web fetch for opportunity radar
+- Simple automation: sending a WhatsApp or email reminder, fetching a deadline, querying a public API
+- Local model wrappers: scripts that route a coaching prompt to a local model and return structured output
+- Eval runners: scripts that batch-run eval scenarios from `eval/scenarios/` against a local or free-tier model
+
+**Out-of-scope** (do not add):
+- Tools that require paid API keys to function at all
+- Tools that make heavy batched calls to frontier models as their primary mechanism
+- Tools that store or transmit real student PII to any external service
+
+**Placement**: Put all tools in `tools/` with one subfolder per category. Each tool must have a `README.md` or inline header comment explaining: what it does, what it requires, how to run it, and which **tier (T0–T4)** it operates at. See `tools/README.md` for conventions.
 
 ## Build and Test
 - There is no global build step for the core repository (content is primarily Markdown).

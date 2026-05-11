@@ -1,4 +1,4 @@
-# MANIFEST — SrujanaBuddy System Registry
+﻿# MANIFEST — SrujanaBuddy System Registry
 
 > **Version**: v1.4  
 > **Scope**: All REVA University students in Brahmacharya Ashrama (the stage of learning and preparing for life's contribution)  
@@ -52,8 +52,8 @@ Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SP
 |-------|------|---------|
 | Academic Learning Coach | `agents/academic-learning-coach.md` | Study strategies, learning design, metacognition |
 | Academic History Agent | `agents/academic-history-agent.md` | Records, transcripts, academic trajectory analysis |
-| Subject Coach (template) | `agents/subject-coach-template.md` | Generic template for subject-specific coaches |
-| Subject Coach Instances | `agents/subject-coaches/instances/` | Per-subject deployed instances |
+| Course Coach (template) | `agents/course-coach-template.md` | Generic template for subject-specific coaches |
+| Course Coach Instances | `agents/course-coaches/instances/` | Per-subject deployed instances |
 
 ### Group B — Career and Enterprise
 

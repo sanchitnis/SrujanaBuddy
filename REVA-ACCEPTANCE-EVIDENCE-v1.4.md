@@ -1,4 +1,4 @@
-# REVA Acceptance Evidence v1.4
+﻿# REVA Acceptance Evidence v1.4
 
 This file maps each acceptance criterion to current implementation evidence.
 Status values:
@@ -10,8 +10,8 @@ Status values:
 |---|----------------------|--------|----------|
 | 1 | New student gets first useful plan within 10 minutes | Pass | SKILL.md, COACHING-SESSION-WORKFLOW.md, intake/intake-protocol.md |
 | 2 | Coach identity SrujanaBuddy introduced correctly | Pass | SKILL.md |
-| 3 | Dynamic subject agent provisioning (up to 10) | Partial | agents/subject-coach-template.md |
-| 4 | Concept-level tracking and Socratic tutoring operational | Partial | agents/subject-coach-template.md, agents/academic-learning-coach.md |
+| 3 | Dynamic subject agent provisioning (up to 10) | Partial | agents/course-coach-template.md |
+| 4 | Concept-level tracking and Socratic tutoring operational | Partial | agents/course-coach-template.md, agents/academic-learning-coach.md |
 | 5 | Student GTD Lite rules D-14/D-21/D-3/no-zero-day operational | Pass | gtd/GTD-GUIDE.md, gtd/03-runway-calendar.md, references/gtd-lite-student-edition.md |
 | 6 | Dopamine baseline active in every daily session | Pass | SKILL.md, references/dopamine-stewardship-student.md |
 | 7 | Completion logging mechanism operational | Pass | profiles/_mentee-profile-template.md, agents/accountability-partner.md |

@@ -141,7 +141,7 @@ and **body** (physical coordination, posture, breath).
 **For REVA students**, the most relevant application:
 - **Mood as worldview**: A leader in a mood of resignation sees different possibilities than one in
   a mood of ambition. Moods are not just feelings — they are *interpretive filters*.
-- **The power of declarations**: A JP leader who *declares* a commitment (not just sets a goal)
+- **The power of declarations**: A REVA student who *declares* a commitment (not just sets a goal)
   has changed their relationship to the future.
 - **Body as leader**: The Sharira-Prana sphere is not just health management. The body *speaks*
   the leader's inner state to others before words do.

@@ -1,4 +1,4 @@
-# Student Profile Template
+﻿# Student Profile Template
 
 ## Identity and academic context
 1. Name:
@@ -34,7 +34,7 @@
 ## Coaching plan
 1. Primary coach route:
 2. Session type for next 3 sessions:
-3. Subject coaches assigned:
+3. Course Coaches assigned:
 
 ## Evidence log
 | Date | Evidence | Sphere | Signal |

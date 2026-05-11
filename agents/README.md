@@ -1,4 +1,4 @@
-# agents - Specialist Coaching Layer
+﻿# agents - Specialist Coaching Layer
 
 Primary audience: coaching designers and reviewers.
 
@@ -12,7 +12,7 @@ The master routing logic in SKILL.md selects one or more agents per session type
 | Agent file | Domain |
 |-----------|--------|
 | academic-learning-coach.md | Learning strategy and mastery |
-| subject-coach-template.md | Course-specific Socratic tutoring template |
+| course-coach-template.md | Course-specific Socratic tutoring template |
 | assessment-competition-coach.md | Exams, vivas, competitions, hackathons |
 | accountability-partner.md | Time execution and commitment tracking |
 | inner-mastery-coach.md | Emotional regulation and soft-skill growth |
@@ -26,6 +26,17 @@ The master routing logic in SKILL.md selects one or more agents per session type
 | academic-history-agent.md | Achievement and record history maintenance |
 | personal-website-builder-agent.md | Personal site planning and evidence-linked content |
 | organizational-attitude-builder.md | Leadership behavior and team contribution |
+
+## Eval and improvement infrastructure
+
+The following agent is internal infrastructure used by the core team, not by students in coaching sessions.
+
+| Agent file | Domain |
+|-----------|--------|
+| [../eval/eval-agent.md](../eval/eval-agent.md) | Persona simulation, session audit, feedback synthesis, improvement backlog |
+| [course-coach-builder.md](course-coach-builder.md) | Build, refresh, and audit AI-native knowledge wikis and workbooks per course (faculty-facing; not student-facing) |
+
+See [`eval/README.md`](../eval/README.md) for the full evaluation and continuous improvement framework.
 
 ## Agent output contract
 

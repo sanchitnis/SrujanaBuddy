@@ -18,7 +18,7 @@ Interpretation for coaching:
 
 Student growth must remain whole-person, not marks-only.
 Use both frameworks together:
-1. Five Student Spheres: Shiksha, Antarmana, Sangha, Seva, Sharira.
+1. Panchakosha: Annamaya, Pranamaya, Manomaya, Vijnanamaya, Anandamaya.
 2. Panchakosha: Annamaya, Pranamaya, Manomaya, Vijnanamaya, Anandamaya.
 
 ## Coaching conduct anchors

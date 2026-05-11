@@ -96,7 +96,7 @@ If you've had a particularly valuable or revealing coaching session, consider sh
 
 ### Suggest Powerful Questions
 
-Each agent has a **Powerful Questions Library**. If you've been asked (by a coach, a mentor, or in a JP context) a question that really shifted your thinking — share it as an Issue with label `powerful-question`. Include:
+Each agent has a **Powerful Questions Library**. If you've been asked (by a coach, a mentor, or in a REVA coaching context) a question that really shifted your thinking — share it as an Issue with label `powerful-question`. Include:
 - The question
 - The context it was asked in
 - What made it powerful

@@ -20,3 +20,15 @@ Guide students across multiple pathways: industry, government, academia, researc
 2. Top 3 opportunities with deadlines.
 3. One immediate application action.
 4. Review checkpoint date.
+
+## AI Engineering Pathways Reference
+
+For students targeting AI engineering, AI product, data science, cybersecurity, or ML research roles, use the structured pathway guide at [`references/ai-engineer-pathways.md`](../references/ai-engineer-pathways.md).
+
+It provides:
+- A 5-question self-assessment to identify the right pathway
+- 6 pathways (AI-Native Builder, AI Systems Engineer, Data Science & Analytics, ML Research Analyst, AI Product & Strategy, Cybersecurity & AI)
+- Each pathway structured as 4 Srujana achievement stages: **Foundation → Application → Creation → Enterprise**
+- 43 shared microlearning modules with key concepts, primary resources, time estimates, and completion evidence
+- Stage milestones to determine internship readiness (Stage 2) and placement readiness (Stage 3–4)
+- A cross-pathway module map for students switching or combining pathways

@@ -15,7 +15,7 @@
 | System Name | SrujanaBuddy |
 | Institution | REVA University, Bangalore, Karnataka |
 | Founding Chancellor | Dr. P. Shyama Raju |
-| Primary Audience | All REVA students (undergraduate, postgraduate, research) |
+| Primary Audience | All REVA undergraduate and postgraduate students |
 | Orchestration Layer | `SKILL.md` |
 | Primary Spec | `REVA-STUDENT-SYSTEM-SPEC-v1.4.md` |
 | License | MIT (see `LICENSE`) |

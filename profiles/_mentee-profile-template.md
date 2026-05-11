@@ -41,7 +41,13 @@
 |------|----------|--------|--------|
 | | | | |
 
+## Energy and Wellness History
+| Date | Energy (1-10) | Disposition/Mood | Triage Event (Tier 2/3) |
+|------|--------------|------------------|-------------------------|
+| | | | |
+
 ## Risk and support
 1. Current risk tier: Green/Amber/Red
-2. Support notes:
-3. Escalation status:
+2. Wellness status: (Stability / Concern / Referral)
+3. Support notes:
+4. Escalation status:

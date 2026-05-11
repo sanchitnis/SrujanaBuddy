@@ -24,5 +24,5 @@ Reference: [references/REVA University.md](../references/REVA%20University.md), 
 
 ## Guardrails
 1. Not a substitute for clinical care.
-2. Red-flag indicators trigger support escalation.
+2. Red-flag indicators (self-harm, suicidal ideation, violence/abuse, functional collapse) trigger immediate support escalation to `wellness-triage-agent`.
 3. Prioritize safety, consent, and student dignity.

@@ -3,6 +3,8 @@
 ## Code Style
 - Prefer minimal, readable edits and preserve existing file structure and tone.
 - Default to Markdown-first changes; most of this repository is specification and workflow docs, not executable code.
+- Use **JSON or YAML** for structured data with repeating fields: module catalogs, question banks, configuration tables, pathway definitions, and any lookup structure a script will parse. Do not embed these as verbose Markdown lists when a structured format is cleaner.
+- Embed `yaml` or `json` fenced code blocks within an `.md` file when data and prose must coexist in a single file. Use standalone `.yaml` / `.json` files when (a) the data exceeds ~15–20 repeating records, (b) it will be consumed by scripts, or (c) separating data from prose significantly aids clarity — then reference the data file from the companion `.md`.
 - For `intake/apps/*.html`, keep the apps dependency-free and offline-capable (no network calls, inline CSS/JS in the same HTML file).
 - When adding scripts, follow the standards in `CONTRIBUTING.md` (Python 3.10+ preferred, stdlib-first, safe defaults, idempotent behavior).
 

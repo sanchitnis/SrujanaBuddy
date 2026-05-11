@@ -1,0 +1,818 @@
+# AI Engineer Module Library
+# Source: references/ai-engineer-pathways.md (prose, pathway sequences, coach notes)
+# For: Career Pathway Coach — load alongside ai-engineer-pathways.md for module-level queries
+# Tier: T0 (pure structured data, no LLM required)
+# Last updated: 2026-05-11
+
+categories:
+  ML-CS: CS Foundations
+  ML-MATH: Mathematics for AI
+  ML-AI: AI/ML Core
+  ML-BUILD: Building & Infrastructure
+  ML-DEEP: Deep Technical
+  ML-HUMAN: Human Skills & Ethics
+  ML-CAREER: Portfolio & Career
+  ML-CYBER: Cybersecurity & AI
+
+modules:
+
+  # ── CS Foundations ─────────────────────────────────────────────────────────
+
+  ML-CS-01:
+    title: Python Fluency
+    category: ML-CS
+    key_concepts:
+      - Variables, functions, classes, file I/O, list comprehensions, error handling
+      - NumPy arrays, pandas DataFrames
+    resources:
+      - title: "Python for Everybody — Coursera (free to audit)"
+        url: https://www.coursera.org/specializations/python
+      - title: Real Python
+        url: https://realpython.com/
+      - title: Exercism Python track
+        url: https://exercism.org/tracks/python
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Solve 10 LeetCode Easy problems in Python; write a pandas data-cleaning script on a real dataset"
+
+  ML-CS-01L:
+    title: Python Lite for Non-Engineers
+    category: ML-CS
+    key_concepts:
+      - Variables, functions, loops
+      - Using AI libraries without deep programming knowledge
+    resources:
+      - title: "AI Python for Beginners — deeplearning.ai (free short course)"
+        url: https://www.deeplearning.ai/short-courses/ai-python-for-beginners/
+    time_estimate: "3–5 days"
+    completion_evidence: "Complete the course; write a short script that calls an LLM API and prints a response"
+
+  ML-CS-02:
+    title: Data Structures & Algorithms
+    category: ML-CS
+    key_concepts:
+      - Big-O analysis
+      - Arrays, linked lists, stacks, queues, hash tables
+      - Trees (BST, heap), graphs (BFS, DFS)
+      - Sorting (merge, quick)
+      - Dynamic programming basics
+    resources:
+      - title: Coding Interview Patterns (book)
+        url: https://geni.us/q7svoz
+      - title: "LeetCode (arrays, trees, graphs tags)"
+        url: https://leetcode.com/
+      - title: "CS50 Harvard (YouTube)"
+        url: https://www.youtube.com/watch?v=iOq5kSKqeR4
+    time_estimate: "4–6 weeks (parallel with other study — 2–3 problems/day)"
+    completion_evidence: "Solve 50 LeetCode problems (Easy: 30, Medium: 20) with Python; implement a BST and a hash table from scratch"
+
+  ML-CS-03:
+    title: Git & GitHub
+    category: ML-CS
+    key_concepts:
+      - Clone, branch, commit, merge, pull request
+      - "GitHub Actions (CI/CD basics)"
+      - GitHub profile README
+    resources:
+      - title: "Learn Git Branching (interactive)"
+        url: https://learngitbranching.js.org/
+      - title: GitHub Skills
+        url: https://skills.github.com/
+    time_estimate: "3–5 days"
+    completion_evidence: "Have a GitHub profile with a README; make one pull request to any open-source project (documentation counts)"
+
+  ML-CS-04:
+    title: Linux / Terminal Basics
+    category: ML-CS
+    key_concepts:
+      - "Navigation (cd, ls, mkdir), file manipulation, grep, pipes"
+      - "Environment variables, SSH"
+      - Virtual environments (venv/conda)
+    resources:
+      - title: "Linux Command Line Basics — LabEx (free)"
+        url: https://labex.io/tutorials/practice-linux-commands-hands-on-labs-398420
+    time_estimate: "2–3 days"
+    completion_evidence: "Set up a Python virtual environment from the command line; write a bash script that automates a repetitive task"
+
+  ML-CS-05:
+    title: Design Patterns
+    category: ML-CS
+    key_concepts:
+      - "Strategy, singleton, factory, observer, decorator, adapter — with Python examples"
+      - SOLID principles
+    resources:
+      - title: Head First Design Patterns (book)
+        url: https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124
+      - title: "Bob Martin SOLID (video)"
+        url: https://www.youtube.com/watch?v=TMuno5RZNeE
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Refactor a personal project to use at least two design patterns; explain SOLID to a peer"
+
+  ML-CS-06:
+    title: Databases & SQL Basics
+    category: ML-CS
+    key_concepts:
+      - "SQL SELECT/JOIN/GROUP BY"
+      - Relational vs. NoSQL tradeoffs
+      - SQLite with Python, basic schema design
+    resources:
+      - title: "Mode Analytics SQL Tutorial (free)"
+        url: https://mode.com/sql-tutorial/
+      - title: SQLite + Python quickstart
+        url: https://docs.python.org/3/library/sqlite3.html
+    time_estimate: "1 week"
+    completion_evidence: "Write 10 SQL queries on a real dataset (e.g. Kaggle); design and query a 3-table schema"
+
+  ML-CS-07:
+    title: Networking Fundamentals
+    category: ML-CS
+    key_concepts:
+      - "TCP/IP, HTTP/HTTPS, DNS, REST APIs, OSI model basics"
+      - SSL/TLS, sockets
+    resources:
+      - title: "Khan Academy — Computers and the Internet"
+        url: https://www.khanacademy.org/computing/code-org/computers-and-the-internet
+      - title: "TCP/IP Explained (YouTube)"
+        url: https://www.youtube.com/watch?v=e5DEVa9eSN0
+    time_estimate: "1 week"
+    completion_evidence: "Explain how an HTTPS request works end-to-end; write a Python script that makes a REST API call and handles errors"
+
+  # ── Mathematics for AI ─────────────────────────────────────────────────────
+
+  ML-MATH-01:
+    title: Linear Algebra for ML
+    category: ML-MATH
+    key_concepts:
+      - "Vectors, matrices, dot product, matrix multiplication"
+      - "Eigenvalues/eigenvectors, SVD, PCA (geometric intuition)"
+      - Orthogonality
+    resources:
+      - title: "Essence of Linear Algebra — 3Blue1Brown (YouTube)"
+        url: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2ZAgoSIREkZe0o
+      - title: "MIT 18.06 Gilbert Strang (OCW)"
+        url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Implement PCA from scratch with NumPy; explain what happens geometrically during matrix multiplication"
+
+  ML-MATH-02:
+    title: Calculus & Optimization
+    category: ML-MATH
+    key_concepts:
+      - "Partial derivatives, gradients, chain rule → backpropagation"
+      - "Gradient descent variants (SGD, Adam)"
+      - Convex vs. non-convex optimization, learning rate scheduling
+    resources:
+      - title: "Khan Academy — Multivariable Calculus"
+        url: https://www.khanacademy.org/math/multivariable-calculus
+      - title: CS231n Optimization Notes
+        url: https://cs231n.github.io/optimization-1/
+    time_estimate: "2 weeks"
+    completion_evidence: "Implement gradient descent on a quadratic function; derive the chain rule for a 2-layer neural network by hand"
+
+  ML-MATH-03:
+    title: Probability & Statistics
+    category: ML-MATH
+    key_concepts:
+      - "Probability distributions (Gaussian, Bernoulli, Categorical)"
+      - "Bayes' theorem, MLE and MAP estimation"
+      - "Hypothesis testing, A/B testing, Central Limit Theorem, confidence intervals"
+    resources:
+      - title: "Khan Academy — Statistics and Probability"
+        url: https://www.khanacademy.org/math/statistics-probability
+      - title: "Think Stats — free book (Allen Downey)"
+        url: https://greenteapress.com/thinkstats2/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Run an A/B test analysis on a real dataset; implement MLE for a Gaussian from scratch"
+
+  ML-MATH-04:
+    title: Information Theory
+    category: ML-MATH
+    key_concepts:
+      - Entropy, cross-entropy loss (why it works for classification)
+      - "KL divergence (used in VAEs, RLHF, distillation)"
+      - Mutual information
+    resources:
+      - title: "Visual Information Theory — Chris Olah (blog)"
+        url: https://colah.github.io/posts/2015-09-Visual-Information/
+    time_estimate: "3–5 days"
+    completion_evidence: "Explain cross-entropy loss intuitively; derive the KL divergence formula and name two places it appears in modern ML"
+
+  # ── AI/ML Core ─────────────────────────────────────────────────────────────
+
+  ML-AI-01:
+    title: Machine Learning Fundamentals
+    category: ML-AI
+    key_concepts:
+      - "Supervised learning (linear regression, logistic regression, SVM, decision trees, gradient boosting)"
+      - "Unsupervised learning (k-means, PCA)"
+      - "Bias-variance tradeoff, regularisation, cross-validation"
+      - Feature engineering, evaluation metrics
+    resources:
+      - title: Hands-On ML with Scikit-Learn (book)
+        url: https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/
+      - title: "Machine Learning Specialisation — Andrew Ng (Coursera, free to audit)"
+        url: https://www.coursera.org/specializations/machine-learning-introduction
+    time_estimate: "3–4 weeks"
+    completion_evidence: "Build an end-to-end ML pipeline (data → model → evaluation) for a real dataset; achieve a Kaggle public score on any beginner competition"
+
+  ML-AI-02:
+    title: Deep Learning Foundations
+    category: ML-AI
+    key_concepts:
+      - "Neural network forward/backward pass, activation functions, loss functions"
+      - "Weight initialisation, batch normalisation, dropout"
+      - "Training techniques (Adam, gradient clipping)"
+      - CNNs, RNNs, LSTMs
+    resources:
+      - title: "Deep Learning Specialisation — Andrew Ng (Coursera)"
+        url: https://www.deeplearning.ai/courses/deep-learning-specialization/
+      - title: "fast.ai Practical Deep Learning (free)"
+        url: https://course.fast.ai/
+      - title: "Deep Learning book — Goodfellow et al. (free online)"
+        url: https://www.deeplearningbook.org/
+    time_estimate: "3–4 weeks"
+    completion_evidence: "Implement a 2-layer neural network with backprop from scratch using NumPy; train a CNN on CIFAR-10 with >80% accuracy"
+
+  ML-AI-03:
+    title: Transformers & Attention
+    category: ML-AI
+    key_concepts:
+      - "Self-attention (Q, K, V, scaled dot-product), multi-head attention"
+      - Positional encoding
+      - "Encoder-only (BERT), decoder-only (GPT), encoder-decoder (T5)"
+      - Residual connections, layer normalisation
+    resources:
+      - title: "Illustrated Transformer — Jay Alammar (blog)"
+        url: https://jalammar.github.io/illustrated-transformer/
+      - title: "Attention Is All You Need — Vaswani et al. 2017 (paper)"
+        url: https://arxiv.org/abs/1706.03762
+      - title: "Neural Networks: Zero to Hero — Karpathy (YouTube)"
+        url: https://karpathy.ai/zero-to-hero.html
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Implement scaled dot-product attention in PyTorch; explain the difference between encoder-only and decoder-only architectures with a use-case example"
+
+  ML-AI-04:
+    title: Large Language Models & Generative AI
+    category: ML-AI
+    key_concepts:
+      - "LLM architecture overview, pre-training objectives, scaling laws"
+      - "Tokenisation, instruction tuning, RLHF, ChatGPT alignment"
+      - "GPT vs. BERT families, context windows, temperature and sampling"
+    resources:
+      - title: "Generative AI with LLMs — Coursera (deeplearning.ai)"
+        url: https://www.deeplearning.ai/courses/generative-ai-with-llms/
+      - title: "HuggingFace NLP Course (free)"
+        url: https://huggingface.co/learn/nlp-course/
+      - title: "LLM Course — Maxime Labonne (free GitHub)"
+        url: https://github.com/mlabonne/llm-course
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Load and query a HuggingFace model; explain RLHF to a non-technical peer; describe how ChatGPT differs from base GPT"
+
+  ML-AI-05:
+    title: Prompting Techniques
+    category: ML-AI
+    key_concepts:
+      - "Zero-shot, few-shot, chain-of-thought (CoT), self-consistency"
+      - "Structured output/JSON mode, function calling/tool use"
+      - System prompts, prompt injection risks
+    resources:
+      - title: "ChatGPT Prompt Engineering for Developers — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/
+      - title: "Building Systems with ChatGPT API — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/
+    time_estimate: "3–5 days"
+    completion_evidence: "Build a chain-of-thought prompt that solves a multi-step reasoning problem; demonstrate function calling with the OpenAI or Anthropic API"
+
+  ML-AI-06:
+    title: RAG — Retrieval-Augmented Generation
+    category: ML-AI
+    key_concepts:
+      - When to use RAG vs. fine-tuning
+      - "Document loading and chunking, embedding models"
+      - "Vector databases (Pinecone, ChromaDB, Weaviate), similarity search"
+      - Re-ranking, evaluation of RAG quality
+    resources:
+      - title: "LangChain: Chat with Your Data — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
+      - title: "Building & Evaluating Advanced RAG — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/
+      - title: "Vector Databases from Embeddings to Applications — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Build a working RAG chatbot over a custom PDF/document set; evaluate retrieval quality with at least 10 test queries"
+
+  ML-AI-07:
+    title: LLM Agents & Agentic Systems
+    category: ML-AI
+    key_concepts:
+      - "The agentic loop (Observe → Think → Act), ReAct pattern, tool use"
+      - "Planning strategies (Plan-and-Execute, Tree of Thought)"
+      - "Memory architectures (in-context, external vector store)"
+      - "Multi-agent orchestration, error recovery, human-in-the-loop"
+    resources:
+      - title: "AI Agents in LangGraph — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/
+      - title: "Multi AI Agent Systems with crewAI — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
+      - title: "Building Effective Agents — Anthropic blog"
+        url: https://www.anthropic.com/research/building-effective-agents
+      - title: "HuggingFace Agents Course (free)"
+        url: https://huggingface.co/learn/agents-course/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Build a 2-tool agent that completes a multi-step task; demonstrate error recovery when a tool fails"
+
+  ML-AI-08:
+    title: "LLM Fine-tuning (LoRA, QLoRA, RLHF)"
+    category: ML-AI
+    key_concepts:
+      - "When to fine-tune vs. RAG, supervised fine-tuning (SFT)"
+      - Instruction tuning dataset formats
+      - "LoRA (low-rank adapters), QLoRA (quantised LoRA for consumer GPUs)"
+      - "DPO as RLHF alternative, evaluation after fine-tuning"
+    resources:
+      - title: "Finetuning Large Language Models — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/finetuning-large-language-models/
+      - title: LlamaFactory (GitHub)
+        url: https://github.com/hiyouga/LLaMA-Factory
+      - title: Unsloth (GitHub)
+        url: https://github.com/unslothai/unsloth
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Fine-tune a small open-source LLM (e.g. Llama or Mistral 7B) using QLoRA on a custom dataset of at least 500 examples; compare outputs before and after fine-tuning"
+
+  ML-AI-09:
+    title: LLM Evaluation
+    category: ML-AI
+    key_concepts:
+      - "Golden test sets, automatic metrics (BLEU, ROUGE, METEOR — limitations)"
+      - "LLM-as-judge, RAGAS for RAG evaluation"
+      - "Human evaluation design, model cards"
+      - Hallucination detection, task completion rate
+    resources:
+      - title: "Evaluating and Debugging Generative AI — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/evaluating-debugging-generative-ai/
+      - title: "Building & Evaluating Advanced RAG — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/
+    time_estimate: "1 week"
+    completion_evidence: "Build an evaluation harness with at least 20 test cases for an LLM feature; use an LLM-as-judge to score outputs automatically"
+
+  # ── Building & Infrastructure ──────────────────────────────────────────────
+
+  ML-BUILD-01:
+    title: AI-native SDLC & Spec-Driven Development
+    category: ML-BUILD
+    key_concepts:
+      - "Spec-driven development (write the spec before the code)"
+      - "AI-native SDLC stages (Problem → Spec → AI-assisted design → AI-assisted implementation → Testing → Iteration)"
+      - TDD with AI, version control workflows
+    resources:
+      - title: "Specification by Example — Martin Fowler"
+        url: https://martinfowler.com/bliki/SpecificationByExample.html
+      - title: How to Use GitHub Copilot Effectively
+        url: https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
+    time_estimate: "3–5 days"
+    completion_evidence: "Write a complete spec for a small project before writing any code; demonstrate a working feature built spec-first with AI assistance"
+
+  ML-BUILD-02:
+    title: AI Coding Tools
+    category: ML-BUILD
+    key_concepts:
+      - "Effective use of GitHub Copilot, Cursor, Claude Code"
+      - "Prompt patterns, spec-driven prompting"
+      - "Reviewing AI-generated code critically, knowing when to override AI suggestions"
+    resources:
+      - title: "Claude Code Best Practices — Anthropic blog"
+        url: https://www.anthropic.com/engineering/claude-code-best-practices
+      - title: "Cursor AI Editor — Getting Started"
+        url: https://www.cursor.com/docs
+      - title: GitHub Copilot Quickstart
+        url: https://docs.github.com/en/copilot/quickstart
+    time_estimate: "3–5 days (ongoing skill)"
+    completion_evidence: "Build a small feature using an AI coding tool from a written spec; annotate 3 cases where you corrected AI-generated code and explain why"
+
+  ML-BUILD-03:
+    title: Full-Stack Basics for AI Apps
+    category: ML-BUILD
+    key_concepts:
+      - "FastAPI (build a REST ML inference endpoint)"
+      - "Streamlit / Gradio (rapid ML demo UIs)"
+      - SQLite/PostgreSQL basics for storing model outputs
+      - Docker for packaging
+    resources:
+      - title: FastAPI tutorial
+        url: https://fastapi.tiangolo.com/tutorial/
+      - title: "Streamlit docs — quickstart"
+        url: https://docs.streamlit.io/get-started
+      - title: Gradio quickstart
+        url: https://www.gradio.app/guides/quickstart
+      - title: "Docker for Developers (YouTube)"
+        url: https://www.youtube.com/watch?v=fqMOX6JJhGo
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Deploy an ML model behind a FastAPI endpoint with a Streamlit UI; Dockerise the project"
+
+  ML-BUILD-04:
+    title: Product Engineering with AI
+    category: ML-BUILD
+    key_concepts:
+      - "Product thinking (user needs → spec → shipped feature)"
+      - "AI feature design (confidence scores, fallbacks, graceful degradation, streaming responses)"
+      - A/B testing AI features, evaluation before launch
+      - "LLM API integration (OpenAI, Anthropic, Gemini APIs), structured outputs, function calling"
+    resources:
+      - title: "Shape Up — Basecamp (free)"
+        url: https://basecamp.com/shapeup
+      - title: OpenAI API Quickstart
+        url: https://platform.openai.com/docs/quickstart
+      - title: Anthropic API Docs
+        url: https://docs.anthropic.com/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Build one AI-powered product feature end-to-end (user need → spec → shipped) with at least one graceful fallback for model failure"
+
+  ML-BUILD-05:
+    title: Systems Architecture for AI Products
+    category: ML-BUILD
+    key_concepts:
+      - "Architectural thinking, software architecture patterns (monolith, microservices, event-driven)"
+      - "AI system design (recommendation engine, semantic search, LLM chatbot at scale)"
+      - "Designing for observability, idempotency in LLM pipelines"
+      - Schema design for AI-generated content
+    resources:
+      - title: System Design Primer (GitHub)
+        url: https://github.com/donnemartin/system-design-primer
+      - title: "Building LLM Applications for Production — Chip Huyen"
+        url: https://huyenchip.com/2023/04/11/llm-engineering.html
+      - title: "Emerging Architectures for LLM Applications — a16z"
+        url: https://a16z.com/emerging-architectures-for-llm-applications/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Design (on paper/diagram) two AI system architectures: one RAG chatbot at scale, one recommendation engine; explain key tradeoffs"
+
+  ML-BUILD-06:
+    title: Cloud Fundamentals
+    category: ML-BUILD
+    key_concepts:
+      - "Pick one provider (AWS/GCP/Azure)"
+      - "Compute (VMs, containers, serverless), storage (object storage, data lakes)"
+      - "Networking basics, IAM and least-privilege, pricing models (on-demand, spot)"
+    resources:
+      - title: "AWS Cloud Practitioner Essentials (free, official)"
+        url: https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/
+      - title: "GCP Fundamentals — Coursera"
+        url: https://www.coursera.org/learn/gcp-fundamentals
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Deploy a FastAPI ML app to one cloud provider; set up an IAM role with least-privilege access"
+
+  ML-BUILD-07:
+    title: Data Engineering on the Cloud
+    category: ML-BUILD
+    key_concepts:
+      - "Data pipelines (ingest → transform → load)"
+      - dbt for data transformation, Apache Airflow for orchestration
+      - Kafka basics
+      - Data lake vs. data warehouse vs. lakehouse
+      - "Cloud-specific tools (S3/Glue/BigQuery/Dataflow)"
+    resources:
+      - title: "Data Engineering Zoomcamp — DataTalks.Club (free)"
+        url: https://github.com/DataTalksClub/data-engineering-zoomcamp
+      - title: "Fundamentals of Data Engineering — Reis & Housley (book)"
+        url: https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Build a data pipeline that ingests a public dataset, transforms it with dbt, and loads it into a cloud data warehouse; add a scheduled Airflow DAG"
+
+  ML-BUILD-08:
+    title: MLOps & AI Infrastructure
+    category: ML-BUILD
+    key_concepts:
+      - "ML pipelines (data → training → evaluation → deployment as reproducible pipeline)"
+      - "Experiment tracking (MLflow, Weights & Biases)"
+      - "Model serving (BentoML, TorchServe, Ray Serve)"
+      - "Inference optimisation (quantisation, batching)"
+      - "Model monitoring (drift detection), feature stores, CI/CD for ML"
+    resources:
+      - title: "MLOps Zoomcamp — DataTalks.Club (free)"
+        url: https://github.com/DataTalksClub/mlops-zoomcamp
+      - title: MLflow docs
+        url: https://mlflow.org/docs/latest/index.html
+      - title: Weights & Biases docs
+        url: https://docs.wandb.ai/
+      - title: "Designing ML Systems — Chip Huyen (book)"
+        url: https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Set up an MLflow experiment tracking run for a training job; deploy a model to a REST endpoint with basic monitoring (request logging + latency tracking)"
+
+  ML-BUILD-09:
+    title: Vector Databases & Embeddings
+    category: ML-BUILD
+    key_concepts:
+      - What embeddings are, cosine similarity
+      - "FAISS, Pinecone, ChromaDB, Weaviate — comparison"
+      - "Indexing strategies (HNSW, IVF), hybrid search (dense + sparse)"
+      - Practical limits of vector search
+    resources:
+      - title: "Vector Databases Explained — Pinecone"
+        url: https://www.pinecone.io/learn/vector-database/
+      - title: "Understanding and Applying Text Embeddings — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/google-cloud-vertex-ai/
+    time_estimate: "3–5 days"
+    completion_evidence: "Build a semantic search engine over a document collection using any vector database; benchmark retrieval quality with 10 sample queries"
+
+  # ── Deep Technical ─────────────────────────────────────────────────────────
+
+  ML-DEEP-01:
+    title: Knowledge Distillation
+    category: ML-DEEP
+    key_concepts:
+      - "Response distillation (train student on teacher outputs)"
+      - "Feature distillation (match internal representations)"
+      - "LoRA-based distillation, hard vs. soft labels"
+      - KL divergence as distillation loss, speculative decoding, self-distillation
+    resources:
+      - title: "Distilling Step-by-Step paper (Hsieh et al., 2023)"
+        url: https://arxiv.org/abs/2212.10535
+      - title: Orca paper (Microsoft)
+        url: https://arxiv.org/abs/2306.02707
+      - title: "HuggingFace TRL — KTO and DPO trainers"
+        url: https://huggingface.co/docs/trl/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Run a response-distillation experiment: use a large model to generate training data, then fine-tune a smaller model on it; compare outputs"
+
+  ML-DEEP-02:
+    title: Data Collection & Curation
+    category: ML-DEEP
+    key_concepts:
+      - "Web scraping at scale (Common Crawl, Scrapy)"
+      - "Crowdsourcing (Scale AI, Appen)"
+      - Programmatic labelling (Snorkel weak supervision)
+      - "Deduplication (MinHash/LSH, semantic dedup)"
+      - "Quality filtering (perplexity, classifier-based)"
+      - Toxicity and PII filtering, data mixture and weighting, data cards
+    resources:
+      - title: "Argilla — open-source annotation platform"
+        url: https://argilla.io/
+      - title: HuggingFace Datasets library
+        url: https://huggingface.co/docs/datasets/
+      - title: DataComp benchmark
+        url: https://www.datacomp.ai/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Curate a dataset of at least 500 examples with quality filtering applied; write a data card documenting source, filtering criteria, and known biases"
+
+  ML-DEEP-03:
+    title: Synthetic Data Generation
+    category: ML-DEEP
+    key_concepts:
+      - "LLM-based generation (self-instruct, persona-driven, backtranslation)"
+      - "Constitutional AI (CAI), code + test generation"
+      - Reward model filtering, diversity sampling, human spot-checking
+    resources:
+      - title: "Self-Instruct paper (Wang et al., 2022)"
+        url: https://arxiv.org/abs/2212.09561
+      - title: "Constitutional AI paper (Anthropic, 2022)"
+        url: https://arxiv.org/abs/2212.08073
+    time_estimate: "1 week"
+    completion_evidence: "Generate a synthetic instruction dataset of at least 200 examples using an LLM; apply one quality filtering step; demonstrate diversity using embedding visualisation"
+
+  ML-DEEP-04:
+    title: Multi-Agent AI Systems
+    category: ML-DEEP
+    key_concepts:
+      - "Orchestrator-subagent patterns, peer collaboration between agents"
+      - Parallelism for independent subtasks
+      - "Structured communication protocols, error recovery in multi-agent pipelines"
+      - Evaluation at the task level
+    resources:
+      - title: LangGraph documentation
+        url: https://langchain-ai.github.io/langgraph/
+      - title: "AutoGen — Microsoft"
+        url: https://microsoft.github.io/autogen/
+      - title: "Multi AI Agent Systems with crewAI — deeplearning.ai (free)"
+        url: https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Build a 3-agent system where a supervisor orchestrates two specialist agents; demonstrate the system completing a multi-step research-and-synthesis task"
+
+  # ── Human Skills & Ethics ──────────────────────────────────────────────────
+
+  ML-HUMAN-01:
+    title: Communication & Storytelling
+    category: ML-HUMAN
+    key_concepts:
+      - "Pyramid Principle (structured communication)"
+      - Technical writing for engineers
+      - Presenting ML results to non-technical stakeholders
+      - Public speaking basics
+    resources:
+      - title: "How to Speak — MIT Patrick Winston (YouTube)"
+        url: https://www.youtube.com/watch?v=Unzc731iCUY
+      - title: "Technical Writing for Engineers — Google (free)"
+        url: https://developers.google.com/tech-writing
+    time_estimate: "Ongoing (1 week to baseline, then practice)"
+    completion_evidence: "Give a 5-minute presentation of a technical project to a non-technical audience; write a project README that a first-year student can follow"
+
+  ML-HUMAN-02:
+    title: Critical Thinking & Problem Framing
+    category: ML-HUMAN
+    key_concepts:
+      - First principles thinking
+      - "Cognitive biases in technical decision-making (Kahneman System 1 vs. 2)"
+      - OODA loop, problem framing before solution generation
+      - "Adaptive vs. technical challenges (Heifetz)"
+    resources:
+      - title: "Thinking, Fast and Slow — Daniel Kahneman (book)"
+        url: https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555
+      - title: "First Principles Thinking — Wait But Why"
+        url: https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html
+    time_estimate: Ongoing
+    completion_evidence: "Write a one-page \"problem brief\" for a real challenge — articulating root cause, assumptions, and constraints before proposing any solution"
+
+  ML-HUMAN-03:
+    title: Ethics & Responsibility in AI
+    category: ML-HUMAN
+    key_concepts:
+      - Bias and fairness in ML, AI harms and societal impact
+      - "Responsible AI practices, the alignment problem (basic)"
+      - "OWASP Top 10 for LLMs (prompt injection, data poisoning)"
+      - GDPR basics for ML engineers
+    resources:
+      - title: "AI Ethics — fast.ai"
+        url: https://ethics.fast.ai/
+      - title: "Weapons of Math Destruction — Cathy O'Neil (book)"
+        url: https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815
+      - title: "Responsible AI Practices — Google"
+        url: https://ai.google/responsibility/responsible-ai-practices/
+    time_estimate: "3–5 days"
+    completion_evidence: "Conduct a bias audit on a public ML model (e.g. a sentiment classifier); write a 1-page reflection on one real-world AI harm case"
+
+  ML-HUMAN-04:
+    title: Collaboration & Team Engineering
+    category: ML-HUMAN
+    key_concepts:
+      - "Psychological safety (Google Project Aristotle)"
+      - "Giving and receiving feedback (Radical Candor)"
+      - Non-violent communication, the five dysfunctions of a team
+      - Code review etiquette
+    resources:
+      - title: "Google Project Aristotle — rework.withgoogle.com"
+        url: https://rework.withgoogle.com/print/guides/5721312655835136/
+      - title: "Radical Candor — Kim Scott"
+        url: https://www.radicalcandor.com/
+    time_estimate: Ongoing
+    completion_evidence: "Conduct or participate in a structured code review; document a retrospective from a team project"
+
+  # ── Portfolio & Career ─────────────────────────────────────────────────────
+
+  ML-CAREER-01:
+    title: GitHub Portfolio & Open Source
+    category: ML-CAREER
+    key_concepts:
+      - "Profile README, pinned repositories (3–5 strong projects)"
+      - Consistent commit history
+      - "Open-source contribution (even documentation)"
+      - README quality
+    resources:
+      - title: "How to Build an AI Portfolio — Towards Data Science"
+        url: https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c
+      - title: How to Contribute to Open Source
+        url: https://opensource.guide/how-to-contribute/
+    time_estimate: "Ongoing (set up in 1 day, maintain always)"
+    completion_evidence: "GitHub profile with at least 3 pinned projects; 1 merged pull request to any public repo"
+
+  ML-CAREER-02:
+    title: Resume & LinkedIn for AI Roles
+    category: ML-CAREER
+    key_concepts:
+      - Lead with projects not job titles
+      - "Quantify ML impact (e.g. \"Reduced latency by 40% via INT8 quantisation\")"
+      - Show your stack explicitly
+      - "AI-specific resume tips (Kaggle rankings, HuggingFace models, open-source contributions)"
+      - LinkedIn optimisation
+    resources:
+      - title: "Tech Interview Handbook — Resume Guide"
+        url: https://www.techinterviewhandbook.org/resume/guide
+    time_estimate: "3–5 days (then update after every project)"
+    completion_evidence: "A tailored resume reviewed by at least one peer or mentor; LinkedIn profile with an \"About\" section that includes AI tech stack"
+
+  ML-CAREER-03:
+    title: Coding Interview Preparation
+    category: ML-CAREER
+    key_concepts:
+      - "LeetCode patterns (sliding window, two pointers, BFS/DFS, DP)"
+      - Time and space complexity analysis
+      - Communicating approach before coding
+      - Python idioms for interviews
+    resources:
+      - title: LeetCode
+        url: https://leetcode.com/
+      - title: Coding Interview Patterns book
+        url: https://geni.us/q7svoz
+      - title: "NeetCode patterns (YouTube)"
+        url: https://www.youtube.com/@NeetCode
+    time_estimate: "4–8 weeks (2–3 problems/day)"
+    completion_evidence: "Solve 100 LeetCode problems (Easy: 50, Medium: 40, Hard: 10); complete 3 mock interviews (Pramp or similar)"
+
+  ML-CAREER-04:
+    title: AI System Design Interview Prep
+    category: ML-CAREER
+    key_concepts:
+      - "ML system design framework (Problem scoping → Data → Modelling → Evaluation → Deployment → Monitoring)"
+      - "Classic design problems (recommendation engine, semantic search, LLM chatbot at scale, fraud detection)"
+      - "ML-specific tradeoffs (latency vs. accuracy, cost vs. quality)"
+    resources:
+      - title: "Designing Machine Learning Systems — Chip Huyen (book)"
+        url: https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/
+      - title: "ML System Design Template — Chip Huyen (free)"
+        url: https://huyenchip.com/machine-learning-systems-design/toc.html
+      - title: Machine Learning System Design Interview book
+        url: https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127
+    time_estimate: "2–4 weeks"
+    completion_evidence: "Design 3 ML systems on paper using the framework; present one design in a mock system design interview setting"
+
+  ML-CAREER-05:
+    title: Kaggle & ML Competitions
+    category: ML-CAREER
+    key_concepts:
+      - Competition lifecycle
+      - "Feature engineering under a leaderboard, Kaggle notebooks"
+      - Ensemble methods, reading winning solutions
+      - Community learning
+    resources:
+      - title: Kaggle
+        url: https://www.kaggle.com/
+      - title: How to Win a Kaggle Competition (blog)
+        url: https://towardsdatascience.com/how-to-win-a-kaggle-competition-8a7dce0ae1ef
+    time_estimate: "Ongoing (enter at least 1 competition per semester)"
+    completion_evidence: "At least one Kaggle competition submission with a public leaderboard score; one Kaggle notebook published with at least 10 upvotes"
+
+  ML-CAREER-06:
+    title: Showcase Project — Build & Deploy
+    category: ML-CAREER
+    key_concepts:
+      - "End-to-end project: data → model/system → API → UI → deployed and publicly accessible"
+      - Clean README, architecture diagram, honest limitations section
+    resources:
+      - title: "HuggingFace Spaces — host demos for free"
+        url: https://huggingface.co/spaces
+    time_estimate: "2–4 weeks"
+    completion_evidence: "One deployed, publicly accessible AI project on HuggingFace Spaces or a cloud provider; GitHub repo with README, architecture diagram, and demo link"
+
+  # ── Cybersecurity & AI ─────────────────────────────────────────────────────
+
+  ML-CYBER-01:
+    title: Computer Security Fundamentals
+    category: ML-CYBER
+    key_concepts:
+      - "Threat models, attack surfaces, OWASP Top 10"
+      - "Network security (firewalls, VPNs, TLS)"
+      - "OS-level security (privilege separation, sandboxing)"
+      - "Common vulnerabilities (SQL injection, XSS, buffer overflow)"
+      - Security mindset
+    resources:
+      - title: "MIT 6.858 Computer Systems Security (YouTube playlist)"
+        url: https://www.youtube.com/watch?v=GqmQg-cszw4&index=1&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh
+      - title: OWASP Top 10
+        url: https://owasp.org/www-project-top-ten/
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Perform a basic OWASP Top 10 security review on a web application; write a 1-page threat model for a simple AI system"
+
+  ML-CYBER-02:
+    title: ML for Security
+    category: ML-CYBER
+    key_concepts:
+      - "Anomaly detection (isolation forest, autoencoders)"
+      - Intrusion detection systems (IDS) with ML
+      - "Fraud detection pipelines, network traffic classification"
+      - Malware classification with embeddings, false positive management
+    resources:
+      - title: Anomaly Detection with Scikit-Learn
+        url: https://scikit-learn.org/stable/modules/outlier_detection.html
+      - title: "Fraud Detection datasets — Kaggle"
+        url: https://www.kaggle.com/search?q=fraud+detection
+    time_estimate: "2–3 weeks"
+    completion_evidence: "Build a fraud or anomaly detection model on a public dataset (e.g. Kaggle Credit Card Fraud); achieve >90% recall at a meaningful precision; document the false positive tradeoff"
+
+  ML-CYBER-03:
+    title: Adversarial ML & Robustness
+    category: ML-CYBER
+    key_concepts:
+      - "Adversarial examples (FGSM, PGD attacks), model robustness evaluation"
+      - Certified defences
+      - "Data poisoning attacks, model stealing/inversion attacks"
+      - RobustBench benchmarks
+    resources:
+      - title: "Adversarial Robustness Toolbox (IBM, GitHub)"
+        url: https://github.com/Trusted-AI/adversarial-robustness-toolbox
+      - title: CleverHans library
+        url: https://github.com/cleverhans-lab/cleverhans
+    time_estimate: "1–2 weeks"
+    completion_evidence: "Implement an FGSM attack on a trained image classifier; demonstrate that adversarial training improves robustness; present results as a table"
+
+  ML-CYBER-04:
+    title: LLM Security & Prompt Injection
+    category: ML-CYBER
+    key_concepts:
+      - "Prompt injection (direct and indirect), jailbreaking techniques"
+      - "LLM vulnerabilities (OWASP Top 10 for LLMs)"
+      - Insecure output handling, data exfiltration via LLMs
+      - "Mitigation strategies (input validation, output filtering, privilege separation in agentic systems)"
+    resources:
+      - title: OWASP Top 10 for Large Language Model Applications
+        url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+      - title: "LLM Security — learnprompting.org"
+        url: https://learnprompting.org/docs/prompt_hacking/intro
+    time_estimate: "1 week"
+    completion_evidence: "Demonstrate a prompt injection attack on a simple LLM application (in a controlled, ethical setting); implement and document two mitigations; write a 1-page security brief for the application"

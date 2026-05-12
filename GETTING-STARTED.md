@@ -6,9 +6,29 @@ SrujanaBuddy can be used in three ways based on the technology surface you need.
 
 Use this when you want the main coaching behavior (`SKILL.md`, `agents/`, `references/`, `gtd/`).
 
-```bash
-git clone https://github.com/<owner>/SrujanaBuddy.git
-cd SrujanaBuddy
+### Windows bootstrap flow
+
+Prerequisites:
+- PowerShell 6 or higher
+- An active Copilot subscription
+
+1. Download the release ZIP with PowerShell:
+
+```powershell
+Invoke-WebRequest -Uri "<RELEASE-ZIP-URL>" -OutFile "$env:TEMP\SrujanaBuddy.zip"
+```
+
+2. Extract it to a folder you can find again:
+
+```powershell
+Expand-Archive -Path "$env:TEMP\SrujanaBuddy.zip" -DestinationPath "$HOME\Downloads\SrujanaBuddy" -Force
+```
+
+3. Open PowerShell in the extracted folder and run:
+
+```powershell
+Set-Location "$HOME\Downloads\SrujanaBuddy"
+.\bootstrap-core-windows.ps1
 ```
 
 Then load `SKILL.md` into your AI environment and start with prompts like:
@@ -17,6 +37,13 @@ Then load `SKILL.md` into your AI environment and start with prompts like:
 - `Help me prepare for exams`
 
 No build step is required for core usage.
+
+### If you already cloned the repo
+
+```powershell
+cd SrujanaBuddy
+.\bootstrap-core-windows.ps1
+```
 
 ## 2) Intake apps (offline HTML apps)
 

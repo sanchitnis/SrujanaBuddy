@@ -35,7 +35,7 @@ These commitments should be interpreted in line with [references/REVA University
 
 ## How to use
 
-1. Load [SKILL.md](SKILL.md) into your AI environment as the master orchestration file.
+1. Load [SKILL.md](SKILL.md) into your AI environment as the always-loaded routing file. Load [SKILL-context.md](SKILL-context.md) on demand for full coaching philosophy and guardrails.
 2. Start a session with a direct request, for example:
    - "Plan my day."
    - "Run weekly review."
@@ -45,7 +45,9 @@ These commitments should be interpreted in line with [references/REVA University
 
 ## Useful files
 
-1. [SKILL.md](SKILL.md): master coaching behavior and routing.
+1. [SKILL.md](SKILL.md): always-loaded routing core (triggers, agent table, session types, reference load map).
+2. [SKILL-context.md](SKILL-context.md): companion coaching philosophy (load on demand).
+3. [SKILL-legacy.md](SKILL-legacy.md): monolithic legacy version (reference only).
 2. [COACHING-SESSION-WORKFLOW.md](COACHING-SESSION-WORKFLOW.md): session types and outcomes.
 3. [gtd/GTD-GUIDE.md](gtd/GTD-GUIDE.md): student execution system.
 4. [intake/intake-protocol.md](intake/intake-protocol.md): onboarding flow.

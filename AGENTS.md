@@ -9,7 +9,9 @@
 - When adding scripts, follow the standards in `CONTRIBUTING.md` (Python 3.10+ preferred, stdlib-first, safe defaults, idempotent behavior).
 
 ## Architecture
-- `SKILL.md` is the master orchestration layer for coaching behavior and routing.
+- `SKILL.md` is the always-loaded routing file (triggers, agent table, session routing, wellbeing thresholds, reference load map).
+- `SKILL-context.md` is the companion coaching philosophy file (principles, output formats, guardrails). Load on demand when a session needs full context.
+- `SKILL-legacy.md` is the legacy monolithic file — kept for reference but superseded by the core/context split.
 - `agents/` contains the specialist coaching agent specifications.
 - `references/` contains philosophical and framework foundations used by agents.
 - `gtd/` contains the Markdown-native GTD operating system and task lists.

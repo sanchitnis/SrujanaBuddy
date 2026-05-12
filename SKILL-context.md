@@ -123,6 +123,36 @@ Daily profile checklist:
 5. One dopamine risk and one stabilizing counter-move.
 6. New insight or pattern signal.
 
+## Tone and Voice
+
+**Default register: Bangalore English with Kannada flavour.**
+
+This is the repo-wide tone for all student-facing coaching content — sessions, prompts, check-ins, challenge cards, anti-drift messages, and onboarding flows.
+
+### Core vocabulary and cadence
+- Use Bangalore-English naturally: "da", "yaar", "guru", "machcha", "no?", "only", "itself", "what to do"
+- Kannada flavour words: "seri" (okay/got it), "correct-aa?" (is that right?), "shuru maadu" (let's begin), "ond nimisha" (one moment), "thumba" (very/a lot), "bekilla" (not needed), "hogbidi" (let it go / move on)
+- Warmth first: peer energy, not teacher energy
+- Humor is welcome; never at the student's expense
+- Short punchy sentences over long elaborate ones
+- Celebrate small wins loudly: "Aye, that's the move da!"
+- Challenge with affection: "Come on yaar, you know this — think again"
+
+### When to switch register
+| Context | Register |
+|---------|----------|
+| Student coaching sessions | Bangalore English + Kannada flavour |
+| Escalation messages to faculty | Professional, formal English |
+| System/config YAML frontmatter | Neutral technical English |
+| References and philosophy docs | Existing tone preserved (do not retrofit) |
+
+### What to avoid
+- Forcing flavour into every single sentence (feels artificial)
+- Mixing formal and casual in the same paragraph
+- Using Kannada words that students from other states may not know without context — if introducing one, pair it with the meaning once
+
+---
+
 ## Output Format Standard
 
 For most coaching sessions, end with:

@@ -17,7 +17,7 @@
 | Founding Chancellor | Dr. P. Shyama Raju |
 | Primary Audience | All REVA undergraduate and postgraduate students |
 | Orchestration Layer | `SKILL.md` |
-| Primary Spec | `REVA-STUDENT-SYSTEM-SPEC-v1.4.md` |
+| Primary Spec | `REVA-STUDENT-SYSTEM-SPEC.md` |
 | License | MIT (see `LICENSE`) |
 
 ---
@@ -27,7 +27,7 @@
 | File | Type | Purpose | Status |
 |------|------|---------|--------|
 | `SKILL.md` | Orchestration | Master coaching intelligence layer — session routing, agent selection, philosophy anchors | ✅ Active |
-| `REVA-STUDENT-SYSTEM-SPEC-v1.4.md` | Spec | Primary requirements specification — Panchakosha model, 18-agent system, acceptance criteria | ✅ Active |
+| `REVA-STUDENT-SYSTEM-SPEC.md` | Spec | Primary requirements specification — Panchakosha model, 18-agent system, acceptance criteria | ✅ Active |
 | `README.md` | Documentation | Project landing page with Quick Start for all three audiences | ✅ Active |
 | `MANIFEST.md` | Registry | This file — complete system catalogue | ✅ Active |
 | `AGENTS.md` | Convention | Project guidelines, code style, build and test commands | ✅ Active |
@@ -35,16 +35,16 @@
 | `CONTRIBUTORS.md` | Attribution | Team, domain experts, philosophical sources | ✅ Active |
 | `CHANGELOG.md` | History | Version history and change documentation | ✅ Active |
 | `COACHING-SESSION-WORKFLOW.md` | Workflow | Step-by-step coaching session protocol | ✅ Active |
-| `REVA-IMPLEMENTATION-TRACKER-v1.4.md` | Tracker | Implementation progress across all system components | ✅ Active |
-| `REVA-METRICS-TRACKER-v1.4.md` | Tracker | Coaching outcome metrics and KPI tracking | ✅ Active |
-| `REVA-ACCEPTANCE-EVIDENCE-v1.4.md` | Tracker | Acceptance criteria evidence log | ✅ Active |
+| `REVA-IMPLEMENTATION-TRACKER.md` | Tracker | Implementation progress across all system components | ✅ Active |
+| `REVA-METRICS-TRACKER.md` | Tracker | Coaching outcome metrics and KPI tracking | ✅ Active |
+| `REVA-ACCEPTANCE-EVIDENCE.md` | Tracker | Acceptance criteria evidence log | ✅ Active |
 | `LICENSE` | Legal | MIT License with frameworks attribution | ✅ Active |
 
 ---
 
 ## 3. Agent Registry
 
-Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SPEC-v1.4.md`.
+Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SPEC.md`.
 
 ### Group A — Academic Track
 
@@ -52,8 +52,8 @@ Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SP
 |-------|------|---------|
 | Academic Learning Coach | `agents/academic-learning-coach.md` | Study strategies, learning design, metacognition |
 | Academic History Agent | `agents/academic-history-agent.md` | Records, transcripts, academic trajectory analysis |
-| Course Coach (template) | `agents/course-coach-template.md` | Generic template for subject-specific coaches |
-| Course Coach Instances | `agents/course-coaches/instances/` | Per-subject deployed instances |
+| Course Buddy (template) | `agents/course-buddy-template.md` | Generic template for subject-specific coaches |
+| Course Buddy Instances | `agents/course-buddyes/instances/` | Per-subject deployed instances |
 
 ### Group B — Career and Enterprise
 

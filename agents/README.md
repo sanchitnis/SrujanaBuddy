@@ -12,7 +12,7 @@ The master routing logic in SKILL.md selects one or more agents per session type
 | Agent file | Domain |
 |-----------|--------|
 | academic-learning-coach.md | Learning strategy and mastery |
-| course-coach-template.md | Course-specific Socratic tutoring template |
+| course-buddy-template.md | Course-specific Socratic tutoring template |
 | assessment-competition-coach.md | Exams, vivas, competitions, hackathons |
 | accountability-partner.md | Time execution and commitment tracking |
 | inner-mastery-coach.md | Emotional regulation and soft-skill growth |
@@ -34,7 +34,7 @@ The following agent is internal infrastructure used by the core team, not by stu
 | Agent file | Domain |
 |-----------|--------|
 | [../eval/eval-agent.md](../eval/eval-agent.md) | Persona simulation, session audit, feedback synthesis, improvement backlog |
-| [course-coach-builder.md](course-coach-builder.md) | Build, refresh, and audit AI-native knowledge wikis and workbooks per course (faculty-facing; not student-facing) |
+| [course-buddy-builder.md](course-buddy-builder.md) | Build, refresh, and audit AI-native knowledge wikis and workbooks per course (faculty-facing; not student-facing) |
 
 See [`eval/README.md`](../eval/README.md) for the full evaluation and continuous improvement framework.
 

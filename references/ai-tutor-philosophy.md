@@ -68,7 +68,7 @@ The REVA extension is built on Dr. Shyama Raju's directive: **"Educate to Enterp
 - Non-STEM courses: markdown cells are pre-structured prompts; student fills analysis.
 - The workbook is never static. The Refresh pipeline updates practice problems from new quiz generations.
 
-### The Course Coach Skill (Socratic tutor)
+### The Course Buddy Skill (Socratic tutor)
 
 - Generated from the course descriptor using the Socratic template.
 - Pre-populated with the concept dependency map extracted from the NotebookLM mind map.
@@ -103,7 +103,7 @@ The REVA extension is built on Dr. Shyama Raju's directive: **"Educate to Enterp
 
 ## Part 6 — Technology Implementation Hierarchy (System-wide)
 
-This section governs technology choices across the **entire SrujanaBuddy system** — not only the Course Coach Builder, but every tool, script, app, and integration.
+This section governs technology choices across the **entire SrujanaBuddy system** — not only the Course Buddy Builder, but every tool, script, app, and integration.
 
 The guiding principle: **prefer the simplest tier that achieves the goal**. Move to a higher tier only when a lower tier genuinely cannot do the job.
 
@@ -145,4 +145,4 @@ Example: the opportunity radar at T2 surfaces raw RSS articles; at T3 it also su
 
 ---
 
-*This philosophy governs the design and maintenance of the entire SrujanaBuddy system — knowledge wikis, workbooks, coaching agents, intake apps, and automation scripts. See [tools/course-coach-builder/README.md](../tools/course-coach-builder/README.md) for the Course Coach Builder implementation.*
+*This philosophy governs the design and maintenance of the entire SrujanaBuddy system — knowledge wikis, workbooks, coaching agents, intake apps, and automation scripts. See [tools/course-buddy-builder/README.md](../tools/course-buddy-builder/README.md) for the Course Buddy Builder implementation.*

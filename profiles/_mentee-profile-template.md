@@ -34,7 +34,7 @@
 ## Coaching plan
 1. Primary coach route:
 2. Session type for next 3 sessions:
-3. Course Coaches assigned:
+3. Course Buddyes assigned:
 
 ## GCS Project Track
 
@@ -103,6 +103,68 @@
 | Date | Effort (1-10) | Coach flag (Y/N) | Faculty escalation raised (Y/N) |
 |------|--------------|------------------|----------------------------------|
 | | | | |
+
+---
+
+## GCS Gamification Analytics
+
+> Populate this section only if the student is enrolled in Grand Challenge Studio (GCS).
+> Coach builds this progressively across sessions. Student sees a pentagon radar chart of their Enterprising Ability Score.
+
+### Learner Profile
+- **Srujana Stage**: 3-creation
+- **Current Week**: (e.g. 8 / 14)
+- **Enterprising Ability Score**: (e.g. 72 / 100)
+
+### Rubric Mastery Progression
+| Rubric | Level | Evidence | Week unlocked |
+|--------|-------|----------|---------------|
+| Evidence of Pivot | novice / intermediate / advanced | [E.g., "Pivoted Week 3, clear logic"] | |
+| Investigation Depth | novice / intermediate / advanced | [E.g., "12 interviews, 6 data sources"] | |
+| Collaboration | novice / intermediate / advanced | [E.g., "Resolved team conflict, Week 6"] | |
+| Final Prototype | novice / intermediate / advanced | [E.g., "Core features working"] | |
+| Reflection | novice / intermediate / advanced | [E.g., "Learning to listen"] | |
+
+### Sprint Level & Milestones
+- **Current Sprint**: (e.g., "8 — Pivot Ready")
+- **Completed**: Weeks [list, e.g., 1–8]
+- **On-track?**: ✅ Yes / ⚠️ Slight lag / ❌ Needs reset
+
+### Engagement & Consistency
+- **Intensity level**: solo-studio / team-studio / mentored-studio / bold-studio
+- **Sessions on-time**: (e.g., 11/12 = 92%)
+- **Anti-drift status**: No gaps / [flag any 7+ day gap]
+
+### E2E Integration Depth
+| Course | Integration depth | Detail |
+|--------|-------------------|--------|
+| Advanced C Programming | low / medium / high | |
+| Software Design | low / medium / high | |
+| IoT | low / medium / high | |
+| Innovation & Entrepreneurship | low / medium / high | |
+
+### Narrative Arc
+- **Role**: The Founder / The Problem Solver / The Change Maker / The Researcher
+- **Chapter**: [Chapter 1–5 based on sprint level]
+- **Story snippet**: (One-line narrative summary)
+
+### Badges Earned
+- 🔄 Pivot Master (2+ pivots with documented logic)
+- 📚 Deep Diver (10+ interviews, Advanced investigation)
+- 🤝 Team Hero (Resolved conflict, elevated teammate idea)
+- 📦 Builder (Fully working demo, demo-able)
+- 🧠 Sage (Meta-reflection, connected learning to journey)
+- [Any others unlocked]
+
+### Mentor Sharing Consent
+- **Share with mentor?**: ✅ Yes / ❌ No (date: [date if consented])
+- **Shared data**: Full profile / Rubric Mastery only / Collaboration log only
+- **Faculty link**: [Optional link to faculty dashboard view]
+
+### Public Leaderboard Consent
+- **Appear on leaderboard?**: ✅ Yes / ❌ No (date: [date if consented])
+- **Eligible categories**: (Auto-populated based on rubric mastery)
+- **Current rank** (if consented): [Rank in each category]
 
 ---
 

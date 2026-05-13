@@ -10,7 +10,7 @@ We have implemented a three-tier support model to ensure students in distress ar
 2. [support-escalation-guide.md](support-escalation-guide.md): The overall logic for Tier 1/2/3 classification.
 3. [manodhara-referral.md](manodhara-referral.md): The specific bridge to your services.
 4. [SKILL.md](SKILL.md): Master routing rules (see Capability #25).
-5. [REVA-STUDENT-SYSTEM-SPEC-v1.4.md](REVA-STUDENT-SYSTEM-SPEC-v1.4.md): Updates to the "At-Risk Early Warning Module" (§13.28).
+5. [REVA-STUDENT-SYSTEM-SPEC.md](REVA-STUDENT-SYSTEM-SPEC.md): Updates to the "At-Risk Early Warning Module" (§13.28).
 
 ## How to Provide Feedback
 - Please edit the files in this folder directly. 

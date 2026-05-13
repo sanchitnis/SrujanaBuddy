@@ -41,7 +41,7 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | # | Agent | File |
 |---|-------|------|
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| 2 | Course Coaches (named slots, e.g. course-coach-gcs) | `agents/course-coach-template.md` + `agents/course-coaches/instances/[course-slug]/skill.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
+| 2 | Course Buddyes (named slots, e.g. course-buddy-gcs) | `agents/course-buddy-template.md` + `agents/course-buddyes/instances/[course-slug]/skill.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
 | 4 | Time and Execution Coach | `agents/accountability-partner.md` |
 | 5 | Accountability and Dopamine Buddy | `agents/accountability-partner.md` |
@@ -65,8 +65,8 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 3 | Weekly Svadhyaya review and reset | Integral Life Coach + Accountability and Dopamine Buddy |
 | 4 | Learning-to-learn coaching | Academic Learning Coach |
 | 5 | Assessment preparation coaching | Assessment and Competition Coach |
-| 6 | Subject mastery session (Socratic) | Course Coach — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` if built |
-| 7 | Socratic concept clarification | Course Coach + Academic Learning Coach |
+| 6 | Subject mastery session (Socratic) | Course Buddy — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` if built |
+| 7 | Socratic concept clarification | Course Buddy + Academic Learning Coach |
 | 8 | Competition and hackathon preparation | Assessment and Competition Coach |
 | 9 | Career pathway planning | Career and Pathway Coach |
 | 10 | Placement readiness coaching | Career and Pathway Coach + Competency and Portfolio Coach |

@@ -3,7 +3,7 @@
 ## Purpose
 
 This folder contains the generated knowledge artefacts for all courses processed by the
-[Course Coach Builder](../tools/course-coach-builder/README.md).
+[Course Buddy Builder](../tools/course-buddy-builder/README.md).
 
 Each course gets its own subfolder:
 
@@ -24,7 +24,7 @@ knowledge/
     student-contributions/           Student-authored improvements (reviewed before merge)
       README.md
     CONTRIBUTING.md                  Contribution guide for this course
-  instances/                         Generated Course Coach skills (assign to agent slots 01-10)
+  instances/                         Generated Course Buddy skills (assign to agent slots 01-10)
     [CourseCode]-[ShortName]/
       skill.md
 ```
@@ -98,7 +98,7 @@ Edit the Markdown file directly and commit. You are the course owner.
 ### To update AI-derived sections (study guide, quiz, flashcards, concept map, audio)
 Run a refresh:
 ```bash
-cd tools/course-coach-builder
+cd tools/course-buddy-builder
 python3 build.py --course-file templates/[CourseCode]-descriptor.md \
                  --output-dir ../../knowledge/ \
                  --refresh
@@ -107,10 +107,10 @@ python3 build.py --course-file templates/[CourseCode]-descriptor.md \
 ### To add a gap topic (from student confusion or eval feedback)
 ```bash
 # Extract F-9 gap topics from eval backlog automatically:
-GAP=$(python3 tools/course-coach-builder/eval_bridge.py --course-code [CourseCode])
+GAP=$(python3 tools/course-buddy-builder/eval_bridge.py --course-code [CourseCode])
 
 # Run refresh with those topics:
-python3 tools/course-coach-builder/build.py \
+python3 tools/course-buddy-builder/build.py \
   --course-file templates/[CourseCode]-descriptor.md \
   --output-dir ../../knowledge/ \
   --refresh --gap-topics "$GAP"
@@ -120,15 +120,15 @@ python3 tools/course-coach-builder/build.py \
 
 ## How to add a new course
 
-1. Copy `tools/course-coach-builder/templates/course-descriptor.md` to a new file named `[CourseCode]-descriptor.md` in the same folder.
+1. Copy `tools/course-buddy-builder/templates/course-descriptor.md` to a new file named `[CourseCode]-descriptor.md` in the same folder.
 2. Fill in all frontmatter fields and unit breakdown sections.
 3. Run the builder:
    ```bash
-   python3 tools/course-coach-builder/build.py \
-     --course-file tools/course-coach-builder/templates/[CourseCode]-descriptor.md \
+   python3 tools/course-buddy-builder/build.py \
+     --course-file tools/course-buddy-builder/templates/[CourseCode]-descriptor.md \
      --output-dir knowledge/
    ```
-4. Assign the generated skill (`knowledge/instances/[CourseCode]-[ShortName]/skill.md`) to an available Course Coach slot (`agents/course-coaches/instances/course-coach-NN.md`).
+4. Assign the generated skill (`knowledge/instances/[CourseCode]-[ShortName]/skill.md`) to an available Course Buddy slot (`agents/course-buddyes/instances/course-buddy-NN.md`).
 
 ---
 
@@ -149,7 +149,7 @@ Student session → F-9 logged in IMPROVEMENT-BACKLOG → eval_bridge.py → bui
 | File | Role |
 |------|------|
 | [references/ai-tutor-philosophy.md](../references/ai-tutor-philosophy.md) | Governing philosophy |
-| [agents/course-coach-builder.md](../agents/course-coach-builder.md) | Builder agent spec (Build / Refresh / Audit modes) |
-| [tools/course-coach-builder/README.md](../tools/course-coach-builder/README.md) | Tool documentation |
+| [agents/course-buddy-builder.md](../agents/course-buddy-builder.md) | Builder agent spec (Build / Refresh / Audit modes) |
+| [tools/course-buddy-builder/README.md](../tools/course-buddy-builder/README.md) | Tool documentation |
 | [eval/data/IMPROVEMENT-BACKLOG.md](../eval/data/IMPROVEMENT-BACKLOG.md) | F-9 gap source |
-| [agents/course-coaches/](../agents/course-coaches/) | Generated skill instance slots |
+| [agents/course-buddyes/](../agents/course-buddyes/) | Generated skill instance slots |

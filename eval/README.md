@@ -36,6 +36,10 @@ eval/
 │   ├── student-feedback-template.md   ← anonymized feedback form for students (< 5 min)
 │   └── mentor-feedback-template.md    ← feedback form for faculty and industry mentors
 │
+├── leaderboards/
+│   ├── README.md                      ← leaderboard governance and update protocols
+│   └── gcs-enterprising-ability.md    ← GCS public leaderboard (8 categories); updated weekly
+│
 └── data/
     ├── eval-log-template.md           ← per-session quality log with pass/fail signal checklist
     └── IMPROVEMENT-BACKLOG.md         ← live log of improvement tasks raised from eval/feedback

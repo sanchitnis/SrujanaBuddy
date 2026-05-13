@@ -35,12 +35,12 @@ SrujanaBuddy is an AI-augmented student support and coaching ecosystem designed 
 ## Conventions
 - **Documentation:** Use Markdown (`.md`) for agent definitions, workflows, and guides.
 - **File Naming:** Use kebab-case for filenames (e.g., `academic-learning-coach.md`).
-- **Templates:** Utilize templates provided in `profiles/`, `gtd/projects/`, and `agents/course-coaches/` for consistency.
+- **Templates:** Utilize templates provided in `profiles/`, `gtd/projects/`, and `agents/course-buddyes/` for consistency.
 
 ## Workflows
 - **Coaching Sessions:** Follow the workflow defined in `COACHING-SESSION-WORKFLOW.md`.
 - **Task Management:** Use the GTD system in `gtd/` for tracking all actions and projects.
-- **Evaluation:** Regularly update trackers in `REVA-IMPLEMENTATION-TRACKER-v1.4.md` and related files.
+- **Evaluation:** Regularly update trackers in `REVA-IMPLEMENTATION-TRACKER.md` and related files.
 
 ## Tools
-- Python scripts in `tools/` are used for building course coaches and generating wiki/workbook content. Ensure `requirements.txt` is updated when adding dependencies.
+- Python scripts in `tools/` are used for building course buddyes and generating wiki/workbook content. Ensure `requirements.txt` is updated when adding dependencies.

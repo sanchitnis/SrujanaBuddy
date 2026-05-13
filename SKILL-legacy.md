@@ -117,7 +117,7 @@ Route to specialist files as needed (single or multi-agent routing):
 | # | Agent | File |
 |---|-------|------|
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| 2 | Course Coaches 01-10 (dynamic) | `agents/course-coach-template.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
+| 2 | Course Buddyes 01-10 (dynamic) | `agents/course-buddy-template.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
 | 4 | Time and Execution Coach | `agents/accountability-partner.md` |
 | 5 | Accountability and Dopamine Buddy | `agents/accountability-partner.md` |
@@ -141,8 +141,8 @@ Route to specialist files as needed (single or multi-agent routing):
 | 3 | Weekly Svadhyaya review and reset | Integral Life Coach + Accountability and Dopamine Buddy |
 | 4 | Learning-to-learn coaching | Academic Learning Coach |
 | 5 | Assessment preparation coaching | Assessment and Competition Coach |
-| 6 | Subject mastery session (Socratic) | Course Coach — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` as supplemental context if the course wiki has been built |
-| 7 | Socratic concept clarification | Course Coach + Academic Learning Coach — reference `knowledge/[CourseCode]-[ShortName]/wiki/[concept-slug].md` if available |
+| 6 | Subject mastery session (Socratic) | Course Buddy — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` as supplemental context if the course wiki has been built |
+| 7 | Socratic concept clarification | Course Buddy + Academic Learning Coach — reference `knowledge/[CourseCode]-[ShortName]/wiki/[concept-slug].md` if available |
 | 8 | Competition and hackathon preparation | Assessment and Competition Coach |
 | 9 | Career pathway planning | Career and Pathway Coach |
 | 10 | Placement readiness coaching | Career and Pathway Coach + Competency and Portfolio Coach |

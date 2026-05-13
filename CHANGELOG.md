@@ -19,7 +19,7 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 - `references/dopamine-stewardship-student.md` - Daily and weekly dopamine protocol.
 - `references/gtd-lite-student-edition.md` - D-14, D-21, D-3 and no-zero-day policy.
 - `agents/academic-learning-coach.md` - learning strategy specialist agent.
-- `agents/course-coach-template.md` - dynamic course-coach template.
+- `agents/course-buddy-template.md` - dynamic course-buddy template.
 - `agents/assessment-competition-coach.md` - assessments and competitions specialist.
 - `agents/career-pathway-coach.md` - multi-path career planning specialist.
 - `agents/competency-portfolio-coach.md` - competency evidence mapping specialist.
@@ -38,8 +38,8 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 - `intake/apps/07-time-management-procrastination.html` - offline procrastination profile app.
 - `intake/apps/08-stress-energy-self-check.html` - offline stress-energy app.
 - `intake/apps/09-career-interest-mapping.html` - offline career interest mapping app.
-- `REVA-IMPLEMENTATION-TRACKER-v1.4.md` - migration progress tracker.
-- `REVA-METRICS-TRACKER-v1.4.md` - success metrics tracking grid.
+- `REVA-IMPLEMENTATION-TRACKER.md` - migration progress tracker.
+- `REVA-METRICS-TRACKER.md` - success metrics tracking grid.
 
 ### Changed
 - `SKILL.md` migrated to SrujanaBuddy identity, 15-agent routing, 24 session types, year-group modes, and REVA guardrails.

@@ -82,8 +82,8 @@ style: |
 
 #
 
-> **आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।**
-> **पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च ॥**
+> ** आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।**
+> **पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च ॥ **
 
 ---
 
@@ -123,7 +123,7 @@ May 14, 2026 · First Floor Boardroom, Admin Block
 
 # How Software Evolved
 
-<div class="mermaid">
+```mermaid
 timeline
     title The Evolution of Software
     1960 onwards : Software 1.0 — Rule-Based
@@ -135,7 +135,7 @@ timeline
     2025 onwards  : Software 3.0 — Language-First Intelligence
               : You describe what you want in plain language
               : AI reasons, plans, and acts
-</div>
+```
 
 > *We moved from "tell the computer every step" to "describe the goal and the AI figures out the steps."*
 
@@ -143,14 +143,14 @@ timeline
 
 # The Analogy — In Simple Terms
 
-<div class="mermaid">
+```mermaid
 graph LR
     A["📋 Software 1.0\nPrinted Procedure Manual\nFollow exact steps only"] --> B["🎓 Software 2.0\nLearned by Example\nShowed 10,000 cases; found patterns"] --> C["🧠 Software 3.0\nExpert Consultant\nDescribe the problem.\nThey figure out the approach."]
 
     style A fill:#ffcdd2,stroke:#c62828,color:#000
     style B fill:#fff9c4,stroke:#f9a825,color:#000
     style C fill:#c8e6c9,stroke:#2e7d32,color:#000
-</div>
+```
 
 ### The shift:
 - **Old:** You tell the computer every step. It breaks if one step changes.
@@ -162,7 +162,7 @@ graph LR
 
 # What Are "Agent Skills"?
 
-<div class="mermaid">
+```mermaid
 flowchart TB
     subgraph AI["🧠 Large Language Model (The Brain)"]
         direction TB
@@ -185,7 +185,7 @@ flowchart TB
     end
 
     SKILL --> AI --> ACTION
-</div>
+```
 
 > **An Agent Skill = Instructions that give the AI a specific role, domain knowledge, and behavioural rules.**
 > Like giving a brilliant generalist a detailed job description.
@@ -212,7 +212,7 @@ flowchart TB
 
 # T.R.A.C.K — Automation Across REVA
 
-<div class="mermaid">
+```mermaid
 mindmap
   root((T.R.A.C.K))
     T[Teaching & Learning]
@@ -240,7 +240,7 @@ mindmap
       Faculty mentoring insights
       Continuous improvement loops
       Early warning dashboards
-</div>
+```
 
 ---
 
@@ -263,13 +263,13 @@ mindmap
 
 # The Key Insight for Leadership
 
-<div class="mermaid">
+```mermaid
 flowchart LR
     A["❌ Old Model\n1 Faculty : 60 Students\nPersonalized guidance = impossible"] --> B["✅ New Model\n1 Faculty + SrujanaBuddy\n= 1 Faculty : 60 Students\nwith personalized coaching at scale"]
 
     style A fill:#ffcdd2,stroke:#c62828,color:#000
     style B fill:#c8e6c9,stroke:#2e7d32,color:#000
-</div>
+```
 
 ### SrujanaBuddy is not a chatbot.
 It is a **coaching operating system** — 160 files, 15,000 lines of REVA-specific coaching intelligence — built on Agent Skills technology.
@@ -286,7 +286,7 @@ It is a **coaching operating system** — 160 files, 15,000 lines of REVA-specif
 
 # What Is SrujanaBuddy?
 
-<div class="mermaid">
+```mermaid
 graph TB
     SB["SrujanaBuddy\nAI Coaching Companion\nfor REVA Students"]
 
@@ -302,7 +302,7 @@ graph TB
     style C3 fill:#e8f5e9,color:#000
     style C4 fill:#fff9c4,color:#000
     style C5 fill:#fce4ec,color:#000
-</div>
+```
 
 *Five Spheres (Panchakosha) — whole-person coaching, not just grades.*
 
@@ -310,7 +310,7 @@ graph TB
 
 # Architecture: How It Routes
 
-<div class="mermaid">
+```mermaid
 flowchart TD
     START([Student says 'hi']) --> PROFILE{Profile exists?}
 
@@ -333,7 +333,7 @@ flowchart TD
     style GREET fill:#c8e6c9,color:#000
     style INTAKE fill:#fff9c4,color:#000
     style ROUTE fill:#3949ab,color:#fff
-</div>
+```
 
 ---
 
@@ -357,7 +357,7 @@ flowchart TD
 
 # The Srujana Pathway
 
-<div class="mermaid">
+```mermaid
 graph LR
     S1["🌱 Stage 1\nFoundation\nStudy habits · GTD\nCampus integration\nYear 1"]
     S2["🔨 Stage 2\nApplication\nIndustry projects\nInternships · Skills\nYear 2–3"]
@@ -370,7 +370,7 @@ graph LR
     style S2 fill:#e8f5e9,stroke:#388e3c,color:#000
     style S3 fill:#fff9c4,stroke:#f9a825,color:#000
     style S4 fill:#fce4ec,stroke:#c62828,color:#000
-</div>
+```
 
 *Readiness-based progression, not semester-gated. Evidence-first.*
 
@@ -532,7 +532,7 @@ graph LR
 
 *Already built into SrujanaBuddy — ready to deploy*
 
-<div class="mermaid">
+```mermaid
 graph TD
     ASSESS["5-Question Self-Assessment"]
     ASSESS --> P1["Pathway 1\nAI-Native Builder\n6–9 months"]
@@ -549,7 +549,7 @@ graph TD
     style P4 fill:#fce4ec,color:#000
     style P5 fill:#f3e5f5,color:#000
     style P6 fill:#ffccbc,color:#000
-</div>
+```
 
 *48 modules · 8 categories · evidence-based progression · free audit resources*
 
@@ -561,7 +561,7 @@ graph TD
 
 # For Students
 
-<div class="mermaid">
+```mermaid
 graph LR
     S["Student\n'I need help'"] --> B["SrujanaBuddy\nAvailable 24/7"]
     B --> W["Wellbeing check\nbefore task work"]
@@ -572,7 +572,7 @@ graph LR
 
     style S fill:#e3f2fd,color:#000
     style B fill:#1a237e,color:#fff
-</div>
+```
 
 - **Always available** — 11 PM exam panic? Handled.
 - **Culturally resonant** — Bangalore English, Kannada flavour, peer energy
@@ -599,7 +599,7 @@ graph LR
 
 # For REVA as an Institution
 
-<div class="mermaid">
+```mermaid
 mindmap
   root((REVA Advantage))
     Differentiation
@@ -618,13 +618,13 @@ mindmap
       Markdown-native — no new infra
       Internal open source model
       Faculty as contributors
-</div>
+```
 
 ---
 
 # Privacy, Safety & Guardrails
 
-<div class="mermaid">
+```mermaid
 flowchart TD
     CHECK["Wellbeing Signal Detected"]
     CHECK --> L1["Tier 1 — Light coaching\nStudent briefly off\nHandle within session"]
@@ -635,7 +635,7 @@ flowchart TD
     style L1 fill:#c8e6c9,color:#000
     style L2 fill:#fff9c4,color:#000
     style L3 fill:#ffcdd2,color:#000
-</div>
+```
 
 - **Student controls sharing** — 3 tiers of mentor visibility
 - **Consent-based leaderboards** — opt-in only
@@ -666,7 +666,7 @@ flowchart TD
 
 # What Makes SrujanaBuddy Different
 
-<div class="mermaid">
+```mermaid
 quadrantChart
     title Coaching Solutions Comparison
     x-axis Scalable --> Personalised
@@ -679,7 +679,7 @@ quadrantChart
     Generic Chatbot: [0.9, 0.1]
     Human Faculty: [0.1, 0.85]
     Commercial EdTech: [0.7, 0.3]
-</div>
+```
 
 *SrujanaBuddy occupies the ideal zone: scalable AND REVA-specific AND personalised.*
 
@@ -718,7 +718,7 @@ quadrantChart
 
 # How to Contribute — No Tech Skills Needed
 
-<div class="mermaid">
+```mermaid
 flowchart LR
     F["Faculty / Student\nContributor"] --> C1["🗣️ Talk to SrujanaBuddy\nReport what works / what doesn't"]
     F --> C2["📝 Edit a Markdown file\nUpdate coaching scripts, question banks"]
@@ -730,7 +730,7 @@ flowchart LR
     style C2 fill:#e8f5e9,color:#000
     style C3 fill:#fff9c4,color:#000
     style C4 fill:#fce4ec,color:#000
-</div>
+```
 
 > **This is a Markdown-native system. If you can write an email, you can contribute.**
 > The system lives on GitHub — every change is versioned, reviewed, and attributed.
@@ -739,7 +739,7 @@ flowchart LR
 
 # Rollout Roadmap
 
-<div class="mermaid">
+```mermaid
 gantt
     title SrujanaBuddy Rollout Plan
     dateFormat YYYY-MM-DD
@@ -757,7 +757,7 @@ gantt
     Faculty dashboards               :2026-09-01, 2026-11-30
     GCS leaderboard (opt-in)         :2026-09-01, 2026-11-30
     REVA-wide rollout consideration  :2026-10-01, 2026-12-31
-</div>
+```
 
 ---
 

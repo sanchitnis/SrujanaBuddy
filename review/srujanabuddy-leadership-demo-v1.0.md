@@ -213,7 +213,7 @@ graph TB
     SB --> C4["🌿 Seva\nContribution\nNCC, NSS, open source"]
     SB --> C5["💪 Sharira\nEnergy & Wellbeing\nSleep, stress, recovery"]
 
-    style SB fill:#1a237e,color:#ffffff
+    style SB fill:#1a237e,color:#000
     style C1 fill:#e3f2fd,color:#000
     style C2 fill:#f3e5f5,color:#000
     style C3 fill:#e8f5e9,color:#000
@@ -246,10 +246,10 @@ flowchart TD
     ROUTE --> A5["Enterprising Skills Mentor"]
     ROUTE --> A6["... 10 more specialists"]
 
-    style START fill:#1a237e,color:#fff
+    style START fill:#1a237e,color:#000
     style GREET fill:#c8e6c9,color:#000
     style INTAKE fill:#fff9c4,color:#000
-    style ROUTE fill:#3949ab,color:#fff
+    style ROUTE fill:#3949ab,color:#000
 ```
 
 ---
@@ -445,7 +445,7 @@ graph TD
     ASSESS --> P5["Pathway 5\nAI Product Leader\n4–6 months"]
     ASSESS --> P6["Pathway 6\nAI Security & Governance\n9–12 months"]
 
-    style ASSESS fill:#1a237e,color:#fff
+    style ASSESS fill:#1a237e,color:#000
     style P1 fill:#e3f2fd,color:#000
     style P2 fill:#e8f5e9,color:#000
     style P3 fill:#fff9c4,color:#000
@@ -474,7 +474,7 @@ graph LR
     B --> E["Enterprising skills\n& GCS scoring"]
 
     style S fill:#e3f2fd,color:#000
-    style B fill:#1a237e,color:#fff
+    style B fill:#1a237e,color:#000
 ```
 
 - **Always available** — 11 PM exam panic? Handled.
@@ -533,7 +533,7 @@ flowchart TD
     CHECK --> L2["Tier 2 — Support coaching\nConsistent stress signals\nGentle referral to REVA counsellor"]
     CHECK --> L3["Tier 3 — Escalation\nCrisis language detected\nImmediate faculty + Manodhara referral"]
 
-    style CHECK fill:#283593,color:#fff
+    style CHECK fill:#283593,color:#000
     style L1 fill:#c8e6c9,color:#000
     style L2 fill:#fff9c4,color:#000
     style L3 fill:#ffcdd2,color:#000
@@ -625,7 +625,7 @@ flowchart LR
     F --> C3["🏫 Build a Course Buddy\nCoaching spec for your subject"]
     F --> C4["📊 Review student signals\nValidate coaching recommendations"]
 
-    style F fill:#1a237e,color:#fff
+    style F fill:#1a237e,color:#000
     style C1 fill:#e3f2fd,color:#000
     style C2 fill:#e8f5e9,color:#000
     style C3 fill:#fff9c4,color:#000

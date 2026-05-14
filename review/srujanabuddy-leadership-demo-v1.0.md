@@ -1,84 +1,6 @@
----
-marp: true
-theme: default
-paginate: true
-size: 16:9
-style: |
-  section {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 26px;
-    padding: 40px 60px;
-    color: #1a1a2e;
-  }
-  section.lead {
-    text-align: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #3949ab 100%);
-    color: #ffffff;
-  }
-  section.lead h1 { color: #ffffff; font-size: 52px; }
-  section.lead h2 { color: #c5cae9; font-size: 32px; font-weight: 300; }
-  section.lead p { color: #e8eaf6; }
-  section.lead blockquote {
-    background: transparent;
-    border-left: 5px solid rgba(255,255,255,0.4);
-    color: #e8eaf6;
-  }
-  section.track {
-    background: #f3f4f6;
-  }
-  section.demo-slide {
-    background: #fafafa;
-    border-top: 6px solid #3949ab;
-  }
-  section.cta {
-    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
-    color: white;
-  }
-  section.cta h1, section.cta h2, section.cta li { color: white; }
-  h1 { color: #1a237e; font-size: 40px; margin-bottom: 0.3em; }
-  h2 { color: #283593; font-size: 30px; }
-  h3 { color: #3949ab; font-size: 24px; }
-  blockquote {
-    border-left: 5px solid #3949ab;
-    background: #e8eaf6;
-    padding: 0.6em 1.2em;
-    border-radius: 4px;
-    font-style: italic;
-    color: #1a237e;
-  }
-  table { font-size: 22px; width: 100%; }
-  th { background: #3949ab; color: white; }
-  tr:nth-child(even) { background: #e8eaf6; }
-  .chat-student {
-    background: #e3f2fd;
-    border-radius: 12px;
-    padding: 0.5em 1em;
-    margin: 0.4em 0;
-    border-left: 3px solid #1976d2;
-    font-size: 22px;
-  }
-  .chat-buddy {
-    background: #e8f5e9;
-    border-radius: 12px;
-    padding: 0.5em 1em;
-    margin: 0.4em 0;
-    border-left: 3px solid #388e3c;
-    font-size: 22px;
-  }
-  .placeholder {
-    background: #fff9c4;
-    border: 2px dashed #f9a825;
-    padding: 1em;
-    border-radius: 8px;
-    text-align: center;
-    color: #6d4c41;
-    font-size: 20px;
-  }
-  footer { font-size: 16px; color: #9e9e9e; }
----
-
-<!-- _class: lead -->
+# SrujanaBuddy — Leadership Demo
+**REVA University AI Coaching Companion**  
+May 14, 2026 · First Floor Boardroom, Admin Block
 
 #
 
@@ -87,7 +9,6 @@ style: |
 
 ---
 
-<!-- _class: lead -->
 
 # SrujanaBuddy
 ## REVA University's AI Coaching Companion
@@ -158,7 +79,6 @@ graph LR
 
 ---
 
-<!-- _class: track -->
 
 # What Are "Agent Skills"?
 
@@ -194,9 +114,8 @@ flowchart TB
 
 # One Model. Infinite Specialists.
 
-<div class="placeholder">
-🖼️ INFOGRAPHIC PLACEHOLDER: Show one brain → 15 specialist hats (coach, auditor, researcher, admin, mentor...)
-</div>
+> 📌 *🖼️ INFOGRAPHIC PLACEHOLDER: Show one brain → 15 specialist hats (coach, auditor, researcher, admin, mentor...)*
+
 
 ### Why this is revolutionary:
 - **No new software** to install or maintain
@@ -208,7 +127,6 @@ flowchart TB
 
 ---
 
-<!-- _class: track -->
 
 # T.R.A.C.K — Automation Across REVA
 
@@ -254,10 +172,9 @@ mindmap
 | **Consulting (C)** | Score a student's startup idea across 6 Enterprising dimensions |
 | **Kaizen (K)** | Run weekly coaching reviews and flag at-risk students to faculty |
 
-<div class="placeholder">
-🖼️ MEME PLACEHOLDER: "It's not about replacing faculty — it's about giving faculty superpowers."
-(Suggest: Professor with Iron Man suit)
-</div>
+> 📌 *🖼️ MEME PLACEHOLDER: "It's not about replacing faculty — it's about giving faculty superpowers."
+(Suggest: Professor with Iron Man suit)*
+
 
 ---
 
@@ -401,18 +318,15 @@ graph LR
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo A — Wellbeing First: Riya's Story
 ### *1st Year · Exam Week · 3/10 energy · 2 days no sleep*
 
-<div class="chat-student">
-💬 Riya: "hi i dont know what to do i have 3 exams in 2 days and i cant study anything my brain is just blank"
-</div>
+> **[Student]** 💬 Riya: "hi i dont know what to do i have 3 exams in 2 days and i cant study anything my brain is just blank"
 
-<div class="chat-buddy">
-🤖 SrujanaBuddy: "Aye Riya, seri — I hear you, da. Blank brain during exam week is the worst feeling, no? Before we do anything else — quick check-in first. On a scale of 1 to 10, how are you feeling right now?"
-</div>
+
+> **[SrujanaBuddy]** 🤖 SrujanaBuddy: "Aye Riya, seri — I hear you, da. Blank brain during exam week is the worst feeling, no? Before we do anything else — quick check-in first. On a scale of 1 to 10, how are you feeling right now?"
+
 
 **What happened:**
 - ✅ Wellbeing check BEFORE any study plan
@@ -424,18 +338,15 @@ graph LR
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo B — Career Clarity: Arjun's Dilemma
 ### *3rd Year · AI/ML track vs co-founding a startup*
 
-<div class="chat-student">
-💬 Arjun: "i like AI and i've been doing some ML projects but my friend wants me to co-found a startup... i honestly don't know which is better"
-</div>
+> **[Student]** 💬 Arjun: "i like AI and i've been doing some ML projects but my friend wants me to co-found a startup... i honestly don't know which is better"
 
-<div class="chat-buddy">
-🤖 SrujanaBuddy: "Arjun, this is actually a really good problem to have — it means you have options. Most 3rd years are still figuring out what they even want. So respect, da. When you were doing those ML projects — what was the feeling? 'I love this work itself' or 'I love what I can build with this'?"
-</div>
+
+> **[SrujanaBuddy]** 🤖 SrujanaBuddy: "Arjun, this is actually a really good problem to have — it means you have options. Most 3rd years are still figuring out what they even want. So respect, da. When you were doing those ML projects — what was the feeling? 'I love this work itself' or 'I love what I can build with this'?"
+
 
 **The outcome:** Arjun realized his answers pointed to the startup — and the startup was in AI. The paths weren't in conflict. He needed to see it clearly.
 
@@ -443,14 +354,12 @@ graph LR
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo C — Portfolio Rescue: Vikram's 6-Week Plan
 ### *4th Year · Placements in 6 weeks · 7 GitHub projects, 5 unfinished*
 
-<div class="chat-buddy">
-🤖 SrujanaBuddy: "Let me give you the honest portfolio audit: Current state: 7 projects, 2 usable, 5 dead weight. Target state in 6 weeks: 3 strong projects + 1 standout you can talk about for 15 minutes. Your bottleneck is not CGPA — it's projects + communication. That's fixable."
-</div>
+> **[SrujanaBuddy]** 🤖 SrujanaBuddy: "Let me give you the honest portfolio audit: Current state: 7 projects, 2 usable, 5 dead weight. Target state in 6 weeks: 3 strong projects + 1 standout you can talk about for 15 minutes. Your bottleneck is not CGPA — it's projects + communication. That's fixable."
+
 
 **6-week rescue plan generated:**
 - Week 1–2: Triage + polish one project
@@ -458,13 +367,11 @@ graph LR
 - Week 5: Practice interview narration
 - Week 6: Mock interview dry run
 
-<div class="placeholder">
-🖼️ IMAGE PLACEHOLDER: Before/after GitHub profile screenshot (mock-up)
-</div>
+> 📌 *🖼️ IMAGE PLACEHOLDER: Before/after GitHub profile screenshot (mock-up)*
+
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo D — Startup & GCS Score: Ananya's Idea
 ### *3rd Year · Campus gig marketplace app · 30 student interviews done*
@@ -484,14 +391,12 @@ graph LR
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo E — Strengths Discovery: Sneha's Revelation
 ### *MBA 1st Year · "Everyone else knows what they want"*
 
-<div class="chat-buddy">
-🤖 SrujanaBuddy: "Sneha, you love *invisible architecture* — the systems behind the scenes that make things work. You're not doing it for recognition. You're doing it for the satisfaction of the system working. That's operations intelligence + process design + systems thinking."
-</div>
+> **[SrujanaBuddy]** 🤖 SrujanaBuddy: "Sneha, you love *invisible architecture* — the systems behind the scenes that make things work. You're not doing it for recognition. You're doing it for the satisfaction of the system working. That's operations intelligence + process design + systems thinking."
+
 
 **Five Spheres Snapshot — built in one session:**
 
@@ -507,14 +412,12 @@ graph LR
 
 ---
 
-<!-- _class: demo-slide -->
 
 # Demo F — The Tough One: Suresh's Reframe
 ### *2nd Year Civil · "I hate my branch. I was always into tech."*
 
-<div class="chat-buddy">
-🤖 SrujanaBuddy: "You're learning Python on your own, without anyone asking you to. That's self-directed learning. And 'the maths of how buildings are designed' — you know what field sits exactly at that intersection? Computational Civil Engineering. People in it write Python to simulate building stress, model earthquake impact, optimize structural design."
-</div>
+> **[SrujanaBuddy]** 🤖 SrujanaBuddy: "You're learning Python on your own, without anyone asking you to. That's self-directed learning. And 'the maths of how buildings are designed' — you know what field sits exactly at that intersection? Computational Civil Engineering. People in it write Python to simulate building stress, model earthquake impact, optimize structural design."
+
 
 **What SrujanaBuddy did NOT do:**
 - ❌ Did not tell him to "just study harder"
@@ -591,9 +494,8 @@ graph LR
 | Mentoring minutes undocumented | Structured session logs (consent-based) |
 | Subject coaching bottleneck | 10+ course coaches available per semester |
 
-<div class="placeholder">
-🖼️ INFOGRAPHIC PLACEHOLDER: Faculty time freed up → deep mentoring, research collaboration
-</div>
+> 📌 *🖼️ INFOGRAPHIC PLACEHOLDER: Faculty time freed up → deep mentoring, research collaboration*
+
 
 ---
 
@@ -657,10 +559,9 @@ flowchart TD
 | Infrastructure required | None — runs on existing IDE + GitHub |
 | New software to install | None |
 
-<div class="placeholder">
-🖼️ MEME PLACEHOLDER: "No new servers. No new licenses. Just a text file that makes the AI brilliant."
-(Suggest: "We have technology at home" meme — the technology is already here)
-</div>
+> 📌 *🖼️ MEME PLACEHOLDER: "No new servers. No new licenses. Just a text file that makes the AI brilliant."
+(Suggest: "We have technology at home" meme — the technology is already here)*
+
 
 ---
 
@@ -691,7 +592,6 @@ quadrantChart
 
 ---
 
-<!-- _class: cta -->
 
 # The Ask — Be Part of History
 
@@ -785,14 +685,12 @@ gantt
 | Core team | Schedule onboarding session | Next week |
 | All | Share this presentation | Today — GitHub link |
 
-<div class="placeholder">
-🖼️ IMAGE PLACEHOLDER: QR code linking to this presentation on GitHub
-(URL: github.com/[org]/SrujanaBuddy/review/srujanabuddy-leadership-demo-v1.0.md)
-</div>
+> 📌 *🖼️ IMAGE PLACEHOLDER: QR code linking to this presentation on GitHub
+(URL: github.com/[org]/SrujanaBuddy/review/srujanabuddy-leadership-demo-v1.0.md)*
+
 
 ---
 
-<!-- _class: cta -->
 
 # Before We Open the Floor
 
@@ -811,9 +709,8 @@ gantt
 
 # Q&A
 
-<div class="placeholder">
-🖼️ IMAGE PLACEHOLDER: "No question is too basic" — open floor graphic
-</div>
+> 📌 *🖼️ IMAGE PLACEHOLDER: "No question is too basic" — open floor graphic*
+
 
 ### Anticipate these questions:
 
@@ -828,7 +725,6 @@ gantt
 
 ---
 
-<!-- _class: lead -->
 
 # ❝
 
@@ -841,7 +737,6 @@ gantt
 
 ---
 
-<!-- _class: lead -->
 
 # Thank You
 

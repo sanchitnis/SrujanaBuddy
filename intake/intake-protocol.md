@@ -18,6 +18,11 @@ Use [references/REVA University.md](references/REVA%20University.md) whenever in
    1. Program, stream, year, semester, section.
    2. Current subjects and known backlog.
    3. Recent performance indicators and attendance patterns.
+   4. Optional pre-existing artifacts — collect before asking duplicate questions:
+      - LinkedIn or other social/portfolio URL (GitHub, Behance, personal site)
+      - Existing resume — pasted text or described section by section
+      - Scanned or photographed handwritten aspiration sheet
+      - If any artifact is provided, extract and pre-fill profile fields from it; confirm with mentee rather than re-asking what is already known.
 3. Baseline diagnostics
    1. Five Student Spheres quick check.
    2. Study habits and time management snapshot.

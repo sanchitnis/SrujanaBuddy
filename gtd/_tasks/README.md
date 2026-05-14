@@ -10,7 +10,7 @@ This folder captures and processes raw items (emails, meeting minutes, notes, me
 | `meetings/` | Meeting minutes and summaries |
 | `notes/` | Ad-hoc notes, checklists, task lists |
 | `messages/` | Chat, Slack, or message captures |
-| `coach/` | SrujanaBuddy AI coach-suggested tasks accepted by the leader |
+| `coach/` | SrujanaBuddy AI coach-suggested tasks accepted by the mentee |
 | `feedback/` | User feedback, suggestions, and improvement requests |
 | `json/` | **AUTO**: Processed task files in JSON format |
 | `.archive/` | **AUTO**: Raw files moved here after processing |
@@ -44,7 +44,7 @@ Each extracted task goes to GTD list:
 - **Someday?** → `05-someday.md`
 - **Reference only?** → `references/`
 
-For coach tasks, process only **leader-accepted AI coach** items from `coach/00-coach-accepted.md`.
+For coach tasks, process only **mentee-accepted AI coach** items from `coach/00-coach-accepted.md`.
 If needed, also write a structured JSON capture into `json/` with `source: "ai-coach"`.
 
 For feedback items, process through triage first in `_tasks/feedback/00-feedback-inbox.md`:

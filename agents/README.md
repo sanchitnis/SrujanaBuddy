@@ -24,7 +24,7 @@ The master routing logic in SKILL.md selects one or more agents per session type
 | support-escalation-guide.md | Triage, escalation, and referral routing |
 | faculty-mentor-coordination-agent.md | Mentor preparation, debrief, and share packets |
 | academic-history-agent.md | Achievement and record history maintenance |
-| personal-website-builder-agent.md | Personal site planning and evidence-linked content |
+| srujana-presence-agent.md | Personal website, resume, and visual pathway map toward aspirations |
 | organizational-attitude-builder.md | Leadership behavior and team contribution |
 
 ## Eval and improvement infrastructure

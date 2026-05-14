@@ -1,6 +1,8 @@
-# Feedback Inbox — SrujanaBuddy Improvement Loop
+# Feedback Inbox — SrujanaBuddy Coaching Experience
 
-Rolling queue for user feedback, suggestions, bug reports, and improvement ideas.
+Rolling queue for mentee feedback on their coaching experience — what's working, what's not, and suggestions.
+
+> **Note:** Feedback about the SrujanaBuddy system itself (features, content, architecture) belongs in the developer feedback loop, not here. This queue is for the mentee's experience only.
 
 ## How To Use
 
@@ -11,54 +13,29 @@ Rolling queue for user feedback, suggestions, bug reports, and improvement ideas
 
 ## Triage Rules
 
-- `accepted`: Clear value, aligned with mission, feasible now.
+- `accepted`: Clear value, aligned with mentee's coaching goals, actionable now.
 - `deferred`: Valuable but not now; add revisit date.
-- `rejected`: Misaligned, unsafe, duplicate, or low-value; include rationale.
+- `rejected`: Misaligned, duplicate, or low-value; include rationale.
 - `needs-data`: Good direction but evidence is insufficient.
 
 ## Open Items
 
 - [ ] [FB-YYYYMMDD-001] Title: 
-  - Source: user/domain expert/developer
+  - Source: mentee
   - Date:
-  - Context (session/file/feature):
+  - Context (session/agent/topic):
   - Observed issue:
   - Suggested improvement:
-  - Evidence/examples:
   - Impact (low/medium/high):
-  - Scope (coaching-methodology/content/process/app):
-  - Owner:
   - Triage status: needs-data
   - Decision notes:
   - Linked action(s):
-  - Target release/review date:
+  - Target review date:
 
 ## Closed Items
 
-- [x] [FB-20260507-003] Add beginner interactive orientation so users can understand and use the system without reading markdown files
-  - Decision: accepted -> implemented
-  - Rationale: Added beginner interactive orientation script and SKILL routing for no-doc onboarding flow
-  - Linked action(s): references/beginner-interactive-orientation.md; SKILL.md (Session Type 13); COACHING-SESSION-WORKFLOW.md (Session 0.0)
-  - Closed date: 2026-05-07
-
-- [x] [FB-20260507-001] Use Bhagavad Gita management materials to strengthen leadership coaching
-  - Decision: accepted -> implemented
-  - Rationale: Added dedicated management wisdom playbook and integrated it into leadership and review protocols
-  - Linked action(s): references/management-wisdom-playbook.md; SKILL.md (Sessions 5 and 7); COACHING-SESSION-WORKFLOW.md (Sessions 2.4 and 4.1)
-  - Closed date: 2026-05-07
-
-- [x] [FB-20260507-002] Add curated Indian wisdom lines and modern self-development quotations to coaching prompts
-  - Decision: accepted -> implemented
-  - Rationale: Added curated Subhashita, Gita, Upanishad, idiom, and modern leadership insight sections with usage rules
-  - Linked action(s): references/management-wisdom-playbook.md
-  - Closed date: 2026-05-07
-
-- [x] [FB-EXAMPLE-000] Example closed item
-  - Decision: accepted
-  - Rationale: Demonstrates format only
-  - Linked action(s): gtd/_tasks/coach/00-coach-accepted.md
-  - Closed date: 2026-05-07
+<!-- Add closed mentee feedback items here after triage -->
 
 ---
 
-Last updated: 2026-05-07
+Last updated: 2026-05-14

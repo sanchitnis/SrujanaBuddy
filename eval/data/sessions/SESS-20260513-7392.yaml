@@ -1,0 +1,49 @@
+# Anonymized Session Log — SrujanaBuddy
+# Privacy verified: PII stripped | Consent: granted (verbal, in-session)
+
+session:
+  id: "SESS-20260513-7392"
+  date: "2026-05-13"
+  consent_granted: true
+
+student:
+  anonymous_id: "Student-7392"
+  year_of_study: ""               # not stated in session
+  stream: ""                      # not stated in session
+  srujana_stage: "Stage 1"        # inferred from session tone and context
+
+session_context:
+  session_type: "Wellbeing reset / Clarity"
+  trigger_phrase: "feeling overwhelmed / low energy (paraphrased)"
+  agents_invoked: ["Integral Life Coach", "Inner Mastery Coach"]
+  session_duration_estimate: "Medium (5-15 min)"
+
+student_state:
+  opening_energy: "Low"
+  closing_energy: "Medium-High"
+  emotional_tone: "Overwhelmed → Calm → Playful"
+  resistance_level: "Mild"
+
+coaching_moves:
+  approach_used: "Fun reframe + grounding (Calm Queen mini-game)"
+  pivot_moments:
+    - "Student moved from 'I don't know what to do' to laughing at the Calm Queen framing"
+    - "Energy visibly shifted after micro-commitment was locked in"
+  tools_used: ["Calm Queen Reset", "Micro-commitment anchor"]
+
+outcomes:
+  commitment_made: true
+  commitment_detail: "Drink one full glass of water + go for a 7-min walk before sitting back down"
+  breakthrough_signal: true
+  breakthrough_note: "Student went from paralysis to lightness — the playful reframe (Calm Queen) unlocked movement where direct advice had not"
+
+quality_signals:
+  tone_appropriate: true
+  pacing_appropriate: true
+  avoided_overwhelm: true
+  warmth_rating: 5
+
+refinement_notes: >
+  The Calm Queen reframe (name your reset, own it like a title) worked very well for a student in
+  low-energy, stuck state. Consider formalizing this as a named coaching move in Inner Mastery Coach
+  agent spec. No system gaps observed — session-ending hook triggered cleanly on 'bye'.

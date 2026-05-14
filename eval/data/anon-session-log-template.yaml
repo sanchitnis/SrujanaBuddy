@@ -1,0 +1,50 @@
+# Anonymized Session Log — SrujanaBuddy
+# Template version: 1.0 | Created: May 2026
+#
+# PRIVACY RULES (mandatory before saving):
+# - Replace student name with Student-[4-digit random code] e.g. Student-4821
+# - Remove: roll number, SRN, email, mobile, section, family names, location specifics
+# - Retain: coaching patterns, session flow, energy, outcomes, tone signals
+# - Consent must be granted explicitly before this file is created
+
+session:
+  id: ""                          # Auto-assign: SESS-YYYYMMDD-[4-digit random]
+  date: ""                        # YYYY-MM-DD
+  consent_granted: true           # Always true — file should not exist if false
+
+student:
+  anonymous_id: ""                # Student-[4-digit random code]
+  year_of_study: ""               # 1st / 2nd / 3rd / 4th / PG-1 / PG-2
+  stream: ""                      # e.g. CSE, ECE, MBA — no section/batch detail
+  srujana_stage: ""               # Stage 1 / 2 / 3 / 4 / Unknown
+
+session_context:
+  session_type: ""                # e.g. Clarity reset, Daily planning, Career pathway
+  trigger_phrase: ""              # What the student said to start the session
+  agents_invoked: []              # e.g. [Integral Life Coach, Accountability Buddy]
+  session_duration_estimate: ""   # Short (< 5 min) / Medium (5-15 min) / Long (> 15 min)
+
+student_state:
+  opening_energy: ""              # 1-10 if stated, else: Low / Medium / High (observed)
+  closing_energy: ""              # 1-10 if stated, else: Low / Medium / High (observed)
+  emotional_tone: ""              # e.g. Overwhelmed, Curious, Resistant, Playful, Calm
+  resistance_level: ""            # None / Mild / Moderate / High
+
+coaching_moves:
+  approach_used: ""               # e.g. Socratic, Direct tactical, Fun reframe, Grounding
+  pivot_moments: []               # Notable moments where coaching shifted approach
+  tools_used: []                  # e.g. Main Character Reset, Brain dump, GTD rescue
+
+outcomes:
+  commitment_made: false          # Did student commit to an action?
+  commitment_detail: ""           # Brief anonymous description e.g. "drink water + 7-min walk"
+  breakthrough_signal: false      # Any notable clarity, energy shift, or insight?
+  breakthrough_note: ""           # Brief description if yes — no PII
+
+quality_signals:
+  tone_appropriate: true          # Was Bangalore English + Kannada flavour tone used well?
+  pacing_appropriate: true        # Did session respect student's readiness level?
+  avoided_overwhelm: true         # Did coach avoid overloading student with tasks?
+  warmth_rating: ""               # 1-5 (5 = very warm and peer-like)
+
+refinement_notes: ""              # Free text: anything unusual, edge case, or system gap observed

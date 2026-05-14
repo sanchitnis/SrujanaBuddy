@@ -1,0 +1,52 @@
+# REVA University Student Aspirations Form
+# Designed for digital collaboration (AI/Student Editing)
+
+university_details:
+  institution: "REVA UNIVERSITY"
+  location: "Bengaluru, India"
+  faculty: "" # To be filled
+  school: ""  # To be filled
+
+student_information:
+  name: ""
+  semester: ""
+  program_name: ""
+  email_id: ""
+  admission_no: ""
+  srn: ""
+  mobile_no: ""
+
+aspirations_and_goals:
+  program_motivation:
+    question: "Why did you choose the program? (Briefly explain your motivation for selecting this field of study)"
+    response: "" 
+
+  long_term_career:
+    question: "What are your long-term career aspirations? (Where do you see yourself in the next 5–10 years?)"
+    response: "" 
+
+  university_support:
+    question: "What kind of support, opportunities, or guidance do you expect from the University/Faculty to help you achieve your goals?"
+    examples: ["mentoring", "internships", "facilities", "research", "skill development"]
+    response: "" 
+
+  community_contribution:
+    question: "How do you plan to contribute to the university/college community during your time here?"
+    response: "" 
+
+  skills_and_development:
+    question: "What are your current skills, strengths, or hobbies, and which ones would you like to further develop during your studies?"
+    response: "" 
+
+  holistic_expectations:
+    question: "What are your expectations from university life beyond academics?"
+    themes: ["Personal growth", "networking", "leadership", "overall experience"]
+    response: "" 
+
+  additional_feedback:
+    question: "Do you have any suggestions, ideas, or additional expectations that you would like to share with the University?"
+    response: "" 
+
+submission:
+  digital_signature: ""
+  date: ""

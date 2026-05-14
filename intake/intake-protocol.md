@@ -22,15 +22,31 @@ Use [references/REVA University.md](references/REVA%20University.md) whenever in
    1. Five Student Spheres quick check.
    2. Study habits and time management snapshot.
    3. Stress, sleep, and energy self-check.
+   4. Coaching readiness and preferences:
+      - Work style: Do they prefer fast ambitious progress with hard/smart work, or slow fun-oriented completion of simple tasks?
+      - Energy state: On a 1-10 scale, how are they feeling right now? (1 = very low, 10 = very high)
+      - Overwhelm level: None / Mild / Moderate / High?
+      - Clarity: Are they clear on what they want, exploring, or confused?
+      - Show-up reliability: Can they commit to showing up consistently for coaching?
+      - System readiness: Do they have time, mental capacity, and tech access to engage with the system?
 4. Goal and direction setting
    - Guide this section using `The Strategic Directive: Educate to Enterprise` and the student-principles section in [references/REVA University.md](references/REVA%20University.md#L43).
    1. 1 academic goal for 30 days.
    2. 1 habit goal for consistency.
    3. 1 career exploration step.
+   4. **Aspirations discovery** (progressive):
+      - Start collaborative fill of `Templates/StudentAspirationsForm.yaml` during intake.
+      - Do not expect complete form in first session if student is exploring.
+      - Save first draft as `profiles/<full-name>-aspirations.yaml` even if partial.
+      - Plan to revisit and refine aspirations in session 2, month-end review, and whenever direction clarity shifts.
+      - **Note in profile**: Aspirations form is *living* — update every 30-60 days or when student insights shift, not one-time only.
 5. Setup and handoff
    1. Create profile from template.
-   2. Initialize GTD Lite lists.
-   3. Route first session type and assigned coach.
+   2. **Populate Coaching Context section** with readiness signals and preferences captured in step 3.
+   3. Initialize GTD Lite lists.
+   4. Route first session type and assigned coach — **calibrated to coaching context** (e.g., if overwhelmed+low energy, start with wellbeing/grounding, not heavy planning).
+   5. Link profile + aspirations file as north-star inputs for the first 30-day plan.
+   6. **Document update cadence**: Flag in profile when aspirations and coaching context should be revisited (typically month-end or after significant session).
 
 ## Risk and escalation
 1. Green: normal coaching cadence.
@@ -38,10 +54,13 @@ Use [references/REVA University.md](references/REVA%20University.md) whenever in
 3. Red: immediate referral per support escalation guide.
 
 ## Required artifacts
-1. Completed profile file.
+1. Completed profile file (including Coaching Context section with work style, energy, overwhelm, clarity, show-up reliability).
 2. Intake app outputs copied into profile evidence section.
-3. First 30-day plan with dated checkpoints.
-4. Assigned session type for next interaction.
+3. First 30-day plan with dated checkpoints — **paced according to coaching context** (not all students same speed).
+4. Assigned session type for next interaction — **calibrated to readiness signals**.
+5. Aspirations file draft: `profiles/<full-name>-aspirations.yaml` (may be partial at intake; plan refinement sessions).
+6. North-star note that maps aspirations to the first 30-day plan.
+7. Coach notes on how to adjust session intensity, pacing, and style based on this student's coaching context.
 
 ## Service level expectations
 1. Intake completion target: 1 guided session.

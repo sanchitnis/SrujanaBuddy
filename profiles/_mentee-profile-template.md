@@ -36,6 +36,33 @@
 2. Session type for next 3 sessions:
 3. Course Buddyes assigned:
 
+## Coaching Context and Preferences
+
+> Captured at intake and updated progressively. Used by all coaches to calibrate session intensity, pacing, and style.
+
+### Work style and progression preference
+1. **Preferred pace**: Fast (ambitious goals, hard/smart work) | Balanced | Slow (small wins, fun-focused tasks)
+2. **Energy baseline**: 1-10 scale (1 = very low, 10 = very high)
+3. **Overwhelm level**: None | Mild | Moderate | High
+4. **Clarity state**: Clear on goals | Somewhat clear | Exploring | Confused | Paralysed
+
+### Engagement and readiness signals
+1. **Show-up consistency**: First session attended? (Y/N) | Pattern: (always / usually / sometimes / rarely)
+2. **System readiness**: Has prerequisites (time, mental capacity, tech access)? (Y/N)
+3. **Coaching receptivity**: Open to feedback | Skeptical | Resistant | Needs trust-building
+4. **Communication preference**: Real-time chat | Async review documents | Mixed
+
+### Coaching implications
+- **Coach notes**: [Brief summary of what to know about this student's coaching context]
+- **Session intensity adjustment**: Start with [light/medium/intense] and scale based on response
+- **Risk flags**: (e.g., "overwhelmed + low energy = avoid heavy planning until stability improves")
+- **Aspirations sync cadence**: Update aspirations file every [30/60/90] days or when context shifts
+
+### Last updated
+- Date: 
+- Updated by: 
+- Reason: (e.g., "end of month review", "post-session adjustment")
+
 ## GCS Project Track
 
 > Populate this section only if the student is enrolled in Grand Challenge Studio (GCS).

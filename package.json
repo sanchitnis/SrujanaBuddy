@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "markdown-it-mermaid": "^0.2.5"
+  }
+}

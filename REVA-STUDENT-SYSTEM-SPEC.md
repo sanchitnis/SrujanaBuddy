@@ -41,7 +41,7 @@ streams to help them progress toward their aspirations in the AI era through:
    - Public leaderboards (8 celebration categories, opt-in)
    - Privacy consent model (3 tiers)
 
-3. **Course Buddy Architecture Enhancement** (Section 13.32): Named slots for course buddies (e.g., `course-buddy-gcs.md`) instead of numbered slots (01-10).
+3. **Course Buddy Architecture Enhancement** (Section 13.32): Named slots for Course Buddies (e.g., `course-buddy-gcs.md`) instead of numbered slots (01-10).
    - Supports both gamified and non-gamified courses
    - Profile tracking with optional analytics sections
    - Per-course reference and context documentation
@@ -51,7 +51,7 @@ streams to help them progress toward their aspirations in the AI era through:
    - Optional gamification analytics section
    - Consent flags for mentor and leaderboard sharing
 
-5. **Gamification Integration into Weekly Coaching Loop**: Step 10 of course coach sessions includes gamification nudge that celebrates progress, unlocks badges, and updates analytics in real-time.
+5. **Gamification Integration into Weekly Coaching Loop**: Step 10 of Course Buddy sessions includes gamification nudge that celebrates progress, unlocks badges, and updates analytics in real-time.
 
 6. **Srujana Stage 3 Gateway**: Project-based courses (starting with GCS) now serve as Srujana Stage 3 (Creation) competency gates; Stage 4 (Enterprise) signals detected and flagged for faculty follow-up.
 
@@ -289,6 +289,12 @@ No auto-sharing with faculty or peers without student consent. Student controls 
 4. Assign year-group coaching mode.
 5. Generate first-week starter plan.
 
+**Aspirations Artifact Rule:**
+1. During onboarding, fill `Templates/StudentAspirationsForm.yaml` collaboratively with the student.
+2. Save the confirmed form as `profiles/<full-name>-aspirations.yaml` once ready.
+3. Use the aspirations file as a coaching north star together with the living profile (`profiles/<full-name>.md`).
+4. Revisit and refresh aspirations during major transitions (semester change, pathway pivot, internship/placement phase).
+
 **Living Profile Rule (from SrujanaBuddy):**
 The student profile is a living document � not a static intake form. In every session,
 capture 1�2 new profile signals (energy pattern, value expressed, new constraint, commitment style)
@@ -301,6 +307,50 @@ and update the profile incrementally. Coaching precision improves continuously o
 4. One explicit commitment (time-bound)
 5. One dopamine risk and one stabilizing counter-move
 6. Any new insight, pattern, or value signal worth recording
+
+### 14.2.1 Coaching Context and Preferences Capture
+
+**Purpose:** Capture how the student prefers to be coached and their readiness to engage with the system, so every coach can personalize session intensity, pacing, and style.
+
+**Captured at intake and updated every 30–60 days or when signals shift:**
+
+1. **Work style and progression preference**
+   - Prefers fast ambitious progress via hard/smart work, or slow fun-oriented completion of simple tasks?
+   - Maps to session intensity and goal-setting approach
+
+2. **Energy baseline (1–10 scale)**
+   - Current energy level at intake
+   - Used to calibrate session load: high energy → ambitious planning; low energy → wellbeing first
+
+3. **Overwhelm level**
+   - Categories: None / Mild / Moderate / High
+   - Determines session pacing and micro-commitment vs. big-goal approach
+
+4. **Clarity state**
+   - Clear on goals | Somewhat clear | Exploring | Confused | Paralysed
+   - Triggers aspirations refinement sessions if exploring or paralysed
+
+5. **Show-up consistency (reliability signal)**
+   - Did student attend first session? (Y/N)
+   - Pattern: Always / Usually / Sometimes / Rarely
+   - Used to determine accountability structure and reminder frequency
+
+6. **System readiness (prerequisites)**
+   - Does student have time, mental capacity, tech access to engage?
+   - Flags barriers early (e.g., overload, no device access, family crisis)
+
+**Coaching Implications Rule:**
+- Coaching context is used to **calibrate every session** after intake. Do not apply one-size-fits-all session templates.
+- **High energy + clear + low overwhelm** → ambitious multi-week plans, fast-paced sessions, big goals
+- **Low energy + exploring + high overwhelm** → wellbeing grounding first, small wins, lightness, aspirations discovery
+- **Unreliable show-up pattern** → add accountability structures, automated reminders, check-in frequency boost
+
+**Progressive Aspirations Rule (Refinement):**
+Aspirations form is not completed once at intake. It is a **living artifact**:
+1. Start collaborative fill at intake — expect partial if student is exploring.
+2. Save first draft even if incomplete.
+3. Revisit and refine at: session 2, month-end review, semester transitions, pathway pivots, whenever clarity shifts.
+4. Update coaching context profile section whenever aspirations evolve or energy/overwhelm/clarity state changes.
 
 ### 14.3 Custom Psychometric Baseline (Non-Clinical, Offline HTML Apps)
 
@@ -771,7 +821,7 @@ Wisdom is never decorative � it must convert to behavior.
 - Public leaderboard (opt-in): anonymous by default; student can show real name
 
 **Weekly Coaching Integration:**
-Each project-based course coach includes a **Gamification nudge** (Step 10 of coaching loop) that:
+Each project-based Course Buddy includes a **Gamification nudge** (Step 10 of coaching loop) that:
 - Celebrates rubric progression and badge unlocks
 - Nudges lagging rubrics toward Intermediate with concrete examples
 - Checks Bold Bet ambition level
@@ -790,7 +840,7 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 
 ### 14.32 Course Buddy Architecture (Named Slots)
 
-**Dynamic course coach provisioning** now uses course-name-based slots instead of numbered slots (01-10).
+**Dynamic Course Buddy provisioning** now uses course-name-based slots instead of numbered slots (01-10).
 
 **Naming convention:**
 - Slot file: `agents/course-buddyes/instances/course-buddy-[slug].md` (e.g., `course-buddy-gcs.md`, `course-buddy-dbms.md`)
@@ -983,9 +1033,12 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 28. Narrative arc system (4 roles, 5 chapters per student) operational.
 29. Public leaderboards (8 categories, opt-in consent) operational for project courses.
 30. Privacy consent model (Private → Mentor Share → Public Leaderboard) fully operational.
-31. Gamification nudge (Step 10 of coaching loop) integrated into course buddies.
+31. Gamification nudge (Step 10 of coaching loop) integrated into Course Buddies.
 32. Enterprising Ability Score (composite of 6 dimensions) calculation and weekly update operational.
 33. Srujana Stage 3 → 4 signal detection and faculty flagging operational (for venture/research track).
+34. Coaching Context Capture (work style, energy, overwhelm, clarity, show-up, readiness) operational at intake and progressively updated every 30–60 days.
+35. Progressive Aspirations Refinement (initial draft at intake, revisited at session 2, month-end, and transitions) operational.
+36. Session intensity and pacing calibrated based on coaching context signals (not one-size-fits-all).
 
 ---
 
@@ -1034,6 +1087,9 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 | **Course Buddy named slots (course-buddy-gcs.md vs. 01-10 numbering)** | **Confirmed (v1.5)** |
 | **Srujana Stage 3 gateway via project-based courses** | **Confirmed (v1.5)** |
 | **Gamification nudge integrated into weekly coaching loop (Step 10)** | **Confirmed (v1.5)** |
+| **Coaching Context Capture (work style, energy, overwhelm, clarity, show-up, readiness)** | **Confirmed (v1.5)** |
+| **Progressive Aspirations Refinement (not one-time, revisited every 30–60 days or at transitions)** | **Confirmed (v1.5)** |
+| **Session intensity calibrated per coaching context (not one-size-fits-all)** | **Confirmed (v1.5)** |
 
 ---
 

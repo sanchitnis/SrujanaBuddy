@@ -23,6 +23,19 @@ eval/
 ├── eval-agent.md                      ← agent spec for running eval sessions and audits
 ├── improvement-board.md               ← governance charter, meeting cadence, stakeholder roles
 │
+├── demos/
+│   ├── README.md                      ← index of all demo sessions; capability coverage table
+│   ├── riya-sharma.md                 ← exam panic → Calm Queen reset → micro-commitment
+│   ├── arjun-patel.md                 ← AI vs startup dilemma → career pathway + Svadharma
+│   ├── keerthi-reddy.md               ← ECE→ML pivot → Course Buddy + out-of-curriculum
+│   ├── vikram-nair.md                 ← placement panic → portfolio triage + accountability
+│   ├── sneha-kulkarni.md              ← MBA strengths discovery → Five Spheres + aspirations form
+│   ├── rohit-joshi.md                 ← personal website paralysis → personal website builder agent
+│   ├── ananya-rao.md                  ← startup idea → GCS 6-dimension scoring (21/30)
+│   ├── mohammed-faizan.md             ← academic crisis → wellbeing triage + GTD rescue
+│   ├── priya-venkatesh.md             ← GATE + PhD track → research reframe + out-of-curriculum
+│   └── suresh-babu.md                 ← deep demotivation → inner mastery + Svadharma + escalation check
+│
 ├── personas/
 │   └── archetypes.md                  ← 4 student archetypes × 8 career paths; 12 sample personas
 │
@@ -42,7 +55,9 @@ eval/
 │
 └── data/
     ├── eval-log-template.md           ← per-session quality log with pass/fail signal checklist
-    └── IMPROVEMENT-BACKLOG.md         ← live log of improvement tasks raised from eval/feedback
+    ├── IMPROVEMENT-BACKLOG.md         ← live log of improvement tasks raised from eval/feedback
+    ├── anon-session-log-template.yaml ← anonymized session log template (consent-gated; PII-free)
+    └── sessions/                      ← saved anonymized session logs (one YAML per session)
 ```
 
 ---

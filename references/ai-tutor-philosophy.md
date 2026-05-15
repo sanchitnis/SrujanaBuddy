@@ -101,47 +101,7 @@ The REVA extension is built on Dr. Shyama Raju's directive: **"Educate to Enterp
 
 ---
 
-## Part 6 — Technology Implementation Hierarchy (System-wide)
 
-This section governs technology choices across the **entire SrujanaBuddy system** — not only the Course Buddy Builder, but every tool, script, app, and integration.
-
-The guiding principle: **prefer the simplest tier that achieves the goal**. Move to a higher tier only when a lower tier genuinely cannot do the job.
-
-### The Five Tiers
-
-| Tier | Label | What it is | API key needed? |
-|------|-------|------------|-----------------|
-| T0 | **Deterministic** | Pure Python / JS / HTML, stdlib only, no model. Template filling, offline scoring, static HTML apps (`intake/apps/` pattern). | No |
-| T1 | **Agent Skills** | Markdown-native Copilot skills — interactive coaching sessions, daily conversational use. No script involved; the LLM is the IDE. | No |
-| T2 | **Scripts (no LLM)** | Rule-based automation — RSS fetch, calendar audit, gap extraction, file transforms. Deterministic output; no language model needed. | No |
-| T3 | **Local / Edge AI** | Prompts needing language understanding — REVA-hosted LLM (when available) or a Gemma-class model running on a mobile phone (Google AI Edge Gallery) or laptop (Ollama). All T3 scripts read `LLM_ENDPOINT`; swap backends with zero code change. | No (local) |
-| T4 | **Free-tier Cloud API** | Unattended background / cron jobs only — e.g., nightly wiki refresh, batch eval runs. Acceptable: Gemini Flash free tier, Groq free tier. Must include a stdlib daily quota guard (`.quota/daily.json`). Paid frontier keys (OpenAI paid, Claude, Gemini Pro) are not in scope currently but could be implemented in future. | Optional |
-
-**Preference order: T0 → T1 → T2 → T3 → T4**
-
-### "Optional" Means Reduced Mode, Not Failure
-
-API keys (T4) and local model endpoints (T3) are always **optional**. If they are not configured, the tool operates at T2 level and logs `[reduced mode] LLM not configured — running without AI enrichment`. T0/T1/T2 always work with zero configuration.
-
-Example: the opportunity radar at T2 surfaces raw RSS articles; at T3 it also summarises and ranks them by relevance to the student's Srujana pathway. Both modes are useful. A student should never see a hard error because a key is missing.
-
-**Standard environment variables** (never hard-code these values):
-
-| Variable | Purpose | Default |
-|----------|---------|--------|
-| `LLM_ENDPOINT` | Local model base URL | `http://localhost:11434` (Ollama standard) |
-| `LLM_MODEL` | Local model name | `gemma3:4b` |
-| `GEMINI_API_KEY` | Gemini Flash free-tier key | *(unset — optional)* |
-| `GROQ_API_KEY` | Groq free-tier key | *(unset — optional)* |
-
-### Six Design Rules
-
-1. **Declare the tier** in every tool's `README.md` or inline header comment: `# Tier: T2`.
-2. **T3/T4 tools degrade gracefully** to T2 via a `--skip-llm` flag or when no endpoint/key is found in the environment.
-3. **No hard-coded model names or API keys** — always read from environment variables listed above.
-4. **T4 cron tools must check a quota guard** before any API call — a stdlib JSON counter at `.quota/daily.json` is sufficient; no extra library needed.
-5. **T3 mobile tools must document one-time setup** in their `README.md`: the app name, the model file to download, and estimated device requirements.
-6. **No tool may require a paid API key to function at all** — if a design requires one, redesign the feature.
 
 ---
 

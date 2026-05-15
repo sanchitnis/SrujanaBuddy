@@ -31,7 +31,7 @@ SrujanaBuddy is a markdown-native AI coaching operating system for REVA Universi
 - Follow the T0→T4 technology tier hierarchy defined in `references/ai-tutor-philosophy.md` for any tool or automation suggestions
 
 ## Key files
-- `SKILL.md` — routing core (always-loaded)
+- `.agents/skills/srujanabuddy/SKILL.md` — routing core (always-loaded)
 - `SKILL-context.md` — coaching philosophy and tone (load on demand)
 - `agents/` — specialist agent specs
 - `profiles/` — student profiles (named `full-name.md`, hyphen-separated)

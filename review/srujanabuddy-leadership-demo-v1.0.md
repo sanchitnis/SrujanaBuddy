@@ -6,6 +6,8 @@ May 14, 2026 · First Floor Boardroom, Admin Block
 
 > **आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।**
 > **पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च ॥**
+A students learns a quarter from the teacher, a quarter by way of her intelligence,
+a quarter from her peers (**now including AI Agents**), and a quarter through the course of time (experience).
 
 ---
 
@@ -172,8 +174,10 @@ mindmap
 | **Consulting (C)** | Score a student's startup idea across 6 Enterprising dimensions |
 | **Kaizen (K)** | Run weekly coaching reviews and flag at-risk students to faculty |
 
-> 📌 *🖼️ MEME PLACEHOLDER: "It's not about replacing faculty — it's about giving faculty superpowers."
-(Suggest: Professor with Iron Man suit)*
+> ![Faculty with Superpowers](../assets/images/faculty%20with%20superpowers.png)
+>
+> **"It's not about replacing faculty — it's about giving faculty superpowers."**
+> (Professor with Iron Man suit)
 
 
 ---
@@ -559,8 +563,10 @@ flowchart TD
 | Infrastructure required | None — runs on existing IDE + GitHub |
 | New software to install | None |
 
-> 📌 *🖼️ MEME PLACEHOLDER: "No new servers. No new licenses. Just a text file that makes the AI brilliant."
-(Suggest: "We have technology at home" meme — the technology is already here)*
+> ![Student with SrujanaBuddy](../assets/images/Student%20with%20SriujanaBuddy.png)
+>
+> **"No new servers. No new licenses. Just a text file that makes the AI brilliant."**
+> (The technology is already here)
 
 
 ---

@@ -9,7 +9,7 @@
 - When adding scripts, follow the standards in `CONTRIBUTING.md` (Python 3.10+ preferred, stdlib-first, safe defaults, idempotent behavior).
 
 ## Architecture
-- `SKILL.md` is the always-loaded routing file (triggers, agent table, session routing, wellbeing thresholds, reference load map).
+- `.agents/skills/srujanabuddy/SKILL.md` is the routing skill (triggers, agent table, session routing, wellbeing thresholds, reference load map).
 - `SKILL-context.md` is the companion coaching philosophy file (principles, output formats, guardrails). Load on demand when a session needs full context.
 - `SKILL-legacy.md` is the legacy monolithic file — kept for reference but superseded by the core/context split.
 - `agents/` contains the specialist coaching agent specifications.
@@ -28,13 +28,13 @@ Each setup is for one individual only. **At every session start**, follow this s
 
 2. **If a profile exists**:
    - Identify the mentee by the filename (e.g., `tushar-v.md` -> Tushar).
-   - Load `SKILL.md` immediately.
+   - Load `.agents/skills/srujanabuddy/SKILL.md` immediately.
    - Load the student's profile to check coaching context and last session notes.
    - **Greeting**: Start immediately with the name and a short summary of the last **coaching** session (ignore any developer/collaborator sessions): *"Namaste [Name]! Welcome back, da. Last time we [short summary of coaching goals/wins]. Where are we today?"*
    - Skip name request and proceed to **Route session** (Step 4).
 
 3. **If NO profile exists**:
-   - Load `SKILL.md` immediately.
+   - Load `.agents/skills/srujanabuddy/SKILL.md` immediately.
    - **Greeting**: *"I am SrujanaBuddy, your AI coaching companion at REVA. This coaching is designed to help you progress toward your aspirations."*
    - Ask for name immediately: *"First things first — what's your name, da?"*
    - Once name is captured, create new profile from `profiles/_mentee-profile-template.md`.
@@ -42,7 +42,7 @@ Each setup is for one individual only. **At every session start**, follow this s
 
 4. **Route session** based on profile signals or intake progress.
 
-5. **Load agent** specified in `SKILL.md` routing table.
+5. **Load agent** specified in `.agents/skills/srujanabuddy/SKILL.md` routing table.
 
 6. **Apply tone and voice** — Bangalore English with Kannada flavour.
 
@@ -78,8 +78,8 @@ Tools, scripts, and small programs are permitted and encouraged in this reposito
 - There is no global build step for the core repository (content is primarily Markdown).
 - For local app testing in this repo:
   - `cd intake/apps && python3 -m http.server 8080`
-- Validate `SKILL.md` frontmatter before submitting structural changes:
-  - `python3 -c "import yaml; c=open('SKILL.md').read(); yaml.safe_load(c.split('---')[1]); print('SKILL.md frontmatter: valid')"`
+- Validate skill frontmatter before submitting structural changes:
+  - `python3 -c "import yaml; c=open('.agents/skills/srujanabuddy/SKILL.md').read(); yaml.safe_load(c.split('---')[1]); print('srujanabuddy SKILL.md frontmatter: valid')"`
 
 ## Conventions
 - Keep guidance aligned with REVA philosophy and Dr. Shyama Raju's vision; do not generalize away core domain intent.

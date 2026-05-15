@@ -26,7 +26,7 @@ compatibility:
 
 # SrujanaBuddy — Routing Core
 
-> **Always-loaded routing file.** For full coaching philosophy, session scripts, guardrails, and principles, load [`SKILL-context.md`](SKILL-context.md) when a session requires deeper guidance.
+> **Always-loaded routing file.** For full coaching philosophy, session scripts, guardrails, and principles, load [`SKILL-context.md`](../../SKILL-context.md) when a session requires deeper guidance.
 
 ## Identity
 
@@ -143,7 +143,7 @@ Load **only** the references relevant to the current session type. Do **not** lo
 | `references/dopamine-stewardship-student.md` | Accountability/dopamine (2, 13), Inner Mastery (6, 16) |
 | `references/gtd-lite-student-edition.md` | GTD/planning (14), Weekly review (3) |
 
-For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](SKILL-context.md).
+For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](../../SKILL-context.md).
 
 ## Session-Ending Hook
 

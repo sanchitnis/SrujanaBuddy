@@ -102,4 +102,4 @@ The project is integrated with other technical courses to ensure holistic develo
 
 * **IoT:** Implementation of hardware components where applicable.
 
-* **Innovation & Entrepreneurship:** Applying innovation processes and lean startup methods.  
+* **Innovation & Entrepreneurship:** Applying innovation processes and lean startup methods.

@@ -55,19 +55,18 @@ Focus on coaching content, workflow clarity, and tone for student-facing files.
 
 ## Available Skills (`.agents/skills/`)
 
-All four skills below are registered and available. Load the relevant `SKILL.md` when the topic triggers:
+All skills below are registered and available. Load the relevant `SKILL.md` when the topic triggers:
 
 | Skill | File | Trigger |
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | GCS, Grand Challenge Studio, sprint, bold bet, demo day |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | Weekly review, inbox, next actions, GTD rescue |
 | `intake` | `.agents/skills/intake/SKILL.md` | New student, no profile, onboarding, first session |
-
-> **`srujanabuddy` is not a triggered skill.** Its orchestration logic lives in `SKILL.md` at the repo root and is always loaded.
+| `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course wiki, workbook, or Course Buddy skill *(faculty/admin only)* |
 
 ## Available Specialist Agents (`agents/`)
 
-Call these by reading their `.md` file when the session needs specialist depth. Routing is done via `.agents/skills/srujanabuddy/SKILL.md` agent table.
+Call these by reading their `.md` file when the session needs specialist depth. Routing is done via `SKILL.md` (root) agent table.
 
 | Agent | File |
 |---|---|

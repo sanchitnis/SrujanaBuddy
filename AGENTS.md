@@ -29,8 +29,7 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | Grand Challenge Studio coach (CSE stream) |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system |
 | `intake` | `.agents/skills/intake/SKILL.md` | New student onboarding and intake protocol |
-
-> **Note:** `srujanabuddy` is not a triggered skill — it is the always-loaded orchestrator at `SKILL.md` (root).
+| `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course knowledge artefacts *(faculty/admin, not student-facing)* |
 
 ### Developer Mode
 
@@ -138,9 +137,6 @@ Example: the opportunity radar at T2 surfaces raw RSS articles; at T3 it also su
 - There is no global build step for the core repository (content is primarily Markdown).
 - For local app testing in this repo:
   - `cd intake/apps && python3 -m http.server 8080`
-- Validate skill frontmatter before submitting structural changes:
-  - `python3 -c "import yaml; c=open('.agents/skills/srujanabuddy/SKILL.md').read(); yaml.safe_load(c.split('---')[1]); print('srujanabuddy SKILL.md frontmatter: valid')"`
-
 ## Conventions
 - Keep guidance aligned with REVA philosophy and Dr. Shyama Raju's vision; do not generalize away core domain intent.
 - Prefer small, additive updates over broad rewrites.

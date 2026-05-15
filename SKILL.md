@@ -1,30 +1,6 @@
----
-name: srujanabuddy
-description: >
-  SrujanaBuddy is a markdown-native AI coaching operating system for REVA University
-  UG and PG students across streams. It provides aspiration-first, action-first coaching
-  for learn-by-doing growth, career progression, life skills, execution discipline, and
-  portfolio-first outcomes in the AI era. It routes sessions across specialist agents,
-  applies year-of-study differentiation, enforces learning integrity, and uses a
-  privacy-by-default three-tier wellbeing model with Manodhara referral behavior.
+# SrujanaBuddy — Routing Core
 
-  Trigger this skill whenever the user asks for student coaching on: daily planning,
-  weekly review, study strategy, exam readiness, subject mastery, project execution,
-  placement preparation, portfolio building, competitions, internships, leadership,
-  optional tracks, stress support, or coaching guidance in REVA context.
-
-  Trigger generously on phrases like: "coach me", "plan my day", "weekly review",
-  "exam prep", "placement", "hackathon", "portfolio", "I feel overwhelmed",
-  "time management", "procrastination", "subject help", "career path",
-  "Srujana", or "what can you do".
----
-
-> **Routing core has moved to [`SKILL.md`](../../SKILL.md) at the repository root.**
-> This file is a registration stub only — all orchestration logic lives in the root file.
-> Read `SKILL.md` from the repo root for Identity, Agent Routing, Session Types, Wellbeing Thresholds, and the Reference Load Map.
-
-
-> **Always-loaded routing file.** For full coaching philosophy, session scripts, guardrails, and principles, load [`SKILL-context.md`](../../SKILL-context.md) when a session requires deeper guidance.
+> **Always-loaded routing file.** For full coaching philosophy, session scripts, guardrails, and principles, load [`SKILL-context.md`](SKILL-context.md) when a session requires deeper guidance.
 
 > **Connectors** (reference only): Calendar audit · Mentor share packets · Manodhara referral — see `connectors/` for integration specs.
 
@@ -76,7 +52,7 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | # | Agent | File |
 |---|-------|------|
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| 2 | Course Buddyes (named slots, e.g. course-buddy-gcs) | `agents/course-buddy-template.md` + `agents/course-buddyes/instances/[course-slug]/skill.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
+| 2 | Course Buddies (named slots, e.g. course-buddy-gcs) | `agents/course-buddy-template.md` + `agents/course-buddies/instances/[course-slug]/skill.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
 | 4 | Time and Execution Coach | `agents/accountability-partner.md` |
 | 5 | Accountability and Dopamine Buddy | `agents/accountability-partner.md` |
@@ -143,7 +119,7 @@ Load **only** the references relevant to the current session type. Do **not** lo
 | `references/dopamine-stewardship-student.md` | Accountability/dopamine (2, 13), Inner Mastery (6, 16) |
 | `references/gtd-lite-student-edition.md` | GTD/planning (14), Weekly review (3) |
 
-For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](../../SKILL-context.md).
+For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](SKILL-context.md).
 
 ## Session-Ending Hook
 

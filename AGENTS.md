@@ -14,7 +14,8 @@
 - `SKILL-legacy.md` is the legacy monolithic file — kept for reference but superseded by the current split.
 - `agents/` contains the specialist coaching agent specifications.
 - `references/` contains philosophical and framework foundations used by agents.
-- `gtd/` contains the Markdown-native GTD operating system and task lists.
+- `stm/` contains the Sankalpa and Time Management workspace (sankalpas, streaks, Svadhyaya).
+- `gtd/` contains the legacy GTD task lists (superseded by `stm/`).
 - `ai-delegation/` contains AI delegation specs and task queue templates.
 - `intake/` and `profiles/` contain onboarding and mentee profile workflows.
 - `connectors/` contains integration specifications (for example calendar audit).
@@ -27,7 +28,8 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 | Skill | File | Purpose |
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | Grand Challenge Studio coach (CSE stream) |
-| `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system |
+| `stm` | `.agents/skills/stm/SKILL.md` | Sankalpa and Time Management — daily commitments, streaks, tiny wins, Svadhyaya review |
+| `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system *(legacy — superseded by STM)* |
 | `intake` | `.agents/skills/intake/SKILL.md` | New student onboarding and intake protocol |
 | `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course knowledge artefacts *(faculty/admin, not student-facing)* |
 

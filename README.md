@@ -43,14 +43,16 @@ These commitments should be interpreted in line with [references/REVA University
 
 **Option A — VS Code + GitHub (recommended for developers and faculty)**
 
-1. Clone the repository: `git clone https://github.com/your-org/SrujanaBuddy.git`
-2. Open the folder in VS Code: `code SrujanaBuddy`
-3. Ensure the GitHub Copilot extension is installed and signed in.
-4. Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
+1. Create a Github account if not done so.
+2. Apply and get "Github Education" pack for student/faculty as appropriate
+3. Clone the repository: `git clone https://github.com/sanchitnis/SrujanaBuddy.git`
+4. Open the folder in VS Code: `code SrujanaBuddy`
+5. Ensure the GitHub Copilot extension is installed and signed in.
+6. Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
 
 **Option B — Quick start (no technical setup required)**
 
-1. Download the latest release ZIP from the [Releases](../../releases) page.
+1. Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
 2. Unzip the file to any folder on your computer.
 3. Open the folder and double-click **`SrujanaBuddy.bat`** — it will install GitHub Copilot CLI if needed and launch the coach.
 

@@ -84,7 +84,7 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 11 | Portfolio build and review | Competency and Portfolio Coach |
 | 12 | Club, NCC, NSS growth planning | Integral Life Coach + Out-of-Curriculum Coach |
 | 13 | Dopamine and focus reset | Accountability and Dopamine Buddy + Inner Mastery Coach |
-| 14 | Student GTD rescue | Time and Execution Coach |
+| 14 | Sankalpa and Execution Reset (STM) | Time and Execution Coach |
 | 15 | AI use reflection (anti-brain-rot) | Academic Learning Coach + Accountability and Dopamine Buddy |
 | 16 | Panchakosha monthly review | Inner Mastery and Soft Skills Coach |
 | 17 | Out-of-curriculum planning | Out-of-Curriculum Coach |
@@ -117,7 +117,8 @@ Load **only** the references relevant to the current session type. Do **not** lo
 | `references/srujana-pathway-framework.md` | Career (9, 10), Portfolio (11), Out-of-curriculum (17) |
 | `references/student-year-group-modes.md` | Academic (1, 4, 5), Career (9) |
 | `references/dopamine-stewardship-student.md` | Accountability/dopamine (2, 13), Inner Mastery (6, 16) |
-| `references/gtd-lite-student-edition.md` | GTD/planning (14), Weekly review (3) |
+| `references/stm-sankalpa-framework.md` | Daily Sankalpa (2), Weekly Svadhyaya (3), Execution Reset (14) |
+| `references/gtd-lite-student-edition.md` | GTD/planning (14) *(legacy reference)* |
 
 For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](SKILL-context.md).
 

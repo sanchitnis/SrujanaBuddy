@@ -117,6 +117,7 @@ Example: *"After I brush my teeth at night, I will write tomorrow's 3 sankalpas.
 
 | File | Purpose | Replaces |
 |------|---------|---------|
+| `_tasks/` | Staging inbox — capture raw tasks before triage | `00-inbox.md` (partial) |
 | `00-today-sankalpa.md` | Daily ritual — today's commitments | `00-inbox.md` + `01-next-actions.md` |
 | `01-streak-tracker.md` | Active habit streaks with milestone markers | *(new)* |
 | `02-weekly-sankalpa.md` | This week's bigger arc commitments | `02-projects.md` (partial) |
@@ -124,6 +125,72 @@ Example: *"After I brush my teeth at night, I will write tomorrow's 3 sankalpas.
 | `04-waiting.md` | Items delegated or pending on others | `04-waiting-for.md` |
 | `05-sankalpa-archive.md` | Completed sankalpas — Celebration Hall of Wins | *(new)* |
 | `06-weekly-svadhyaya.md` | Weekly self-reflection and reset | `07-weekly-review.md` |
+
+---
+
+## Task Capture and Triage
+
+Before a task can become a sankalpa, it must be **captured and routed**. Writing captures freely — without worrying where they go — protects the quality of your sankalpa list.
+
+`stm/_tasks/` is the **staging inbox**. Write here first. Triage during your morning ritual or at your first free moment.
+
+### Capture
+
+Save any incoming task, obligation, or thought as a new file in `stm/_tasks/`:
+
+```
+YYYY-MM-DD-short-title.md
+```
+
+Use `stm/_tasks/TEMPLATE-capture.md` as the starting point. Fill only the raw task field. Do not triage at capture time if you are mid-class, mid-meeting, or mid-thought.
+
+### Triage Decision Flow
+
+Work through every `[raw]` file in `_tasks/` during the morning ritual:
+
+```
+Incoming capture
+  ↓
+< 2 min right now?
+  YES → Tatkala: complete it NOW — delete the capture file
+  NO  ↓
+Must happen today?
+  YES → Dainika → 00-today-sankalpa.md
+        (3/day cap full? → mark [PENDING], triage tomorrow)
+  NO  ↓
+Must happen this week?
+  YES → Saptahika → 02-weekly-sankalpa.md
+        (both slots full? → mark [PENDING], review at Svadhyaya)
+  NO  ↓
+Waiting on someone else?
+  YES → Waiting → 04-waiting.md
+  NO  ↓
+Genuinely want to do someday?
+  YES → Iccha → 03-someday-iccha.md
+   NO → Discard — hogbidi
+```
+
+### Routing Table
+
+| Triage Decision | Route | STM File |
+|---|---|---|
+| < 2 min right now | Tatkala | Complete immediately — no file |
+| Must happen today | Dainika | `00-today-sankalpa.md` |
+| Must happen this week | Saptahika | `02-weekly-sankalpa.md` |
+| Delegated / waiting | Waiting | `04-waiting.md` |
+| Someday / not urgent | Iccha | `03-someday-iccha.md` |
+| Cap is full | Pending | Keep in `_tasks/` with `[PENDING]` tag |
+| Not worth doing | Discard | Delete the capture file |
+
+### Triage Rules
+
+1. **Capture first, triage second.** Never block writing because you don't know where it goes yet.
+2. **The 3/day Dainika cap is enforced at triage.** If the cap is full, the task stays `[PENDING]` — it does not get forced into today.
+3. **`_tasks/` is a staging area, not a backlog.** Review all `[raw]` and `[PENDING]` files every Sunday in Svadhyaya. Piling up here is a stress signal.
+4. **Write the sankalpa in implementation-intention form** when routing to Dainika or Saptahika: *"When [situation], I will [action] for [duration]."*
+5. **Archive after triage.** Move the processed file to `stm/_tasks/.archive/YYYY-MM-DD/`.
+
+> Full folder guide and capture template: [`stm/_tasks/README.md`](../_tasks/README.md)
 
 ---
 

@@ -6,6 +6,7 @@ May 14, 2026 · First Floor Boardroom, Admin Block
 
 > **आचार्यात् पादमादत्ते पादं शिष्यः स्वमेधया ।**
 > **पादं सब्रह्मचारिभ्यः पादं कालक्रमेण च ॥**
+
 A students learns a quarter from the teacher, a quarter by way of her intelligence,
 a quarter from her peers (**now including AI Agents**), and a quarter through the course of time (experience).
 
@@ -692,7 +693,7 @@ gantt
 | All | Share this presentation | Today — GitHub link |
 
 > 📌 *🖼️ IMAGE PLACEHOLDER: QR code linking to this presentation on GitHub
-(URL: github.com/[org]/SrujanaBuddy/review/srujanabuddy-leadership-demo-v1.0.md)*
+(URL: github.com/sanchitnis/SrujanaBuddy/review/srujanabuddy-leadership-demo-v1.0.md)*
 
 
 ---

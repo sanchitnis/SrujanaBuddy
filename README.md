@@ -1,6 +1,10 @@
 # SrujanaBuddy
 
-An AI coaching system for REVA University students.
+SrujanaBuddy is an AI coaching companion for REVA University students, providing 24×7 first-level support across three areas:
+
+- **Academics** — courses, curriculum guidance, and exam preparation
+- **Aspirations** — progression toward career goals, soft skills, and enterprising skills
+- **Wellbeing** — first-response mental health support, with escalation to Manodhara for serious concerns
 
 ## What this is
 
@@ -35,13 +39,33 @@ These commitments should be interpreted in line with [references/REVA University
 
 ## How to use
 
-1. Load [SKILL.md](SKILL.md) into your AI environment as the always-loaded routing file. Load [SKILL-context.md](SKILL-context.md) on demand for full coaching philosophy and guardrails.
-2. Start a session with a direct request, for example:
-   - "Plan my day."
-   - "Run weekly review."
-   - "Help me prepare for exams."
-   - "I need placement readiness coaching."
-3. Use the GTD and profile files to track commitments, completions, and progress.
+### Installation
+
+**Option A — VS Code + GitHub (recommended for developers and faculty)**
+
+1. Clone the repository: `git clone https://github.com/your-org/SrujanaBuddy.git`
+2. Open the folder in VS Code: `code SrujanaBuddy`
+3. Ensure the GitHub Copilot extension is installed and signed in.
+4. Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
+
+**Option B — Quick start (no technical setup required)**
+
+1. Download the latest release ZIP from the [Releases](../../releases) page.
+2. Unzip the file to any folder on your computer.
+3. Open the folder and double-click **`SrujanaBuddy.bat`** — it will install GitHub Copilot CLI if needed and launch the coach.
+
+---
+
+### Running a session
+
+1. You can start with just saying Hi.
+2. Give *any* direct request, for example:
+   - Plan my day.
+   - Run weekly review.
+   - Help me prepare for exams.
+   - I need placement readiness coaching.
+   - Teach me C Programming
+3. As you go along, this saves your information in profile and stm folders to track commitments, completions, and progress. These are local files and are provate to you.
 
 ## Useful files
 

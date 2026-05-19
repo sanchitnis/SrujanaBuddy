@@ -1,6 +1,13 @@
 # SrujanaBuddy — .gitignore
 
 # ============================================================
+# STM PERSONAL DATA — kanban board auto-save (browser File System
+# Access API writes here after every change; contains live task
+# and streak data that is personal to the student)
+# ============================================================
+stm/kanban-data.json
+
+# ============================================================
 # PERSONAL PROFILES — never commit to public repos
 # ============================================================
 profiles/*

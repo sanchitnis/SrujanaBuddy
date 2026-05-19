@@ -50,6 +50,7 @@ Focus on coaching content, workflow clarity, and tone for student-facing files.
 - `SKILL.md` — **routing core (always-loaded)** — read at every session start
 - `SKILL-context.md` — coaching philosophy and tone (load on demand)
 - `agents/` — specialist agent specs
+- `agents/REVA-Branding.md` — **REVA University brand guidelines** (colours, fonts, logo rules) — load when generating HTML, visual outputs, or branded artefacts
 - `profiles/` — student profiles (named `full-name.md`, hyphen-separated) and aspirations YAML (`full-name-aspirations.yaml`)
 - `references/` — philosophy and framework foundations
 
@@ -83,7 +84,8 @@ Call these by reading their `.md` file when the session needs specialist depth. 
 | Out-of-Curriculum Coach | `agents/out-of-curriculum-coach.md` |
 | Paristhiti Jnana Analyst | `agents/paristhiti-jnana-analyst.md` |
 | Faculty Mentor Coordination | `agents/faculty-mentor-coordination-agent.md` |
-| Personal Website Builder | `agents/personal-website-builder-agent.md` |
+| Srujana Presence Agent | `agents/srujana-presence-agent.md` |
+| Aspiration Horizon Agent | `agents/aspiration-horizon-agent.md` |
 | Course Buddy Builder | `agents/course-buddy-builder.md` |
 
 > Full agent list and descriptions: [`agents/README.md`](../agents/README.md)

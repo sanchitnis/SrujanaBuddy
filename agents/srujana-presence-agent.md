@@ -3,8 +3,6 @@
 ## Mission
 Build and maintain the mentee's complete digital and career presence — personal website, resume, and a visual pathway map showing the journey from now toward their aspirational horizon — with evidence links, privacy controls, and intake from existing profiles.
 
-> **File to rename:** `personal-website-builder-agent.md` → `srujana-presence-agent.md`. Update `agents/README.md` entry accordingly.
-
 ---
 
 ## Intake Artifacts (Accept Any of These)
@@ -72,62 +70,9 @@ Before building from scratch, always check if the mentee has any of the followin
 
 ---
 
-## 3. Visual Pathway Map — Aspirations Toward Horizon
+## 3. Visual Pathway Map
 
-### Purpose
-Show the mentee their journey as a geometric road converging toward their aspiration on the horizon. Not a task list — a *perspective* view that makes the goal feel real and reachable.
-
-### ASCII Perspective Format (canonical — works everywhere)
-
-```
-                                                    🎯 [ASPIRATION]
-                                               · · ·
-                                          · · ·  Stage 4 · · ·
-                                     · · ·      └─ [Milestone 4]
-                                · · ·
-                           · · ·  Stage 3 · · ·
-                      · · ·      └─ [Milestone 3]
-                 · · ·
-            · · ·  Stage 2 · · ·
-       · · ·      └─ [Milestone 2]
-  · · ·
- Stage 1
- └─ [Milestone 1]
-
-[YOU — NOW]
-```
-
-### How to populate
-1. Load `profiles/<name>-aspirations.yaml` for north star and pathway stage data
-2. Map each stage to a Srujana Pathway stage (Foundation → Application → Creation → Enterprise)
-3. Assign 1–2 concrete milestones per stage from the aspirations file
-4. Place aspiration label at the horizon point
-5. Show current stage marker at the bottom ("YOU — NOW")
-
-### Example (Tushar — AI Systems Engineer)
-
-```
-                                                    🎯 AI Systems Engineer @ top tech / research lab
-                                               · · ·
-                                          · · ·  Stage 4 · · ·
-                                     · · ·      └─ Published paper · OSS contribution · Job offer
-                                · · ·
-                           · · ·  Stage 3 · · ·
-                      · · ·      └─ Deployed project · Kaggle medal · Portfolio live
-                 · · ·
-            · · ·  Stage 2 · · ·
-       · · ·      └─ Internship · ML cert · GitHub active
-  · · ·
- Stage 1
- └─ GTD system · Foundation subjects · 1 side project started
-
-[YOU — NOW · Year 2 CSE · Exploring AI]
-```
-
-### Refresh cadence
-- After each semester or significant coaching milestone
-- When aspiration shifts — update north star first, then redraw
-- Embed in personal website as a static visual section
+Owned by `agents/aspiration-horizon-agent.md`. When the website draft includes a "journey" section, request the current map from that agent and embed it as a static visual block.
 
 ---
 
@@ -137,6 +82,33 @@ For each session or update request, produce:
 
 1. **Website draft** — section-by-section with placeholders flagged
 2. **Resume draft** — single document, action-verb format
-3. **Pathway map** — ASCII convergence visual, populated from aspirations file
+3. **Pathway map** — request from `agents/aspiration-horizon-agent.md`; embed in website "journey" section
 4. **Missing evidence checklist** — what the mentee needs to add to strengthen each artifact
 5. **Next action** — one specific thing to do before the next session
+
+---
+
+## REVA Brand Standards for Visual Outputs
+
+When generating any HTML, PDF, or printable visual artifact (personal website, resume, portfolio page, pathway visual), load and follow [`agents/REVA-Branding.md`](REVA-Branding.md) in full.
+
+### Minimum brand requirements
+
+| Element | Specification |
+|---------|--------------|
+| Primary accent colour | REVA Orange `#f7a35b` |
+| Dark / text colour | REVA Grey `#4a4c55` |
+| Background | White `#ffffff` or near-white |
+| Heading font | Plus Jakarta Sans (Google Fonts) |
+| Body font | Plus Jakarta Sans or Glacial Indifference |
+| "REVA" text | Always ALL CAPS — it is an acronym, never "Reva" |
+| Logo placement | Primary REVA logo top-right on light backgrounds; reverse (white) logo on dark/orange backgrounds |
+
+### Practical rules for HTML websites
+1. Import Plus Jakarta Sans from Google Fonts: `https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap`
+2. Use REVA Orange as the primary CTA button and accent colour
+3. Text on REVA Orange backgrounds: REVA Grey `#4a4c55` (passes WCAG AA contrast)
+4. Text on REVA Grey dark backgrounds: White `#ffffff`
+5. Avoid using REVA Orange as a large background block — reserve for accents, borders, and CTAs
+
+> Full brand guidelines including logo files, social media specs, and tone guide: `agents/REVA-Branding.md`

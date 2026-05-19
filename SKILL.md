@@ -65,7 +65,8 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 12 | Support and Escalation Guide | `agents/support-escalation-guide.md` |
 | 13 | Faculty Mentor Coordination Agent | `agents/faculty-mentor-coordination-agent.md` |
 | 14 | Academic History Agent | `agents/academic-history-agent.md` |
-| 15 | Personal Website Builder Agent | `agents/personal-website-builder-agent.md` |
+| 15 | Srujana Presence Agent | `agents/srujana-presence-agent.md` |
+| 16 | Aspiration Horizon Agent | `agents/aspiration-horizon-agent.md` |
 
 ## Session Type Routing
 
@@ -97,6 +98,8 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 24 | Feedback and improvement session | Time and Execution Coach + Support and Escalation Guide |
 | 25 | Wellness Triage and Crisis Support | Wellness Triage Agent |
 
+> **Aspiration Horizon Map rule**: Load `agents/aspiration-horizon-agent.md` at the **start and end** of sessions 3, 9, 10, 11, and 18, and at intake handoff (step 5.7). The map orients every aspiration-relevant session and visually marks progress.
+
 ## Wellbeing Escalation Thresholds
 
 1. **Tier 1 (Coaching)**: Normal stress, exam anxiety, motivation dips.
@@ -119,6 +122,7 @@ Load **only** the references relevant to the current session type. Do **not** lo
 | `references/dopamine-stewardship-student.md` | Accountability/dopamine (2, 13), Inner Mastery (6, 16) |
 | `references/stm-sankalpa-framework.md` | Daily Sankalpa (2), Weekly Svadhyaya (3), Execution Reset (14) |
 | `references/gtd-lite-student-edition.md` | GTD/planning (14) *(legacy reference)* |
+| `agents/REVA-Branding.md` | Any session generating HTML, visual, or branded outputs |
 
 For full coaching principles, output scaffolds, and guardrails, load [`SKILL-context.md`](SKILL-context.md).
 

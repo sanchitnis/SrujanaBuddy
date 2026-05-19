@@ -886,7 +886,7 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 | Career Pathway Coach | Multi-path career plans, internships, placement readiness |
 | Enterprising Skills Mentor | Educate to Enterprise (REVA motto), MVP, venture coaching, Srujana Stages 3�4 |
 | Competency Portfolio Coach | Evidence collection, competency mapping, semester showcase |
-| Personal Website Builder Agent | HTML website generation, maintenance, privacy controls |
+| Srujana Presence Agent | Personal website, resume, visual pathway map, and digital presence |
 
 **Competitions and Optional Tracks**
 

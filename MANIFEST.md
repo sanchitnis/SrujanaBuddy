@@ -62,7 +62,8 @@ Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SP
 | Career Pathway Coach | `agents/career-pathway-coach.md` | Career exploration, pathways, Educate to Enterprise alignment |
 | Enterprising Skills Mentor | `agents/enterprising-skills-mentor.md` | Entrepreneurship, enterprise thinking, initiative |
 | Competency Portfolio Coach | `agents/competency-portfolio-coach.md` | Evidence portfolio, competency documentation |
-| Personal Website Builder Agent | `agents/personal-website-builder-agent.md` | Personal brand and digital presence |
+| Srujana Presence Agent | `agents/srujana-presence-agent.md` | Personal website and resume with digital presence scaffolding |
+| Aspiration Horizon Agent | `agents/aspiration-horizon-agent.md` | Visual Pathway Map — aspirational horizon view rendered at session start and end |
 
 ### Group C — Competitions and Optional Tracks
 

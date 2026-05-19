@@ -125,6 +125,7 @@ Example: *"After I brush my teeth at night, I will write tomorrow's 3 sankalpas.
 | `04-waiting.md` | Items delegated or pending on others | `04-waiting-for.md` |
 | `05-sankalpa-archive.md` | Completed sankalpas — Celebration Hall of Wins | *(new)* |
 | `06-weekly-svadhyaya.md` | Weekly self-reflection and reset | `07-weekly-review.md` |
+| `07-projects.md` | Active projects tracker — multi-week commitments you own | `02-projects.md` (full) |
 
 ---
 
@@ -181,6 +182,8 @@ Genuinely want to do someday?
 | Someday / not urgent | Iccha | `03-someday-iccha.md` |
 | Cap is full | Pending | Keep in `_tasks/` with `[PENDING]` tag |
 | Not worth doing | Discard | Delete the capture file |
+| New multi-week commitment (you own it) | Project | Create in `07-projects.md`, then decompose to Saptahika/Dainika |
+| Assigned task inside a project you don't own | Contributor | Triage normally; tag with `[PRJ: name]` |
 
 ### Triage Rules
 
@@ -191,6 +194,64 @@ Genuinely want to do someday?
 5. **Archive after triage.** Move the processed file to `stm/_tasks/.archive/YYYY-MM-DD/`.
 
 > Full folder guide and capture template: [`stm/_tasks/README.md`](../_tasks/README.md)
+
+---
+
+## Projects in STM
+
+A **project** is any commitment that spans more than one week and requires multiple sankalpas to complete. Projects do not replace sankalpas — they sit above them and generate sankalpas every week.
+
+### Five project types
+
+| Type | Example | Typical span |
+|---|---|---|
+| **Course project** | Team app for Software Design or OS lab | 4–8 weeks |
+| **Credit project** | Mini-project (2 credits) or Final Year Project | 1 semester – 1 year |
+| **Faculty collaboration** | Out-of-curriculum R&D or lab contribution | Ongoing |
+| **Hackathon team** | Ideate, build, and compete as a team | 2–6 weeks |
+| **Independent venture** | Research paper, consulting, product, or startup | Open-ended |
+
+### Two modes
+
+**Leader / Owner mode** — you initiated the project, or you are the person responsible for it.
+
+1. Create a project block in `07-projects.md` using the template.
+2. Define the goal, outcome, and rough phases.
+3. Every Sunday: pick the current phase milestone as your Saptahika sankalpa for the week.
+4. Break that milestone into daily Dainika sankalpas each morning.
+5. Review progress in `06-weekly-svadhyaya.md` weekly.
+
+**Contributor mode** — someone else owns the project; you have assigned tasks.
+
+1. Do **not** create a project file — that's the leader's job.
+2. When a task is assigned to you, drop it in `stm/_tasks/` and triage normally.
+3. Tag with `[PRJ: project-name]` when routing to Dainika or Saptahika so you can cluster project work visually.
+
+### How projects generate sankalpas
+
+```
+Project (07-projects.md)
+  ↓
+Current phase → this week's milestone
+  ↓
+Saptahika: "Complete [milestone] by [day of week]"
+  ↓
+Dainika: "When [situation], I will [next step] for [duration]"
+  ↓
+Tatkala: anything < 2 min that surfaces during execution
+```
+
+A project that generates no sankalpa this week is a **stalled project**. Raise it in Svadhyaya.
+
+### Project rules
+
+1. **Max 3 active projects at once.** More than 3 creates attention debt. Park extras in `03-someday-iccha.md`.
+2. **Every project needs a clear outcome statement.** Not "work on FYP" — "FYP Chapter 2 submitted to guide by May 30."
+3. **A project milestone counts as one of your 2 Saptahika slots** for that week.
+4. **Review weekly.** Two consecutive Svadhyaya sessions with no project update = stalled or done. Decide which.
+5. **Contributor tasks go through `_tasks/`** — contributors do not need a project file.
+
+> Project tracker and template: [`stm/07-projects.md`](07-projects.md) · [`stm/_tasks/PROJECT-template.md`](_tasks/PROJECT-template.md)
 
 ---
 

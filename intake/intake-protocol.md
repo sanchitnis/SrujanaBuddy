@@ -52,6 +52,7 @@ Use [references/REVA University.md](references/REVA%20University.md) whenever in
    4. Route first session type and assigned coach — **calibrated to coaching context** (e.g., if overwhelmed+low energy, start with wellbeing/grounding, not heavy planning).
    5. Link profile + aspirations file as north-star inputs for the first 30-day plan.
    6. **Document update cadence**: Flag in profile when aspirations and coaching context should be revisited (typically month-end or after significant session).
+   7. **Presence bootstrap** — Hand off to `agents/srujana-presence-agent.md`. Feed artifacts already collected in step 2.4 (LinkedIn URL, resume text, aspirations draft) to pre-fill the website and resume scaffolds. Even a partial draft in session 1 is enough — the agent will fill placeholders and flag what is missing. Schedule presence refinement in session 2.
 
 ## Risk and escalation
 1. Green: normal coaching cadence.

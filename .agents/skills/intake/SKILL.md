@@ -30,6 +30,7 @@ description: >
 3. Personal priorities and constraints explicit
 4. Initial risk level and support path assigned
 5. First 30-day action plan agreed
+6. **Presence bootstrap initiated** — `agents/srujana-presence-agent.md` loaded with collected artifacts (LinkedIn, resume, aspirations draft); scaffolds flagged for session 2 refinement
 
 ## Psychometric apps (offline, no network required)
 

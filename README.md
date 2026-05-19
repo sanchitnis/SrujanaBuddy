@@ -1,10 +1,12 @@
 # SrujanaBuddy
 
-SrujanaBuddy is an AI coaching companion for REVA University students, providing 24×7 first-level support across three areas:
+SrujanaBuddy (Srujana: Creating something new) is an AI coaching companion for REVA University students, providing 24×7 first-level support across three areas:
 
 - **Academics** — courses, curriculum guidance, and exam preparation
-- **Aspirations** — progression toward career goals, soft skills, and enterprising skills
+- **Aspirations** — progression toward career goals, soft skills, and enterprising skills along the four stage pathway of a. skill building, b. *real life* application, c. creation of new solutions/research and d. impactful value adding solutions.
 - **Wellbeing** — first-response mental health support, with escalation to Manodhara for serious concerns
+
+The interaction is customized to REVA students and the system builds up memory which is totally private to the students in the profiles and stm folders.
 
 ## What this is
 
@@ -64,10 +66,17 @@ These commitments should be interpreted in line with [references/REVA University
 2. Give *any* direct request, for example:
    - Plan my day.
    - Run weekly review.
-   - Help me prepare for exams.
+   - Help me prepare for exam for my course _____.
    - I need placement readiness coaching.
    - Teach me C Programming
+   - I am overwhelmed for my project. I do not know where to start.
 3. As you go along, this saves your information in profile and stm folders to track commitments, completions, and progress. These are local files and are provate to you.
+
+## Support and Contribution
+
+Join the user group for support or to see how others are using it to their benefit: [WhatsApp User Group](https://chat.whatsapp.com/LaUa7miMn270r40hfGGsin)
+
+Join this if you want to learn and enhance this Software 3.0 based simple system. No coding knowledge required. Both faculty and students are welcome: [WhatsApp Developer/Contributor Group](https://chat.whatsapp.com/Gkaw6cPuBzV5Mnc7Lspyb4)
 
 ## Useful files
 

@@ -130,7 +130,7 @@ Route to specialist files as needed (single or multi-agent routing):
 | 12 | Support and Escalation Guide | `agents/support-escalation-guide.md` |
 | 13 | Faculty Mentor Coordination Agent | `agents/faculty-mentor-coordination-agent.md` |
 | 14 | Academic History Agent | `agents/academic-history-agent.md` |
-| 15 | Personal Website Builder Agent | `agents/personal-website-builder-agent.md` |
+| 15 | Srujana Presence Agent | `agents/srujana-presence-agent.md` |
 
 ## Required Session Types and Routing
 

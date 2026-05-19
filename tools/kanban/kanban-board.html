@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SrujanaBuddy Kanban — STM Task Board</title>
+<!--
+  Tier: T0 — no dependencies, offline-capable. Open directly in any browser.
+  Brand: REVA University — REVA Orange #f7a35b · REVA Grey #4a4c55 · Plus Jakarta Sans
+  Fonts: Plus Jakarta Sans (Google Fonts — loads from CDN; degrades gracefully offline)
+  Data: localStorage key srujana-kanban-v1; optional disk save via File System Access API
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --saffron: #f7a35b;  /* REVA Orange */
+  --deep:    #4a4c55;  /* REVA Grey */
+  --cream:   #fafaf8;
+  --warm:    #fff8f3;
+  --muted:   #8a8c95;
+  --border:  #d8d9e0;
+  --gold:    #e8893a;
+  --success: #4A7C59;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--cream);
+  color: var(--deep);
+  min-height: 100vh;
+}
+
+/* ── Header ───────────────────────────────────────── */
+.header {
+  background: var(--deep);
+  color: var(--cream);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 3px solid var(--saffron);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.header-logo { font-size: 22px; flex-shrink: 0; }
+.header-text { flex: 1; min-width: 0; }
+.header-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.header-sub   { font-size: 10px; color: var(--muted); margin-top: 1px; letter-spacing: 0.06em; text-transform: uppercase; }
+.header-actions { display: flex; gap: 6px; flex-shrink: 0; }
+
+.btn {
+  padding: 6px 13px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+.btn:active { transform: scale(0.97); }
+.btn:hover  { opacity: 0.85; }
+.btn-primary { background: var(--saffron); color: #fff; }
+.btn-ghost   { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,0.25); }
+.btn-muted   { background: var(--warm); color: var(--deep); }
+
+/* ── Streak Bar ───────────────────────────────────── */
+.streak-bar {
+  background: var(--warm);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.streak-bar::-webkit-scrollbar { height: 3px; }
+.streak-bar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.streak-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.streak-chips { display: flex; gap: 6px; flex-shrink: 0; }
+.streak-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  user-select: none;
+}
+.streak-chip:hover { border-color: var(--saffron); }
+.streak-chip .sc-count { font-weight: 700; color: var(--saffron); }
+.streak-add {
+  background: none;
+  border: 1px dashed var(--border);
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.streak-add:hover { border-color: var(--saffron); color: var(--saffron); }
+
+/* ── Board ────────────────────────────────────────── */
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  padding: 18px 20px 32px;
+  min-height: calc(100vh - 130px);
+  align-items: start;
+}
+@media (max-width: 1000px) { .board { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px)  { .board { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 400px)  { .board { grid-template-columns: 1fr; } }
+
+/* ── Column ───────────────────────────────────────── */
+.column {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.col-header {
+  padding: 11px 14px;
+  border-bottom: 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-header-left { display: flex; align-items: center; gap: 7px; }
+.col-emoji  { font-size: 15px; }
+.col-title  { font-size: 13px; font-weight: 700; }
+.col-sub    { font-size: 10px; color: var(--muted); margin-top: 1px; }
+.col-right  { display: flex; align-items: center; gap: 5px; }
+.col-count  {
+  background: var(--warm);
+  border-radius: 10px;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.col-add-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--muted);
+  padding: 0 2px;
+  transition: color 0.15s;
+}
+.col-add-btn:hover { color: var(--saffron); }
+
+.col-captured .col-header { border-color: #64748B; }
+.col-today    .col-header { border-color: var(--saffron); }
+.col-thisweek .col-header { border-color: var(--gold); }
+.col-waiting  .col-header { border-color: #7C3AED; }
+.col-done     .col-header { border-color: var(--success); }
+
+.col-body {
+  padding: 8px;
+  flex: 1;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.col-empty {
+  text-align: center;
+  color: var(--border);
+  font-size: 12px;
+  padding: 20px 8px;
+  font-style: italic;
+}
+
+/* ── Card ─────────────────────────────────────────── */
+.card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 9px 11px;
+  animation: cardIn 0.18s ease;
+}
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.col-done .card { opacity: 0.55; }
+.col-done .card:hover { opacity: 1; }
+
+.card-top  { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 6px; }
+.card-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.badge-ACA { background: #2563EB; }
+.badge-CAR { background: #16A34A; }
+.badge-WLB { background: #7C3AED; }
+.badge-SKL { background: var(--saffron); }
+.badge-PRJ { background: var(--gold); }
+
+.card-text    { font-size: 12px; line-height: 1.45; flex: 1; word-break: break-word; }
+.card-project { font-size: 10px; color: var(--muted); margin-top: 3px; }
+
+.card-actions { display: flex; gap: 3px; margin-top: 7px; justify-content: flex-end; flex-wrap: wrap; }
+.ca-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 10px;
+  cursor: pointer;
+  color: var(--muted);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.ca-btn:hover           { background: var(--warm); }
+.ca-btn-done:hover      { border-color: var(--success); color: var(--success); background: #F0FDF4; }
+.ca-btn-delete:hover    { border-color: #DC2626; color: #DC2626; background: #FEF2F2; }
+.ca-btn-fwd:hover       { border-color: var(--saffron); color: var(--saffron); }
+
+/* ── Modal ────────────────────────────────────────── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.overlay.open { display: flex; }
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+}
+.modal-title { font-size: 15px; font-weight: 700; margin-bottom: 16px; }
+
+.fg { margin-bottom: 13px; }
+.fg label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.fg input, .fg select, .fg textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--cream);
+  color: var(--deep);
+  font-family: inherit;
+}
+.fg textarea { min-height: 72px; resize: vertical; }
+.fg input:focus, .fg select:focus, .fg textarea:focus {
+  outline: none;
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 2px rgba(247,163,91,0.2);
+}
+.modal-footer { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
+
+/* ── Streak modal list ────────────────────────────── */
+.streak-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+}
+.streak-row:last-child { border-bottom: none; }
+.streak-row-info { flex: 1; min-width: 0; }
+.streak-row-name  { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.streak-row-label { font-size: 10px; color: var(--muted); }
+.counter-group { display: flex; align-items: center; gap: 5px; }
+.cbtn {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.cbtn:hover { background: var(--warm); }
+.cbtn-del { border-color: #FCA5A5; color: #DC2626; }
+.cbtn-del:hover { background: #FEF2F2; }
+.cval { font-weight: 700; font-size: 13px; color: var(--saffron); min-width: 26px; text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-logo">🌿</div>
+  <div class="header-text">
+    <div class="header-title">SrujanaBuddy Kanban</div>
+    <div class="header-sub">REVA University · STM Task Board · Sadhana Streaks · T0 — offline</div>
+  </div>
+  <div class="header-actions">
+    <span id="save-indicator" style="font-size:10px;color:var(--muted);white-space:nowrap;align-self:center;"></span>
+    <button class="btn btn-ghost" id="btn-save-loc" onclick="setSaveLocation()" title="Pick a file on disk — board auto-saves there after every change">📁 Save Location</button>
+    <button class="btn btn-ghost" onclick="clearDone()">Clear Done</button>
+    <button class="btn btn-ghost" onclick="exportJSON()">Export</button>
+    <button class="btn btn-ghost" onclick="importJSON()">Import</button>
+  </div>
+</header>
+
+<!-- Streak Bar -->
+<div class="streak-bar">
+  <span class="streak-label">Sadhana ·</span>
+  <div class="streak-chips" id="streak-chips"></div>
+  <button class="streak-add" onclick="openStreakModal()">+ Add Habit</button>
+</div>
+
+<!-- Board -->
+<div class="board" id="board"></div>
+
+<!-- ── Add Card Modal ─────────────────────────────── -->
+<div class="overlay" id="card-overlay">
+  <div class="modal">
+    <div class="modal-title" id="card-modal-heading">Add Task</div>
+    <div class="fg">
+      <label>Task</label>
+      <textarea id="f-text" placeholder="Describe the task or commitment…"></textarea>
+    </div>
+    <div class="fg">
+      <label>Domain</label>
+      <select id="f-domain">
+        <option value="ACA">ACA — Academic</option>
+        <option value="CAR">CAR — Career</option>
+        <option value="WLB">WLB — Wellbeing</option>
+        <option value="SKL">SKL — Skill-building</option>
+        <option value="PRJ">PRJ — Project milestone</option>
+      </select>
+    </div>
+    <div class="fg">
+      <label>Project tag <span style="font-weight:400;text-transform:none">(optional)</span></label>
+      <input id="f-project" placeholder="e.g. FYP, Hackathon-2026" />
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-muted" onclick="closeCardModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveCard()">Add Task</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Streak Modal ───────────────────────────────── -->
+<div class="overlay" id="streak-overlay">
+  <div class="modal">
+    <div class="modal-title">Sadhana Streaks</div>
+    <div id="streak-list-body"></div>
+    <div style="border-top:1px solid var(--border);padding-top:14px;margin-top:12px;">
+      <div class="fg" style="margin-bottom:10px;">
+        <label>New habit</label>
+        <input id="f-streak-name" placeholder="e.g. 30-min coding daily" />
+      </div>
+      <div class="modal-footer" style="margin-top:0;">
+        <button class="btn btn-muted" onclick="closeStreakModal()">Close</button>
+        <button class="btn btn-primary" onclick="addStreak()">Add Habit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   Data Layer
+   ============================================================ */
+const STORE_KEY = 'srujana-kanban-v1';
+
+const COL_IDS = ['captured', 'today', 'thisweek', 'waiting', 'done'];
+const COL = {
+  captured: { label: 'Captured',   emoji: '📥', sub: '_tasks inbox',     accent: '#64748B' },
+  today:    { label: 'Today',      emoji: '☀️',  sub: 'Dainika',          accent: '#f7a35b' },
+  thisweek: { label: 'This Week',  emoji: '📅', sub: 'Saptahika',        accent: '#e8893a' },
+  waiting:  { label: 'Waiting',    emoji: '⏳', sub: 'pending on others', accent: '#7C3AED' },
+  done:     { label: 'Done',       emoji: '✅', sub: 'archived wins',    accent: '#4A7C59' },
+};
+
+const MILESTONES = [
+  { days: 66, emoji: '🏆', label: 'Sadhana complete — this is identity now!' },
+  { days: 21, emoji: '⚡', label: 'Rewiring complete — behaviour is automatic' },
+  { days: 7,  emoji: '🔥', label: 'Saptahika Siddhi — one full week kept' },
+  { days: 3,  emoji: '🌱', label: 'Chain forming — keep going!' },
+  { days: 0,  emoji: '',   label: 'Starting out — show up again tomorrow' },
+];
+
+function milestone(n) {
+  return MILESTONES.find(m => n >= m.days);
+}
+
+function load() {
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (raw) {
+      const d = JSON.parse(raw);
+      // Ensure all columns exist (forward-compat)
+      COL_IDS.forEach(id => { if (!d.cards[id]) d.cards[id] = []; });
+      return d;
+    }
+  } catch (_) {}
+  return { streaks: [], cards: { captured:[], today:[], thisweek:[], waiting:[], done:[] } };
+}
+
+function save(d) {
+  localStorage.setItem(STORE_KEY, JSON.stringify(d));
+  saveToFile(); // auto-save to disk if a save location has been set
+}
+function uid()   { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/* ============================================================
+   Render
+   ============================================================ */
+function renderStreakChips() {
+  const d = load();
+  const chips = document.getElementById('streak-chips');
+  chips.innerHTML = d.streaks.map(st => {
+    const m = milestone(st.count);
+    return `<button class="streak-chip" onclick="openStreakModal()" title="${esc(streakLabel(st.count))}">
+      ${m.emoji ? `<span>${m.emoji}</span>` : ''}
+      <span>${esc(st.name)}</span>
+      <span class="sc-count">${st.count}d</span>
+    </button>`;
+  }).join('');
+}
+
+function renderBoard() {
+  const d = load();
+  const board = document.getElementById('board');
+  board.innerHTML = COL_IDS.map((cid, ci) => {
+    const meta  = COL[cid];
+    const cards = d.cards[cid] || [];
+    const prevId = ci > 0 ? COL_IDS[ci - 1] : null;
+    const nextId = ci < COL_IDS.length - 2 ? COL_IDS[ci + 1] : null; // no auto-push to 'done' via arrow
+
+    const cardsHTML = cards.length === 0
+      ? `<div class="col-empty">—</div>`
+      : cards.map(c => cardHTML(c, cid, prevId, nextId)).join('');
+
+    const addBtn = cid !== 'done'
+      ? `<button class="col-add-btn" onclick="openCardModal('${cid}')" title="Add task">＋</button>`
+      : '';
+
+    return `
+      <div class="column col-${cid}">
+        <div class="col-header">
+          <div class="col-header-left">
+            <span class="col-emoji">${meta.emoji}</span>
+            <div>
+              <div class="col-title">${meta.label}</div>
+              <div class="col-sub">${meta.sub}</div>
+            </div>
+          </div>
+          <div class="col-right">
+            <span class="col-count">${cards.length}</span>
+            ${addBtn}
+          </div>
+        </div>
+        <div class="col-body">${cardsHTML}</div>
+      </div>`;
+  }).join('');
+}
+
+function cardHTML(c, cid, prevId, nextId) {
+  const projTag = c.project
+    ? `<div class="card-project">📁 ${esc(c.project)}</div>`
+    : '';
+
+  const moveBack = (prevId && cid !== 'done')
+    ? `<button class="ca-btn" onclick="moveCard('${c.id}','${cid}','${prevId}')">← ${COL[prevId].label}</button>`
+    : '';
+
+  const moveFwd = nextId
+    ? `<button class="ca-btn ca-btn-fwd" onclick="moveCard('${c.id}','${cid}','${nextId}')">${COL[nextId].label} →</button>`
+    : '';
+
+  const doneBtn = cid !== 'done'
+    ? `<button class="ca-btn ca-btn-done" onclick="doneCard('${c.id}','${cid}')" title="Mark done">✓ Done</button>`
+    : '';
+
+  const delBtn = `<button class="ca-btn ca-btn-delete" onclick="deleteCard('${c.id}','${cid}')" title="Delete">✕</button>`;
+
+  return `
+    <div class="card" id="card-${esc(c.id)}">
+      <div class="card-top">
+        <span class="card-badge badge-${esc(c.domain)}">${esc(c.domain)}</span>
+        <span class="card-text">${esc(c.text)}</span>
+      </div>
+      ${projTag}
+      <div class="card-actions">${moveBack}${moveFwd}${doneBtn}${delBtn}</div>
+    </div>`;
+}
+
+function render() {
+  renderStreakChips();
+  renderBoard();
+}
+
+/* ============================================================
+   Card Operations
+   ============================================================ */
+let _targetCol = null;
+
+function openCardModal(colId) {
+  _targetCol = colId;
+  document.getElementById('card-modal-heading').textContent = `Add to ${COL[colId].label}`;
+  document.getElementById('f-text').value    = '';
+  document.getElementById('f-domain').value  = 'ACA';
+  document.getElementById('f-project').value = '';
+  document.getElementById('card-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('f-text').focus(), 40);
+}
+
+function closeCardModal() {
+  document.getElementById('card-overlay').classList.remove('open');
+}
+
+function saveCard() {
+  const text = document.getElementById('f-text').value.trim();
+  if (!text) { document.getElementById('f-text').focus(); return; }
+  const domain  = document.getElementById('f-domain').value;
+  const project = document.getElementById('f-project').value.trim();
+  const d = load();
+  d.cards[_targetCol].push({ id: uid(), text, domain, project, createdAt: new Date().toISOString() });
+  save(d);
+  closeCardModal();
+  render();
+}
+
+function moveCard(cardId, fromCol, toCol) {
+  const d = load();
+  const idx = d.cards[fromCol].findIndex(c => c.id === cardId);
+  if (idx === -1) return;
+  const [card] = d.cards[fromCol].splice(idx, 1);
+  d.cards[toCol].push(card);
+  save(d);
+  render();
+}
+
+function doneCard(cardId, fromCol) {
+  const d = load();
+  const idx = d.cards[fromCol].findIndex(c => c.id === cardId);
+  if (idx === -1) return;
+  const [card] = d.cards[fromCol].splice(idx, 1);
+  card.completedAt = new Date().toISOString();
+  d.cards.done.push(card);
+  save(d);
+  render();
+}
+
+function deleteCard(cardId, colId) {
+  if (!confirm('Delete this card? This cannot be undone.')) return;
+  const d = load();
+  d.cards[colId] = d.cards[colId].filter(c => c.id !== cardId);
+  save(d);
+  render();
+}
+
+function clearDone() {
+  if (!confirm('Clear all cards in the Done column?')) return;
+  const d = load();
+  d.cards.done = [];
+  save(d);
+  render();
+}
+
+/* ============================================================
+   Streak Operations
+   ============================================================ */
+function streakLabel(n) {
+  const m = milestone(n);
+  return m.label;
+}
+
+function openStreakModal() {
+  renderStreakList();
+  document.getElementById('streak-overlay').classList.add('open');
+  document.getElementById('f-streak-name').value = '';
+}
+
+function closeStreakModal() {
+  document.getElementById('streak-overlay').classList.remove('open');
+  renderStreakChips();
+}
+
+function renderStreakList() {
+  const d = load();
+  const el = document.getElementById('streak-list-body');
+  if (!d.streaks.length) {
+    el.innerHTML = '<p style="font-size:12px;color:var(--muted);padding:4px 0 8px">No habits yet. Add one below.</p>';
+    return;
+  }
+  el.innerHTML = d.streaks.map(st => {
+    const m = milestone(st.count);
+    return `
+      <div class="streak-row">
+        <span style="font-size:18px;flex-shrink:0">${m.emoji || '⬜'}</span>
+        <div class="streak-row-info">
+          <div class="streak-row-name">${esc(st.name)}</div>
+          <div class="streak-row-label">${streakLabel(st.count)}</div>
+        </div>
+        <div class="counter-group">
+          <button class="cbtn" onclick="changeStreak('${st.id}', -1)">−</button>
+          <span class="cval">${st.count}</span>
+          <button class="cbtn" onclick="changeStreak('${st.id}', 1)">+</button>
+          <button class="cbtn cbtn-del" onclick="deleteStreak('${st.id}')" title="Remove habit">✕</button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function addStreak() {
+  const name = document.getElementById('f-streak-name').value.trim();
+  if (!name) { document.getElementById('f-streak-name').focus(); return; }
+  const d = load();
+  d.streaks.push({ id: uid(), name, count: 1 });
+  save(d);
+  document.getElementById('f-streak-name').value = '';
+  renderStreakList();
+}
+
+function changeStreak(id, delta) {
+  const d = load();
+  const st = d.streaks.find(s => s.id === id);
+  if (!st) return;
+  st.count = Math.max(0, st.count + delta);
+  save(d);
+  renderStreakList();
+}
+
+function deleteStreak(id) {
+  if (!confirm('Remove this habit streak?')) return;
+  const d = load();
+  d.streaks = d.streaks.filter(s => s.id !== id);
+  save(d);
+  renderStreakList();
+}
+
+/* ============================================================
+   Export / Import
+   ============================================================ */
+function exportJSON() {
+  const d = load();
+  const blob = new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'srujana-kanban-' + new Date().toISOString().slice(0, 10) + '.json';
+  a.click();
+}
+
+function importJSON() {
+  const inp = document.createElement('input');
+  inp.type = 'file';
+  inp.accept = '.json';
+  inp.onchange = e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        if (!data.cards || !data.streaks) throw new Error('bad format');
+        save(data);
+        render();
+        alert('Imported successfully, da! ✅');
+      } catch (_) {
+        alert('Could not import — invalid file format.');
+      }
+    };
+    reader.readAsText(file);
+  };
+  inp.click();
+}
+
+/* ============================================================
+   Close modals on overlay click + keyboard shortcuts
+   ============================================================ */
+document.getElementById('card-overlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeCardModal();
+});
+document.getElementById('streak-overlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeStreakModal();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeCardModal(); closeStreakModal(); }
+  if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) saveCard();
+});
+
+/* ============================================================
+   File System Persistence
+   Uses File System Access API (Chrome / Edge) + IndexedDB to
+   persist the file handle across sessions. Falls back gracefully
+   to localStorage-only in Firefox or unsupported browsers.
+   User picks the save location once (“📁 Save Location” button).
+   After that, every change auto-saves to that file on disk.
+   Suggested path: stm/kanban-data.json (listed in .gitignore)
+   ============================================================ */
+const IDB_NAME  = 'srujana-kanban-idb';
+const IDB_STORE = 'handles';
+const IDB_KEY   = 'kanban-file';
+let _fileHandle = null;
+
+function openIDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(IDB_NAME, 1);
+    req.onupgradeneeded = e => e.target.result.createObjectStore(IDB_STORE);
+    req.onsuccess = e => resolve(e.target.result);
+    req.onerror   = e => reject(e.target.error);
+  });
+}
+async function storeHandle(h) {
+  const db = await openIDB();
+  return new Promise((res, rej) => {
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    tx.objectStore(IDB_STORE).put(h, IDB_KEY);
+    tx.oncomplete = res;
+    tx.onerror    = e => rej(e.target.error);
+  });
+}
+async function loadHandle() {
+  const db = await openIDB();
+  return new Promise((res, rej) => {
+    const tx  = db.transaction(IDB_STORE, 'readonly');
+    const req = tx.objectStore(IDB_STORE).get(IDB_KEY);
+    req.onsuccess = () => res(req.result || null);
+    req.onerror   = e => rej(e.target.error);
+  });
+}
+
+function updateSaveIndicator() {
+  const el = document.getElementById('save-indicator');
+  if (!el) return;
+  if (!window.showSaveFilePicker) {
+    el.textContent = 'localStorage only';
+    return;
+  }
+  if (_fileHandle) {
+    el.textContent  = '💾 ' + _fileHandle.name;
+    el.style.color  = '#4A7C59';
+  } else {
+    el.textContent = 'no file — localStorage only';
+    el.style.color = 'var(--muted)';
+  }
+}
+
+async function saveToFile() {
+  if (!_fileHandle) return;
+  try {
+    let perm = await _fileHandle.queryPermission({ mode: 'readwrite' });
+    if (perm === 'prompt') {
+      // saveToFile() is always called from a user gesture, so requesting here is valid
+      perm = await _fileHandle.requestPermission({ mode: 'readwrite' });
+    }
+    if (perm !== 'granted') { _fileHandle = null; updateSaveIndicator(); return; }
+    const writable = await _fileHandle.createWritable();
+    await writable.write(JSON.stringify(load(), null, 2));
+    await writable.close();
+  } catch (e) {
+    if (e.name !== 'NoModificationAllowedError') console.warn('Kanban auto-save:', e.message);
+  }
+}
+
+async function setSaveLocation() {
+  if (!window.showSaveFilePicker) {
+    alert('File System Access API is not supported in this browser.\nUse Chrome or Edge for file auto-save.\nData continues to be saved in localStorage.');
+    return;
+  }
+  try {
+    const handle = await window.showSaveFilePicker({
+      suggestedName: 'kanban-data.json',
+      startIn: 'documents',
+      types: [{ description: 'JSON data file', accept: { 'application/json': ['.json'] } }],
+    });
+    _fileHandle = handle;
+    await storeHandle(handle);
+    const writable = await handle.createWritable();
+    await writable.write(JSON.stringify(load(), null, 2));
+    await writable.close();
+    updateSaveIndicator();
+  } catch (e) {
+    if (e.name !== 'AbortError') console.error('setSaveLocation:', e);
+  }
+}
+
+async function initFilePersistence() {
+  if (!window.showSaveFilePicker) { updateSaveIndicator(); return; }
+  try {
+    const handle = await loadHandle();
+    if (!handle) { updateSaveIndicator(); return; }
+    _fileHandle = handle;
+    // queryPermission without prompting — permission will be re-requested on first save action
+    await handle.queryPermission({ mode: 'readwrite' });
+    updateSaveIndicator();
+  } catch (e) {
+    console.warn('initFilePersistence:', e);
+    updateSaveIndicator();
+  }
+}
+
+/* ============================================================
+   Boot
+   ============================================================ */
+render();
+initFilePersistence();
+</script>
+</body>
+</html>

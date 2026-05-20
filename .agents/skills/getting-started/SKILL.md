@@ -48,7 +48,7 @@ Use this flow before diagnostics:
 3. What the student must maintain:
   - `profiles/<full-name>.md` (living profile)
   - `profiles/<full-name>-aspirations.yaml` (north-star aspirations)
-  - `profiles/<full-name>-GPS-map.md` (ASCII progress map)
+  - `profiles/<full-name>-gps-map.md` (ASCII progress map)
 4. Presence nudge:
   - "Within first 2-3 sessions, start your personal website + resume baseline using Srujana Presence flow."
 
@@ -61,7 +61,7 @@ Use this flow before diagnostics:
 5. First 30-day action plan agreed
 6. **Presence bootstrap initiated** — `agents/srujana-presence-agent.md` loaded with collected artifacts (LinkedIn, resume, aspirations draft); scaffolds flagged for session 2 refinement
 7. **Aspirations bootstrap completed** — first-draft fill of `Templates/StudentAspirationsForm.yaml` saved to `profiles/<full-name>-aspirations.yaml`
-8. **GPS map initialized** — first visual goals map saved as `profiles/<full-name>-GPS-map.md`
+8. **GPS map initialized** — first visual goals map saved as `profiles/<full-name>-gps-map.md`
 9. **Baseline competencies captured** — English reading comprehension, basic maths, and logical reasoning diagnostic saved in profile notes
 
 ## Psychometric apps (offline, no network required)
@@ -105,7 +105,7 @@ New profiles are created from: [`profiles/_mentee-profile-template.md`](../../pr
 
 Save as: `profiles/<full-name>.md` (hyphen-separated, no spaces)
 Save aspirations as: `profiles/<full-name>-aspirations.yaml`
-Save goals map as: `profiles/<full-name>-GPS-map.md`
+Save goals map as: `profiles/<full-name>-gps-map.md`
 
 ## Initial Aspirations Bootstrap (getting-started level)
 
@@ -114,7 +114,7 @@ At getting-started, run aspiration capture at beginner depth only.
 1. Use REVA's official aspirations structure from `Templates/StudentAspirationsForm.yaml`.
 2. Capture first-draft answers even if partial; do not wait for perfect clarity.
 3. Save as `profiles/<full-name>-aspirations.yaml`.
-4. Generate first GPS visual map using `Templates/StudentGPSMapTemplate.md` and save as `profiles/<full-name>-GPS-map.md`.
+4. Generate first GPS visual map using `Templates/StudentGPSMapTemplate.md` and save as `profiles/<full-name>-gps-map.md`.
 5. Mark unclear fields for progressive follow-up sessions.
 6. Do **not** introduce advanced Swadharma framing at intake; start with aspiration and ikigai basics.
 

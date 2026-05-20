@@ -2,7 +2,7 @@
 
 Use this template for each student's goals map file:
 
-- `profiles/<full-name>-GPS-map.md`
+- `profiles/<full-name>-gps-map.md`
 
 This map is updated at session start, during aspiration shifts, and at session end.
 

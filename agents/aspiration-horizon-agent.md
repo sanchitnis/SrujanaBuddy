@@ -18,14 +18,14 @@ Maintain a living Visual Pathway Map for each mentee — an ASCII perspective vi
 
 The canonical persistence file is:
 
-- `profiles/<full-name>-GPS-map.md`
+- `profiles/<full-name>-gps-map.md`
 - Template: `Templates/StudentGPSMapTemplate.md`
 
 ## When to load
 
 Display the map at the **start AND end of every session**.
 
-If `profiles/<full-name>-GPS-map.md` exists, load it first and refresh its current state.
+If `profiles/<full-name>-gps-map.md` exists, load it first and refresh its current state.
 
 If missing, generate it using `Templates/StudentGPSMapTemplate.md`, populate it from aspirations data, and save immediately.
 
@@ -66,7 +66,7 @@ The `▶` marker moves forward as the student completes milestones.
 5. Mark the student's current stage with `▶` and their year/stream/coaching state.
 6. Place the aspiration label at the horizon point.
 7. If aspirations file is partial or missing, use whatever is known and flag the blanks.
-8. Save rendered output to `profiles/<full-name>-GPS-map.md` at session start and session end.
+8. Save rendered output to `profiles/<full-name>-gps-map.md` at session start and session end.
 
 ---
 
@@ -88,7 +88,7 @@ The `▶` marker moves forward as the student completes milestones.
 >
 > *"You moved. Even one step on this road is real, da. Next commitment: [commitment from session]. See you next time."*
 
-After rendering at session end, persist latest version to `profiles/<full-name>-GPS-map.md`.
+After rendering at session end, persist latest version to `profiles/<full-name>-gps-map.md`.
 
 ---
 
@@ -96,7 +96,7 @@ After rendering at session end, persist latest version to `profiles/<full-name>-
 
 | Trigger | Action |
 |---------|--------|
-| Start of any session | Load + refresh map, then save to `profiles/<full-name>-GPS-map.md` |
+| Start of any session | Load + refresh map, then save to `profiles/<full-name>-gps-map.md` |
 | End of any session | Re-render map with latest state and save |
 | Aspirations YAML updated | Full map redraw |
 | Student confirms a milestone completed | Advance `▶` marker; celebrate the win |
@@ -136,4 +136,4 @@ After rendering at session end, persist latest version to `profiles/<full-name>-
 - **Career and Pathway Coach** (`agents/career-pathway-coach.md`): uses the map to orient career direction discussions and show pathway fit.
 - **Competency Portfolio Coach** (`agents/competency-portfolio-coach.md`): references current stage milestones to identify evidence gaps.
 - **Aspirations data source**: `profiles/<full-name>-aspirations.yaml` — always load this before rendering.
-- **Persistence target**: `profiles/<full-name>-GPS-map.md` — always save latest rendered map here.
+- **Persistence target**: `profiles/<full-name>-gps-map.md` — always save latest rendered map here.

@@ -59,11 +59,15 @@ Each setup is for one individual only. **At every session start**, follow this s
    - Once name is captured, create new profile from `profiles/_mentee-profile-template.md`.
    - Proceed directly to **Getting Started / Intake Protocol** (`intake/intake-protocol.md`).
 
-4. **Route session** based on profile signals or intake progress.
+4. **GPS Map — Session Open**: Load `agents/aspiration-horizon-agent.md`. Read `profiles/<full-name>-gps-map.md` (create from `profiles/<full-name>-aspirations.yaml` if it doesn't exist). Show the ASCII map to the student at the start of every coaching session.
 
-5. **Load agent** specified in `SKILL.md` (root) Specialist Agent Routing table.
+5. **Route session** based on profile signals or intake progress.
 
-6. **Apply tone and voice** — Bangalore English with Kannada flavour.
+6. **Load agent** specified in `SKILL.md` (root) Specialist Agent Routing table.
+
+7. **Apply tone and voice** — Bangalore English with Kannada flavour.
+
+8. **GPS Map — Session Close**: After the session commitment is captured, re-render the ASCII map if any aspiration or milestone signal shifted. Save the updated map to `profiles/<full-name>-gps-map.md` and note the delta.
 
 ## Tools and Automation
 

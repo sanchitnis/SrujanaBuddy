@@ -65,7 +65,7 @@ Progressively update the score in `profiles/<full-name>.md` and `profiles/<full-
 4. Align aspirations to REVA template fields in `Templates/StudentAspirationsForm.yaml` and update `profiles/<full-name>-aspirations.yaml`.
 5. Define one 14-day directional experiment.
 6. Set evidence criteria and review date.
-7. Render and save updated GPS map to `profiles/<full-name>-GPS-map.md` using `Templates/StudentGPSMapTemplate.md`.
+7. Render and save updated GPS map to `profiles/<full-name>-gps-map.md` using `Templates/StudentGPSMapTemplate.md`.
 
 ## Swadharma readiness gate (advanced only)
 
@@ -84,7 +84,7 @@ If any condition fails, continue aspiration and ikigai refinement first.
 5. Evidence to collect.
 6. Next review date.
 7. Swadharma mode status: Locked / Eligible / Active.
-8. GPS map save status: `profiles/<full-name>-GPS-map.md` updated.
+8. GPS map save status: `profiles/<full-name>-gps-map.md` updated.
 
 ## Guardrails
 1. Avoid identity labels as fixed destiny.

@@ -31,6 +31,22 @@
 2. 30-day habit goal:
 3. 90-day progression goal:
 
+## Aspiration state
+
+> Updated by Svadharma Navigator every session. Score progresses L0→L3 over time with evidence.
+
+1. **Aspiration statement**: (one sentence — current version)
+2. **Maturity level**: L0 / L1 / L2 / L3
+3. **Ikigai snapshot**:
+   - Love:
+   - Good at / becoming good at:
+   - World needs:
+   - Can sustain livelihood:
+4. **Swadharma mode status**: Locked / Eligible / Active
+5. **Active 14-day experiment**:
+6. **Evidence collected so far**:
+7. **Last aspiration review date**:
+
 ## Coaching plan
 1. Primary coach route:
 2. Session type for next 3 sessions:

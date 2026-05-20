@@ -62,6 +62,7 @@ All skills below are registered and available. Load the relevant `SKILL.md` when
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | GCS, Grand Challenge Studio, sprint, bold bet, demo day |
 | `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coaching — Advanced C Programming, Intensive Programming Lab |
+| `cse-acp` | `.agents/skills/cse-acp/SKILL.md` | ACP course buddy — B25CI0201, C programs, pointers, file handling, mini-project, Moodle assessment |
 | `drive-with-gps` | `.agents/skills/drive-with-gps/SKILL.md` | Goal Plan Sankalpa, accountability, daily commitment, map progress, Sankalpa reset |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | Weekly review, inbox, next actions, GTD rescue |
 | `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake, profile setup, baseline diagnostics, first session |

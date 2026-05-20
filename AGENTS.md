@@ -29,6 +29,7 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | Grand Challenge Studio coach (CSE stream) |
 | `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coach — Advanced C Programming (CSE) |
+| `cse-acp` | `.agents/skills/cse-acp/SKILL.md` | ACP course buddy — Advanced C Programming with GenAI (B25CI0201, CSE Sem II) |
 | `drive-with-gps` | `.agents/skills/drive-with-gps/SKILL.md` | Goal Plan Sankalpa — merged accountability + STM for GPS map progress |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system *(legacy — superseded by GPS)* |
 | `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake baselining, and Srujana Presence/GPS bootstrap |

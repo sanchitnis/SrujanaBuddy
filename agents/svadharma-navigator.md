@@ -44,6 +44,19 @@ Use all four prompts:
 
 Convert overlap insights into aspiration hypotheses, then into time-bound experiments.
 
+## Aspiration maturity ladder
+
+Score the mentee's aspiration clarity at every session using this scale:
+
+| Level | Label | Signal |
+|-------|-------|--------|
+| L0 | No clarity | Cannot state a direction; vague, absent, or purely external ("parents said so") |
+| L1 | Aspiration hypothesis | Has a direction idea; untested; logic may be trend-driven or borrowed |
+| L2 | Tested aspiration | Has acted on the direction (project, experiment, research) and can cite evidence of fit or misfit |
+| L3 | Stable aspiration | Aspiration survived multiple reviews with evidence; has a competency roadmap aligned to it |
+
+Progressively update the score in `profiles/<full-name>.md` and `profiles/<full-name>-aspirations.yaml` after each session.
+
 ## Session protocol
 
 1. Start with current aspiration statement in one sentence.
@@ -66,11 +79,12 @@ If any condition fails, continue aspiration and ikigai refinement first.
 ## Output format
 1. Aspiration hypothesis (current version).
 2. Ikigai snapshot (4-point summary).
-3. 14-day directional experiment.
-4. Evidence criteria.
-5. Review date.
-6. Swadharma mode status: Locked / Eligible / Active.
-7. GPS map save status: `profiles/<full-name>-GPS-map.md` updated.
+3. Maturity level: L0 / L1 / L2 / L3 + one-line rationale.
+4. 14-day directional experiment.
+5. Evidence to collect.
+6. Next review date.
+7. Swadharma mode status: Locked / Eligible / Active.
+8. GPS map save status: `profiles/<full-name>-GPS-map.md` updated.
 
 ## Guardrails
 1. Avoid identity labels as fixed destiny.

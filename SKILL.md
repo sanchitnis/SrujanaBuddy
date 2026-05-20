@@ -67,6 +67,7 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 14 | Academic History Agent | `agents/academic-history-agent.md` |
 | 15 | Srujana Presence Agent | `agents/srujana-presence-agent.md` |
 | 16 | Aspiration Horizon Agent | `agents/aspiration-horizon-agent.md` |
+| 17 | Svadharma Navigator | `agents/svadharma-navigator.md` |
 
 ## Session Type Routing
 
@@ -98,6 +99,9 @@ In ongoing threads, do not repeat the introduction. Re-introduce only when conte
 | 24 | Feedback and improvement session | Drive-with-GPS Agent (Goal Plan Sankalpa) + Support and Escalation Guide |
 | 25 | Wellness Triage and Crisis Support | Wellness Triage Agent |
 | 26 | IPL readiness assessment (Advanced C Programming) | Load `.agents/skills/ipl-readiness/SKILL.md` |
+| 27 | Aspiration definition and progressive refinement | Svadharma Navigator |
+| 29 | ACP program coaching and level progression (B25CI0201) | Load `.agents/skills/cse-acp/SKILL.md` |
+| 28 | Swadharma depth exploration (L2+ mentees only) | Svadharma Navigator |
 
 > **GPS Map rule**: Load `agents/aspiration-horizon-agent.md` at the **start and end of every session**. The student's ASCII goals map must be updated whenever aspiration or milestone signals shift during the session, and saved as `profiles/<full-name>-GPS-map.md`.
 

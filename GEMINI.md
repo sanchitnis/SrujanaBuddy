@@ -14,7 +14,7 @@ SrujanaBuddy is an AI-augmented student support and coaching ecosystem designed 
 ## Core Principles
 - **Student-Centricity:** All agents and workflows must prioritize the student's holistic development.
 - **Agentic Automation:** Leverage AI agents for specialized tasks (coaching, history tracking, triage).
-- **STM Framework:** Adhere to Sankalpa and Time Management (STM) principles for student commitment culture, streaks, and habit formation. GTD lists in `gtd/` are legacy; the active execution workspace is `stm/`.
+- **STM Framework:** Adhere to Sankalpa and Time Management (STM) principles for student commitment culture, streaks, and habit formation. GTD lists in `gtd/` are legacy; the active execution workspace is `drive-with-gps/`.
 
 ## Architectural Patterns
 - **Multi-Agent System:** Specialized agents reside in the `agents/` directory.
@@ -39,7 +39,7 @@ SrujanaBuddy is an AI-augmented student support and coaching ecosystem designed 
 
 ## Workflows
 - **Coaching Sessions:** Follow the workflow defined in `COACHING-SESSION-WORKFLOW.md`.
-- **Task Management:** Use the STM system in `stm/` for tracking daily sankalpas, streaks, and weekly Svadhyaya. Legacy GTD lists are in `gtd/`.
+- **Task Management:** Use the STM system in `drive-with-gps/` for tracking daily sankalpas, streaks, and weekly Svadhyaya. Legacy GTD lists are in `gtd/`.
 - **Evaluation:** Regularly update trackers in `REVA-IMPLEMENTATION-TRACKER.md` and related files.
 
 ## Tools

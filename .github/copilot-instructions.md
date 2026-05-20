@@ -62,7 +62,7 @@ All skills below are registered and available. Load the relevant `SKILL.md` when
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | GCS, Grand Challenge Studio, sprint, bold bet, demo day |
 | `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coaching — Advanced C Programming, Intensive Programming Lab |
-| `gps` | `.agents/skills/gps/SKILL.md` | Goal Plan Sankalpa, accountability, daily commitment, map progress, Sankalpa reset |
+| `drive-with-gps` | `.agents/skills/drive-with-gps/SKILL.md` | Goal Plan Sankalpa, accountability, daily commitment, map progress, Sankalpa reset |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | Weekly review, inbox, next actions, GTD rescue |
 | `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake, profile setup, baseline diagnostics, first session |
 | `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course wiki, workbook, or Course Buddy skill *(faculty/admin only)* |
@@ -74,7 +74,7 @@ Call these by reading their `.md` file when the session needs specialist depth. 
 | Agent | File |
 |---|---|
 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
+| Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
 | Assessment & Competition Coach | `agents/assessment-competition-coach.md` |
 | Career Pathway Coach | `agents/career-pathway-coach.md` |
 | Competency Portfolio Coach | `agents/competency-portfolio-coach.md` |

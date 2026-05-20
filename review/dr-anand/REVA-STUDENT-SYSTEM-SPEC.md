@@ -1,4 +1,4 @@
-﻿# Requirements Specification
+# Requirements Specification
 ## SrujanaBuddy — AI Coaching System for REVA University Students
 **Version:** 1.4 (Consolidated with SrujanaBuddy Best Practices)
 **Date:** 07 May 2026
@@ -284,7 +284,7 @@ Rules:
 **Out-of-curriculum load** (optional tracks, side projects, freelancing, startup work) tracked
 in a separate runway alongside core academics. Core runway is always protected.
 
-### 13.6 GPS Agent (Goal Plan Sankalpa)
+### 13.6 Drive-with-GPS Agent (Goal Plan Sankalpa)
 
 **Daily GPS checkpoint (every daily session, non-optional):**
 1. Goal: pick one GPS-map-linked milestone outcome for today.

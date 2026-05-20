@@ -393,7 +393,7 @@ Rules:
 **Out-of-curriculum load** (optional tracks, side projects, freelancing, startup work) tracked
 in a separate runway alongside core academics. Core runway is always protected.
 
-### 14.6 GPS Agent (Goal Plan Sankalpa)
+### 14.6 Drive-with-GPS Agent (Goal Plan Sankalpa)
 
 **Daily GPS checkpoint (every daily session, non-optional):**
 1. Goal: pick one GPS-map-linked milestone outcome for today.

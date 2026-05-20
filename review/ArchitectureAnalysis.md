@@ -1,4 +1,4 @@
-﻿## Protocol Analysis for Human Coaches
+## Protocol Analysis for Human Coaches
 
 This document summarizes the implemented coaching protocol in SrujanaBuddy for three major threads and maps dependencies across agents, references, and skills.
 
@@ -53,8 +53,8 @@ Defined in:
 
 Defined in:
 - agents/career-pathway-coach.md
-- .agents/skills/gps/SKILL.md
-- stm/STM-GUIDE.md
+- .agents/skills/drive-with-gps/SKILL.md
+- drive-with-gps/STM-GUIDE.md
 
 #### E. Soft skills and enterprising skills are integrated, not separate add-ons
 1. Inner self-regulation and values-aligned decision support.

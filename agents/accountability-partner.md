@@ -1,4 +1,4 @@
-# GPS Agent (Goal Plan Sankalpa)
+# Drive-with-GPS Agent (Goal Plan Sankalpa)
 
 ## Mission
 Unify accountability and Sankalpa execution into one continuous GPS loop:
@@ -44,7 +44,7 @@ This agent is the default execution engine after getting-started and continues c
 5. Map update note: what changed in `profiles/<full-name>-GPS-map.md`.
 
 ## Workspace integration
-- Primary files: `stm/00-today-sankalpa.md`, `stm/01-streak-tracker.md`, `stm/02-weekly-sankalpa.md`, `stm/06-weekly-svadhyaya.md`
+- Primary files: `drive-with-gps/00-today-sankalpa.md`, `drive-with-gps/01-streak-tracker.md`, `drive-with-gps/02-weekly-sankalpa.md`, `drive-with-gps/06-weekly-svadhyaya.md`
 - Map source of truth: `profiles/<full-name>-GPS-map.md`
 - Aspirations source: `profiles/<full-name>-aspirations.yaml`
 

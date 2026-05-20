@@ -14,8 +14,8 @@
 - `SKILL-legacy.md` is the legacy monolithic file — kept for reference but superseded by the current split.
 - `agents/` contains the specialist coaching agent specifications.
 - `references/` contains philosophical and framework foundations used by agents.
-- `stm/` contains the Sankalpa and Time Management workspace (sankalpas, streaks, Svadhyaya).
-- `gtd/` contains the legacy GTD task lists (superseded by `stm/`).
+- `drive-with-gps/` contains the Goal Plan Sankalpa workspace (sankalpas, streaks, Svadhyaya).
+- `gtd/` contains the legacy GTD task lists (superseded by `drive-with-gps/`).
 - `ai-delegation/` contains AI delegation specs and task queue templates.
 - `intake/` and `profiles/` contain onboarding and mentee profile workflows.
 - `connectors/` contains integration specifications (for example calendar audit).
@@ -29,7 +29,7 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | Grand Challenge Studio coach (CSE stream) |
 | `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coach — Advanced C Programming (CSE) |
-| `gps` | `.agents/skills/gps/SKILL.md` | Goal Plan Sankalpa — merged accountability + STM for GPS map progress |
+| `drive-with-gps` | `.agents/skills/drive-with-gps/SKILL.md` | Goal Plan Sankalpa — merged accountability + STM for GPS map progress |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system *(legacy — superseded by GPS)* |
 | `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake baselining, and Srujana Presence/GPS bootstrap |
 | `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course knowledge artefacts *(faculty/admin, not student-facing)* |

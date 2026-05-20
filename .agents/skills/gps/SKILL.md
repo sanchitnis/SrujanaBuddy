@@ -1,32 +1,49 @@
 ---
-name: stm
+name: gps
 description: >
-  STM — Sankalpa and Time Management. Ancient wisdom meets modern habit science.
-  Builds the student's commitment culture through daily sankalpas, streak chains,
-  tiny wins, and weekly Svadhyaya (self-reflection). Inspired by the Vedic concept
-  of sankalpa (sacred commitment) combined with Duolingo-style streaks, James Clear's
-  Atomic Habits, and implementation intentions from modern psychology.
+  GPS (Goal Plan Sankalpa) Skill — merged execution system combining accountability
+  partner discipline with STM Sankalpa practice. Focuses on continuous progress on the
+  student's GPS map, daily/weekly commitments, and long-term follow-through.
 
-  Sankalpa is not just a goal — it is a commitment you make to start something
-  immediately and complete it. Completing even the smallest task is a fulfilled sankalpa.
+  This skill continues to gather mentee data after getting-started is complete:
+  execution patterns, blockers, pacing fit, and evidence quality.
 
-  Trigger on: "sankalpa", "stm", "daily goal", "streak", "tiny win", "habit",
-  "build a habit", "commitment today", "I want to start something", "what should I
-  do today", "I can't stay consistent", "I keep breaking habits", "execution",
-  "plan my day", "sankalpa and time management".
+  Trigger on: "gps", "goal plan sankalpa", "sankalpa", "stm", "accountability",
+  "daily goal", "streak", "tiny win", "execution", "plan my day", "commitment",
+  "I can't stay consistent", "I keep breaking habits", "progress on my map".
 ---
 
-# STM — Sankalpa and Time Management
+# GPS — Goal Plan Sankalpa
 
 > Full framework and philosophy: [`stm/STM-GUIDE.md`](../../stm/STM-GUIDE.md)
 
+> Agent implementation: [`agents/accountability-partner.md`](../../../agents/accountability-partner.md)
+
 ## When to use
 
-- Student needs a daily commitment structure (not a task list)
-- Student is building a new habit and needs streak accountability
-- Student broke a streak and needs a compassionate restart (Sadhana Shield)
-- Session type 14 (Sankalpa and Execution Reset) or session type 2 (Daily Sankalpa focus)
-- Student says they "keep starting but never finishing" or "can't stay consistent"
+- Student needs execution support after getting-started
+- Student needs commitments linked directly to GPS map milestones
+- Student is building consistency and needs streak accountability
+- Student broke rhythm and needs recovery path
+- Session type 2, 3, 13, or 14 needs execution discipline focus
+
+## GPS core loop
+
+1. **Goal**: pick one milestone-aligned outcome from `profiles/<full-name>-GPS-map.md`
+2. **Plan**: convert into one weekly deliverable and one daily action
+3. **Sankalpa**: lock a specific start time and completion evidence
+4. **Review**: verify evidence, update map marker, and refine commitments
+
+This loop repeats every session and progressively captures mentee patterns.
+
+## Progressive data collection (post getting-started)
+
+Capture and refine these signals over time:
+1. Execution reliability and follow-through ratio
+2. Typical blocker pattern (time, clarity, energy, fear, distraction)
+3. Best working rhythm (morning/evening, deep-work window)
+4. Commitment sizing fit (overload vs underload)
+5. Evidence quality (self-report vs artifact-backed)
 
 ## The three tiers of Sankalpa
 
@@ -94,3 +111,4 @@ Missed a day? Use your **Sadhana Shield** (allowed once per week):
 2. **No guilt framing** — missed days are restarted with Sadhana Shield, not shame
 3. **Completion over perfection** — a 60% done sankalpa counts if it was started immediately
 4. **Identity anchor every session** — close with: *"I am someone who completes what I start"*
+5. **Map alignment required** — commitments must connect to `profiles/<full-name>-GPS-map.md`

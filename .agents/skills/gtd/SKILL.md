@@ -20,7 +20,7 @@ description: >
 - Student is overwhelmed with tasks and needs to capture + clarify
 - Weekly review is due or overdue
 - Student wants to set up or reset their GTD system
-- Session type 14 (Student GTD Rescue) or session type 3 (Weekly Svadhyaya Review)
+- Session type 14 (Sankalpa and Execution Reset (GPS)) or session type 3 (Weekly Svadhyaya Review)
 
 ## GTD Workspace files
 

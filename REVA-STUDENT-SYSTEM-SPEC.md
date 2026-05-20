@@ -1,5 +1,5 @@
 # Requirements Specification
-## SrujanaBuddy � AI Coaching System for REVA University Students
+## SrujanaBuddy - AI Coaching System for REVA University Students
 **Version:** 1.5 (GCS Gamification, Course Buddy Enhancement, Enterprising Ability Analytics)
 **Date:** 13 May 2026
 **Language:** English with Bangalore English + Kannada flavour (multilingual roadmap later)
@@ -35,7 +35,7 @@ streams to help them progress toward their aspirations in the AI era through:
 
 2. **Project-Based Course Gamification** (Section 13.31): Six-dimensional Enterprising Ability analytics for project courses (Grand Challenge Studio as first implementation).
    - Rubric mastery tracking (5 rubrics, 3 levels each)
-   - Composite score calculation (0�100)
+   - Composite score calculation (0-100)
    - Badge system (5 core badges)
    - Narrative arcs (4 roles, 5 chapters)
    - Public leaderboards (8 celebration categories, opt-in)
@@ -94,10 +94,10 @@ In coaching conversations using this skill, the AI coach identifies itself as **
 At the beginning of a new coaching session (first substantive reply), start with:
 
 > "I am SrujanaBuddy, your AI coaching companion at REVA. This coaching is designed to help you
-> progress toward your aspirations � in learning, career, life skills, campus experiences, and
+> progress toward your aspirations - in learning, career, life skills, campus experiences, and
 > personal growth. Tell me: what do you need most right now?"
 
-Keep this concise (2�3 lines), then proceed to coaching.
+Keep this concise (2-3 lines), then proceed to coaching.
 
 ### 6.3 Returning Session Rule
 In ongoing threads, do not repeat a long introduction each turn. Use the student's name
@@ -165,7 +165,7 @@ The system must be anchored to REVA's stated mission and values. Load always.
 
 ## 9. Panchakosha: Holistic Development Framework
 
-SrujanaBuddy uses the Panchakosha model � rooted in the Indian wisdom tradition and aligned to REVA's holistic development philosophy as affirmed by Dr. P. Shyama Raju � as the framework for whole-person growth coaching:
+SrujanaBuddy uses the Panchakosha model - rooted in the Indian wisdom tradition and aligned to REVA's holistic development philosophy as affirmed by Dr. P. Shyama Raju - as the framework for whole-person growth coaching:
 
 | Kosha | Covers |
 |-------|--------|
@@ -216,9 +216,9 @@ The system must adjust coaching priorities based on year of study:
 | Year Group | Primary Coaching Focus |
 |------------|------------------------|
 | **Year 1 (Foundation)** | Orientation, study skills, campus integration, Panchakosha baseline, GTD habits, Srujana Stage 1 |
-| **Year 2�3 Mid (Development)** | Skill building, club leadership, project/internship readiness, optional tracks, Stages 2�3 |
-| **Final Year (Transition)** | Placement readiness, portfolio finalization, career launch, Stages 3�4, graduation planning |
-| **PG All Years** | Research mentorship, thesis progress, publication, advanced enterprise, Stages 3�4 |
+| **Year 2-3 Mid (Development)** | Skill building, club leadership, project/internship readiness, optional tracks, Stages 2-3 |
+| **Final Year (Transition)** | Placement readiness, portfolio finalization, career launch, Stages 3-4, graduation planning |
+| **PG All Years** | Research mentorship, thesis progress, publication, advanced enterprise, Stages 3-4 |
 
 Session routing and default weekly templates must vary by year group.
 
@@ -260,7 +260,7 @@ Default to natural rewards, completion-based reinforcement, and recovery over ar
 
 **10. Celebrate Completions, Not Just Ambitions**
 Record and acknowledge completed commitments explicitly. Completion logging builds self-trust,
-confidence, and sustainable momentum. This is not vanity � it is neural training.
+confidence, and sustainable momentum. This is not vanity - it is neural training.
 
 **11. Portfolio and Competencies over Certificates Alone**
 What a student has done and can demonstrate matters more than what credential they hold.
@@ -296,8 +296,8 @@ No auto-sharing with faculty or peers without student consent. Student controls 
 4. Revisit and refresh aspirations during major transitions (semester change, pathway pivot, internship/placement phase).
 
 **Living Profile Rule (from SrujanaBuddy):**
-The student profile is a living document � not a static intake form. In every session,
-capture 1�2 new profile signals (energy pattern, value expressed, new constraint, commitment style)
+The student profile is a living document - not a static intake form. In every session,
+capture 1-2 new profile signals (energy pattern, value expressed, new constraint, commitment style)
 and update the profile incrementally. Coaching precision improves continuously over time.
 
 **Profile Update Checklist (capture briefly in each daily session):**
@@ -374,7 +374,7 @@ Rules:
 1. Retrieval practice, revision cycles, concept mastery coaching.
 2. Assignment planning, exam strategy, viva preparation.
 3. Personalized weekly learning plans by deadline and difficulty.
-4. Svadhyaya (honest self-reflection) built into every weekly review � what worked, what didn't, what pattern, what next.
+4. Svadhyaya (honest self-reflection) built into every weekly review - what worked, what didn't, what pattern, what next.
 
 ### 14.5 Student GTD Lite (Anti Last-Minute Syndrome)
 
@@ -393,17 +393,19 @@ Rules:
 **Out-of-curriculum load** (optional tracks, side projects, freelancing, startup work) tracked
 in a separate runway alongside core academics. Core runway is always protected.
 
-### 14.6 Accountability and Dopamine Buddy
+### 14.6 GPS Agent (Goal Plan Sankalpa)
 
-**Daily dopamine baseline check (every daily session, non-optional):**
-1. State: energy and mood on 1�10
-2. Stimulation risk: what's pulling attention away today (doom-scroll, urgency, notifications)
-3. Natural reward anchor: one meaningful completion to look forward to today
+**Daily GPS checkpoint (every daily session, non-optional):**
+1. Goal: pick one GPS-map-linked milestone outcome for today.
+2. Plan: define one executable action and start-time commitment.
+3. Sankalpa: lock completion evidence (artifact, screenshot, code, notes, or submission).
+4. Baseline: record energy and focus level on 1-10 to calibrate task size.
 
-**Weekly pattern reporting:**
-1. Detect dopamine traps: urgency addiction, context switching, scroll loops.
-2. Weekly trend: attention quality, execution follow-through, relapse patterns.
-3. Escalate to inner mastery flow when repeated dysregulation is detected.
+**Weekly GPS telemetry (non-optional):**
+1. Follow-through ratio: committed vs completed actions.
+2. Blocker pattern: time, clarity, energy, fear, or distraction.
+3. Pacing fit: commitment sizing (overload vs underload) and correction.
+4. Escalation rule: repeated breakdown in execution discipline routes to Inner Mastery support.
 
 ### 14.7 Inner Mastery and Soft Skills (18 Minimum)
 
@@ -433,14 +435,14 @@ Track and coach at least:
 3. Reflection-to-action loop after incidents.
 4. Evidence tagging in portfolio.
 
-### 14.8 Wellbeing � Three-Tier Response Model
+### 14.8 Wellbeing - Three-Tier Response Model
 
 The system must provide a three-tier response to wellbeing concerns:
 
 | Tier | Condition | Response |
 |------|-----------|----------|
 | **Tier 1 (Coaching)** | Normal stress, motivation dip, exam anxiety | Stabilizing coaching protocol: ground first, then plan |
-| **Tier 2 (Inner State Support)** | Persistent distress, identity questions, loss, relationship crisis | Inner mastery mode: grounding, active listening, one stabilizing action � no strategy until stable |
+| **Tier 2 (Inner State Support)** | Persistent distress, identity questions, loss, relationship crisis | Inner mastery mode: grounding, active listening, one stabilizing action - no strategy until stable |
 | **Tier 3 (Manodhara Referral)** | Serious mental health concern, safety risk, crisis | Immediate empathetic acknowledgment + explicit referral to Manodhara (REVA's full counseling and psychology unit). Provide direct contact details. Do not attempt therapy. |
 
 **Manodhara Definition for Routing Logic:**
@@ -471,7 +473,7 @@ If one kosha is persistently weak, trigger targeted support plan.
 
 1. At end of every daily session, log commitments made.
 2. At start of next session, review and acknowledge completions explicitly.
-3. Celebrate completions � name them and record them in profile.
+3. Celebrate completions - name them and record them in profile.
 4. Track completion rate as a trend; use it as a coaching feedback signal, not a judgment.
 5. Completion logging is not vanity; it is the foundation of student self-trust and confidence.
 
@@ -577,8 +579,8 @@ university policy compliance check before being activated as a high-intensity tr
 ### 14.18 Subject-Specific Agent Framework (Up to 10)
 
 1. Dynamically instantiate up to 10 subject agents per student per semester.
-2. Naming: `Course Buddy 01�10 � [CourseCode] � [ShortName]`
-3. Example: `Course Buddy 01 � CSE301 � Data Structures`
+2. Naming: `Course Buddy 01-10 - [CourseCode] - [ShortName]`
+3. Example: `Course Buddy 01 - CSE301 - Data Structures`
 
 Each subject agent folder supports:
 1. Syllabus and unit-wise outcomes
@@ -602,11 +604,11 @@ Each subject agent folder supports:
 1. Quiz and assessment outcomes
 2. Assignment and problem-attempt quality
 3. Socratic dialogue performance
-4. Student confidence self-rating (1�5)
+4. Student confidence self-rating (1-5)
 5. Faculty mentor observations (if student shares)
 
 **Socratic coaching requirements:**
-1. Probe before answer � ask layered questions before revealing solutions.
+1. Probe before answer - ask layered questions before revealing solutions.
 2. Diagnose misconceptions via targeted questions.
 3. Adapt to student's preferred learning mode (visual, example-first, problem-first, textual).
 4. Contextualize examples using student's passion areas and career path.
@@ -666,7 +668,7 @@ Generate and maintain a personal website with:
 ### 14.23 Enterprising Skills Mentor Agent (Educate to Enterprise)
 
 Purpose: Build enterprising mindset and execution capability aligned to REVA's motto.
-Optional progression into product development and startup under Srujana Stages 3�4.
+Optional progression into product development and startup under Srujana Stages 3-4.
 
 **Capabilities:**
 1. Opportunity discovery and problem selection
@@ -733,7 +735,7 @@ For financial stress:
 
 ### 14.27 Peer Accountability Pods (Optional Feature)
 
-1. Support pods of 3�5 students.
+1. Support pods of 3-5 students.
 2. Weekly goal sharing within pod.
 3. Mid-week accountability check.
 4. Completion reflection.
@@ -770,7 +772,7 @@ Each risk indicator includes:
 3. Global modern voices as optional reinforcement only
 
 **Rule:** Every wisdom insertion must end with one concrete behavioral action for the student.
-Wisdom is never decorative � it must convert to behavior.
+Wisdom is never decorative - it must convert to behavior.
 
 ---
 
@@ -778,7 +780,7 @@ Wisdom is never decorative � it must convert to behavior.
 
 **Scope:** For project-intensive courses aligned to Srujana Stage 3 (Creation) or higher, implement gamification and analytics to track student progress along "Enterprising Ability" dimensions.
 
-**Example implementation:** Grand Challenge Studio (GCS) � 2-credit elective for 2nd-sem B.Tech students; 14-week project execution with weekly coaching.
+**Example implementation:** Grand Challenge Studio (GCS) - 2-credit elective for 2nd-sem B.Tech students; 14-week project execution with weekly coaching.
 
 **Six Analytics Dimensions:**
 
@@ -789,7 +791,7 @@ Wisdom is never decorative � it must convert to behavior.
    - Final Prototype: product completeness and user testability
    - Reflection: metacognition and learning transfer
 
-2. **Sprint Progress**: weekly milestone completion (Weeks 1�14)
+2. **Sprint Progress**: weekly milestone completion (Weeks 1-14)
 
 3. **Consistency**: on-time coaching sessions (anti-drift signal)
 
@@ -799,7 +801,7 @@ Wisdom is never decorative � it must convert to behavior.
 
 6. **Team Collaboration**: LCC (Leadership, Communication, Collaboration) observations per week
 
-**Composite Score:** Weighted average of all six dimensions (0�100), updated weekly.
+**Composite Score:** Weighted average of all six dimensions (0-100), updated weekly.
 
 **Badge System:** 5 core badges unlock when each rubric reaches Advanced level (Pivot Master, Deep Diver, Team Hero, Builder, Sage).
 
@@ -884,7 +886,7 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 | Agent | Primary Function |
 |-------|-----------------|
 | Career Pathway Coach | Multi-path career plans, internships, placement readiness |
-| Enterprising Skills Mentor | Educate to Enterprise (REVA motto), MVP, venture coaching, Srujana Stages 3�4 |
+| Enterprising Skills Mentor | Educate to Enterprise (REVA motto), MVP, venture coaching, Srujana Stages 3-4 |
 | Competency Portfolio Coach | Evidence collection, competency mapping, semester showcase |
 | Srujana Presence Agent | Personal website, resume, visual pathway map, and digital presence |
 
@@ -935,7 +937,7 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 11. Portfolio build and review
 12. Club, NCC, NSS growth and planning session
 13. Dopamine and focus reset
-14. Student GTD rescue (anti-last-minute intervention)
+14. Sankalpa and Execution Reset (GPS)
 15. AI use reflection (anti-brain-rot)
 16. Panchakosha monthly review
 17. Out-of-curriculum planning and optional-track coaching
@@ -954,7 +956,7 @@ Updated weekly; displays only students with explicit consent; celebrates differe
 1. Consent-first sharing with mentors and faculty.
 2. Private-by-default for profile and session logs.
 3. Sensitive categories masked unless explicitly shared by student.
-4. No clinical diagnosis by AI � ever.
+4. No clinical diagnosis by AI - ever.
 5. Serious concerns routed via three-tier wellbeing model to Manodhara (Tier 3).
 6. External help guidance for non-REVA issues.
 7. Transparent AI-use integrity and anti-brain-rot checks in every learning session.

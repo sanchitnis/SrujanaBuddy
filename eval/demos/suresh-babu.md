@@ -179,3 +179,23 @@ Done. Take care, Suresh. Slowly slowly — but forward. See you next week. 🙏
 | Escalation decision | Monitoring. Will check wellbeing score next session; faculty mentor referral if score drops below 3 |
 | Agents shown | Wellness Triage, Inner Mastery Coach, Svadharma Navigator |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Civil + coding intersection career clarity
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Computational civil specialization pathway
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Applied projects in structural simulation/automation
+			  . . .
+		  . . .  Stage 2 (Application) . . .
+	  . . .      - Branch strategy options + coding-linked course engagement
+  . . .
+ Stage 1 (Foundation)
+ - Motivation recovery and agency reset
+
+▶ YOU - NOW | 2nd year Civil | Stage 1 at risk, clarity rebuilding
+```

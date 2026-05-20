@@ -248,3 +248,23 @@ Done! All the best for GCS, Ananya. Make it happen. 🚀
 | Agents shown | Enterprising Skills Mentor, GCS Gamification Engine |
 | GCS score | 21/30 — Stage 3 Creation track |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Campus gig startup scaled beyond REVA
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Live users across Bangalore colleges
+						  . . .
+					  ▶ . . .  Stage 3 (Creation) . . .
+				  . . .      - V1 launch + mentor-backed growth loop
+			  . . .
+		  . . .  Stage 2 (Application) . . .
+	  . . .      - User interviews + prototype + early validation
+  . . .
+ Stage 1 (Foundation)
+ - Problem discovery and opportunity mapping
+
+▶ YOU - NOW | 3rd year CSE | Stage 3 in progress
+```

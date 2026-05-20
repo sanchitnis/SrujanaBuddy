@@ -164,3 +164,23 @@ Seri! Saved anonymously. Go crush those exams, Calm Queen. 👑✨
 | Breakthrough | Student shifted from paralysis to agency within 5 exchanges |
 | Consent to save | Granted |
 | Anon log | `eval/data/sessions/` |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Calm, consistent exam performer
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Independent resilience under pressure
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Repeatable focus rituals and execution confidence
+			  . . .
+		  . . .  Stage 2 (Application) . . .
+	  . . .      - Stable study rhythm and anxiety recovery tools
+  . . .
+ Stage 1 (Foundation)
+ - Breath reset + micro planning + sleep recovery
+
+▶ YOU - NOW | 1st year CSE | Stage 1 Foundation
+```

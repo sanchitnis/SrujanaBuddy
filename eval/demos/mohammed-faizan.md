@@ -198,3 +198,23 @@ Done. Take care of yourself first, Faizan. The academics will follow. See you in
 | Escalation signal | 4/10 energy + numbness → wellness centre referral (not escalated to faculty, student engaged) |
 | Agents shown | Wellness Triage, Academic Learning Coach, GTD Lite |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Stable academic recovery and progression
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Consistent high-functioning study system
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Self-directed planning and confident exam execution
+			  . . .
+		  . . .  Stage 2 (Application) . . .
+	  . . .      - Recovery rhythm and sustained attendance
+  . . .
+ Stage 1 (Foundation)
+ - Wellbeing stabilization + Internal 2 rescue actions
+
+▶ YOU - NOW | 1st year Mechanical | Stage 1 at risk, recovery active
+```

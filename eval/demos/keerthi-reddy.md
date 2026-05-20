@@ -163,3 +163,23 @@ Done, seri! See you Monday, Keerthi. Install first, then rest. Shuru maadu! 🚀
 | Breakthrough | Student hadn't considered that ECE signals background is a *moat* in ML |
 | Agents shown | Out-of-Curriculum Coach, Course Buddy Builder, AI Engineer Pathway |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Internship-ready ECE-to-ML engineer
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Edge AI / embedded ML role impact
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Portfolio-grade ML project with ECE moat
+			  . . .
+		  ▶ . . .  Stage 2 (Application) . . .
+	  . . .      - Python + sklearn + first deployable ML experiments
+  . . .
+ Stage 1 (Foundation)
+ - Math confidence and programming basics
+
+▶ YOU - NOW | 2nd year ECE | Stage 1 to 2 transition
+```

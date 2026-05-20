@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Maths Baseline</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #f6f3ed; color: #1f2937; }
+    .card { max-width: 920px; margin: 0 auto; background: #fff; border: 1px solid #d6d3d1; border-radius: 12px; padding: 20px; }
+    h1 { margin-top: 0; }
+    .q { margin: 14px 0; padding: 12px; background: #fafaf9; border-radius: 8px; }
+    button { margin-top: 12px; margin-right: 8px; padding: 10px 14px; border-radius: 8px; border: 0; background: #0f766e; color: #fff; cursor: pointer; }
+    textarea { width: 100%; min-height: 160px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Basic Maths Baseline</h1>
+    <p>Answer all questions. This checks entry-level quantitative fluency.</p>
+
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+
+  <script>
+    const items = [
+      {
+        text: 'If 3x + 5 = 20, then x = ?',
+        options: ['3', '5', '10', '15'],
+        answer: 1
+      },
+      {
+        text: 'What is 15% of 240?',
+        options: ['24', '30', '36', '42'],
+        answer: 2
+      },
+      {
+        text: 'If a train covers 120 km in 2 hours, its average speed is:',
+        options: ['40 km/h', '50 km/h', '60 km/h', '70 km/h'],
+        answer: 2
+      },
+      {
+        text: 'Simplify: (2/3) + (1/6) = ?',
+        options: ['1/2', '2/5', '5/6', '3/4'],
+        answer: 2
+      },
+      {
+        text: 'The mean of 4, 8, 10, 14 is:',
+        options: ['8', '9', '10', '11'],
+        answer: 1
+      },
+      {
+        text: 'If the ratio of boys to girls is 3:2 and total students are 50, number of girls = ?',
+        options: ['20', '25', '30', '35'],
+        answer: 0
+      }
+    ];
+
+    const q = document.getElementById('questions');
+    items.forEach((item, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${item.text}</label><br/>` +
+        item.options.map((opt, idx) => `<label><input type="radio" name="q${i}" value="${idx}"> ${opt}</label><br/>`).join('');
+      q.appendChild(row);
+    });
+
+    function scoreTest() {
+      let score = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        if (Number(checked.value) === items[i].answer) score += 1;
+      }
+
+      const pct = Math.round((score / items.length) * 100);
+      let band = 'Strong baseline';
+      let action = 'Proceed to applied problem-solving and speed drills.';
+      if (pct < 50) {
+        band = 'Needs foundational reinforcement';
+        action = 'Revise arithmetic, fractions, percentages, and linear equations.';
+      } else if (pct < 80) {
+        band = 'Developing baseline';
+        action = 'Practice mixed-topic sets (10 questions/day) for 2 weeks.';
+      }
+
+      document.getElementById('result').value =
+        `Basic Maths Score: ${score}/${items.length} (${pct}%)\n` +
+        `Band: ${band}\n\n` +
+        'Suggested next step:\n' + action;
+    }
+
+    function copyResult() {
+      const text = document.getElementById('result');
+      text.select();
+      document.execCommand('copy');
+      alert('Result copied.');
+    }
+  </script>
+</body>
+</html>

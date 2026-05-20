@@ -8,7 +8,9 @@
   Tier: T0 — no dependencies, offline-capable. Open directly in any browser.
   Brand: REVA University — REVA Orange #f7a35b · REVA Grey #4a4c55 · Plus Jakarta Sans
   Fonts: Plus Jakarta Sans (Google Fonts — loads from CDN; degrades gracefully offline)
-  Data: localStorage key srujana-kanban-v1; optional disk save via File System Access API
+  Data: auto-loads from stm/kanban-data.json on every page load (requires local HTTP server).
+         Falls back to localStorage key srujana-kanban-v1 when fetch is unavailable (file:// context).
+         Optional disk auto-save via File System Access API (📁 Save Location button).
 -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
@@ -347,7 +349,6 @@ body {
     <button class="btn btn-ghost" id="btn-save-loc" onclick="setSaveLocation()" title="Pick a file on disk — board auto-saves there after every change">📁 Save Location</button>
     <button class="btn btn-ghost" onclick="clearDone()">Clear Done</button>
     <button class="btn btn-ghost" onclick="exportJSON()">Export</button>
-    <button class="btn btn-ghost" onclick="importJSON()">Import</button>
   </div>
 </header>
 
@@ -852,10 +853,30 @@ async function initFilePersistence() {
 }
 
 /* ============================================================
+   Default data file auto-load
+   ============================================================ */
+const DEFAULT_DATA_PATH = '../../stm/kanban-data.json';
+
+async function loadFromDefaultFile() {
+  try {
+    const res = await fetch(DEFAULT_DATA_PATH);
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+    if (!data.cards || !data.streaks) throw new Error('bad format');
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  } catch (_) {
+    // fetch unavailable (file:// context) or file absent — use existing localStorage
+  }
+}
+
+/* ============================================================
    Boot
    ============================================================ */
-render();
-initFilePersistence();
+(async () => {
+  await loadFromDefaultFile();
+  render();
+  await initFilePersistence();
+})();
 </script>
 </body>
 </html>

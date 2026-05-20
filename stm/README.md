@@ -41,4 +41,4 @@ Sunday (15 min)  →  06-weekly-svadhyaya.md — honest review + next week's pla
 
 ## Skill file
 
-[`.agents/skills/stm/SKILL.md`](../.agents/skills/stm/SKILL.md) — AI coaching instructions
+[`.agents/skills/gps/SKILL.md`](../.agents/skills/gps/SKILL.md) — AI coaching instructions

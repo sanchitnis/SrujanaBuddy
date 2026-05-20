@@ -196,3 +196,23 @@ Done, seri! Go build that site, Rohit. Recruiters are waiting. 🎯
 | Agents shown | Personal Website Builder Agent |
 | Technology tier | T0 (static HTML, free hosting — no dependencies, no cost) |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Internship-ready digital profile with project proof
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Strong recruiter conversion via portfolio
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Live portfolio + polished deployed project set
+			  . . .
+		  ▶ . . .  Stage 2 (Application) . . .
+	  . . .      - Stack decision clarity + build/deploy workflow
+  . . .
+ Stage 1 (Foundation)
+ - Basic HTML/CSS and project readiness
+
+▶ YOU - NOW | 3rd year ISE | Stage 2 in progress
+```

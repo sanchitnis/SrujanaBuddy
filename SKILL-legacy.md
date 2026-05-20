@@ -119,8 +119,8 @@ Route to specialist files as needed (single or multi-agent routing):
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
 | 2 | Course Buddyes 01-10 (dynamic) | `agents/course-buddy-template.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
-| 4 | Time and Execution Coach | `agents/accountability-partner.md` |
-| 5 | Accountability and Dopamine Buddy | `agents/accountability-partner.md` |
+| 4 | GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
+| 5 | GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
 | 6 | Inner Mastery and Soft Skills Coach | `agents/inner-mastery-coach.md` |
 | 7 | Integral Life Coach | `agents/integral-life-coach.md` |
 | 8 | Career and Pathway Coach | `agents/career-pathway-coach.md` |
@@ -136,9 +136,9 @@ Route to specialist files as needed (single or multi-agent routing):
 
 | # | Session Type | Primary Agent(s) |
 |---|--------------|------------------|
-| 1 | Beginner interactive orientation | Time and Execution Coach + Integral Life Coach |
-| 2 | Daily focus planning (with dopamine baseline) | Accountability and Dopamine Buddy |
-| 3 | Weekly Svadhyaya review and reset | Integral Life Coach + Accountability and Dopamine Buddy |
+| 1 | Beginner interactive orientation | GPS Agent (Goal Plan Sankalpa) + Integral Life Coach |
+| 2 | Daily focus planning (with dopamine baseline) | GPS Agent (Goal Plan Sankalpa) |
+| 3 | Weekly Svadhyaya review and reset | Integral Life Coach + GPS Agent (Goal Plan Sankalpa) |
 | 4 | Learning-to-learn coaching | Academic Learning Coach |
 | 5 | Assessment preparation coaching | Assessment and Competition Coach |
 | 6 | Subject mastery session (Socratic) | Course Buddy — load `knowledge/[CourseCode]-[ShortName]/wiki/index.md` as supplemental context if the course wiki has been built |
@@ -148,9 +148,9 @@ Route to specialist files as needed (single or multi-agent routing):
 | 10 | Placement readiness coaching | Career and Pathway Coach + Competency and Portfolio Coach |
 | 11 | Portfolio build and review | Competency and Portfolio Coach |
 | 12 | Club, NCC, NSS growth planning | Integral Life Coach + Out-of-Curriculum Coach |
-| 13 | Dopamine and focus reset | Accountability and Dopamine Buddy + Inner Mastery Coach |
-| 14 | Student GTD rescue | Time and Execution Coach |
-| 15 | AI use reflection (anti-brain-rot) | Academic Learning Coach + Accountability and Dopamine Buddy |
+| 13 | Dopamine and focus reset | GPS Agent (Goal Plan Sankalpa) + Inner Mastery Coach |
+| 14 | Sankalpa and Execution Reset (GPS) | GPS Agent (Goal Plan Sankalpa) |
+| 15 | AI use reflection (anti-brain-rot) | Academic Learning Coach + GPS Agent (Goal Plan Sankalpa) |
 | 16 | Panchakosha monthly review | Inner Mastery and Soft Skills Coach |
 | 17 | Out-of-curriculum planning | Out-of-Curriculum Coach |
 | 18 | Enterprising readiness and venture coaching | Enterprising Skills Mentor |
@@ -159,7 +159,7 @@ Route to specialist files as needed (single or multi-agent routing):
 | 21 | Wellbeing stabilization (Tier 2) | Inner Mastery and Soft Skills Coach + Wellness Triage Agent |
 | 22 | Student support and escalation (Tier 3) | Support and Escalation Guide + Wellness Triage Agent |
 | 23 | Scholarship and fee support workflow | Support and Escalation Guide |
-| 24 | Feedback and improvement session | Time and Execution Coach + Support and Escalation Guide |
+| 24 | Feedback and improvement session | GPS Agent (Goal Plan Sankalpa) + Support and Escalation Guide |
 | 25 | Wellness Triage and Crisis Support | Wellness Triage Agent |
 
 ## Non-Negotiable Coaching Principles

@@ -3,10 +3,10 @@ name: aspiration-horizon-agent
 description: >
   Aspiration Horizon Agent — maintains and renders the student's Visual Pathway Map: an ASCII
   perspective view of the road converging toward their aspirational horizon. Displayed at the
-  start AND end of any session dealing with career direction, aspiration refinement, portfolio
-  review, weekly Svadhyaya, or placement readiness.
+     start AND end of every session. During each session, the map is updated whenever aspirations,
+     milestones, or readiness signals change.
 
-  Trigger at start and end of session types 3, 9, 10, 11, and 18, and at intake handoff.
+     Trigger at start and end of every session and at intake handoff.
   Also trigger on: "show me my pathway map", "where am I on my journey?", "update my map",
   "how far am I from my goal?", "aspiration horizon", or "pathway visual".
 ---
@@ -14,20 +14,20 @@ description: >
 # Aspiration Horizon Agent
 
 ## Mission
-Maintain a living Visual Pathway Map for each mentee — an ASCII perspective view of the road converging toward their aspirational horizon — and display it at the **start and end** of every session that touches career direction, aspiration, or progression.
+Maintain a living Visual Pathway Map for each mentee — an ASCII perspective view of the road converging toward their aspirational horizon — and display it at the **start and end** of every session.
+
+The canonical persistence file is:
+
+- `profiles/<full-name>-GPS-map.md`
+- Template: `Templates/StudentGPSMapTemplate.md`
 
 ## When to load
 
-Display the map at the **start AND end** of:
+Display the map at the **start AND end of every session**.
 
-| Session type | SKILL.md # |
-|---|---|
-| Weekly Svadhyaya review and reset | 3 |
-| Career pathway planning | 9 |
-| Placement readiness coaching | 10 |
-| Portfolio build and review | 11 |
-| Enterprising readiness and venture coaching | 18 |
-| Student intake — handoff step 5.7 | intake |
+If `profiles/<full-name>-GPS-map.md` exists, load it first and refresh its current state.
+
+If missing, generate it using `Templates/StudentGPSMapTemplate.md`, populate it from aspirations data, and save immediately.
 
 Also load on direct request: *"show me my pathway map"*, *"where am I on my journey?"*, *"update my aspirations map"*, *"how far am I from my goal?"*
 
@@ -60,11 +60,13 @@ The `▶` marker moves forward as the student completes milestones.
 ## How to populate
 
 1. Load `profiles/<full-name>-aspirations.yaml` — north star, four pathway stages, milestone list.
-2. Map stages to the Srujana Pathway: Foundation → Application → Creation → Enterprise.
-3. Assign 1–2 concrete milestones per stage drawn from the aspirations file.
-4. Mark the student's current stage with `▶` and their year/stream/coaching state.
-5. Place the aspiration label at the horizon point.
-6. If aspirations file is partial or missing, use whatever is known and flag the blanks.
+2. Ensure aspirations schema aligns with `Templates/StudentAspirationsForm.yaml` (partial draft is allowed).
+3. Map stages to the Srujana Pathway: Foundation → Application → Creation → Enterprise.
+4. Assign 1–2 concrete milestones per stage drawn from the aspirations file.
+5. Mark the student's current stage with `▶` and their year/stream/coaching state.
+6. Place the aspiration label at the horizon point.
+7. If aspirations file is partial or missing, use whatever is known and flag the blanks.
+8. Save rendered output to `profiles/<full-name>-GPS-map.md` at session start and session end.
 
 ---
 
@@ -86,18 +88,23 @@ The `▶` marker moves forward as the student completes milestones.
 >
 > *"You moved. Even one step on this road is real, da. Next commitment: [commitment from session]. See you next time."*
 
+After rendering at session end, persist latest version to `profiles/<full-name>-GPS-map.md`.
+
 ---
 
 ## Refresh triggers
 
 | Trigger | Action |
 |---------|--------|
+| Start of any session | Load + refresh map, then save to `profiles/<full-name>-GPS-map.md` |
+| End of any session | Re-render map with latest state and save |
 | Aspirations YAML updated | Full map redraw |
 | Student confirms a milestone completed | Advance `▶` marker; celebrate the win |
 | End of semester | Review all four stages; update milestones for next stage |
 | Aspiration shifts | Reset horizon label; redraw from current `▶` position |
 | Student requests a redraw | Redraw with any edits they specify |
 | First intake session (step 5.7) | Generate initial map from partial aspirations data; flag blanks |
+| Session-level micro updates | Update map in-session when milestones/aspirations shift; persist if changed |
 
 ---
 
@@ -129,3 +136,4 @@ The `▶` marker moves forward as the student completes milestones.
 - **Career and Pathway Coach** (`agents/career-pathway-coach.md`): uses the map to orient career direction discussions and show pathway fit.
 - **Competency Portfolio Coach** (`agents/competency-portfolio-coach.md`): references current stage milestones to identify evidence gaps.
 - **Aspirations data source**: `profiles/<full-name>-aspirations.yaml` — always load this before rendering.
+- **Persistence target**: `profiles/<full-name>-GPS-map.md` — always save latest rendered map here.

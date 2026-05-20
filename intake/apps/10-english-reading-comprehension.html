@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Reading Comprehension Baseline</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #f6f3ed; color: #1f2937; }
+    .card { max-width: 920px; margin: 0 auto; background: #fff; border: 1px solid #d6d3d1; border-radius: 12px; padding: 20px; }
+    h1 { margin-top: 0; }
+    .passage { margin: 14px 0; padding: 12px; background: #fafaf9; border-radius: 8px; line-height: 1.5; }
+    .q { margin: 14px 0; padding: 12px; background: #fafaf9; border-radius: 8px; }
+    button { margin-top: 12px; margin-right: 8px; padding: 10px 14px; border-radius: 8px; border: 0; background: #0f766e; color: #fff; cursor: pointer; }
+    textarea { width: 100%; min-height: 160px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>English Reading Comprehension Baseline</h1>
+    <p>Read the passage and answer all questions. This is a foundational diagnostic, not an exam.</p>
+
+    <div class="passage">
+      <strong>Passage:</strong><br/>
+      In modern learning environments, students often confuse information access with understanding.
+      Having many resources can create a false sense of progress unless learners actively retrieve ideas,
+      connect them to prior knowledge, and apply them to new problems. Deep learning is less about
+      memorizing isolated facts and more about building structures of meaning. Students who pause to
+      explain concepts in their own words, test themselves, and reflect on mistakes generally retain
+      knowledge longer and transfer it better across subjects.
+    </div>
+
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+
+  <script>
+    const items = [
+      {
+        text: 'Which statement best captures the main idea of the passage?',
+        options: [
+          'More study materials always guarantee better learning.',
+          'Understanding comes from active processing, not just access to information.',
+          'Memorization is the most reliable strategy for all subjects.',
+          'Mistakes should be avoided to maintain confidence.'
+        ],
+        answer: 1
+      },
+      {
+        text: 'According to the passage, what creates a false sense of progress?',
+        options: [
+          'Explaining ideas in your own words',
+          'Taking mock tests',
+          'Having many resources without active learning',
+          'Reflecting on mistakes'
+        ],
+        answer: 2
+      },
+      {
+        text: 'The phrase "transfer it better across subjects" most nearly means:',
+        options: [
+          'Scoring the same marks in all subjects',
+          'Applying learned ideas in different contexts',
+          'Changing optional subjects frequently',
+          'Repeating the same notes for all exams'
+        ],
+        answer: 1
+      },
+      {
+        text: 'Which of the following is NOT listed as a deep-learning behavior?',
+        options: [
+          'Self-testing',
+          'Explaining concepts in your own words',
+          'Avoiding difficult questions',
+          'Reflecting on mistakes'
+        ],
+        answer: 2
+      },
+      {
+        text: 'What is the tone of the passage?',
+        options: [
+          'Humorous and casual',
+          'Critical but practical',
+          'Purely narrative',
+          'Highly emotional'
+        ],
+        answer: 1
+      }
+    ];
+
+    const q = document.getElementById('questions');
+    items.forEach((item, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${item.text}</label><br/>` +
+        item.options.map((opt, idx) => `<label><input type="radio" name="q${i}" value="${idx}"> ${opt}</label><br/>`).join('');
+      q.appendChild(row);
+    });
+
+    function scoreTest() {
+      let score = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        if (Number(checked.value) === items[i].answer) score += 1;
+      }
+
+      const pct = Math.round((score / items.length) * 100);
+      let band = 'Strong baseline';
+      let action = 'Move to higher-level comprehension and summarization tasks.';
+      if (pct < 50) {
+        band = 'Needs support';
+        action = 'Practice short passages daily and focus on main-idea extraction.';
+      } else if (pct < 80) {
+        band = 'Developing baseline';
+        action = 'Build speed and inference skill with timed reading drills.';
+      }
+
+      document.getElementById('result').value =
+        `English Reading Comprehension: ${score}/${items.length} (${pct}%)\n` +
+        `Band: ${band}\n\n` +
+        'Suggested next step:\n' + action;
+    }
+
+    function copyResult() {
+      const text = document.getElementById('result');
+      text.select();
+      document.execCommand('copy');
+      alert('Result copied.');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logical Reasoning Baseline</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #f6f3ed; color: #1f2937; }
+    .card { max-width: 920px; margin: 0 auto; background: #fff; border: 1px solid #d6d3d1; border-radius: 12px; padding: 20px; }
+    h1 { margin-top: 0; }
+    .q { margin: 14px 0; padding: 12px; background: #fafaf9; border-radius: 8px; }
+    button { margin-top: 12px; margin-right: 8px; padding: 10px 14px; border-radius: 8px; border: 0; background: #0f766e; color: #fff; cursor: pointer; }
+    textarea { width: 100%; min-height: 160px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Logical Reasoning Baseline</h1>
+    <p>Answer all questions. This checks pattern recognition and structured thinking.</p>
+
+    <div id="questions"></div>
+    <button onclick="scoreTest()">Generate Result</button>
+    <button onclick="copyResult()">Copy to Clipboard</button>
+    <textarea id="result" readonly></textarea>
+  </div>
+
+  <script>
+    const items = [
+      {
+        text: 'Find the next number: 2, 6, 12, 20, 30, ?',
+        options: ['36', '40', '42', '44'],
+        answer: 2
+      },
+      {
+        text: 'If all coders are problem-solvers and some students are coders, which is definitely true?',
+        options: [
+          'All students are problem-solvers',
+          'Some students are problem-solvers',
+          'No students are coders',
+          'All problem-solvers are coders'
+        ],
+        answer: 1
+      },
+      {
+        text: 'Odd one out: Triangle, Square, Circle, Rectangle',
+        options: ['Triangle', 'Square', 'Circle', 'Rectangle'],
+        answer: 2
+      },
+      {
+        text: 'A is taller than B. B is taller than C. Which statement is true?',
+        options: ['C is taller than A', 'A is taller than C', 'B is taller than A', 'Cannot be determined'],
+        answer: 1
+      },
+      {
+        text: 'Complete analogy: Book : Read :: Food : ?',
+        options: ['Cook', 'Eat', 'Serve', 'Buy'],
+        answer: 1
+      },
+      {
+        text: 'If today is Wednesday, what day will it be after 10 days?',
+        options: ['Friday', 'Saturday', 'Sunday', 'Monday'],
+        answer: 1
+      }
+    ];
+
+    const q = document.getElementById('questions');
+    items.forEach((item, i) => {
+      const row = document.createElement('div');
+      row.className = 'q';
+      row.innerHTML = `<label>${i + 1}. ${item.text}</label><br/>` +
+        item.options.map((opt, idx) => `<label><input type="radio" name="q${i}" value="${idx}"> ${opt}</label><br/>`).join('');
+      q.appendChild(row);
+    });
+
+    function scoreTest() {
+      let score = 0;
+      for (let i = 0; i < items.length; i++) {
+        const checked = document.querySelector(`input[name=q${i}]:checked`);
+        if (!checked) { alert('Please answer all questions.'); return; }
+        if (Number(checked.value) === items[i].answer) score += 1;
+      }
+
+      const pct = Math.round((score / items.length) * 100);
+      let band = 'Strong reasoning baseline';
+      let action = 'Move to timed mixed logical sets and puzzle drills.';
+      if (pct < 50) {
+        band = 'Needs foundational reasoning support';
+        action = 'Practice sequence, syllogism, and analogy basics daily for 15 minutes.';
+      } else if (pct < 80) {
+        band = 'Developing reasoning baseline';
+        action = 'Add timed reasoning practice (2 sets/week).';
+      }
+
+      document.getElementById('result').value =
+        `Logical Reasoning Score: ${score}/${items.length} (${pct}%)\n` +
+        `Band: ${band}\n\n` +
+        'Suggested next step:\n' + action;
+    }
+
+    function copyResult() {
+      const text = document.getElementById('result');
+      text.select();
+      document.execCommand('copy');
+      alert('Result copied.');
+    }
+  </script>
+</body>
+</html>

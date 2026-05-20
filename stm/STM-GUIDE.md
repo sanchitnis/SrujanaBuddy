@@ -1,7 +1,7 @@
 # STM — Sankalpa and Time Management
 ## Ancient Wisdom + Modern Habit Science for REVA Students
 
-> Skill file: [`.agents/skills/stm/SKILL.md`](../.agents/skills/stm/SKILL.md)
+> Skill file: [`.agents/skills/gps/SKILL.md`](../.agents/skills/gps/SKILL.md)
 
 ---
 

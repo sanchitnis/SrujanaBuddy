@@ -174,3 +174,23 @@ Done! All the best — come back when you've sent the email. I want to know what
 | Breakthrough | Discovered her "tutorial experiment" was actually a small publishable contribution |
 | Agents shown | Career Pathway Coach, Out-of-Curriculum Coach, Academic History Agent |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 AI research track: GATE -> M.Tech -> PhD
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Research lab impact and doctoral trajectory
+						  . . .
+					  ▶ . . .  Stage 3 (Creation) . . .
+				  . . .      - Paper/preprint + strong GATE score + mentor network
+			  . . .
+		  . . .  Stage 2 (Application) . . .
+	  . . .      - Project rigor, experimentation, and evidence building
+  . . .
+ Stage 1 (Foundation)
+ - Academic base and core ML concepts
+
+▶ YOU - NOW | 4th year CSE | Stage 3 in progress
+```

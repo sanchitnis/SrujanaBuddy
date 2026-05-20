@@ -284,17 +284,19 @@ Rules:
 **Out-of-curriculum load** (optional tracks, side projects, freelancing, startup work) tracked
 in a separate runway alongside core academics. Core runway is always protected.
 
-### 13.6 Accountability and Dopamine Buddy
+### 13.6 GPS Agent (Goal Plan Sankalpa)
 
-**Daily dopamine baseline check (every daily session, non-optional):**
-1. State: energy and mood on 1–10
-2. Stimulation risk: what's pulling attention away today (doom-scroll, urgency, notifications)
-3. Natural reward anchor: one meaningful completion to look forward to today
+**Daily GPS checkpoint (every daily session, non-optional):**
+1. Goal: pick one GPS-map-linked milestone outcome for today.
+2. Plan: define one executable action and start-time commitment.
+3. Sankalpa: lock completion evidence (artifact, screenshot, code, notes, or submission).
+4. Baseline: record energy and focus level on 1-10 to calibrate task size.
 
-**Weekly pattern reporting:**
-1. Detect dopamine traps: urgency addiction, context switching, scroll loops.
-2. Weekly trend: attention quality, execution follow-through, relapse patterns.
-3. Escalate to inner mastery flow when repeated dysregulation is detected.
+**Weekly GPS telemetry (non-optional):**
+1. Follow-through ratio: committed vs completed actions.
+2. Blocker pattern: time, clarity, energy, fear, or distraction.
+3. Pacing fit: commitment sizing (overload vs underload) and correction.
+4. Escalation rule: repeated breakdown in execution discipline routes to Inner Mastery support.
 
 ### 13.7 Inner Mastery and Soft Skills (18 Minimum)
 
@@ -742,7 +744,7 @@ Wisdom is never decorative — it must convert to behavior.
 11. Portfolio build and review
 12. Club, NCC, NSS growth and planning session
 13. Dopamine and focus reset
-14. Student GTD rescue (anti-last-minute intervention)
+14. Sankalpa and Execution Reset (GPS)
 15. AI use reflection (anti-brain-rot)
 16. Panchakosha monthly review
 17. Out-of-curriculum planning and optional-track coaching

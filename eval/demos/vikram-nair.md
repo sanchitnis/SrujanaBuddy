@@ -180,3 +180,23 @@ Seri! Saved. Now go finish that auth. Shuru maadu! 💪
 | Breakthrough | Student realised CGPA isn't the bottleneck — story + projects are |
 | Agents shown | Competency Portfolio Coach, Accountability Partner, GTD rescue |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Placement-ready candidate with compelling project story
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Offer conversion with strong interview narrative
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Standout deployed product + interview confidence
+			  . . .
+		  ▶ . . .  Stage 2 (Application) . . .
+	  . . .      - Portfolio triage + execution milestones
+  . . .
+ Stage 1 (Foundation)
+ - Baseline coding and project exploration
+
+▶ YOU - NOW | 4th year CSE | Stage 2 to 3 transition
+```

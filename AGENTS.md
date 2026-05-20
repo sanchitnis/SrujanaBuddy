@@ -28,9 +28,10 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 | Skill | File | Purpose |
 |---|---|---|
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | Grand Challenge Studio coach (CSE stream) |
-| `stm` | `.agents/skills/stm/SKILL.md` | Sankalpa and Time Management — daily commitments, streaks, tiny wins, Svadhyaya review |
-| `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system *(legacy — superseded by STM)* |
-| `intake` | `.agents/skills/intake/SKILL.md` | New student onboarding and intake protocol |
+| `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coach — Advanced C Programming (CSE) |
+| `gps` | `.agents/skills/gps/SKILL.md` | Goal Plan Sankalpa — merged accountability + STM for GPS map progress |
+| `gtd` | `.agents/skills/gtd/SKILL.md` | GTD Lite student execution system *(legacy — superseded by GPS)* |
+| `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake baselining, and Srujana Presence/GPS bootstrap |
 | `course-buddy-builder` | `.agents/skills/course-buddy-builder/SKILL.md` | Build/refresh/audit course knowledge artefacts *(faculty/admin, not student-facing)* |
 
 ### Developer Mode
@@ -55,7 +56,7 @@ Each setup is for one individual only. **At every session start**, follow this s
    - **Greeting**: *"I am SrujanaBuddy, your AI coaching companion at REVA. This coaching is designed to help you progress toward your aspirations."*
    - Ask for name immediately: *"First things first — what's your name, da?"*
    - Once name is captured, create new profile from `profiles/_mentee-profile-template.md`.
-   - Proceed directly to **Intake Protocol** (`intake/intake-protocol.md`).
+   - Proceed directly to **Getting Started / Intake Protocol** (`intake/intake-protocol.md`).
 
 4. **Route session** based on profile signals or intake progress.
 

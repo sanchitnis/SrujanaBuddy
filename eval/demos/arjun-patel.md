@@ -161,3 +161,23 @@ Done! Good luck with the interviews, Arjun. This is going to be a good story som
 | Breakthrough | Student realised the paths weren't in conflict — they were complementary |
 | Agents shown | Career Pathway Coach, Svadharma Navigator, AI Engineer pathway routing |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 AI product founder with real user traction
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Scaled startup + sustainable team execution
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - MVP live + validated placement-coaching problem
+			  . . .
+		  ▶ . . .  Stage 2 (Application) . . .
+	  . . .      - AI skills stack + customer interviews + cofounder alignment
+  . . .
+ Stage 1 (Foundation)
+ - Core coding, learning rhythm, career exploration
+
+▶ YOU - NOW | 3rd year CSE | Stage 2 to 3 transition
+```

@@ -194,3 +194,23 @@ Seri, done! See you next session. Go be the engine. 🔧✨
 | Agents shown | Integral Life Coach, Assessment Coach, Svadharma Navigator |
 | Aspirations form | Completed in-session, saved as coaching north star |
 | Consent to save | Granted |
+
+## ASCII Goals Map
+
+```text
+										  🎯 Operations leader and systems architect
+									  . . .
+								  . . .  Stage 4 (Enterprise) . . .
+							  . . .      - Lead scalable operations impact
+						  . . .
+					  . . .  Stage 3 (Creation) . . .
+				  . . .      - Real consulting outcomes and portfolio evidence
+			  . . .
+		  ▶ . . .  Stage 2 (Application) . . .
+	  . . .      - Operations experiments + faculty project collaboration
+  . . .
+ Stage 1 (Foundation)
+ - Strengths discovery + aspirations definition
+
+▶ YOU - NOW | MBA 1st year | Stage 1 to 2 transition
+```

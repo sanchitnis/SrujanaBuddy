@@ -70,7 +70,7 @@ These defaults should remain aligned with REVA's learner-centric and holistic-de
 ### 13. Dopamine and focus reset
 - Outcome: stabilization protocol and relapse-prevention action.
 
-### 14. Student GTD rescue
+### 14. Sankalpa and Execution Reset (GPS)
 - Outcome: red-zone task stabilization and runway restoration.
 
 ### 15. AI use reflection (anti-brain-rot)

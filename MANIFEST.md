@@ -17,7 +17,7 @@
 | Founding Chancellor | Dr. P. Shyama Raju |
 | Primary Audience | All REVA undergraduate and postgraduate students |
 | Orchestration Layer | `SKILL.md` |
-| Primary Spec | `REVA-STUDENT-SYSTEM-SPEC.md` |
+| Primary Spec | `docs/SrujanaBuddySpec.md` |
 | License | MIT (see `LICENSE`) |
 
 ---
@@ -27,7 +27,7 @@
 | File | Type | Purpose | Status |
 |------|------|---------|--------|
 | `SKILL.md` | Orchestration | Master coaching intelligence layer — session routing, agent selection, philosophy anchors | ✅ Active |
-| `REVA-STUDENT-SYSTEM-SPEC.md` | Spec | Primary requirements specification — Panchakosha model, 18-agent system, acceptance criteria | ✅ Active |
+| `docs/SrujanaBuddySpec.md` | Spec | Primary requirements specification — Panchakosha model, 18-agent system, acceptance criteria | ✅ Active |
 | `README.md` | Documentation | Project landing page with Quick Start for all three audiences | ✅ Active |
 | `MANIFEST.md` | Registry | This file — complete system catalogue | ✅ Active |
 | `AGENTS.md` | Convention | Project guidelines, code style, build and test commands | ✅ Active |
@@ -35,16 +35,16 @@
 | `CONTRIBUTORS.md` | Attribution | Team, domain experts, philosophical sources | ✅ Active |
 | `CHANGELOG.md` | History | Version history and change documentation | ✅ Active |
 | `COACHING-SESSION-WORKFLOW.md` | Workflow | Step-by-step coaching session protocol | ✅ Active |
-| `REVA-IMPLEMENTATION-TRACKER.md` | Tracker | Implementation progress across all system components | ✅ Active |
-| `REVA-METRICS-TRACKER.md` | Tracker | Coaching outcome metrics and KPI tracking | ✅ Active |
-| `REVA-ACCEPTANCE-EVIDENCE.md` | Tracker | Acceptance criteria evidence log | ✅ Active |
+| `docs/REVA-IMPLEMENTATION-TRACKER.md` | Tracker | Implementation progress across all system components | ✅ Active |
+| `docs/REVA-METRICS-TRACKER.md` | Tracker | Coaching outcome metrics and KPI tracking | ✅ Active |
+| `docs/REVA-ACCEPTANCE-EVIDENCE.md` | Tracker | Acceptance criteria evidence log | ✅ Active |
 | `LICENSE` | Legal | MIT License with frameworks attribution | ✅ Active |
 
 ---
 
 ## 3. Agent Registry
 
-Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SPEC.md`.
+Agents are grouped by function, matching Section 14.2 of `docs/SrujanaBuddySpec.md`.
 
 ### Group A — Academic Track
 
@@ -79,7 +79,7 @@ Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SP
 | Inner Mastery Coach | `agents/inner-mastery-coach.md` | Panchakosha wellbeing, Pranamaya/Manomaya health, Positive Intelligence |
 | Integral Life Coach | `agents/integral-life-coach.md` | Whole-person integration across all five koshas |
 | Organizational Attitude Builder | `agents/organizational-attitude-builder.md` | Vivekananda OA framework; shadow side and antidote coaching |
-| Accountability Partner | `agents/accountability-partner.md` | Weekly check-ins, commitment tracking, GTD support |
+| Drive-with-GPS Agent | `agents/drive-with-gps.md` | Weekly check-ins, commitment tracking, GPS map, Sankalpa |
 
 ### Group E — Purpose and Values
 
@@ -151,7 +151,7 @@ Agents are grouped by function, matching Section 14.2 of `REVA-STUDENT-SYSTEM-SP
 | App | File | Instrument | Status |
 |-----|------|-----------|--------|
 | 01 Character Strengths | `intake/apps/01-character-strengths.html` | VIA 24 strengths (REVA values-aligned) | ✅ Active |
-| 02 Balance Wheel | `intake/apps/02-spheres-assessment.html` | Five Spheres / Panchakosha balance wheel | ✅ Active (Panchakosha rewrite roadmap: see REVA-STUDENT-SYSTEM-SPEC §14) |
+| 02 Balance Wheel | `intake/apps/02-spheres-assessment.html` | Five Spheres / Panchakosha balance wheel | ✅ Active (Panchakosha rewrite roadmap: see docs/SrujanaBuddySpec.md §14) |
 | 03 Leadership OA Profile | `intake/apps/03-leadership-oa-profile.html` | Vivekananda Organizational Attitude (REVA-specific antidotes) | ✅ Active |
 | 04 Growth Mindset | `intake/apps/04-growth-mindset.html` | Dweck growth mindset scale | ✅ Active |
 | 05 Grit & Perseverance | `intake/apps/05-grit-perseverance.html` | Duckworth Grit scale | ✅ Active |

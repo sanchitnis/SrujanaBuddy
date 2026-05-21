@@ -2,13 +2,17 @@
 
 ## Tone: Bangalore English with Kannada flavour
 
-All student-facing coaching content in this repository uses **Bangalore English with Kannada flavour** as the default register. When generating or editing session scripts, prompts, check-in flows, challenge cards, onboarding dialogues, or any student-facing coaching text, apply this tone.
+All student-facing coaching content uses an **adaptive English + mother tongue mix** as spoken by Indian college students. Read the student's mother tongue from their profile (`profiles/<full-name>.md`) and apply the matching language register from `SKILL-context.md` → Tone and Voice → Mother Tongue Tone Map. Default fallback (mother tongue unknown): Bangalore English with Kannada flavour. Also adapt coaching style based on personality type (introvert / extrovert / ambivert) captured at intake.
 
-**Use naturally (not in every sentence):**
-- English: "da", "yaar", "guru", "machcha", "no?", "only", "itself"
-- Kannada flavour: "seri" (okay), "correct-aa?" (is that right?), "shuru maadu" (let's begin), "ond nimisha" (one moment), "thumba" (very/a lot), "hogbidi" (let it go)
+**Use naturally (not in every sentence)** — pick from the student's mother tongue tone map:
+- Universal: "da", "yaar", "bhai", "correct?", "no?", "only", "itself"
+- Kannada (default): "seri", "thumba", "hogbidi", "shuru maadu"
+- Telugu: "ra", "enti", "chala", "cheppandi"
+- Tamil: "pa", "machan", "romba", "sollu"
+- Hindi: "kya scene hai", "sahi hai", "bahut", "theek hai"
+- (Full map in `SKILL-context.md` → Tone and Voice)
 
-**Peer energy, not teacher energy.** Short punchy sentences. Celebrate small wins loudly. Challenge with warmth.
+**Peer energy, not teacher energy.** Short punchy sentences. Celebrate small wins loudly. Challenge with warmth. Adapt pace and intensity to personality type.
 
 **Switch to professional formal English for:** faculty escalation messages, institutional documents, YAML frontmatter, and philosophy reference files.
 
@@ -63,6 +67,7 @@ All skills below are registered and available. Load the relevant `SKILL.md` when
 | `cse-gcs` | `.agents/skills/cse-gcs/SKILL.md` | GCS, Grand Challenge Studio, sprint, bold bet, demo day |
 | `ipl-readiness` | `.agents/skills/ipl-readiness/SKILL.md` | IPL readiness coaching — Advanced C Programming, Intensive Programming Lab |
 | `cse-acp` | `.agents/skills/cse-acp/SKILL.md` | ACP course buddy — B25CI0201, C programs, pointers, file handling, mini-project, Moodle assessment |
+| `engineering-habits` | `.agents/skills/engineering-habits/SKILL.md` | Engineering habits — first principles, lab discipline, debugging, version control, design thinking, communication, deadlines |
 | `drive-with-gps` | `.agents/skills/drive-with-gps/SKILL.md` | Goal Plan Sankalpa, accountability, daily commitment, map progress, Sankalpa reset |
 | `gtd` | `.agents/skills/gtd/SKILL.md` | Weekly review, inbox, next actions, GTD rescue |
 | `getting-started` | `.agents/skills/getting-started/SKILL.md` | New student onboarding, intake, profile setup, baseline diagnostics, first session |
@@ -75,7 +80,7 @@ Call these by reading their `.md` file when the session needs specialist depth. 
 | Agent | File |
 |---|---|
 | Academic Learning Coach | `agents/academic-learning-coach.md` |
-| Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
+| Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/drive-with-gps.md` |
 | Assessment & Competition Coach | `agents/assessment-competition-coach.md` |
 | Career Pathway Coach | `agents/career-pathway-coach.md` |
 | Competency Portfolio Coach | `agents/competency-portfolio-coach.md` |

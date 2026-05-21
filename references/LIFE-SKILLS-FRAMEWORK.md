@@ -43,7 +43,7 @@ The framework acknowledges that:
 - `references/daily-thread.md` (Morning Protocol)
 - `references/weekly-rhythm.md` (Svadhyaya ritual)
 - `references/yearly-strategy.md` (Annual retreat)
-- `agents/accountability-partner.md` (full agent file)
+- `agents/drive-with-gps.md` (full agent file)
 
 **Materials Needed** 🔴:
 - Explicit habit formation coaching guide (neuroplasticity + Vedantic perspective)
@@ -304,7 +304,7 @@ The framework acknowledges that:
 
 **Materials Available**:
 - `gtd/GTD-GUIDE.md` (Five GTD Steps: Capture → Clarify → Organise → Reflect → Engage)
-- `agents/accountability-partner.md` (WOOP method reference)
+- `agents/drive-with-gps.md` (WOOP method reference)
 - `agents/paristhiti-jnana-analyst.md` (adaptive leadership coaching)
 - `references/yearly-strategy.md` (Immunity to Change: root cause analysis)
 - COACHING-SESSION-WORKFLOW.md (Phase 4.1: Leadership Challenge)

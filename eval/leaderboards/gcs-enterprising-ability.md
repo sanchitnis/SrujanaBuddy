@@ -10,7 +10,7 @@
 
 **To populate this leaderboard:**
 
-1. **Every Friday evening** (after weekly coaching sessions), open each student's profile in `profiles/{full-name}.md`
+1. **Every Friday evening** (after weekly coaching sessions), open each student's GCS course profile at `profiles/{full-name}-cse-gcs.md`
 2. Go to section `## GCS Gamification Analytics`
 3. Extract data:
    - Interview count, sources, Investigation depth level

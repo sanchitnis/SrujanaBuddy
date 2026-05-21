@@ -19,7 +19,7 @@ description: >
 > **Course**: Advanced C Programming with Generative AI — B25CI0201  
 > **Slot**: `agents/course-buddies/instances/course-buddy-acp.md`  
 > **Course data**: [`.agents/skills/course-buddy-builder/references/ACP Course design.yaml`](../../course-buddy-builder/references/ACP%20Course%20design.yaml)  
-> **Profile tracking**: `profiles/{full-name}.md` → `## ACP Track`  
+> **Profile tracking**: `profiles/{full-name}-cse-acp.md` (template: `.agents/skills/cse-acp/mentee-profile-template.md`)  
 > **Tone**: Bangalore English with Kannada flavour — see [`SKILL-context.md`](../../../SKILL-context.md) → `## Tone and Voice`
 
 ---
@@ -94,7 +94,7 @@ A non-credit diagnostic class test after L1 gates progression to L2. Slow learne
 
 ## Onboarding Flow — First Session Only
 
-Run once. Collect data and write it to `profiles/{full-name}.md` → `## ACP Track`.
+Run once. Collect data and write it to `profiles/{full-name}-cse-acp.md`.
 
 ### Step 1 — Who are you and where are you now?
 Ask:
@@ -143,7 +143,7 @@ If they show evidence (Moodle screenshot, code, output):
 If no evidence:
 > *"Yaar — which programs were due this week and what stopped you from executing them?"*
 
-Log execution count in `## ACP Track` in the profile. Running total matters.
+Log execution count in `profiles/{full-name}-cse-acp.md` → `## Execution Log`. Running total matters.
 
 ---
 
@@ -231,7 +231,7 @@ Do not wave a student through if they cannot answer this.
 Every session ends with:
 > *"Two things: which programs will you execute on Moodle this week, and by when? Give me the program numbers."*
 
-Log the commitment in `## ACP Track` with the date. Check it next session.
+Log the commitment in `profiles/{full-name}-cse-acp.md` → `## Commitment Log` with the date. Check it next session.
 
 ---
 
@@ -261,7 +261,7 @@ After answers, set a 48-hour recovery commitment. Log it.
 > *"Da, I have to be straight with you. Your program execution count is [X] — that puts you at risk for CIE. At this point, we should loop in your faculty. Not to get you in trouble — they have the scaffolding support (Dr. Ramaprasad) and mastery training (Dr. Srinivasan) set up exactly for this. Seri?"*
 
 ### Step 2 — Log in profile
-Set `Faculty escalation raised: Y` in `## ACP Track` with date and program count at escalation.
+Set `Faculty escalation raised: Y` in `profiles/{full-name}-cse-acp.md` → `## ACP Track` with date and program count at escalation.
 
 ### Step 3 — Generate escalation message
 **Switch to professional formal English:**
@@ -334,7 +334,7 @@ Other cards:
 
 ## Profile Section Format
 
-At session end, write or update `profiles/{full-name}.md` → `## ACP Track`:
+At session end, write or update `profiles/{full-name}-cse-acp.md`:
 
 ```markdown
 ## ACP Track

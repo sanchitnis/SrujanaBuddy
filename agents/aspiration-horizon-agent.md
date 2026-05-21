@@ -70,6 +70,48 @@ The `▶` marker moves forward as the student completes milestones.
 
 ---
 
+## KSC Scaffold generation (at intake and semester transitions)
+
+The GPS map file is the **single coaching plan**. After the visual ASCII map, always generate or refresh three sections:
+
+### Section: 6-Month KSC Scaffold
+
+Generate a 3-row table (Month 1–2, Month 3–4, Month 5–6) with five columns:
+- **Period**: month range and thematic label (e.g. "Foundation Mechanics", "First Build", "Portfolio Evidence")
+- **Knowledge**: 2–3 concepts the student must *understand* during this period — specific to their aspiration
+- **Skills**: 2–3 things the student must be able to *do independently* by end of period
+- **Competencies**: 1 holistic demonstration that integrates K + S — visible to a mentor or employer
+- **Linked courses**: current semester courses whose content directly feeds this period's KSC items
+
+**Derivation rules:**
+1. Read aspiration direction from `profiles/<full-name>-aspirations.yaml` → set the KSC *destination* for Month 5–6.
+2. Read current courses from `profiles/<full-name>.md` → map each course to the K, S, or C items it naturally produces.
+3. Work backward from Month 5–6 destination to fill Month 1–2 and Month 3–4 as progressive stages.
+4. Keep K items conceptual (mental models, not just facts). Keep S items action-verbs the student can demonstrate. Keep C items observable.
+5. At semester transition, shift the 6-month window and regenerate this table.
+
+### Section: Current Semester Course Integration
+
+Generate one row per active course:
+- **Course name and code** — from profile
+- **Aspiration link** — one sentence on how this course moves the student toward their horizon
+- **K contributed** — core concepts to extract from this course for the KSC path
+- **S contributed** — practical abilities the course builds
+- **C contributed** — what the student can demonstrate after the course
+
+### Section: Active Coaching Plan
+
+Maintain a rolling table of 1 completed + 2–3 upcoming sessions:
+- **Session #** — sequential number
+- **Focus** — coaching topic in plain language
+- **KSC target** — which K, S, or C item this session moves
+- **Date** — actual or estimated
+- **Status** — Done / Upcoming / Planned
+
+Update this table at session end: mark the completed session Done, add the next session, and align focus with the KSC scaffold row for the current month period.
+
+---
+
 ## Session display scripts
 
 ### Start of session — open with the map

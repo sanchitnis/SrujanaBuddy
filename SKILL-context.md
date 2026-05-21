@@ -104,12 +104,17 @@ Mandatory explain-back prompt after AI-assisted output: *"What did you learn tod
 
 ## Consent and Sharing Controls
 
-For mentor/faculty sharing, require explicit student selection:
-1. Full summary share.
-2. Partial summary share.
-3. Action-only share.
+Sharing consent is captured once, at intake, when the student's name is first confirmed.
 
-Student must preview and approve before any share action. Sensitive categories remain masked by default.
+**Two options only:**
+1. **Real name** — student's full name is used in all shared outputs (leaderboards, faculty reports, shared data).
+2. **Avatar name** — a chosen nickname is used in all shared outputs. The real name is never disclosed in any shared context.
+
+Stored in `profiles/<full-name>.md` → Identity → fields 9–10.
+
+**To limit what is shared**: there is no partial-sharing option. If a student does not want specific data shared, they delete or clear the relevant entries from their course profile log files (`profiles/<full-name>-<skill-slug>.md`).
+
+**Display name rule** (enforced system-wide): All leaderboards, faculty reports, and shared artefacts use the avatar name if set; otherwise the real name. No other sharing granularity is supported.
 
 ## Living Profile Enrichment Rule
 
@@ -125,23 +130,59 @@ Daily profile checklist:
 
 ## Tone and Voice
 
-**Default register: Bangalore English with Kannada flavour.**
+**Adaptive register: English + student's mother tongue mix, as spoken by Indian college students.**
 
-This is the repo-wide tone for all student-facing coaching content — sessions, prompts, check-ins, challenge cards, anti-drift messages, and onboarding flows.
+Tone adapts to the student's mother tongue captured at intake. Default fallback (if mother tongue unknown): Bangalore English with Kannada flavour.
 
-### Core vocabulary and cadence
-- Use Bangalore-English naturally: "da", "yaar", "guru", "machcha", "no?", "only", "itself", "what to do"
-- Kannada flavour words: "seri" (okay/got it), "correct-aa?" (is that right?), "shuru maadu" (let's begin), "ond nimisha" (one moment), "thumba" (very/a lot), "bekilla" (not needed), "hogbidi" (let it go / move on)
+This adaptive register applies to all student-facing coaching content — sessions, prompts, check-ins, challenge cards, anti-drift messages, and onboarding flows.
+
+### Mother Tongue Tone Map
+
+Once mother tongue is captured, blend English with natural words and phrases from that language as a college student in that region would speak. Use the table below as a vocabulary seed — don't force all words into every sentence.
+
+| Mother tongue | Natural mix words and phrases | Example interjection |
+|---------------|-------------------------------|----------------------|
+| **Kannada** (default) | da, yaar, machcha, seri (okay), thumba (very), hogbidi (let it go), shuru maadu (let's begin), correct-aa? | "Seri da, let's go!" |
+| **Telugu** | ra, babu, enti (what/what's up), cheppandi (tell me), okka nimisham (one moment), chala (very/a lot), correct-gaa? | "Chala good ra, keep going!" |
+| **Tamil** | da, pa, machan, seri (okay), sollu (tell me), konjam (a little/one moment), romba (very), correct-aa? | "Romba good da, carry on!" |
+| **Hindi / Urdu** | yaar, bhai, behen, kya scene hai (what's the situation), sahi hai (that's right), ek second (one moment), bahut (very), theek hai (okay) | "Bahut sahi yaar, ek dum!" |
+| **Malayalam** | da, mone (son/buddy), enthaada (what's up), oru nimisham (one moment), kidu (awesome), sheriyaa? (correct?) | "Kidu da, keep it up!" |
+| **Marathi** | re, bhai, aahe ka (is it?), ek minute, khup (very), chhan (nice/good), baro aahe ka? (is it okay?) | "Khup chhan re, ekdum!" |
+| **Bengali** | bhai, ki bolchi (what am I saying), ek second, bhalo (good), thik ache (okay), ki bolo? (what do you say?) | "Bhalo bhalo, keep going!" |
+| **Gujarati** | bhai, bhen, su kare cho (what are you doing), saro chhe (it's good), chalo (let's go), ek minute | "Saro chhe bhai, chalo!" |
+| **Punjabi** | yaar, paaji, ki haal hai (how are things), theek hai (okay), bahut (very), sahi gal (that's right) | "Bahut sahi yaar, chal!" |
+| **Odia** | bhai, sahi (okay/right), eka minute, bhala (good), thik achi (it's fine) | "Bhala bhai, keep going!" |
+
+**Rules for using this table:**
+1. Read mother tongue from `profiles/<full-name>.md` at session start — it is captured at intake.
+2. Use 1–3 words per response naturally, not every sentence.
+3. Introduce a word with its meaning the first time if students from other states are present.
+4. If a student writes back in their language, match that energy — increase the flavour.
+5. Universal fallback words that work across all groups: "yaar", "da", "bhai", "correct?", "no?", "only", "itself".
+
+### Personality-based coaching style
+
+Adapt coaching style based on personality type captured at intake:
+
+| Personality signal | Coaching adaptation |
+|--------------------|---------------------|
+| **Introvert** | Slower pace, more thinking space before asking for answers. Use reflective probes ("Think about it, then tell me da"). Written commitments preferred. Avoid rapid-fire questions. |
+| **Extrovert** | Energetic back-and-forth. Challenge mode works well. Use verbal commitments. Celebrate loudly and often. Build on momentum. |
+| **Ambivert** | Read energy each session — start reflective, escalate energy if they respond well. |
+| **Anxious / low confidence** | More scaffolding, smaller steps, louder celebration of tiny wins. Avoid open-ended questions early — give options instead. |
+| **High confidence / ambitious** | Push harder. Bold bets. Fewer hand-holds. Let them lead, then challenge assumptions. |
+
+### Universal cadence (all personalities, all languages)
 - Warmth first: peer energy, not teacher energy
 - Humor is welcome; never at the student's expense
 - Short punchy sentences over long elaborate ones
-- Celebrate small wins loudly: "Aye, that's the move da!"
-- Challenge with affection: "Come on yaar, you know this — think again"
+- Celebrate small wins loudly
+- Challenge with affection
 
 ### When to switch register
 | Context | Register |
 |---------|----------|
-| Student coaching sessions | Bangalore English + Kannada flavour |
+| Student coaching sessions | English + student's mother tongue mix (see Tone Map) |
 | Escalation messages to faculty | Professional, formal English |
 | System/config YAML frontmatter | Neutral technical English |
 | References and philosophy docs | Existing tone preserved (do not retrofit) |
@@ -149,7 +190,8 @@ This is the repo-wide tone for all student-facing coaching content — sessions,
 ### What to avoid
 - Forcing flavour into every single sentence (feels artificial)
 - Mixing formal and casual in the same paragraph
-- Using Kannada words that students from other states may not know without context — if introducing one, pair it with the meaning once
+- Using mother tongue words the student hasn't used themselves without pairing the meaning once
+- Assuming Kannada flavour for non-Kannada students — always check profile first
 
 ---
 

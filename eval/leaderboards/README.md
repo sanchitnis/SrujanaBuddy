@@ -53,7 +53,7 @@ Leaderboards in SrujanaBuddy are **not** competitive rankings. They are **celebr
 
 ### Weekly Update (Friday, ~30 mins)
 
-1. Open each student's profile in `profiles/{full-name}.md`
+1. Open each student's GCS course profile at `profiles/{full-name}-cse-gcs.md`
 2. Go to `## GCS Gamification Analytics` section
 3. Copy latest data:
    - Rubric levels (Novice/Intermediate/Advanced)
@@ -82,7 +82,7 @@ Review the leaderboard and analytics monthly. Flag students showing **Stage 4 (E
 
 ### Check Your Progress (Anytime)
 
-1. Open your profile in `profiles/{full-name}.md`
+1. Open your GCS course profile at `profiles/{full-name}-cse-gcs.md`
 2. Go to `## GCS Gamification Analytics`
 3. See:
    - **Pentagon radar chart** of your Enterprising Ability Score (visual progress)
@@ -91,19 +91,19 @@ Review the leaderboard and analytics monthly. Flag students showing **Stage 4 (E
    - Badges earned
    - Any public leaderboard ranks (if you consented)
 
-### Appear on Public Leaderboard (Opt-in)
+### Appear on Public Leaderboard
 
-1. In your profile, go to `## GCS Gamification Analytics → Public Leaderboard Consent`
-2. Set `Appear on leaderboard: ✅ Yes`
-3. Choose: stay anonymous (Anon-XXX) or show your real name
-4. Every Friday, if you earned a new badge or rank, you'll appear on the relevant leaderboard
+Your display name on the leaderboard is set at intake:
+- If you chose **real name** at intake — your full name appears.
+- If you chose **avatar name** at intake — your avatar appears; real name is never shown.
 
-### Share with Your Mentor (Opt-in)
+To change your display name, update `profiles/<full-name>.md` → Identity → fields 9–10 and tell your coach.
+To remove specific entries from the leaderboard, delete or clear those log entries from your GCS course profile (`profiles/<full-name>-cse-gcs.md`).
 
-1. In your profile, go to `## GCS Gamification Analytics → Mentor Sharing Consent`
-2. Set `Share with mentor: ✅ Yes`
-3. Choose what to share: Full profile / Rubric Mastery only / Collaboration log only
-4. Your mentor gets a dashboard view of your Enterprising Ability progress
+### Share with Your Mentor
+
+Faculty mentors see the same display name as the leaderboard (real or avatar, as chosen at intake).
+To limit what your mentor sees, delete or clear the relevant log sections in `profiles/<full-name>-cse-gcs.md`.
 
 ---
 

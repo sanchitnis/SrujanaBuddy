@@ -38,8 +38,8 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 - `intake/apps/07-time-management-procrastination.html` - offline procrastination profile app.
 - `intake/apps/08-stress-energy-self-check.html` - offline stress-energy app.
 - `intake/apps/09-career-interest-mapping.html` - offline career interest mapping app.
-- `REVA-IMPLEMENTATION-TRACKER.md` - migration progress tracker.
-- `REVA-METRICS-TRACKER.md` - success metrics tracking grid.
+- `docs/REVA-IMPLEMENTATION-TRACKER.md` - migration progress tracker.
+- `docs/REVA-METRICS-TRACKER.md` - success metrics tracking grid.
 
 ### Changed
 - `SKILL.md` migrated to SrujanaBuddy identity, 15-agent routing, 24 session types, year-group modes, and REVA guardrails.
@@ -60,7 +60,7 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 ### Added — Coaching Lifecycle (Intake System)
 - `intake/intake-protocol.md` — Complete 3-stage onboarding: Deep Interview (6 modules) → Psychometrics → Synthesis session
 - `intake/apps/01-character-strengths.html` — 30-question VIA-adapted Character Strengths assessment with REVA values-aligned interpretations and Markdown export
-- `intake/apps/02-spheres-assessment.html` — 50-question Five Spheres Balance Wheel with radar chart visualisation and Integral Balance Score (see REVA-STUDENT-SYSTEM-SPEC for Panchakosha rewrite roadmap)
+- `intake/apps/02-spheres-assessment.html` — 50-question Five Spheres Balance Wheel with radar chart visualisation and Integral Balance Score (see docs/SrujanaBuddySpec.md for Panchakosha rewrite roadmap)
 - `intake/apps/03-leadership-oa-profile.html` — 40-question Organizational Attitude profile with Saboteur identification and REVA-specific antidotes
 - `profiles/_mentee-profile-template.md` — Comprehensive living mentee document: psychometrics → sessions → breakthroughs → coaching hypothesis
 

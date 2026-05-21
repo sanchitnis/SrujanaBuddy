@@ -14,7 +14,7 @@ The master routing logic in SKILL.md selects one or more agents per session type
 | academic-learning-coach.md | Learning strategy and mastery |
 | course-buddy-template.md | Course-specific Socratic tutoring template |
 | assessment-competition-coach.md | Exams, vivas, competitions, hackathons |
-| accountability-partner.md | Time execution and commitment tracking |
+| drive-with-gps.md | Goal Plan Sankalpa — GPS map, commitment tracking, Sankalpa execution |
 | inner-mastery-coach.md | Emotional regulation and soft-skill growth |
 | integral-life-coach.md | Sphere balance and values alignment |
 | career-pathway-coach.md | Multi-path career planning and placement readiness |

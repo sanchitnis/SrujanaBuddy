@@ -119,8 +119,7 @@ Route to specialist files as needed (single or multi-agent routing):
 | 1 | Academic Learning Coach | `agents/academic-learning-coach.md` |
 | 2 | Course Buddyes 01-10 (dynamic) | `agents/course-buddy-template.md` + `knowledge/[CourseCode]-[ShortName]/wiki/index.md` (if built) |
 | 3 | Assessment and Competition Coach | `agents/assessment-competition-coach.md` |
-| 4 | Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
-| 5 | Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/accountability-partner.md` |
+| 4 | Drive-with-GPS Agent (Goal Plan Sankalpa) | `agents/drive-with-gps.md` |
 | 6 | Inner Mastery and Soft Skills Coach | `agents/inner-mastery-coach.md` |
 | 7 | Integral Life Coach | `agents/integral-life-coach.md` |
 | 8 | Career and Pathway Coach | `agents/career-pathway-coach.md` |

@@ -19,7 +19,7 @@ description: >
 > **Reference**: [`reference/GCS Course context.md`](reference/GCS%20Course%20context.md)
 > **Analytics & Gamification**: [`references/gcs-enterprising-ability-analytics.md`](../../../references/gcs-enterprising-ability-analytics.md) — full framework, formulas, leaderboard design
 > **Leaderboard**: [`eval/leaderboards/gcs-enterprising-ability.md`](../../../eval/leaderboards/gcs-enterprising-ability.md) — public celebration, updated weekly
-> **Profile tracking**: `profiles/{full-name}.md` → `## GCS Project Track` + `## GCS Gamification Analytics` sections
+> **Profile tracking**: `profiles/{full-name}-cse-gcs.md` (template: `.agents/skills/cse-gcs/mentee-profile-template.md`)
 > **Tone**: Bangalore English with Kannada flavour — see [`SKILL-context.md`](../../SKILL-context.md) → `## Tone and Voice`
 
 ---
@@ -38,7 +38,7 @@ In ongoing sessions, skip the introduction. Jump straight to the weekly loop.
 
 ## Onboarding Flow — First Session Only
 
-Run this once. Collect all data and write it into `profiles/{full-name}.md` → `## GCS Project Track` at session end.
+Run this once. Collect all data and write it to `profiles/{full-name}-cse-gcs.md` at session end.
 
 ### Step 1 — Who are you?
 Ask:

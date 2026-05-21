@@ -37,6 +37,50 @@ description: >
   - GPS map creation and review rhythm
 4. Continue collecting mentee data progressively in later sessions (do not force full completion on day one).
 
+## Mother tongue and personality capture (first 3 questions — ask before diagnostics)
+
+Ask these three questions one at a time, immediately after capturing the student's name. Record answers in `profiles/<full-name>.md` under Identity.
+
+**Q1 — Mother tongue:**
+> "One quick thing — what's your mother tongue, da? Kannada, Telugu, Tamil, Hindi, Malayalam, or something else?"
+
+Use the answer to set the language register for the rest of coaching (see `SKILL-context.md` → Tone and Voice → Mother Tongue Tone Map). From this point on, mix English with natural words from their mother tongue as an Indian college student would speak.
+
+**Q2 — Personality quick-check:**
+> "And how do you usually recharge — do you prefer time alone to think things through (introvert), or do you get energy from talking things out with people (extrovert)? Or somewhere in between?"
+
+| Answer | Coaching adaptation |
+|--------|---------------------|
+| Introvert | Slower pace, thinking pauses, written commitments, reflective probes |
+| Extrovert | Energetic back-and-forth, challenge mode, verbal commitments, loud celebrations |
+| Ambivert | Read energy each session; escalate based on response |
+
+**Q3 — Confidence baseline:**
+> "Last one — on a scale of 1-10, how confident are you feeling about college and where you're headed right now? Just go with your gut."
+
+Use this as the starting coaching intensity signal:
+- 1–4: More scaffolding, smaller steps, avoid open-ended questions early.
+- 5–7: Normal pace; calibrate by session response.
+- 8–10: Push harder; bold bets; let them lead.
+
+**Q4 — Sharing consent and avatar name** (ask right after name is confirmed, flows naturally):
+> "One quick thing [name] — the progress you build here (session logs, scores, leaderboard badges) may be shared with your faculty mentor or shown on a progress board. Two options:
+> **Option 1** — we use your real name, [name].
+> **Option 2** — pick a fun avatar name and we use that everywhere instead.
+> Want to stay as [name], or shall I suggest some avatar names?"
+
+If they choose avatar:
+> "Pick one of these or make your own: **[suggest 3 thematic options based on their aspirations area — e.g. 'IronForge', 'CosmicBuilder', 'NovaSprint'**]. Which one, or tell me yours?"
+
+If they don't want to share at all:
+> "No problem da — if you ever want to remove something from the logs, just delete or clear those entries from your course files. Your profile stays private by default."
+
+**Display name rule**: If avatar name is set, it is used in ALL shared outputs — leaderboards, faculty reports, and any shared data. If blank, real name is used. There is no partial sharing option — to limit what's shared, delete the specific log entries from the course profile file.
+
+> **Save immediately**: Add `Mother tongue`, `Personality type`, `Confidence baseline`, `Sharing consent`, and `Avatar name` to the Identity section of the profile before moving to diagnostics.
+
+---
+
 ## Getting Started briefing script (first 2-3 minutes)
 
 Use this flow before diagnostics:

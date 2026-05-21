@@ -6,6 +6,11 @@
 3. Program and stream:
 4. Year and semester:
 5. Section:
+6. Mother tongue: (used to adapt coaching language register)
+7. Personality type: Introvert / Extrovert / Ambivert
+8. Confidence baseline (1–10 at intake):
+9. Sharing consent: Real name / Avatar
+10. Avatar name: (blank = real name used in all leaderboards, faculty reports, and shared data)
 
 ## Academic baseline
 1. Current subjects:
@@ -48,9 +53,14 @@
 7. **Last aspiration review date**:
 
 ## Coaching plan
+
+> **The authoritative coaching plan lives in `profiles/<full-name>-gps-map.md`** — see the Active Coaching Plan, 6-Month KSC Scaffold, and Current Semester Course Integration sections there.
+> This section is a pointer only.
+
 1. Primary coach route:
-2. Session type for next 3 sessions:
-3. Course Buddyes assigned:
+2. Next session type:
+3. Course Buddies assigned:
+4. GPS map file: `profiles/<full-name>-gps-map.md`
 
 ## Coaching Context and Preferences
 
@@ -79,137 +89,18 @@
 - Updated by: 
 - Reason: (e.g., "end of month review", "post-session adjustment")
 
-## GCS Project Track
+## Course Profiles
 
-> Populate this section only if the student is enrolled in Grand Challenge Studio (GCS).
-> Coach builds this progressively across sessions — never fill all at once.
+> Each enrolled course has its own separate profile file. Do not add course-specific tracking here.
+> Format: `profiles/<full-name>-<skill-slug>.md`
 
-### Project identity
-1. Team name:
-2. Team members:
-3. Challenge statement:
-4. Week enrolled:
-5. Why they chose GCS (in their own words):
-6. Bold Bet (most ambitious version of the project):
+| Skill slug | File | Template |
+|------------|------|----------|
+| `cse-acp` | `profiles/<full-name>-cse-acp.md` | `.agents/skills/cse-acp/mentee-profile-template.md` |
+| `cse-gcs` | `profiles/<full-name>-cse-gcs.md` | `.agents/skills/cse-gcs/mentee-profile-template.md` |
+| `engineering-habits` | `profiles/<full-name>-engineering-habits.md` | `.agents/skills/engineering-habits/mentee-profile-template.md` |
 
-### Sprint log
-| Sprint name | Goal | Evidence (link/desc) | Blocker | Commitment date | Done? |
-|-------------|------|----------------------|---------|-----------------|-------|
-| | | | | | |
-
-### Evidence-of-pivot log
-| What failed | Logic of direction change | Date |
-|-------------|--------------------------|------|
-| | | |
-
-### Investigation depth log
-| Source (interview/data/article) | Key insight | Date |
-|--------------------------------|-------------|------|
-| | | |
-
-### Collaboration contribution log
-| Role played | Feedback given | Feedback received | Conflict resolved | Date |
-|-------------|----------------|-------------------|-------------------|------|
-| | | | | |
-
-### LCC observations (Leadership / Communication / Collaboration)
-| Week | Leadership move | Communication move | Collaboration move |
-|------|----------------|--------------------|--------------------|
-| | | | |
-
-### Prototype evolution
-| Version | What changed | User reaction | Date |
-|---------|--------------|---------------|------|
-| v1 | | | |
-
-### Bold Bet tracker
-1. Bold Bet statement:
-2. Tiny win 1:
-3. Tiny win 2:
-4. Tiny win 3:
-5. Current status:
-
-### E2E integration notes
-| Course linked | Synergy applied | Session/date |
-|---------------|----------------|--------------|
-| Advanced C Programming | | |
-| Software Design | | |
-| IoT | | |
-| Innovation & Entrepreneurship | | |
-
-### Reflection entries
-| Week | Reflection |
-|------|-----------|
-| | |
-
-### Effort signal log
-| Date | Effort (1-10) | Coach flag (Y/N) | Faculty escalation raised (Y/N) |
-|------|--------------|------------------|----------------------------------|
-| | | | |
-
----
-
-## GCS Gamification Analytics
-
-> Populate this section only if the student is enrolled in Grand Challenge Studio (GCS).
-> Coach builds this progressively across sessions. Student sees a pentagon radar chart of their Enterprising Ability Score.
-
-### Learner Profile
-- **Srujana Stage**: 3-creation
-- **Current Week**: (e.g. 8 / 14)
-- **Enterprising Ability Score**: (e.g. 72 / 100)
-
-### Rubric Mastery Progression
-| Rubric | Level | Evidence | Week unlocked |
-|--------|-------|----------|---------------|
-| Evidence of Pivot | novice / intermediate / advanced | [E.g., "Pivoted Week 3, clear logic"] | |
-| Investigation Depth | novice / intermediate / advanced | [E.g., "12 interviews, 6 data sources"] | |
-| Collaboration | novice / intermediate / advanced | [E.g., "Resolved team conflict, Week 6"] | |
-| Final Prototype | novice / intermediate / advanced | [E.g., "Core features working"] | |
-| Reflection | novice / intermediate / advanced | [E.g., "Learning to listen"] | |
-
-### Sprint Level & Milestones
-- **Current Sprint**: (e.g., "8 — Pivot Ready")
-- **Completed**: Weeks [list, e.g., 1–8]
-- **On-track?**: ✅ Yes / ⚠️ Slight lag / ❌ Needs reset
-
-### Engagement & Consistency
-- **Intensity level**: solo-studio / team-studio / mentored-studio / bold-studio
-- **Sessions on-time**: (e.g., 11/12 = 92%)
-- **Anti-drift status**: No gaps / [flag any 7+ day gap]
-
-### E2E Integration Depth
-| Course | Integration depth | Detail |
-|--------|-------------------|--------|
-| Advanced C Programming | low / medium / high | |
-| Software Design | low / medium / high | |
-| IoT | low / medium / high | |
-| Innovation & Entrepreneurship | low / medium / high | |
-
-### Narrative Arc
-- **Role**: The Founder / The Problem Solver / The Change Maker / The Researcher
-- **Chapter**: [Chapter 1–5 based on sprint level]
-- **Story snippet**: (One-line narrative summary)
-
-### Badges Earned
-- 🔄 Pivot Master (2+ pivots with documented logic)
-- 📚 Deep Diver (10+ interviews, Advanced investigation)
-- 🤝 Team Hero (Resolved conflict, elevated teammate idea)
-- 📦 Builder (Fully working demo, demo-able)
-- 🧠 Sage (Meta-reflection, connected learning to journey)
-- [Any others unlocked]
-
-### Mentor Sharing Consent
-- **Share with mentor?**: ✅ Yes / ❌ No (date: [date if consented])
-- **Shared data**: Full profile / Rubric Mastery only / Collaboration log only
-- **Faculty link**: [Optional link to faculty dashboard view]
-
-### Public Leaderboard Consent
-- **Appear on leaderboard?**: ✅ Yes / ❌ No (date: [date if consented])
-- **Eligible categories**: (Auto-populated based on rubric mastery)
-- **Current rank** (if consented): [Rank in each category]
-
----
+Create a new row here when a student is enrolled in a course that has a skill.
 
 ## Evidence log
 | Date | Evidence | Sphere | Signal |

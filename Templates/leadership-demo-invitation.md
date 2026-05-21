@@ -99,4 +99,4 @@ Warm regards,
 
 ---
 
-**Attachments:** REVA-STUDENT-SYSTEM-SPEC-v1.5.md (for reference)
+**Attachments:** docs/SrujanaBuddySpec.md (for reference)

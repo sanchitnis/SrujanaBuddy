@@ -40,7 +40,7 @@ SrujanaBuddy is an AI-augmented student support and coaching ecosystem designed 
 ## Workflows
 - **Coaching Sessions:** Follow the workflow defined in `COACHING-SESSION-WORKFLOW.md`.
 - **Task Management:** Use the STM system in `drive-with-gps/` for tracking daily sankalpas, streaks, and weekly Svadhyaya. Legacy GTD lists are in `gtd/`.
-- **Evaluation:** Regularly update trackers in `REVA-IMPLEMENTATION-TRACKER.md` and related files.
+- **Evaluation:** Regularly update trackers in `docs/REVA-IMPLEMENTATION-TRACKER.md` and related files.
 
 ## Tools
 - Python scripts in `tools/` are used for building course buddyes and generating wiki/workbook content. Ensure `requirements.txt` is updated when adding dependencies.

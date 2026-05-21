@@ -16,9 +16,12 @@ Use [references/REVA University.md](references/REVA%20University.md) whenever in
    2. Explain support boundaries, confidentiality limits, and escalation conditions.
 2. Core data capture
    1. Program, stream, year, semester, section.
-   2. Current subjects and known backlog.
-   3. Recent performance indicators and attendance patterns.
-   4. Optional pre-existing artifacts — collect before asking duplicate questions:
+   2. Mother tongue — used to set coaching language register (see `SKILL-context.md` → Tone and Voice → Mother Tongue Tone Map).
+   3. Personality quick-check — introvert / extrovert / ambivert; confidence baseline 1–10.
+   4. Sharing consent and avatar name — captured when name is asked (see `getting-started` SKILL.md → Q4). Two options: real name or avatar name. No partial-sharing option — to limit what is shared, the student deletes specific entries from their course profile log files. Store in `profiles/<full-name>.md` → Identity fields 9–10.
+   5. Current subjects and known backlog.
+   5. Recent performance indicators and attendance patterns.
+   6. Optional pre-existing artifacts — collect before asking duplicate questions:
       - LinkedIn or other social/portfolio URL (GitHub, Behance, personal site)
       - Existing resume — pasted text or described section by section
       - Scanned or photographed handwritten aspiration sheet

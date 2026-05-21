@@ -14,7 +14,7 @@ Status values:
 | 4 | Concept-level tracking and Socratic tutoring operational | Partial | agents/course-buddy-template.md, agents/academic-learning-coach.md |
 | 5 | Student GTD Lite rules D-14/D-21/D-3/no-zero-day operational | Pass | gtd/GTD-GUIDE.md, gtd/03-runway-calendar.md, references/gtd-lite-student-edition.md |
 | 6 | Dopamine baseline active in every daily session | Pass | SKILL.md, references/dopamine-stewardship-student.md |
-| 7 | Completion logging mechanism operational | Pass | profiles/_mentee-profile-template.md, agents/accountability-partner.md |
+| 7 | Completion logging mechanism operational | Pass | profiles/_mentee-profile-template.md, agents/drive-with-gps.md |
 | 8 | AI anti-brain-rot guardrails operational | Pass | SKILL.md, references/reva-values-anchor.md |
 | 9 | Portfolio capture and competency mapping operational | Pass | agents/competency-portfolio-coach.md, agents/career-pathway-coach.md |
 | 10 | Out-of-curriculum tracking with specialized flows operational | Pass | agents/out-of-curriculum-coach.md |

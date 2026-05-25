@@ -43,7 +43,15 @@ These commitments should be interpreted in line with [references/REVA University
 
 ### Installation
 
-**Option A — VS Code + GitHub (recommended for developers and faculty)**
+**Option A — Quick start (preferred, no technical setup required)**
+
+1. Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
+2. Unzip the file to any folder on your computer.
+3. Login to your Google account in your default browser (required for authentication).
+4. Open the folder and double-click **`SrujanaBuddy.bat`** — it will install Google Antigravity CLI (`agy`) if needed and launch the coach.
+5. When prompted, continue from your previous session (agy will auto-resume if available).
+
+**Option B — VS Code + GitHub (for developers and faculty)**
 
 1. Create a Github account if not done so.
 2. Apply and get "Github Education" pack for student/faculty as appropriate
@@ -51,12 +59,6 @@ These commitments should be interpreted in line with [references/REVA University
 4. Open the folder in VS Code: `code SrujanaBuddy`
 5. Ensure the GitHub Copilot extension is installed and signed in.
 6. Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
-
-**Option B — Quick start (no technical setup required)**
-
-1. Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
-2. Unzip the file to any folder on your computer.
-3. Open the folder and double-click **`SrujanaBuddy.bat`** — it will install GitHub Copilot CLI if needed and launch the coach.
 
 ---
 
@@ -72,11 +74,14 @@ These commitments should be interpreted in line with [references/REVA University
    - I am overwhelmed for my project. I do not know where to start.
 3. As you go along, this saves your information in profile and stm folders to track commitments, completions, and progress. These are local files and are provate to you.
 
+
 ## Support and Contribution
 
 Join the user group for support or to see how others are using it to their benefit: [WhatsApp User Group](https://chat.whatsapp.com/LaUa7miMn270r40hfGGsin)
 
 Join this if you want to learn and enhance this Software 3.0 based simple system. No coding knowledge required. Both faculty and students are welcome: [WhatsApp Developer/Contributor Group](https://chat.whatsapp.com/Gkaw6cPuBzV5Mnc7Lspyb4)
+
+For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Useful files
 

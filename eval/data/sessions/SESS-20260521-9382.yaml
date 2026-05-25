@@ -1,0 +1,44 @@
+# Anonymized Session Log — SrujanaBuddy
+# Template version: 1.0 | Created: May 2026
+
+session:
+  id: "SESS-20260521-9382"
+  date: "2026-05-21"
+  consent_granted: true
+
+student:
+  anonymous_id: "Student-9382"
+  year_of_study: "1st"
+  stream: "BCA"
+  srujana_stage: "Stage 1"
+
+session_context:
+  session_type: "Subject mastery / General query"
+  trigger_phrase: "hi"
+  agents_invoked: ["Academic Learning Coach"]
+  session_duration_estimate: "Short (< 5 min)"
+
+student_state:
+  opening_energy: "8"
+  closing_energy: "8"
+  emotional_tone: "Calm"
+  resistance_level: "None"
+
+coaching_moves:
+  approach_used: "Grounding"
+  pivot_moments: []
+  tools_used: []
+
+outcomes:
+  commitment_made: false
+  commitment_detail: ""
+  breakthrough_signal: false
+  breakthrough_note: ""
+
+quality_signals:
+  tone_appropriate: true
+  pacing_appropriate: true
+  avoided_overwhelm: true
+  warmth_rating: "5"
+
+refinement_notes: "Student started the session, asked a general concept question ('what are workflows') which was explained using cricket and C programming analogies, and then politely concluded the session. Consent was explicitly granted."

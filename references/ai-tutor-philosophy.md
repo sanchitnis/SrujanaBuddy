@@ -101,8 +101,4 @@ The REVA extension is built on Dr. Shyama Raju's directive: **"Educate to Enterp
 
 ---
 
-
-
----
-
 *This philosophy governs the design and maintenance of the entire SrujanaBuddy system — knowledge wikis, workbooks, coaching agents, intake apps, and automation scripts. See [tools/course-buddy-builder/README.md](../tools/course-buddy-builder/README.md) for the Course Buddy Builder implementation.*

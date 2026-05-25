@@ -1,0 +1,82 @@
+[
+  {
+    "name": "PM Internship Portal",
+    "url": "https://pminternship.mca.gov.in/",
+    "type": "national",
+    "description": "Government of India portal for student internships in ministries and departments.",
+    "eligibility": "Indian students, UG/PG",
+    "tags": ["government", "engineering", "management", "research"]
+  },
+  {
+    "name": "AICTE Internship Portal",
+    "url": "https://internship.aicte-india.org/",
+    "type": "national",
+    "description": "AICTE's official portal for internships across India in various domains.",
+    "eligibility": "AICTE-approved institution students",
+    "tags": ["engineering", "technology", "management"]
+  },
+  {
+    "name": "Internshala",
+    "url": "https://internshala.com/",
+    "type": "national",
+    "description": "Popular Indian portal for internships and fresher jobs across domains.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["engineering", "business", "arts", "design", "law"]
+  },
+  {
+    "name": "LinkedIn Internships",
+    "url": "https://www.linkedin.com/jobs/internships/",
+    "type": "international",
+    "description": "Global professional network with internship listings worldwide.",
+    "eligibility": "Open to all",
+    "tags": ["global", "engineering", "business", "research"]
+  },
+  {
+    "name": "Glassdoor Internships",
+    "url": "https://www.glassdoor.com/Job/internship-jobs-SRCH_KO0,10.htm",
+    "type": "international",
+    "description": "International job portal with internship opportunities in top companies.",
+    "eligibility": "Open to all",
+    "tags": ["global", "engineering", "business", "technology"]
+  },
+  {
+    "name": "Chegg Internships",
+    "url": "https://www.internships.com/",
+    "type": "international",
+    "description": "US-based portal for internships in various domains, including STEM and business.",
+    "eligibility": "Open to all",
+    "tags": ["US", "engineering", "business", "science"]
+  },
+  {
+    "name": "Google Careers (Internships)",
+    "url": "https://careers.google.com/students/",
+    "type": "company-specific",
+    "description": "Official Google portal for student internships and university programs.",
+    "eligibility": "Students (UG/PG/PhD)",
+    "tags": ["technology", "engineering", "global"]
+  },
+  {
+    "name": "Microsoft Internships",
+    "url": "https://careers.microsoft.com/students/us/en/internship-worldwide",
+    "type": "company-specific",
+    "description": "Microsoft's global internship portal for students in engineering, business, and more.",
+    "eligibility": "Students (UG/PG/PhD)",
+    "tags": ["technology", "engineering", "business", "global"]
+  },
+  {
+    "name": "TCS NextStep",
+    "url": "https://nextstep.tcs.com/",
+    "type": "company-specific",
+    "description": "Tata Consultancy Services' portal for internships and fresher jobs.",
+    "eligibility": "Students and fresh graduates",
+    "tags": ["IT", "engineering", "India"]
+  },
+  {
+    "name": "IBM Careers (Internships)",
+    "url": "https://www.ibm.com/in-en/employment/entrylevel/",
+    "type": "company-specific",
+    "description": "IBM's official portal for student internships and early professional roles.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["technology", "engineering", "global"]
+  }
+]

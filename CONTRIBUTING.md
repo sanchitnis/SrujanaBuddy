@@ -68,6 +68,34 @@ If you want to write the improvement directly:
 - [ ] REVA philosophical terminology is used accurately (see Glossary in `references/README.md`)
 - [ ] Changes tested by asking Claude to coach using the modified file
 
+
+### Editorial and Design Principles for Skills and Guardrails
+
+#### Skill/Guardrail Separation
+
+Every agent or skill in this repository must encode its core behavior directly in its `SKILL.md` file. Shared guardrails (philosophy, safety, or practice profile) live in the orchestrator or agent-level context files. **If a skill's correct output depends on a guardrail catching a mistake the skill would have made, that's a design smell.**
+
+**Rule of thumb:** If a test passes only because a guardrail fired, add the behavior to the skill directly. Guardrails are the safety net, not the primary scaffold.
+
+**Examples:**
+- If a coaching skill covers a domain (e.g., career planning), it must handle all relevant sub-cases (e.g., entrepreneurship, research, placements) in its own checklist or logic, not rely on a global override.
+- If a date or calculation must be business-day aware, encode the rule in the skill, not just in a shared fallback.
+
+#### Provenance and Tagging
+
+Attach provenance tags or citations to key numbers, formulas, or decisions—not just to paragraphs. E.g., `[source: Gita 2.47]` next to a principle, or `[verify: REVA policy]` on a load-bearing rule. Tags on surrounding prose get lost; tags on the critical item do not.
+
+#### Decline Pathways
+
+If the right answer to a category of question is "I decline to answer/compute," bake that into the skill as a hard gate. State the gate plainly, make it default-on, and narrow any exemptions in sub-bullets—not the other way around.
+
+#### Workflow Discipline
+
+- **Read the orchestrator and agent context files before editing any skill.** The practice profile, integrations, and shared guardrails shape what the skill should say and omit.
+- **Bump the version on material changes.** Patch bumps for behavior additions; minor bumps for new skills or required inputs.
+- **Run all validators and linters before submitting.**
+- **Do not remove shared guardrails.** The net stays; the goal is a skill that doesn't need the net, not a system without one.
+
 ### The editorial process for philosophical changes
 
 Any change to `references/REVA University.md`, `references/reva-values-anchor.md`, or to the core frameworks in `references/five-spheres-framework.md` goes through a two-reviewer process before merging. This protects the philosophical integrity of the system.
@@ -109,7 +137,7 @@ Each agent has a **Powerful Questions Library**. If you've been asked (by a coac
 
 ```bash
 # Clone
-git clone https://github.com/YOUR-ORG/srujanabuddy.git
+git clone https://github.com/sanchitnis/srujanabuddy.git
 cd srujanabuddy
 
 # No build step required for the core skill (all Markdown)

@@ -289,14 +289,33 @@ print('SKILL.md frontmatter: valid')
 "
 ```
 
+### Versioning and Release Policy
+
+SrujanaBuddy follows [Semantic Versioning (SemVer)](https://semver.org/) for all releases (e.g., `MAJOR.MINOR.PATCH` formatted as `VX.Y.Z` like `V0.1.6`).
+
+1. **Development Pushes and Merges**:
+   * Developers can push to their feature/bugfix branches and merge PRs into `main` as frequently as needed. Intermediate merges do not require incrementing the version label in `SrujanaBuddy.bat`.
+
+2. **Creating a Release**:
+   * When preparing an official release, a check must be made to determine the nature of the changes and suggest the next version number:
+     * **PATCH** (e.g., `V0.1.6` -> `V0.1.7`): For backward-compatible bug fixes and small tweaks.
+     * **MINOR** (e.g., `V0.1.6` -> `V0.2.0`): For backward-compatible new features, adding a new specialized coaching agent, or updating onboarding workflow steps.
+     * **MAJOR** (e.g., `V0.1.6` -> `V1.0.0`): For any backward-incompatible changes or core architectural overhauls.
+   * **Crucial Rule on User Compatibility**: The new release **MUST ensure full backward-compatibility** with user-specific local files (such as their personal profiles in `profiles/`, their goal progress maps, and their active commitment/streaks data in `drive-with-gps/`). New versions must never overwrite, break, or delete these personalized student data directories.
+   * **Suggesting Next Version and Release Notes**:
+     * Before tag creation, compile a clear list of changes to suggest the next version increment.
+     * Draft comprehensive **Release Notes** explaining new features, improvements, and fixed issues, and explicitly confirming that user profiles and local data structures remain fully compatible.
+
 ### Pull Request checklist for code contributions
 
 - [ ] No breaking changes to existing file formats (GTD, agent files, profile template)
+- [ ] Verified that changes do not break compatibility with existing local user profiles, GPS maps, or user-specific data directories
 - [ ] New scripts have docstrings and usage examples
 - [ ] HTML apps tested in Chrome + Firefox
 - [ ] No new external dependencies introduced without discussion
 - [ ] README for the affected folder updated
 - [ ] `SKILL.md` agent roster / file index updated if new files added
+- [ ] Semantic Versioning (SemVer) rules checked if preparing a release
 
 ---
 

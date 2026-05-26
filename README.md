@@ -47,6 +47,7 @@ To install SrujanaBuddy on your computer, follow these simple steps:
 
 1. **Download**: Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
 2. **Extract**: Unzip the downloaded `.zip` file to any folder on your computer.
+3. **Optional plugins stay optional**: Add-on tools such as the placements-and-internships plugin under `tools/live-data/` are not required for the core install or launch flow.
 
 For developer setup instructions and custom contributions, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 

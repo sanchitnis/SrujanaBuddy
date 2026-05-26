@@ -66,7 +66,7 @@ tools/
 | Category | Examples |
 |---------|---------|
 | Psychometric / self-assessment | Character strengths quiz, sphere balance self-rating, Srujana stage self-assessment |
-| Live data collection | Opportunity radar: fetch internship deadlines from REVA portal or Internshala; fetch exam dates; check email for mentor replies |
+| Live data collection | Opportunity radar: fetch internship deadlines from REVA portal or Internshala; fetch exam dates; check email for mentor replies; placements-and-internships plugin for curated portal lookup |
 | Messaging | Send a WhatsApp reminder for a coaching checkpoint; send an email digest of this week's GTD actions |
 | Eval runner | Batch-run `eval/scenarios/*.md` prompts against a local Gemma model; output a quality report with pass/fail per scenario |
 | Local model wrapper | Wrap a Ollama or AI Edge Gallery call to a coaching prompt; return a structured coaching output for manual review |

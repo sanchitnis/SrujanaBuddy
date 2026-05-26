@@ -135,17 +135,48 @@ Each agent has a **Powerful Questions Library**. If you've been asked (by a coac
 
 ### Repository setup
 
-```bash
-# Clone
-git clone https://github.com/sanchitnis/srujanabuddy.git
-cd srujanabuddy
+1. **GitHub Account**: Create a GitHub account if you haven't done so.
+2. **GitHub Education**: Apply and get the "GitHub Education" pack for student/faculty as appropriate.
+3. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/sanchitnis/SrujanaBuddy.git
+   cd SrujanaBuddy
+   ```
+4. **Open in VS Code**: Open the folder in VS Code: `code SrujanaBuddy`
+5. **Install Copilot**: Ensure the GitHub Copilot extension is installed and signed in.
+6. **Start Session**: Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
 
-# No build step required for the core skill (all Markdown)
-# For the psychometric apps:
+No build step is required for the core coaching files (which are primarily Markdown). If you are testing the psychometric apps locally:
+```bash
 cd intake/apps
 open 01-character-strengths.html  # macOS
 # or
 python3 -m http.server 8080       # then visit localhost:8080
+```
+
+### Working with Branches (For Beginners)
+
+If you are new to Git and GitHub, here is a quick walkthrough of the standard branching workflow:
+
+```bash
+# Clone the repository
+git clone https://github.com/sanchitnis/SrujanaBuddy.git
+cd SrujanaBuddy
+
+# Create and switch to a new branch called "feature-login"
+git checkout -b feature-login
+
+# Make your changes in the code files
+
+# Stage, commit, and push
+git add .
+git commit -m "Add login functionality"
+git push -u origin feature-login
+
+# Next time you make changes on this branch:
+git add .
+git commit -m "Fix login bug"
+git push
 ```
 
 ### Branch naming conventions

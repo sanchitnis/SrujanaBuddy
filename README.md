@@ -43,22 +43,22 @@ These commitments should be interpreted in line with [references/REVA University
 
 ### Installation
 
-**Option A — Quick start (preferred, no technical setup required)**
+To install SrujanaBuddy on your computer, follow these simple steps:
 
-1. Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
-2. Unzip the file to any folder on your computer.
-3. Login to your Google account in your default browser (required for authentication).
-4. Open the folder and double-click **`SrujanaBuddy.bat`** — it will install Google Antigravity CLI (`agy`) if needed and launch the coach.
-5. When prompted, continue from your previous session (agy will auto-resume if available).
+1. **Download**: Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
+2. **Extract**: Unzip the downloaded `.zip` file to any folder on your computer.
 
-**Option B — VS Code + GitHub (for developers and faculty)**
+For developer setup instructions and custom contributions, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-1. Create a Github account if not done so.
-2. Apply and get "Github Education" pack for student/faculty as appropriate
-3. Clone the repository: `git clone https://github.com/sanchitnis/SrujanaBuddy.git`
-4. Open the folder in VS Code: `code SrujanaBuddy`
-5. Ensure the GitHub Copilot extension is installed and signed in.
-6. Open any session file or start a Copilot Chat — SrujanaBuddy will greet you.
+### How to Start
+
+Once installed, follow these steps to launch the mentoring companion:
+
+1. **Browser Login**: Ensure you are logged in to your Google account in your default web browser (required for secure authentication).
+2. **Launch**: Open the unzipped folder and double-click **`SrujanaBuddy.bat`**.
+   * *First-run*: The script will automatically check for and install the Google Antigravity CLI (`agy`) if it is not already available on your machine.
+   * *Auto-Update*: Every time you launch `SrujanaBuddy.bat`, it will check if a newer version is available on GitHub and prompt you to automatically update.
+3. **Connect**: When prompted, continue from your previous session (the interface will auto-resume if available).
 
 ---
 

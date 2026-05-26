@@ -1,0 +1,10 @@
+{
+  "name": "placements-and-internships",
+  "displayName": "Placements and Internships Support",
+  "version": "0.1.0",
+  "tier": "T2",
+  "optional": true,
+  "containerCompatible": true,
+  "entrypoint": "placements_and_internships.py",
+  "description": "Optional stdlib-only plugin for browsing curated placement and internship portals."
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "LinkedIn Jobs",
+    "url": "https://www.linkedin.com/jobs/",
+    "type": "international",
+    "description": "Professional network with placement and entry-level job listings across industries.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["global", "engineering", "business", "placements"]
+  },
+  {
+    "name": "Naukri Campus",
+    "url": "https://www.naukri.com/campus/careers",
+    "type": "national",
+    "description": "Campus-focused hiring portal for freshers and early-career placement opportunities in India.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["India", "engineering", "business", "placements"]
+  },
+  {
+    "name": "Unstop Jobs",
+    "url": "https://unstop.com/jobs",
+    "type": "national",
+    "description": "Graduate jobs, challenges, and placement-oriented hiring opportunities for students.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["India", "engineering", "management", "placements"]
+  },
+  {
+    "name": "Wellfound",
+    "url": "https://wellfound.com/jobs",
+    "type": "international",
+    "description": "Startup-focused job board for internships, placements, and early-career roles.",
+    "eligibility": "Open to all",
+    "tags": ["startup", "technology", "global", "placements"]
+  },
+  {
+    "name": "Google Careers",
+    "url": "https://careers.google.com/jobs/results/",
+    "type": "company-specific",
+    "description": "Official Google portal for full-time university graduate and early-career roles.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["technology", "engineering", "global", "placements"]
+  },
+  {
+    "name": "Microsoft Careers",
+    "url": "https://jobs.careers.microsoft.com/global/en/search",
+    "type": "company-specific",
+    "description": "Microsoft careers portal with student, graduate, and early-career placement roles.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["technology", "engineering", "global", "placements"]
+  },
+  {
+    "name": "TCS NextStep",
+    "url": "https://nextstep.tcs.com/",
+    "type": "company-specific",
+    "description": "TCS entry-level hiring and placement portal for students and fresh graduates.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["IT", "engineering", "India", "placements"]
+  },
+  {
+    "name": "Infosys Careers",
+    "url": "https://career.infosys.com/",
+    "type": "company-specific",
+    "description": "Infosys portal for campus hiring, graduate programs, and entry-level roles.",
+    "eligibility": "Students and recent graduates",
+    "tags": ["IT", "engineering", "India", "placements"]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "cv-for-role",
+  "version": "1.0.0",
+  "description": "Comprehensive resume tailoring assistant plugin: generates ATS-ready resume, cover letter, interview Q&A, scoring dashboard, and video resume script for applicants.",
+  "main": "cv-for-role.md",
+  "skills": [
+    {
+      "name": "generate-resume",
+      "description": "Generates a role-tailored, ATS-friendly resume in Markdown for an applicant based on their profile and job description.",
+      "entry": "cv-for-role.md"
+    },
+    {
+      "name": "generate-cover-letter",
+      "description": "Generates a cover letter with selectable tone for an applicant and target role.",
+      "entry": "cv-for-role.md"
+    },
+    {
+      "name": "generate-interview-qa",
+      "description": "Generates interview Q&A with multi-round follow-up prompts for a given role.",
+      "entry": "cv-for-role.md"
+    },
+    {
+      "name": "generate-scoring-dashboard",
+      "description": "Generates a dashboard with Match %, ATS %, Gap score, and improvement suggestions.",
+      "entry": "cv-for-role.md"
+    },
+    {
+      "name": "generate-video-resume-script",
+      "description": "Generates a 2-minute video resume script for an applicant.",
+      "entry": "cv-for-role.md"
+    }
+  ]
+}

@@ -158,3 +158,5 @@ For full coaching principles, output scaffolds, and guardrails, load [`SKILL-con
 2. Respond: *"No problem at all, da. Your call always. See you next time!"*
 
 **Privacy rule:** Consent is per-session, never assumed. Never save without explicit yes.
+
+> **Plugin auto-registration:** At session start, SrujanaBuddy also scans `.agents/plugins/` for plugins with a `plugin.json` or `package.json` manifest, and registers all skills, workflows, and commands found there. No manual update needed for new plugins.

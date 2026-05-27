@@ -97,23 +97,18 @@ echo.
 where curl >nul 2>&1
 if %errorlevel% == 0 (
     echo Installing agy via official installation script...
-    curl -fsSL https://antigravity.google/cli/install.cmd -o "%temp%\install.cmd"
-    if %errorlevel% == 0 (
-        call "%temp%\install.cmd"
-        del "%temp%\install.cmd"
-        
-        :: Re-check after installation
-        where agy >nul 2>&1
-        if %errorlevel% == 0 goto :runagy
-        
-        if exist "%LOCALAPPDATA%\Antigravity\agy.exe" (
-            set "PATH=%PATH%;%LOCALAPPDATA%\Antigravity"
-            goto :runagy
-        )
-        if exist "%USERPROFILE%\.local\bin\agy.exe" (
-            set "PATH=%PATH%;%USERPROFILE%\.local\bin"
-            goto :runagy
-        )
+    echo Installing agy via PowerShell script...
+    powershell -Command "irm https://antigravity.google/cli/install.ps1 | iex"
+    :: Re-check after installation
+    where agy >nul 2>&1
+    if %errorlevel% == 0 goto :runagy
+    if exist "%LOCALAPPDATA%\Antigravity\agy.exe" (
+        set "PATH=%PATH%;%LOCALAPPDATA%\Antigravity"
+        goto :runagy
+    )
+    if exist "%USERPROFILE%\.local\bin\agy.exe" (
+        set "PATH=%PATH%;%USERPROFILE%\.local\bin"
+        goto :runagy
     )
 )
 

@@ -60,6 +60,7 @@ while enforcing evidence-based claims and Indian legal-compliance guardrails.
 
 ---
 
+
 ## 4) Core Functional Requirements
 
 ### 4.1 Profile Layer
@@ -103,6 +104,14 @@ while enforcing evidence-based claims and Indian legal-compliance guardrails.
    - role-specific,
    - follow-up deep-dive rounds.
 
+4. **Generate 2-Minute Video Resume Script**
+   - Allow any applicant (not just students) to generate a concise, 2-minute video resume script tailored to their experience level and target role.
+   - Script structure: introduction, experience summary, key skills, achievements, closing statement.
+   - Input prompts for experience level, achievements, and target role.
+   - Output: ready-to-record script (approx. 250–300 words) in Markdown.
+   - Provide clear instructions for applicants to record their video using the script.
+   - Ensure inclusive language for applicants at all experience levels.
+
 ### 4.5 Scoring & Feedback Dashboard
 
 1. Match Score (0–100)
@@ -139,6 +148,33 @@ The system must block, warn, or escalate confirmation for:
 8. Contradictory timeline claims.
 9. Confidential employer data exposure.
 10. Any claim without traceable evidence in profile, source, or uploaded content.
+
+---
+
+
+## 6A) Implementation Plan: Video Resume Script Feature
+
+1. **Requirements & Design**
+   - Define script structure: intro, experience, skills, achievements, closing.
+   - Make prompts/app flow generic for “applicant” (not just students).
+   - Allow input for experience level, key achievements, and target role.
+
+2. **Script Generation Logic**
+   - Create a template or script generator (Markdown or Python script).
+   - Use applicant’s profile data (if available) or prompt for details.
+   - Ensure output is a 2-minute script (approx. 250–300 words).
+
+3. **User Interface/Workflow**
+   - Add a section in docs/cv-for-role-prd.md or a new tool in tools/ for video resume script generation.
+   - Provide clear instructions for applicants to record their video using the script.
+
+4. **Integration**
+   - Link the script generator from relevant documentation (e.g., CV guide).
+   - Optionally, add a CLI or web form for easy script generation.
+
+5. **Testing & Review**
+   - Test with profiles of varying experience.
+   - Review for clarity, brevity, and inclusivity.
 
 ---
 

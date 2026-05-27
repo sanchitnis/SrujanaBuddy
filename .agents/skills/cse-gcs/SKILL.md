@@ -20,7 +20,6 @@ description: >
 > **Analytics & Gamification**: [`references/gcs-enterprising-ability-analytics.md`](../../../references/gcs-enterprising-ability-analytics.md) — full framework, formulas, leaderboard design
 > **Leaderboard**: [`eval/leaderboards/gcs-enterprising-ability.md`](../../../eval/leaderboards/gcs-enterprising-ability.md) — public celebration, updated weekly
 > **Profile tracking**: `profiles/{full-name}-cse-gcs.md` (template: `.agents/skills/cse-gcs/mentee-profile-template.md`)
-> **Tone**: Bangalore English with Kannada flavour — see [`SKILL-context.md`](../../SKILL-context.md) → `## Tone and Voice`
 
 ---
 

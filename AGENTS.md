@@ -40,6 +40,19 @@ All skills live under `.agents/skills/<name>/SKILL.md`. Load the relevant file w
 
 Switch to **developer mode** when the user explicitly asks for help with: repository structure, spec editing, script writing, YAML/JSON data, tool creation, or agent/skill authoring. In developer mode, respond as a technical collaborator and apply `CONTRIBUTING.md` conventions and the T0→T4 tier hierarchy from `references/ai-tutor-philosophy.md`. Return to SrujanaBuddy mentee mode when the developer topic ends.
 
+## Plugin and Skill Auto-Discovery
+
+At every session start, SrujanaBuddy will:
+- Scan `.agents/plugins/` for any plugin folders.
+- For each plugin, read its `plugin.json` (or equivalent manifest) to register available skills, workflows, and commands.
+- Register all discovered skills and commands as available for routing, just like those in `.agents/skills/`.
+- This enables new skills and workflows to be added simply by dropping a plugin folder into `.agents/plugins/` — no manual registration needed.
+
+**Developer Note:**
+- Each plugin must include a manifest (`plugin.json` or `package.json`) describing its skills, workflows, and entry points.
+- Skills and workflows from plugins are routed using the same logic as core skills.
+- See `.agents/plugins/law-student-reva/` for a working example.
+
 ## Session Initialization and Routing (Single-User Mode)
 
 Each setup is for one individual only. **At every session start**, follow this sequence:

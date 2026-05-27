@@ -1,0 +1,13 @@
+{
+  "name": "video-resume-script",
+  "version": "1.0.0",
+  "description": "Plugin to generate a 2-minute video resume script for applicants of any experience level.",
+  "main": "video-resume-script.md",
+  "skills": [
+    {
+      "name": "generate-video-resume-script",
+      "description": "Generates a 2-minute video resume script for an applicant based on their experience, achievements, and target role.",
+      "entry": "video-resume-script.md"
+    }
+  ]
+}

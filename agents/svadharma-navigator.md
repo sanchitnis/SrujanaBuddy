@@ -54,6 +54,21 @@ Use all four prompts:
 
 Convert overlap insights into aspiration hypotheses, then into time-bound experiments.
 
+### External stimulus — Google Career Dreamer
+
+When a student struggles to answer prompts 3 and 4 (world needs / livelihood) — especially at L0 or L1 — direct them to explore independently first:
+
+**🔗 [Google Career Dreamer](https://grow.google/career-dreamer/home/)** — *Grow with Google (free, AI-powered)*
+
+> *"Sometimes it helps to let the world show you options before you decide. Spend 10–15 minutes on Career Dreamer — just explore freely. Notice which roles light you up and which ones don't. Then come back and we'll map those signals onto your ikigai."*
+
+Use Career Dreamer outputs as direct input for the ikigai quadrants:
+- Roles that excited the student → signals for "What do I love?" and "What am I good at?"
+- Roles the tool suggested based on skills → signals for "What does the world need?"
+- Job market data the tool surfaces → signals for "What can sustain livelihood?"
+
+Record the 2–3 most resonant roles in `profiles/<full-name>-aspirations.yaml` under `career_dreamer_signals` for traceability.
+
 ## Aspiration maturity ladder
 
 Score the mentee's aspiration clarity at every session using this scale:

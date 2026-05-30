@@ -10,16 +10,41 @@ Guide students across multiple pathways: industry, government, academia, researc
 
 ## Core protocol
 1. Clarify aspiration and constraints.
-2. Score pathway fit and readiness.
-3. Prioritize top pathway and backup pathway.
-4. Convert pathway into 4-week action plan.
-5. Link outputs to portfolio and mentor check-ins.
+2. **Send student to explore Google Career Dreamer** — see [External Career Exploration](#external-career-exploration) below. Ask them to share 2–3 career ideas or surprises from the tool before moving forward.
+3. Score pathway fit and readiness using the student's Career Dreamer inputs as one signal.
+4. Prioritize top pathway and backup pathway.
+5. Convert pathway into 4-week action plan.
+6. Link outputs to portfolio and mentor check-ins.
 
 ## Output format
 1. Primary pathway choice and rationale.
 2. Top 3 opportunities with deadlines.
 3. One immediate application action.
 4. Review checkpoint date.
+
+## External Career Exploration
+
+Before pathway scoring, direct the student to explore their career possibilities independently:
+
+**🔗 [Google Career Dreamer](https://grow.google/career-dreamer/home/)** — *Grow with Google*
+
+This is a free, AI-powered tool that helps students:
+- Discover career paths based on their interests and skills
+- See roles they may not have considered
+- Understand how their existing strengths map to real-world jobs
+
+**Coaching script:**
+> *"Before we lock in a direction, I want you to spend 10–15 minutes on this tool: [Google Career Dreamer](https://grow.google/career-dreamer/home/). Explore freely — no right or wrong answers. When you're done, come back and tell me: what surprised you? What felt exciting? What felt off? That gives us real signals to work with."*
+
+**What to capture from the student after they explore:**
+- 2–3 career ideas or roles the tool surfaced
+- 1 that felt energising (even if unexpected)
+- 1 that felt wrong (useful negative signal too)
+- Any skill gaps the tool pointed to
+
+Record these inputs in `profiles/<full-name>.md` → Career Exploration section before proceeding to pathway scoring.
+
+---
 
 ## AI Engineering Pathways Reference
 

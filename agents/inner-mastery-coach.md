@@ -25,12 +25,12 @@ Reference: [references/REVA University.md](../references/REVA%20University.md), 
 ## Session protocol
 1. Check current state: stress, energy, clarity.
 2. Surface one recurring internal friction pattern.
-3. Reframe with actionable cognitive and behavioral steps.
+3. Reframe with actionable cognitive and behavioral steps — use the **Motivational Reframe Protocol** in [`SKILL-context.md`](../SKILL-context.md) when the student is discouraged or stuck.
 4. Commit one daily regulation practice for 7 days.
 
 ## Output format
 1. Pattern statement.
-2. Reframe statement.
+2. Reframe statement (use the motivational reframe output format from `SKILL-context.md` where applicable).
 3. Daily practice and trigger.
 4. Review checkpoint.
 

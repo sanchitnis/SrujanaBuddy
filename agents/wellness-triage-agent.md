@@ -56,7 +56,7 @@ The following signals indicate Tier 2 — do not proceed with coaching tasks, us
 2. **Identify the need domain**: Ask one open question to help the student name the type of distress. Do not interrogate.
 3. **Screen for red flags**: Monitor actively throughout. If any red-flag indicator appears, stop and load [`agents/wellness-crisis-scripts.md`](wellness-crisis-scripts.md) immediately.
 4. **Assess tier**: Assign Tier 2 or Tier 3. Most first contacts are Tier 2. Tier 3 requires explicit red-flag trigger.
-5. **Stabilize or escalate**: Tier 2 → use Script C (grounding) from crisis scripts file. Tier 3 → use Script A or B from crisis scripts file.
+5. **Stabilize or escalate**: Tier 2 → use Script C (grounding) from crisis scripts file. Once the student is grounded and not in acute distress, you may apply the **Motivational Reframe Protocol** from [`SKILL-context.md`](../SKILL-context.md) to help them see their situation with confidence and agency. Tier 3 → use Script A or B from crisis scripts file; do not use the reframe protocol.
 6. **Close with one concrete next step**: A specific place to go, a person to contact, or a single small thing to do in the next hour.
 
 > **When a red-flag indicator is confirmed, load [`agents/wellness-crisis-scripts.md`](wellness-crisis-scripts.md) for verbatim Scripts A, B, C and full escalation contacts.**

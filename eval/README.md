@@ -56,8 +56,8 @@ eval/
 └── data/
     ├── eval-log-template.md           ← per-session quality log with pass/fail signal checklist
     ├── IMPROVEMENT-BACKLOG.md         ← live log of improvement tasks raised from eval/feedback
-    ├── anon-session-log-template.yaml ← anonymized session log template (consent-gated; PII-free)
-    └── sessions/                      ← saved anonymized session logs (one YAML per session)
+    ├── anon-session-log-template.yaml ← session log template (consent-gated; PII-free)
+    └── sessions/                      ← saved concurrent session logs ([name-or-avatar]-session-[date]-[id].yaml)
 ```
 
 ---

@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "description": "Synthetic testing database for SrujanaBuddy",
+    "last_updated": "2026-06-03T10:23:00Z"
+  },
+  "personas": [
+    {
+      "id": "persona-3",
+      "name": "Divya",
+      "archetype": "Passenger",
+      "career_path": "CP-8 Management-Consulting",
+      "stage": 1,
+      "aspiration": "Unstated; family expects a good job in a good company",
+      "background": "Third-year BBA. Decent grades but no clubs, no internship, no portfolio.",
+      "behavioral_signals": [
+        "Very short answers",
+        "I don't know is a common response"
+      ]
+    },
+    {
+      "id": "persona-1",
+      "name": "Arya",
+      "archetype": "Achiever",
+      "career_path": "CP-1 AI-Technology",
+      "stage": 3,
+      "aspiration": "Publish a paper on retrieval-augmented generation at a top-tier NLP venue by end of Year 4",
+      "background": "Third-year BTech CSE. Has completed two internships.",
+      "behavioral_signals": [
+        "Arrives with a draft research question",
+        "Knows the key papers"
+      ]
+    },
+    {
+      "id": "persona-6",
+      "name": "Sameer",
+      "archetype": "Explorer",
+      "career_path": "CP-5 Civil Services-Policy",
+      "stage": 1,
+      "aspiration": "IAS or IPS \u2014 interested in public administration",
+      "background": "Second-year BA Political Science. Reads newspapers, participates in debates.",
+      "behavioral_signals": [
+        "Asks how do I become an IAS officer",
+        "Interested in everything and overwhelmed"
+      ]
+    },
+    {
+      "id": "persona-12",
+      "name": "Deepak",
+      "archetype": "Resistor",
+      "career_path": "CP-6 Social Enterprise",
+      "stage": 1,
+      "aspiration": "Work in rural education; strongly opposed to urban corporate career",
+      "background": "First-year MA Education. Grew up in a rural district.",
+      "behavioral_signals": [
+        "I don't want to be a professional, I want to do something real",
+        "Distrusts institutional frameworks"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S1-01",
+      "name": "Passenger / Management \u2014 First session, no aspiration",
+      "persona_id": "persona-3",
+      "stage": 1,
+      "student_input": "My professor said I should talk to you. I don't really know why I'm here. I guess I need to figure out what to do after college.",
+      "expected_behaviors": [
+        "Does NOT immediately offer a plan or career path.",
+        "Opens with a gentle exploratory question about what Divya enjoys.",
+        "Produces one small, non-threatening next action."
+      ],
+      "quality_signals": [
+        "No premature career prescription in the first response",
+        "At least one open question asked before any advice offered",
+        "Next action is genuinely achievable for a Passenger within 48 hours",
+        "No mention of placement, package, or peer comparison"
+      ],
+      "failure_modes": [
+        {
+          "code": "F-2",
+          "description": "Responding as if Divya is an Achiever"
+        },
+        {
+          "code": "F-7",
+          "description": "Pushing toward Stage 2 in session 1"
+        }
+      ]
+    },
+    {
+      "id": "S1-02",
+      "name": "Achiever / AI-Technology \u2014 Foundation completeness check",
+      "persona_id": "persona-1",
+      "stage": 1,
+      "student_input": "I'm in first year BTech CSE. I want to work in AI. I've already started learning Python on my own. I know about machine learning basics from YouTube. What should I do next?",
+      "expected_behaviors": [
+        "Acknowledges the self-learning already happening.",
+        "Checks depth: asks what she has actually built.",
+        "Gives a stretch but realistic next action."
+      ],
+      "quality_signals": [
+        "Self-learning is acknowledged as real evidence",
+        "Depth-check question asked before prescribing next steps",
+        "Next action has a specific output"
+      ],
+      "failure_modes": [
+        {
+          "code": "F-1",
+          "description": "Treating her as Stage 2-ready"
+        },
+        {
+          "code": "F-6",
+          "description": "Slowing her down with excessive caution"
+        }
+      ]
+    }
+  ],
+  "execution_history": [
+    {
+      "timestamp": "2026-06-03T10:23:41.810242",
+      "level_scope": "all",
+      "results": {
+        "level_1": "FAIL",
+        "level_2": "PASS",
+        "level_3": "FAIL"
+      },
+      "failures_count": 67
+    },
+    {
+      "timestamp": "2026-06-03T10:29:08.211756",
+      "level_scope": "1",
+      "results": {
+        "level_1": "FAIL",
+        "level_2": "PASS",
+        "level_3": "PASS"
+      },
+      "failures_count": 66
+    }
+  ]
+}

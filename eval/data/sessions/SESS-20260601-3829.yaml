@@ -1,0 +1,41 @@
+session:
+  id: "SESS-20260601-3829"
+  date: "2026-06-01"
+  consent_granted: true
+
+student:
+  anonymous_id: "Student-3829"
+  year_of_study: "1st"
+  stream: "BCA"
+  srujana_stage: "Stage 1"
+
+session_context:
+  session_type: "Confirm doctor visit + attempt my_strlen from scratch"
+  trigger_phrase: "hi"
+  agents_invoked: ["Academic Learning Coach", "Drive-with-GPS Agent"]
+  session_duration_estimate: "Short (< 5 min)"
+
+student_state:
+  opening_energy: "8"
+  closing_energy: "8"
+  emotional_tone: "Curious, engaged, cooperative"
+  resistance_level: "None"
+
+coaching_moves:
+  approach_used: "Validation, career pathway alignment, low-pressure invitation"
+  pivot_moments: ["Addressed spontaneous PhD aspiration and mapped it to C foundations"]
+  tools_used: ["Aspirations sync", "GPS active plan update", "Wellness check-in"]
+
+outcomes:
+  commitment_made: true
+  commitment_detail: "Confirmed booked doctor appointment"
+  breakthrough_signal: true
+  breakthrough_note: "First proactive health action taken; shared long-term PhD aspiration"
+
+quality_signals:
+  tone_appropriate: true
+  pacing_appropriate: true
+  avoided_overwhelm: true
+  warmth_rating: "5"
+
+refinement_notes: "Student completed doctor's appointment booking before session. Student also introduced a new long-term PhD in Australia aspiration, which represents a shift or expansion from the startup builder path. Discussed requirements and linked foundations."

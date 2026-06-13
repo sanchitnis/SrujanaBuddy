@@ -42,7 +42,7 @@ This is a free, AI-powered tool that helps students:
 - 1 that felt wrong (useful negative signal too)
 - Any skill gaps the tool pointed to
 
-Record these inputs in `profiles/<full-name>.md` → Career Exploration section before proceeding to pathway scoring.
+Record these inputs in `srujana-memory/my-memory/soul.md` → Career Exploration section before proceeding to pathway scoring.
 
 ---
 

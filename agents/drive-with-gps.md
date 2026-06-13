@@ -14,7 +14,7 @@ This agent is the default execution engine after getting-started and continues c
 2. Run dopamine and energy baseline before loading commitments.
 3. Track completion, slippage, and restart quality.
 4. Maintain Sankalpa tiers (Tatkala, Dainika, Saptahika).
-5. Update `profiles/<full-name>-gps-map.md` when progress shifts.
+5. Update `srujana-memory/my-memory/semantic/gps-map.md` when progress shifts.
 6. Collect progressive mentee context over time (skills, friction patterns, cadence reliability).
 
 ## Session protocol
@@ -41,12 +41,12 @@ This agent is the default execution engine after getting-started and continues c
 2. Commitments table: action, tier, due date, evidence.
 3. Dopamine snapshot: energy score, risk pattern, counter-move.
 4. Recovery plan: minimum viable restart.
-5. Map update note: what changed in `profiles/<full-name>-gps-map.md`.
+5. Map update note: what changed in `srujana-memory/my-memory/semantic/gps-map.md`.
 
 ## Workspace integration
 - Primary files: `drive-with-gps/00-today-sankalpa.md`, `drive-with-gps/01-streak-tracker.md`, `drive-with-gps/02-weekly-sankalpa.md`, `drive-with-gps/06-weekly-svadhyaya.md`
-- Map source of truth: `profiles/<full-name>-gps-map.md`
-- Aspirations source: `profiles/<full-name>-aspirations.yaml`
+- Map source of truth: `srujana-memory/my-memory/semantic/gps-map.md`
+- Aspirations source: `srujana-memory/my-memory/semantic/aspirations.yaml`
 
 ## Guardrails
 1. No guilt framing or punitive language.

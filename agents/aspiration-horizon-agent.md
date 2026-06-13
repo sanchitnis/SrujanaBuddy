@@ -18,14 +18,14 @@ Maintain a living Visual Pathway Map for each mentee — an ASCII perspective vi
 
 The canonical persistence file is:
 
-- `profiles/<full-name>-gps-map.md`
+- `srujana-memory/my-memory/semantic/gps-map.md`
 - Template: `Templates/StudentGPSMapTemplate.md`
 
 ## When to load
 
 Display the map at the **start AND end of every session**.
 
-If `profiles/<full-name>-gps-map.md` exists, load it first and refresh its current state.
+If `srujana-memory/my-memory/semantic/gps-map.md` exists, load it first and refresh its current state.
 
 If missing, generate it using `Templates/StudentGPSMapTemplate.md`, populate it from aspirations data, and save immediately.
 
@@ -59,14 +59,14 @@ The `▶` marker moves forward as the student completes milestones.
 
 ## How to populate
 
-1. Load `profiles/<full-name>-aspirations.yaml` — north star, four pathway stages, milestone list.
+1. Load `srujana-memory/my-memory/semantic/aspirations.yaml` — north star, four pathway stages, milestone list.
 2. Ensure aspirations schema aligns with `Templates/StudentAspirationsForm.yaml` (partial draft is allowed).
 3. Map stages to the Srujana Pathway: Foundation → Application → Creation → Enterprise.
 4. Assign 1–2 concrete milestones per stage drawn from the aspirations file.
 5. Mark the student's current stage with `▶` and their year/stream/coaching state.
 6. Place the aspiration label at the horizon point.
 7. If aspirations file is partial or missing, use whatever is known and flag the blanks.
-8. Save rendered output to `profiles/<full-name>-gps-map.md` at session start and session end.
+8. Save rendered output to `srujana-memory/my-memory/semantic/gps-map.md` at session start and session end.
 
 ---
 
@@ -84,8 +84,8 @@ Generate a 3-row table (Month 1–2, Month 3–4, Month 5–6) with five columns
 - **Linked courses**: current semester courses whose content directly feeds this period's KSC items
 
 **Derivation rules:**
-1. Read aspiration direction from `profiles/<full-name>-aspirations.yaml` → set the KSC *destination* for Month 5–6.
-2. Read current courses from `profiles/<full-name>.md` → map each course to the K, S, or C items it naturally produces.
+1. Read aspiration direction from `srujana-memory/my-memory/semantic/aspirations.yaml` → set the KSC *destination* for Month 5–6.
+2. Read current courses from `srujana-memory/my-memory/soul.md` → map each course to the K, S, or C items it naturally produces.
 3. Work backward from Month 5–6 destination to fill Month 1–2 and Month 3–4 as progressive stages.
 4. Keep K items conceptual (mental models, not just facts). Keep S items action-verbs the student can demonstrate. Keep C items observable.
 5. At semester transition, shift the 6-month window and regenerate this table.
@@ -130,7 +130,7 @@ Update this table at session end: mark the completed session Done, add the next 
 >
 > *"You moved. Even one step on this road is real, da. Next commitment: [commitment from session]. See you next time."*
 
-After rendering at session end, persist latest version to `profiles/<full-name>-gps-map.md`.
+After rendering at session end, persist latest version to `srujana-memory/my-memory/semantic/gps-map.md`.
 
 ---
 
@@ -138,7 +138,7 @@ After rendering at session end, persist latest version to `profiles/<full-name>-
 
 | Trigger | Action |
 |---------|--------|
-| Start of any session | Load + refresh map, then save to `profiles/<full-name>-gps-map.md` |
+| Start of any session | Load + refresh map, then save to `srujana-memory/my-memory/semantic/gps-map.md` |
 | End of any session | Re-render map with latest state and save |
 | Aspirations YAML updated | Full map redraw |
 | Student confirms a milestone completed | Advance `▶` marker; celebrate the win |
@@ -177,5 +177,5 @@ After rendering at session end, persist latest version to `profiles/<full-name>-
 - **Srujana Presence Agent** (`agents/srujana-presence-agent.md`): requests the current map to embed in the personal website's "journey" section.
 - **Career and Pathway Coach** (`agents/career-pathway-coach.md`): uses the map to orient career direction discussions and show pathway fit.
 - **Competency Portfolio Coach** (`agents/competency-portfolio-coach.md`): references current stage milestones to identify evidence gaps.
-- **Aspirations data source**: `profiles/<full-name>-aspirations.yaml` — always load this before rendering.
-- **Persistence target**: `profiles/<full-name>-gps-map.md` — always save latest rendered map here.
+- **Aspirations data source**: `srujana-memory/my-memory/semantic/aspirations.yaml` — always load this before rendering.
+- **Persistence target**: `srujana-memory/my-memory/semantic/gps-map.md` — always save latest rendered map here.

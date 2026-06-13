@@ -43,6 +43,14 @@ These commitments should be interpreted in line with [references/REVA University
 
 ### Installation
 
+> **Legal Notice**
+>
+> - **Copyright**: Copyright (c) 2026 REVA University. All Rights Reserved.
+> - **Authorized Access**: Use is restricted to authorized REVA University students and employees only.
+> - **Confidentiality**: All materials in this repository are proprietary. External sharing without official written approval from REVA University is strictly prohibited.
+> - **Attribution**: You must retain the original copyright notice and creator attribution in all copies or substantial portions of the software.
+> - **Agreement Clause**: Installing, deploying, or using any assets, plugins, or components from this repository constitutes your agreement to the terms in the [LICENSE](LICENSE) file.
+
 To install SrujanaBuddy on your computer, follow these simple steps:
 
 1. **Download**: Download the latest release source code ZIP from the [latest Release](https://github.com/sanchitnis/SrujanaBuddy/releases/latest).
@@ -55,17 +63,38 @@ For developer setup instructions and custom contributions, please see [CONTRIBUT
 
 Once installed, follow these steps to launch the mentoring companion:
 
-1. **Browser Login**: Ensure you are logged in to your Google account in your default web browser (required for secure authentication).
-2. **Launch**: Open the unzipped folder and double-click **`SrujanaBuddy.bat`**.
+1. **Workspace Memory Setup**:
+   - Create a folder named `srujana-memory` on your local Desktop or in the parent directory of your repositories.
+   - Inside it, create two directories:
+     - `my-memory/` — for private data (e.g. `soul.md`, `context/`, `semantic/`, `episodic/`, `habits/`). Under `my-memory/semantic/`, place your `gps-map.md` and `aspirations.yaml`.
+     - `public-memory/` — for public portfolios and resumes. It must contain a `profile.md` (resume) and directories: `publications/`, `patents/`, `projects/`, and `reports/`.
+     - If you are collaborating with a mentor, create a folder under `srujana-memory/mentor-mentee/student-[avatar]/`.
+   - **No Fallback**: If the `srujana-memory` directory is missing, SrujanaBuddy will halt and ask you to set it up.
+2. **Workspace Information Setup**:
+   - Create a sibling folder named `reva-information` at the same level as your repository folder (i.e. `../reva-information/`).
+   - Populate this folder with markdown files containing REVA University public handbooks, regulations, syllabus, and policies.
+3. **Configure VS Code Multi-Root Workspace**:
+   - Save your workspace as a `.code-workspace` file (e.g., `srujana.code-workspace`) with the following folders:
+     ```json
+     {
+       "folders": [
+         { "path": "SrujanaBuddy" },
+         { "path": "srujana-memory" },
+         { "path": "reva-information" }
+       ]
+     }
+     ```
+4. **Browser Login**: Ensure you are logged in to your Google account in your default web browser (required for secure authentication).
+5. **Launch**: Open the `SrujanaBuddy` folder and double-click **`SrujanaBuddy.bat`**.
    * *First-run*: The script will automatically check for and install the Google Antigravity CLI (`agy`) if it is not already available on your machine.
    * *Auto-Update*: Every time you launch `SrujanaBuddy.bat`, it will check if a newer version is available on GitHub and prompt you to automatically update.
-3. **Connect**: When prompted, continue from your previous session (the interface will auto-resume if available).
+6. **Connect**: When prompted, continue from your previous session (the interface will auto-resume if available).
 
 ---
 
 ### Running a session
 
-1. You can start with just saying Hi.
+1. You can start by saying Hi.
 2. Give *any* direct request, for example:
    - Plan my day.
    - Run weekly review.
@@ -73,7 +102,8 @@ Once installed, follow these steps to launch the mentoring companion:
    - I need placement readiness coaching.
    - Teach me C Programming
    - I am overwhelmed for my project. I do not know where to start.
-3. As you go along, this saves your information in profile and stm folders to track commitments, completions, and progress. These are local files and are provate to you.
+3. As you go along, this saves your information in the centralized `srujana-memory/my-memory/` folder to track commitments, completions, and progress. These are local files and are private to you.
+
 
 
 ## Support and Contribution

@@ -138,6 +138,8 @@ For full coaching principles, output scaffolds, and guardrails, load [`SKILL-con
 
 **Hook script (run on trigger, before final farewell):**
 
+1. Rebuild the local HTML dashboard: Execute the builder script `python tools/build_buddy_dashboard.py` to refresh the profile completeness, KPIs, and collaborative status.
+2. Ask:
 > "Hey, before you go — can I save an anonymized version of our chat today? No names, no personal details — just the coaching patterns, to help improve SrujanaBuddy for all REVA students. It stays private and only used in bulk for system refinement. Is that okay with you?"
 
 **If student says yes (or "seri", "ok", "sure", "yes", "haan"):**

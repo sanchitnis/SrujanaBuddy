@@ -98,3 +98,9 @@ token.json
 
 # Antigravity CLI local config
 .antigravitycli
+
+# ============================================================
+# LOCAL PORTAL DATA — contains personal profile details
+# ============================================================
+web/buddy-data.json
+

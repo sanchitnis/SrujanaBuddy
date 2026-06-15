@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SrujanaBuddy Student Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+            color: #1e3a8a;
+        }
+        .command-list, .nudge-list {
+            list-style: none;
+            padding: 0;
+        }
+        .command-item, .nudge-item {
+            padding: 10px;
+            border-bottom: 1px dashed #e5e7eb;
+            font-family: monospace;
+        }
+        .command-item {
+            color: #0f766e;
+        }
+        .nudge-item {
+            color: #b91c1c;
+            font-weight: bold;
+        }
+        .progress-bar-container {
+            background-color: #e5e7eb;
+            border-radius: 8px;
+            height: 24px;
+            width: 100%;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .progress-bar {
+            background-color: #10b981;
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            text-align: center;
+            color: white;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        pre {
+            background: #1e293b;
+            color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, monospace;
+        }
+        .badge {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .file-picker-card {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            color: #92400e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>SrujanaBuddy Student Portal</h1>
+                <p>Private Student Mentoring Dashboard</p>
+            </div>
+            <div>
+                <button onclick="refreshData()" style="padding: 10px 15px; background: #10b981; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                    🔄 Load From Memory
+                </button>
+            </div>
+        </header>
+
+        <div id="file-picker-warning" class="file-picker-card">
+            <strong>CORS or Path Error:</strong> Local file browsing security restrictions blocked auto-fetching the dashboard JSON. 
+            Please select your <code>buddy-data.json</code> manually from <code>srujana-memory/my-memory/</code>:
+            <input type="file" id="file-picker" style="margin-left: 10px;" accept=".json">
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Left Side: Profile & Nudges -->
+            <div>
+                <div class="card">
+                    <h2>Profile Completeness Score</h2>
+                    <div class="progress-bar-container">
+                        <div id="progress" class="progress-bar">0%</div>
+                    </div>
+                    <ul id="nudge-list" class="nudge-list">
+                        <!-- Nudges go here -->
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Running a Session (Available Commands)</h2>
+                    <ul id="command-list" class="command-list">
+                        <!-- Commands go here -->
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Collaborations & Team Workspaces</h2>
+                    <div id="collab-container">
+                        <p>Loading collaborations...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: GPS Map & Habits -->
+            <div>
+                <div class="card">
+                    <h2>Active GPS Map (Sankalpa Scaffold)</h2>
+                    <pre id="gps-map">Loading active map...</pre>
+                </div>
+
+                <div class="card">
+                    <h2>Active Habits & Streaks</h2>
+                    <div id="habits-container">
+                        <p>Loading habits...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fallbackPath = '../../srujana-memory/my-memory/buddy-data.json';
+        
+        function renderDashboard(data) {
+            // 1. Completeness Score & Nudges
+            const score = data.personal.score;
+            const progress = document.getElementById('progress');
+            progress.style.width = score + '%';
+            progress.textContent = score + '% Complete';
+            
+            const nudgeList = document.getElementById('nudge-list');
+            nudgeList.innerHTML = '';
+            if (data.personal.nudges.length === 0) {
+                const li = document.createElement('li');
+                li.className = 'nudge-item';
+                li.style.color = '#10b981';
+                li.textContent = '🎉 Your student profile is 100% complete! Keep up the great work.';
+                nudgeList.appendChild(li);
+            } else {
+                data.personal.nudges.forEach(nudge => {
+                    const li = document.createElement('li');
+                    li.className = 'nudge-item';
+                    li.textContent = '⚠️ ' + nudge;
+                    nudgeList.appendChild(li);
+                });
+            }
+
+            // 2. Commands List
+            const commandList = document.getElementById('command-list');
+            commandList.innerHTML = '';
+            data.generic.commands.forEach(cmd => {
+                const li = document.createElement('li');
+                li.className = 'command-item';
+                li.textContent = '> ' + cmd;
+                commandList.appendChild(li);
+            });
+
+            // 3. Collaborations
+            const collabContainer = document.getElementById('collab-container');
+            collabContainer.innerHTML = '';
+            if (data.personal.collaborations.length === 0) {
+                collabContainer.innerHTML = '<p>No active mentor-mentee folder updates tracked.</p>';
+            } else {
+                data.personal.collaborations.forEach(collab => {
+                    const item = document.createElement('div');
+                    item.style.marginBottom = '10px';
+                    item.style.padding = '10px';
+                    item.style.border = '1px solid #e5e7eb';
+                    item.style.borderRadius = '4px';
+                    item.innerHTML = `
+                        <strong>Folder:</strong> <span class="badge">${collab.folder}</span><br>
+                        <strong>Latest File:</strong> ${collab.latest_file}<br>
+                        <strong>Last Update:</strong> ${new Date(collab.last_update).toLocaleString()}
+                    `;
+                    collabContainer.appendChild(item);
+                });
+            }
+
+            // 4. GPS Map
+            document.getElementById('gps-map').textContent = data.personal.gps_map;
+
+            // 5. Habits
+            const habitsContainer = document.getElementById('habits-container');
+            habitsContainer.innerHTML = '';
+            if (data.personal.habits.length === 0) {
+                habitsContainer.innerHTML = '<p>No active habits being tracked currently. Update habits.md.</p>';
+            } else {
+                const ul = document.createElement('ul');
+                data.personal.habits.forEach(habit => {
+                    const li = document.createElement('li');
+                    li.textContent = habit;
+                    ul.appendChild(li);
+                });
+                habitsContainer.appendChild(ul);
+            }
+            
+            // Hide warning if load succeeds
+            document.getElementById('file-picker-warning').style.display = 'none';
+        }
+
+        function refreshData() {
+            fetch(fallbackPath)
+                .then(response => {
+                    if (!response.ok) throw new Error();
+                    return response.json();
+                })
+                .then(data => renderDashboard(data))
+                .catch(error => {
+                    console.warn('Relative path fetch failed. Activating manual file picker fallback.');
+                    document.getElementById('file-picker-warning').style.display = 'block';
+                    document.getElementById('collab-container').innerHTML = '<p style="color:#b45309;">Please select buddy-data.json using the file picker above.</p>';
+                });
+        }
+
+        // File picker handler
+        document.getElementById('file-picker').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                try {
+                    const data = JSON.parse(evt.target.result);
+                    renderDashboard(data);
+                } catch(err) {
+                    alert('Invalid JSON file selected.');
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        // Initial load
+        refreshData();
+    </script>
+</body>
+</html>

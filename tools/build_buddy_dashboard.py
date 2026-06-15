@@ -176,7 +176,7 @@ def build_dashboard():
     print("Building SrujanaBuddy Dashboard...")
     memory_dir = locate_srujana_memory()
     if not memory_dir:
-        print("[WARNING] srujana-memory directory could not be located. Dashboard will show empty profile placeholders.")
+        print("[WARNING] srujana-memory directory could not be located. Writing to local web/ folder as fallback.")
         # Create empty template placeholder
         output_data = {
             "generic": {
@@ -192,6 +192,9 @@ def build_dashboard():
                 "collaborations": []
             }
         }
+        dest_dir = REPO_ROOT / "web"
+        dest_dir.mkdir(exist_ok=True)
+        dest_file = dest_dir / "buddy-data.json"
     else:
         completeness = check_profile_completeness(memory_dir)
         personal_data = load_extra_personal_data(memory_dir)
@@ -210,14 +213,14 @@ def build_dashboard():
                 "collaborations": personal_data["collaborations"]
             }
         }
+        dest_dir = memory_dir / "my-memory"
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        dest_file = dest_dir / "buddy-data.json"
         
-    web_dir = REPO_ROOT / "web"
-    web_dir.mkdir(exist_ok=True)
-    
-    with open(web_dir / "buddy-data.json", "w", encoding="utf-8") as f:
+    with open(dest_file, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
         
-    print(f"SrujanaBuddy dashboard data successfully written to {web_dir / 'buddy-data.json'}")
+    print(f"SrujanaBuddy dashboard data successfully written to {dest_file}")
 
 if __name__ == "__main__":
     build_dashboard()

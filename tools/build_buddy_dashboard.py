@@ -2,7 +2,6 @@ import os
 import sys
 import re
 import json
-import yaml
 from pathlib import Path
 
 # Resolve repo root
@@ -14,46 +13,74 @@ def locate_srujana_memory():
     if env_path and Path(env_path).exists():
         return Path(env_path).resolve()
         
-    # 2. Sibling Path (one level up from repo root)
-    sibling_path = REPO_ROOT.parent / "srujana-memory"
-    if sibling_path.exists():
-        return sibling_path.resolve()
-        
-    # 3. Desktop
-    desktop = Path(os.path.expanduser("~/Desktop/srujana-memory"))
-    if desktop.exists():
-        return desktop.resolve()
-        
-    # 4. OneDrive Desktop
-    onedrive_desktop = Path(os.path.expanduser("~/OneDrive/Desktop/srujana-memory"))
-    if onedrive_desktop.exists():
-        return onedrive_desktop.resolve()
-        
+    # 2. Walk up parent directory tree from REPO_ROOT and current directory to find srujana-memory
+    search_starts = [REPO_ROOT, Path.cwd()]
+    for start in search_starts:
+        curr = start.resolve()
+        # Traverse up to the drive root
+        while curr != curr.parent:
+            # Check if it's a child here or a sibling
+            sibling = curr / "srujana-memory"
+            if sibling.exists() and sibling.is_dir():
+                return sibling.resolve()
+            sibling_sibling = curr.parent / "srujana-memory"
+            if sibling_sibling.exists() and sibling_sibling.is_dir():
+                return sibling_sibling.resolve()
+            curr = curr.parent
+            
+    # 3. Fallbacks to Desktop/OneDrive Desktop
+    fallbacks = [
+        Path(os.path.expanduser("~/Desktop/srujana-memory")),
+        Path(os.path.expanduser("~/OneDrive/Desktop/srujana-memory")),
+        Path(os.path.expanduser("~/OneDrive - REVA University/Desktop/srujana-memory"))
+    ]
+    for path in fallbacks:
+        if path.exists() and path.is_dir():
+            return path.resolve()
+            
     return None
 
-def parse_readme_commands():
-    readme_path = REPO_ROOT / "README.md"
-    commands = []
-    if not readme_path.exists():
-        return commands
+def parse_skill_routing():
+    skill_path = REPO_ROOT / "SKILL.md"
+    plugins = [
+        {"name": "Academics", "description": "Courses, concept mastery, and exam preparation", "commands": []},
+        {"name": "Aspirations", "description": "Goal Plan Sankalpa (GPS) and career pathways", "commands": []},
+        {"name": "Wellbeing", "description": "Stress management, energy checks, and Kaizen", "commands": []}
+    ]
+    if not skill_path.exists():
+        return plugins
         
-    with open(readme_path, "r", encoding="utf-8") as f:
+    with open(skill_path, "r", encoding="utf-8") as f:
         content = f.read()
         
-    # Find "Running a session" section
-    match = re.search(r"##+ Running a session(.*?)(##+|$)", content, re.DOTALL | re.IGNORECASE)
-    if match:
-        section_text = match.group(1)
-        # Find all bulleted/numbered items with commands
-        for line in section_text.splitlines():
-            line = line.strip()
-            if line.startswith("-") or line.startswith("*") or re.match(r"^\d+\.", line):
-                # Clean up bullet markers
-                cleaned = re.sub(r"^[-*\d\.\s]+", "", line).strip()
-                if cleaned:
-                    # Check if it has a sub-bullet or nested code block
-                    commands.append(cleaned)
-    return commands
+    # Find Session Type Routing table
+    match = re.search(r"##+ Session Type Routing(.*?)(##+|$)", content, re.DOTALL | re.IGNORECASE)
+    if not match:
+        return plugins
+        
+    table_text = match.group(1)
+    for line in table_text.splitlines():
+        if "|" in line and not line.strip().startswith("|-") and "Primary Agent" not in line and "Session Type" not in line:
+            parts = [p.strip() for p in line.split("|") if p.strip()]
+            if len(parts) >= 2:
+                session_type = parts[1]
+                agent = parts[2] if len(parts) > 2 else ""
+                
+                # Dynamic grouping
+                category = "Academics"
+                agent_lower = agent.lower()
+                if "gps" in agent_lower or "svadharma" in agent_lower or "career" in agent_lower or "presence" in agent_lower or "aspiration" in agent_lower or "portfolio" in agent_lower or "enterprising" in agent_lower:
+                    category = "Aspirations"
+                elif "wellbeing" in agent_lower or "mastery" in agent_lower or "life" in agent_lower or "escalation" in agent_lower or "triage" in agent_lower:
+                    category = "Wellbeing"
+                    
+                for p in plugins:
+                    if p["name"] == category:
+                        p["commands"].append({
+                            "command": session_type,
+                            "description": f"Guided coaching using {agent}"
+                        })
+    return plugins
 
 def check_profile_completeness(memory_dir):
     soul_path = memory_dir / "my-memory" / "soul.md"
@@ -127,6 +154,48 @@ def check_profile_completeness(memory_dir):
 
     return completeness
 
+def parse_soul_metadata(soul_path):
+    metadata = {
+        "name": "Unknown Student",
+        "role": "Student Member",
+        "school": "School of Computer Science and Engineering",
+        "orcid": "None",
+        "user_type": "student"
+    }
+    if not soul_path.exists():
+        return metadata
+        
+    with open(soul_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    name_match = re.search(r"Name:\s*(.+)", content, re.IGNORECASE)
+    if name_match:
+        metadata["name"] = name_match.group(1).strip()
+        
+    id_match = re.search(r"Student ID:\s*(.+)", content, re.IGNORECASE)
+    if id_match:
+        metadata["orcid"] = id_match.group(1).strip()
+        
+    stream_match = re.search(r"Program and stream:\s*(.+)", content, re.IGNORECASE)
+    if stream_match:
+        metadata["role"] = stream_match.group(1).strip()
+        
+    school_match = re.search(r"School:\s*(.+)", content, re.IGNORECASE)
+    if school_match:
+        metadata["school"] = school_match.group(1).strip()
+        
+    type_match = re.search(r"(User Type|type):\s*(.+)", content, re.IGNORECASE)
+    if type_match:
+        metadata["user_type"] = type_match.group(2).strip()
+        
+    return metadata
+
+def read_markdown_file(path, fallback=""):
+    if path.exists():
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+    return fallback
+
 def load_extra_personal_data(memory_dir):
     data = {
         "gps_map": "No active Goal Plan Sankalpa map found. Run daily planning to generate.",
@@ -165,6 +234,7 @@ def load_extra_personal_data(memory_dir):
                     import datetime
                     dt = datetime.datetime.fromtimestamp(latest_mtime).isoformat()
                     data["collaborations"].append({
+                        "type": "mentor-mentee",
                         "folder": f"mentor-mentee/{item.name}",
                         "latest_file": latest_file,
                         "last_update": dt
@@ -176,51 +246,59 @@ def build_dashboard():
     print("Building SrujanaBuddy Dashboard...")
     memory_dir = locate_srujana_memory()
     if not memory_dir:
-        print("[WARNING] srujana-memory directory could not be located. Writing to local web/ folder as fallback.")
-        # Create empty template placeholder
-        output_data = {
-            "generic": {
-                "system": "SrujanaBuddy",
-                "commands": parse_readme_commands()
-            },
-            "personal": {
-                "score": 0,
-                "nudges": ["Create the 'srujana-memory' folder on your Desktop or parent directory to initialize profile tracking."],
-                "fields": {},
-                "gps_map": "Please set up srujana-memory to see your active GPS Map.",
-                "habits": [],
-                "collaborations": []
-            }
-        }
-        dest_dir = REPO_ROOT / "web"
-        dest_dir.mkdir(exist_ok=True)
-        dest_file = dest_dir / "buddy-data.json"
-    else:
-        completeness = check_profile_completeness(memory_dir)
-        personal_data = load_extra_personal_data(memory_dir)
+        print("[WARNING] srujana-memory directory could not be located. Dashboard generation halted.")
+        return
         
-        output_data = {
-            "generic": {
-                "system": "SrujanaBuddy",
-                "commands": parse_readme_commands()
-            },
-            "personal": {
-                "score": completeness["score"],
-                "nudges": completeness["nudges"],
-                "fields": completeness["fields"],
-                "gps_map": personal_data["gps_map"],
-                "habits": personal_data["habits"],
-                "collaborations": personal_data["collaborations"]
-            }
+    completeness = check_profile_completeness(memory_dir)
+    personal_data = load_extra_personal_data(memory_dir)
+    soul_meta = parse_soul_metadata(memory_dir / "my-memory" / "soul.md")
+    
+    # Paths for other semantic logs
+    recent_path = memory_dir / "my-memory" / "episodic" / "recent.md"
+    aspirations_path = memory_dir / "my-memory" / "semantic" / "aspirations.yaml"
+    
+    output_data = {
+        "generic": {
+            "system": "SrujanaBuddy",
+            "plugins": parse_skill_routing()
+        },
+        "personal": {
+            "name": soul_meta["name"],
+            "role": soul_meta["role"],
+            "school": soul_meta["school"],
+            "orcid": soul_meta["orcid"],
+            "score": completeness["score"],
+            "nudges": completeness["nudges"],
+            "fields": completeness["fields"],
+            "gps_map": personal_data["gps_map"],
+            "habits": personal_data["habits"],
+            "collaborations": personal_data["collaborations"],
+            "recent": read_markdown_file(recent_path, "No recent sessions logged."),
+            "aspirations": read_markdown_file(aspirations_path, "No aspirations defined.")
         }
-        dest_dir = memory_dir / "my-memory"
-        dest_dir.mkdir(parents=True, exist_ok=True)
-        dest_file = dest_dir / "buddy-data.json"
-        
-    with open(dest_file, "w", encoding="utf-8") as f:
+    }
+    
+    # 1. Write the backup JSON
+    dest_json = memory_dir / "my-memory" / "buddy-data.json"
+    with open(dest_json, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
         
-    print(f"SrujanaBuddy dashboard data successfully written to {dest_file}")
+    # 2. Read HTML template from repository
+    template_file = REPO_ROOT / "web" / "student_index.html"
+    if template_file.exists():
+        with open(template_file, "r", encoding="utf-8") as f:
+            template_content = f.read()
+            
+        # Replace the json string placeholder in the template
+        embedded_str = json.dumps(output_data, indent=2)
+        replaced_content = template_content.replace("/*DASHBOARD_DATA_PLACEHOLDER*/", embedded_str)
+        
+        dest_html = memory_dir / "my-memory" / "student_index.html"
+        with open(dest_html, "w", encoding="utf-8") as f:
+            f.write(replaced_content)
+        print(f"SrujanaBuddy Student HTML portal written to {dest_html}")
+    else:
+        print(f"[WARNING] Student HTML template not found at {template_file}")
 
 if __name__ == "__main__":
     build_dashboard()
